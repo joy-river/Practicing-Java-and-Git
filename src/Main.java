@@ -1,6 +1,4 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
 
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -8,32 +6,20 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         int n = Integer.parseInt(br.readLine());
-        int max;
-        ArrayList<Integer>[] tri = new ArrayList[n];
-        StringTokenizer st;
-        for (int i = 0 ; i < n ; i ++){
-            tri[i] = new ArrayList<>();
-            st = new StringTokenizer(br.readLine());
-            for (int j = 0 ; j < i + 1 ; j++)
-                tri[i].add(Integer.parseInt(st.nextToken()));
-        }
-        max = tri[0].get(0);
-        for (int i = 1 ; i < n ; i ++){
-            for (int j = 0; j < tri[i].size(); j++){
-                if(j == 0)
-                    tri[i].add(j,tri[i-1].get(j) + tri[i].get(j));
-                else if (j == tri[i].size() - 1)
-                    tri[i].add(j,tri[i-1].get(j - 1) + tri[i].get(j));
-                else
-                    tri[i].add(j,Math.max(tri[i-1].get(j-1) , tri[i-1].get(j)) + tri[i].get(j));
-                if(tri[i].get(j) > max)
-                    max = tri[i].get(j);
-                tri[i].remove(j+1);
-            }
-            tri[i - 1].clear();
-        }
+        int[] point = new int[n];
+        int[] sum = new int [n];
 
-        bw.write(Integer.toString(max));
+        for (int i = n - 1 ; i >= 0 ; i--)
+            point[i] = Integer.parseInt(br.readLine());
+
+        if(n == 1)
+            bw.write(Integer.toString(point[0]));
+        else {
+            sum[1] = (sum[0] = point[0]) + point[1];
+            for (int i = 2; i < n; i++)
+                sum[i] = Math.max(sum[i - 2] + point[i], i > 2 ? point[i - 1] + sum[i - 3] + point[i] : 0);
+            bw.write(Integer.toString(Math.max(sum[n - 2], sum[n - 1])));
+        }
         bw.flush();
         bw.close();
     }
