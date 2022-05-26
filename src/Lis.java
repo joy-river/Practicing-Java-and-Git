@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.StringTokenizer;
-
+//참고로 부분 수열은 수열의 순서를 유지하는 수열임 ㅇㅇ
 public class Lis {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
