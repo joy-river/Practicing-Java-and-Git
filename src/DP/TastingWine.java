@@ -1,3 +1,5 @@
+package DP;
+
 import java.io.*;
 
 public class TastingWine {
