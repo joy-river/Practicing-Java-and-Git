@@ -6,21 +6,36 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         int n = Integer.parseInt(br.readLine());
-        int[] point = new int[n];
-        int[] sum = new int [n];
+        int[] wine = new int [n + 1];
+        int[] d = new int[n + 1];
+        int[] dmax = new int [n + 1];
+        int max = 0;
+        int count = 0;
+        for (int i = 0 ; i < n ; i ++)
+            wine[i] = Integer.parseInt(br.readLine());
 
-        for (int i = n - 1 ; i >= 0 ; i--)
-            point[i] = Integer.parseInt(br.readLine());
+        for (int i = 0 ; i < n ; i ++){
+            if(wine[i] != 0 && count < 2){
+                d[i] = wine[i];
+                max = Math.max(max, d[i]);
+                dmax[i] = d[i];
+                for (int j = i + 1; j < n; j++) {
+                    if (j <= i + 2)
+                        d[j] = d[i] + wine[j];
+                    else
+                        d[j] = Math.max(dmax[j-2], dmax[j - 3] + wine[j - 1]) + wine[j];
+                    max = Math.max(max, d[j]);
+                    dmax[j] = Math.max(dmax[j - 1], d[j]);
 
-        if(n == 1)
-            bw.write(Integer.toString(point[0]));
-        else {
-            sum[1] = (sum[0] = point[0]) + point[1];
-            for (int i = 2; i < n; i++)
-                sum[i] = Math.max(sum[i - 2] + point[i], i > 2 ? point[i - 1] + sum[i - 3] + point[i] : 0);
-            bw.write(Integer.toString(Math.max(sum[n - 2], sum[n - 1])));
+                }
+                count++;
+            }
+
         }
+
+        bw.write(Integer.toString(n == 1 ? wine[0] : max));
         bw.flush();
         bw.close();
     }
+
 }
