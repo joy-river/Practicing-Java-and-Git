@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.StringTokenizer;
 
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -6,34 +7,20 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         int n = Integer.parseInt(br.readLine());
-        int[] wine = new int [n + 1];
-        int[] d = new int[n + 1];
-        int[] dmax = new int [n + 1];
-        int max = 0;
-        int count = 0;
-        for (int i = 0 ; i < n ; i ++)
-            wine[i] = Integer.parseInt(br.readLine());
-
-        for (int i = 0 ; i < n ; i ++){
-            if(wine[i] != 0 && count < 2){
-                d[i] = wine[i];
-                max = Math.max(max, d[i]);
-                dmax[i] = d[i];
-                for (int j = i + 1; j < n; j++) {
-                    if (j <= i + 2)
-                        d[j] = d[i] + wine[j];
-                    else
-                        d[j] = Math.max(dmax[j-2], dmax[j - 3] + wine[j - 1]) + wine[j];
-                    max = Math.max(max, d[j]);
-                    dmax[j] = Math.max(dmax[j - 1], d[j]);
-
-                }
-                count++;
-            }
-
+        StringTokenizer st;
+        int[][] wire = new int [n][2];
+        for (int i = 0; i <n ; i++){
+            st = new StringTokenizer(br.readLine());
+            for (int j = 0 ; j < 2; j ++)
+                wire[i][j] = Integer.parseInt(st.nextToken());
         }
 
-        bw.write(Integer.toString(n == 1 ? wine[0] : max));
+
+
+        전봇대에서 교차하는게 업다 => 항상 증가ㅏㅏ 아니면 항상 감소하는 방향이어야만 한다.
+
+
+        bw.write(Integer.toString(123));
         bw.flush();
         bw.close();
     }
