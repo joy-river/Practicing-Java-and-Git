@@ -1,8 +1,6 @@
 package DP;
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.StringTokenizer;
 
 public class LCS {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -11,16 +9,17 @@ public class LCS {
     public static void main(String[] args) throws IOException {
         String[] a = br.readLine().split("");
         String[] b = br.readLine().split("");
-        int[] dp  = new int[a.length + 1];
+        int[][] dp  = new int[a.length + 1][b.length + 1];
         int max = 0;
 
-        for (int i = 0 ; i < a.length ; i++){
-            dp[i] = 1;
-            for (int j = 0 ; j < i; j ++)
-                if(a[i].equals(b[j]))
-                    dp[i] = Math.max(dp[i], dp[j] + 1);
-            max = Math.max(dp[i], max);
-        }
+        for (int i = 1 ; i <= a.length; i++)
+            for (int j = 1; j <= b.length; j++) {
+                if (a[i - 1].equals(b[j - 1]))
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                else
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                max = Math.max(max, dp[i][j]);
+            }
 
 
         bw.write(Integer.toString(max));
@@ -29,3 +28,4 @@ public class LCS {
     }
 
 }
+
