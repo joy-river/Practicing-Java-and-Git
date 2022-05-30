@@ -6,21 +6,28 @@ public class Main {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void main(String[] args) throws IOException {
-        int n = Integer.parseInt(br.readLine());
-        StringTokenizer st;
-        int[][] wire = new int [n][2];
-        for (int i = 0; i <n ; i++){
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+        int k = Integer.parseInt(st.nextToken());
+        int[][] stuff = new int [2][n];
+        int[][] dp = new int [k + 1][n + 1];
+        int max = 0;
+
+        for (int i = 0 ; i < n ; i ++) {
             st = new StringTokenizer(br.readLine());
-            for (int j = 0 ; j < 2; j ++)
-                wire[i][j] = Integer.parseInt(st.nextToken());
+            for (int j = 0; j < 2; j++)
+                stuff[j][i] = Integer.parseInt(st.nextToken());
+        }
+        for (int i = 1; i < k + 1; i ++){
+            for (int j = 1 ; j < n + 1 ; j ++){
+                if(i >= stuff[0][j - 1])
+                    dp[i][j] = Math.max(dp[i][j - 1] , dp[i - stuff[0][j - 1]][j - 1] + stuff[1][j - 1]);
+                else
+                    dp[i][j] = dp[i][j - 1];
+            }
         }
 
-
-
-        전봇대에서 교차하는게 업다 => 항상 증가ㅏㅏ 아니면 항상 감소하는 방향이어야만 한다.
-
-
-        bw.write(Integer.toString(123));
+        bw.write(Integer.toString(max));
         bw.flush();
         bw.close();
     }
