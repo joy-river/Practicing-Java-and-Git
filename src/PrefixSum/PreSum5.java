@@ -1,9 +1,10 @@
+package PrefixSum;
+
 import java.io.*;
-import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 
-public class Main {
+public class PreSum5 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
