@@ -1,7 +1,6 @@
 package PrefixSum;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 
@@ -14,13 +13,17 @@ public class HCI {
         String[] arr = br.readLine().split("");
         int n = Integer.parseInt(br.readLine());
         String alpha;
-        ArrayList<Integer>[] sum = new ArrayList[26];
+        int [][] sum = new int [arr.length + 1][26];
         int a,b;
         int index;
 
-        for (int i = 0 ; i < 26; i ++)
-            (sum[i] = new ArrayList<>()).add(0);
-        sum[arr[0].charAt(0) - 97].set(0,1);
+        sum[0][arr[0].charAt(0) - 97]++;
+        for (int i = 1 ; i < arr.length ; i ++){
+            for (int j = 0 ; j < 26; j ++)
+                sum[i][j] = sum[i - 1][j];
+            sum[i][arr[i].charAt(0) - 97]++;
+        }
+
 
         for (int i = 0; i < n ; i ++){
             st = new StringTokenizer(br.readLine());
@@ -28,10 +31,8 @@ public class HCI {
             index = alpha.charAt(0) - 97;
             a = Integer.parseInt(st.nextToken());
             b = Integer.parseInt(st.nextToken());
-            if(sum[index].size() <= b)
-                for (int j = sum[index].size() ; j <= b  ; j++)
-                    sum[index].add(sum[index].get(sum[index].size() -1 ) + (arr[j].equals(alpha) ? 1 : 0));
-            bw.write(sum[index].get(b) - (a == 0 ? 0 : sum[index].get(a - 1))  + "\n");
+
+            bw.write(sum[b][index] - (a == 0 ? 0 : sum[a - 1][index]) + "\n");
 
         }
         bw.flush();
@@ -39,4 +40,6 @@ public class HCI {
     }
 
 }
+
+
 
