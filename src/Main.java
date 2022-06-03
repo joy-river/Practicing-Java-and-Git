@@ -1,5 +1,7 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.StringTokenizer;
 
 
@@ -8,32 +10,22 @@ public class Main {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void main(String[] args) throws IOException {
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int n = Integer.parseInt(st.nextToken());
-        int m = Integer.parseInt(st.nextToken());
+        StringTokenizer st;
+        int n = Integer.parseInt(br.readLine());
+        int count = 0;
+        int [][] time = new int [n][2];
 
-        int [][]table = new int[n + 1][n + 1];
-        int [][] sum = new int[n + 1][n + 1];
-        for (int i = 0 ; i <= n; i++){
+        for (int i = 0 ; i < n ; i ++){
             st = new StringTokenizer(br.readLine());
-            for (int j = 0; j <= n ; j++)
-                table[i][j] = Integer.parseInt(st.nextToken());
-        }
-        sum[1][1] = table[1][1];
-        for (int i = 2; i < n + 1; i++) {
-            sum[1][i] = sum[1][i - 1] + table[1][i];
-            sum[i][1] = sum[i - 1][1] + table[i][1];
-        }
-        for (int i = 2; i < n + 1; i++){
-            for (int j = 2; j < n + 1; j ++){
-                sum[i][j] = sum[i - 1][j] + sum[i][j-1] + table[i][j];
-            }
+            time[i][0] = Integer.parseInt(st.nextToken());
+            time[i][1] = Integer.parseInt(st.nextToken());
         }
 
+        Arrays.sort(time, (o1, o2) -> o1[1] == o2[1] ? Integer.compare(o1[0], o2[0]) : Integer.compare(o1[1], o2[1]));
 
 
 
-
+        bw.write(Integer.toString(count));
         bw.flush();
         bw.close();
     }
