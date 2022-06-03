@@ -12,26 +12,23 @@ public class PreSum5 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
-
-        int [][]table = new int[n + 1][n + 1];
+        int [] cord = new int [4];
         int [][] sum = new int[n + 1][n + 1];
-        for (int i = 0 ; i <= n; i++){
+
+        for (int i = 1 ; i <= n; i++){
             st = new StringTokenizer(br.readLine());
-            for (int j = 0; j <= n ; j++)
-                table[i][j] = Integer.parseInt(st.nextToken());
+            for (int j = 1; j <= n ; j++)
+                sum[i][j] = sum[i][j-1] + (Integer.parseInt(st.nextToken()));
         }
-        sum[1][1] = table[1][1];
-        for (int i = 2; i < n + 1; i++) {
-            sum[1][i] = sum[1][i - 1] + table[1][i];
-            sum[i][1] = sum[i - 1][1] + table[i][1];
+        for (int i = 1 ; i <= n; i++)
+            for (int j = 1 ; j <= n ;j++)
+                sum[i][j] += sum[i - 1][j];
+        for (int i = 0 ; i < m ; i++){
+            st = new StringTokenizer(br.readLine());
+            for (int j = 0 ; j < 4; j ++)
+                cord[j] = Integer.parseInt(st.nextToken());
+            bw.write(sum[cord[2]][cord[3]] - sum[cord[0] - 1][cord[3]] - sum[cord[2]][cord[1] - 1] + sum[cord[0] - 1][cord[1] - 1] + "\n");
         }
-        for (int i = 2; i < n + 1; i++){
-            for (int j = 2; j < n + 1; j ++){
-                sum[i][j] = sum[i - 1][j] + sum[i][j-1] + table[i][j];
-            }
-        }
-
-
 
 
 
@@ -40,4 +37,6 @@ public class PreSum5 {
     }
 
 }
+
+
 
