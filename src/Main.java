@@ -1,54 +1,55 @@
 import java.io.*;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
+    static int zero = 0, one = 0;
     public static void main(String[] args) throws IOException {
-        Deque<Integer> deq = new LinkedList<>();
+
         int n = Integer.parseInt(br.readLine()), k;
-        boolean rev, error;
-        StringBuilder sb = new StringBuilder();
-        String [] func, num;
+        int[][] table = new int[n][n];
+        String[] input;
 
         for (int i = 0 ; i < n ; i ++){
-            rev = false;
-            error = false;
-            func = br.readLine().split("");
-            k = Integer.parseInt(br.readLine());
-            num = br.readLine().split("");
-            while(k != 0)
-                deq.add(Integer.parseInt(num[2 * k-- - 1]));
-            for (String s : func) {
-                if (s.equals("R"))
-                    rev = !rev;
-                else if (deq.isEmpty()) {
-                    error = true;
-                    break;
-                }
-                else if (rev) deq.removeLast();
-                else deq.removeFirst();
-            }
-            if(error)
-                sb.append("error" + "\n");
-            else{
-                sb.append("[");
-                if(rev)
-                    while(!deq.isEmpty()) sb.append(deq.pollLast() + ",");
-                else
-                    while(!deq.isEmpty()) sb.append(deq.pollFirst() + ",");
-                sb.replace(sb.length() - 1, sb.length() - 1, "]" + "\n");
-            }
+            input = br.readLine().split(" ");
+            for (int j = 0 ;j < n; j++)
+                table[i][j] = Integer.parseInt(input[j]);
         }
-
-
-
-        bw.write(sb.toString());
+        counting(table, 0 , 0 ,n);
+        bw.write(zero +"\n" + one);
         bw.flush();
         bw.close();
+    }
+    static int counting (int[][]table,int i, int j, int n){
+        int temp;
+        int temp0 = 0 , temp1 = 0;
+        if(n == 1) {
+            if(table[i][j] == 1)
+                one++;
+            else
+                zero++;
+            return table[i][j];
+        }
+        else{
+            for (int k = 0 ; k < 2; k++)
+                for (int l = 0 ; l < 2; l++) {
+                    temp  = counting(table, i + k * (n / 2), j + l * (n / 2), n / 2);
+                    if (temp == 0)
+                          temp0++;
+                    else
+                        temp1++;
+                }
+            if(temp0 == 4) {
+                zero -= 3;
+                 return 0;
+            }
+            else if (temp1 == 4){
+                one -= 3;
+                return 1;
+            }
+        }
+        return -1;
     }
 
 }
