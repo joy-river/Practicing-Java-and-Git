@@ -7,7 +7,7 @@ public class Main {
     static int zero = 0, one = 0;
     public static void main(String[] args) throws IOException {
 
-        int n = Integer.parseInt(br.readLine()), k;
+        int n = Integer.parseInt(br.readLine());
         int[][] table = new int[n][n];
         String[] input;
 
@@ -37,8 +37,10 @@ public class Main {
                     temp  = counting(table, i + k * (n / 2), j + l * (n / 2), n / 2);
                     if (temp == 0)
                           temp0++;
-                    else
+                    else if (temp == 1)
                         temp1++;
+                    else // return -1일때;;;;;;;;;;;
+                        break;
                 }
             if(temp0 == 4) {
                 zero -= 3;
@@ -48,8 +50,9 @@ public class Main {
                 one -= 3;
                 return 1;
             }
+            else
+                return -1;
         }
-        return -1;
     }
 
 }
