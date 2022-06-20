@@ -24,17 +24,21 @@ public class Main {
     static int counting (int[][]table,int i, int j, int a){
         int temp;
         int temp0 = 0 , temp1 = 0;
+        StringBuilder add = new StringBuilder();
         if(a == 1)
             return table[i][j];
         else{
+            add.append("(");
             for (int k = 0 ; k < 2; k++)
                 for (int l = 0 ; l < 2; l++) {
                     temp  = counting(table, i + k * (a / 2), j + l * (a / 2), a / 2);
                     if (temp == 0) {
                         temp0++;
+                        add.append("0");
                     }
                     else if (temp == 1) {
                         temp1++;
+                        add.append("1");
                     }
                 }
             if(temp0 == 4 && a != n) {
