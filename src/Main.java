@@ -7,9 +7,10 @@ public class Main {
     static Long mod = 1000000007L;
     public static void main(String[] args) throws IOException {
         String[] input = br.readLine().split(" ");
-        Long n = Long.parseLong(input[0]);
-        Long r = Long.parseLong(input[1]);
+        Long a = A(Long.parseLong(input[0]));
+        Long b = B(Long.parseLong(input[0]), Long.parseLong(input[1]));
 
+        bw.write(Long.toString(a * mult(mod -2, b, 1L) % mod));
 
         bw.flush();
         bw.close();
@@ -23,14 +24,18 @@ public class Main {
         return result;
     }
     static long B (long n, long r){
-        long result = 1L;
-        while(r != 0){
-            result *= r;
-            result %= mod;
-            result *= (n - r);
-            result %= mod;
-            r--;
+        long result = A(n - r);
+        result *= A(r);
+        return result % mod;
+    }
+    static Long mult (Long n ,Long num, Long result){
+        Long temp;
+        if (n != 1){
+            temp = mult(n / 2, num, result);
+            result = n % 2 == 0 ? (temp * temp % mod) : ((temp * temp % mod) * num) % mod;
+            return result;
         }
-        return result;
+        else
+            return num;
     }
 }
