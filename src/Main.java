@@ -25,7 +25,7 @@ public class Main {
     }
     static long B (long n, long r){
         long result = A(n - r);
-        result *= A(r);
+        result *= (A(r)) % mod;
         return result % mod;
     }
     static Long mult (Long n ,Long num, Long result){
