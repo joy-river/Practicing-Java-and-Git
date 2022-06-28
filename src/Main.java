@@ -7,8 +7,8 @@ public class Main {
     static Long mod = 1000000007L;
     public static void main(String[] args) throws IOException {
         String[] input = br.readLine().split(" ");
-        Long a = A(Long.parseLong(input[0]));
-        Long b = B(Long.parseLong(input[0]), Long.parseLong(input[1]));
+        Long a = A(Long.parseLong(input[0])) % mod;
+        Long b = B(Long.parseLong(input[0]), Long.parseLong(input[1])) % mod;
 
         bw.write(Long.toString(a * mult(mod -2, b, 1L) % mod));
 
@@ -25,7 +25,7 @@ public class Main {
     }
     static long B (long n, long r){
         long result = A(n - r);
-        result *= A(r);
+        result *= (A(r)) % mod;
         return result % mod;
     }
     static Long mult (Long n ,Long num, Long result){
