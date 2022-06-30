@@ -20,17 +20,17 @@ public class Main {
             b[i] = br.readLine().split(" ");
 
         for (int i = 0 ; i < input[0]; i ++){
-            for (int s = 0 ; s < input2[0]; s++) {
-                for (int j = 0; j < input[1]; j++) {
-                    temp += Integer.parseInt(a[i][j])  * Integer.parseInt(b[s][j]);
-                }
+            for (int s = 0 ; s < input2[1]; s++) {
+                temp = 0;
+                for (int j = 0; j < input[1]; j++)
+                    temp += Integer.parseInt(a[i][j])  * Integer.parseInt(b[j][s]);
+                sb.append(temp + " ");
             }
+            sb.append("\n");
         }
 
-
-
-
-
-
+        bw.write(sb.toString());
+        bw.flush();
+        bw.close();
     }
 }
