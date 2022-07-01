@@ -1,36 +1,58 @@
 import java.io.*;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    static final int mod = 1000;
+    static matrix save;
+    static StringBuilder sb = new StringBuilder();
     public static void main(String[] args) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
-        StringBuilder sb = new StringBuilder();
-        int temp = 0;
-        int [] input = {Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())};
-        String [][] a = new String[input[0]][];
-        for (int i = 0 ; i < input[0]; i ++)
-            a[i] = br.readLine().split(" ");
-        st = new StringTokenizer(br.readLine());
-        int [] input2 = {Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())};
-        String [][] b = new String[input[0]][];
-        for (int i = 0 ; i < input2[0]; i++)
-            b[i] = br.readLine().split(" ");
-
-        for (int i = 0 ; i < input[0]; i ++){
-            for (int s = 0 ; s < input2[1]; s++) {
-                temp = 0;
-                for (int j = 0; j < input[1]; j++)
-                    temp += Integer.parseInt(a[i][j])  * Integer.parseInt(b[j][s]);
-                sb.append(temp + " ");
-            }
-            sb.append("\n");
+        int size = Integer.parseInt(st.nextToken());
+        long n = Long.parseLong(st.nextToken());
+        int[][] mat = new int[size][size];
+        for (int i = 0 ; i < size; i++){
+            st = new StringTokenizer(br.readLine());
+            for (int j = 0 ; j < size; j++)
+                mat[i][j] = Integer.parseInt(st.nextToken());
         }
-
-        bw.write(sb.toString());
+        save = new matrix(mat);
+        bw.write(Matexp(size , n , save).toString());
         bw.flush();
         bw.close();
     }
+    static matrix Matexp (int size , long n,  matrix mat){
+        matrix temp;
+        if (n != 1){
+            temp = Matexp(size , n /2 , mat);
+            mat = n % 2L == 0 ? mult(temp, temp, size) :  mult(mult(temp, temp, size), save, size);
+            return mat;
+        }
+        else{
+            return save;
+        }
+    }
+    static matrix mult (matrix a, matrix b , int size){
+        int temp;
+        matrix c = new matrix(new int [size][size]);
+        for (int i = 0 ; i < size; i ++){
+            for (int s = 0 ; s < size; s++) {
+                temp = 0;
+                for (int j = 0; j < size; j++)
+                    temp += (a.mat[i][j]  * b.mat[j][s]) % mod;
+                c.mat[i][s] = temp;
+            }
+        }
+        return c;
+    }
 }
+class matrix {
+    public matrix(int[][] mat) {
+        this.mat = mat;
+    }
+    int[][] mat;
+}
+
