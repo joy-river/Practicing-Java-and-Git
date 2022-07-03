@@ -31,9 +31,9 @@ public class Main {
             mat = n % 2L == 0 ? mult(temp, temp, size) :  mult(mult(temp, temp, size), save, size);
             return mat;
         }
-        else{
+        else
             return save;
-        }
+
     }
     static matrix mult (matrix a, matrix b , int size){
         int temp;
@@ -43,7 +43,7 @@ public class Main {
                 temp = 0;
                 for (int j = 0; j < size; j++)
                     temp += (a.mat[i][j]  * b.mat[j][s]) % mod;
-                c.mat[i][s] = temp;
+                c.mat[i][s] = temp % mod;
             }
         }
         return c;
