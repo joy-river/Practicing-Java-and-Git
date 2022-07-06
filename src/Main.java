@@ -28,8 +28,9 @@ public class Main {
         long temp = 0;
         for (int i  = start; i < end; i++){
             if(input[i] > input[i + 1]){
-
-            }else
+                if(input[i + 1] * (i - start) < temp)ddaa
+            }
+            else
                 temp += input[start];
 
         }
