@@ -5,6 +5,7 @@ public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static long[] input;
+    static long[] hist;
     static long output = 0;
     public static void main(String[] args) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -15,11 +16,14 @@ public class Main {
                 break;
             else{
                 input = new long[n];
-                for(int i  = 0 ; i < n ; i ++)
+                hist = new long[n];
+                for(int i  = 0 ; i < n ; i ++) {
                     input[i] = Long.parseLong(st.nextToken());
+                    hist[i] = -1L;
+                }
             }
             output = 0;
-            hist (0, n);
+            hist (0, n - 1);
             bw.write(output + "\n");
             st = new StringTokenizer(br.readLine());
         }
@@ -27,35 +31,44 @@ public class Main {
         bw.flush();
         bw.close();
     }
-    static long hist(int start, int end){
+    static void hist(int start, int end){
         long temp = input[start];
         long min = input[start];
-        if (start == end)
-            return temp;
+        if (start == end) {
+            hist[start] = temp;
+            output = Math.max(temp, output);
+        }
         else {
-            for (int i = start + 1; i < end; i++) {
+            for (int i = start + 1; i <= end; i++) {
                 if(input[i] >= min){
                     if(temp + min < input[i]) {
                         output = Math.max(temp, output);
-                        hist(i, end);
-                        return temp;
+                        hist[start] = temp;
+                        if(hist[i] == -1)
+                            hist(i, end);
+                        return;
                     }
-                    else
+                    else {
+                        if(hist[i] == -1)
+                            hist(i , end);
                         temp += min;
+                    }
                 }
                 else{
                     min = input[i];
-                    if((i + 1 - start) * min  > temp){
+                    if((i + 1 - start) * min  > temp)
                         temp = (i + 1 -start) * min;
-                    }
                     else{
                         output = Math.max(temp, output);
-                        hist(i ,end);
-                        return temp;
+                        hist[start] = temp;
+                        if(hist[i] == -1)
+                            hist(i ,end);
                     }
                 }
-                output = Math.max(temp, output);
+
             }
+            output = Math.max(temp, output);
+            hist[start] = temp;
         }
     }
 
