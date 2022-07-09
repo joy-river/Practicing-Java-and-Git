@@ -41,37 +41,23 @@ public class Main {
         else {
             for (int i = start + 1; i <= end; i++) {
                 if(input[i] >= min){
-                    if(temp + min < input[i]) {
-                        output = Math.max(temp, output);
-                        hist[start] = temp;
-                        if(hist[i] == -1)
-                            hist(i, end);
-                        return;
-                    }
-                    else {
-                        if(hist[i] == -1)
-                            hist(i , end);
-                        temp += min;
-                    }
+                    if(hist[i] == -1)
+                        hist(i , end);
+                    temp += min;
                 }
                 else{
                     min = input[i];
-                    if((i + 1 - start) * min  > temp)
-                        temp = (i + 1 -start) * min;
-                    else{
-                        output = Math.max(temp, output);
-                        hist[start] = temp;
-                        if(hist[i] == -1)
-                            hist(i ,end);
+                    temp = (i + 1 - start) * min;
+                    if(hist[i] == -1)
+                        hist(i ,end);
                     }
+                output = Math.max(temp, output);
                 }
-
             }
-            output = Math.max(temp, output);
+
             hist[start] = temp;
         }
     }
 
-}
 
 
