@@ -52,10 +52,11 @@ public class Main {
                         hist(i ,end);
                     }
                 output = Math.max(temp, output);
+                hist[start] = Math.max(temp, hist[start]);
                 }
             }
 
-            hist[start] = temp;
+
         }
     }
 
