@@ -8,7 +8,7 @@ public class MatrixExp {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static final int mod = 1000;
-    static matrix save;
+    static matrixexp save;
 
     public static void main(String[] args) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -20,9 +20,9 @@ public class MatrixExp {
             for (int j = 0 ; j < size; j++)
                 mat[i][j] = Integer.parseInt(st.nextToken()) % mod;
         }
-        save = new matrix(mat);
+        save = new matrixexp(mat);
 
-        matrix output = Matexp(size, n, save);
+        matrixexp output = Matexp(size, n, save);
         for (int i = 0  ;  i< size; i++) {
             for (int j = 0; j < size; j++)
                 bw.write(output.mat[i][j] + " ");
@@ -32,8 +32,8 @@ public class MatrixExp {
         bw.flush();
         bw.close();
     }
-    static matrix Matexp (int size , long n, matrix mat){
-        matrix temp;
+    static matrixexp Matexp (int size , long n, matrixexp mat){
+        matrixexp temp;
         if (n != 1){
             temp = Matexp(size , n /2 , mat);
             mat = n % 2L == 0 ? mult(temp, temp, size) :  mult(mult(temp, temp, size), save, size);
@@ -43,9 +43,9 @@ public class MatrixExp {
             return save;
         }
     }
-    static matrix mult (matrix a, matrix b , int size){
+    static matrixexp mult (matrixexp a, matrixexp b , int size){
         int temp;
-        matrix c = new matrix(new int [size][size]);
+        matrixexp c = new matrixexp(new int [size][size]);
         for (int i = 0 ; i < size; i ++){
             for (int s = 0 ; s < size; s++) {
                 temp = 0;
@@ -57,8 +57,8 @@ public class MatrixExp {
         return c;
     }
 }
-class matrix {
-    public matrix(int[][] mat) {
+class matrixexp {
+    public matrixexp(int[][] mat) {
         this.mat = mat;
     }
     int[][] mat;
