@@ -1,70 +1,43 @@
 import java.io.*;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    static long[] input;
-    static node[] seg;
-    static long output = 0;
-
+    static List<Integer> wire = new ArrayList<>();
+    static int n;
     public static void main(String[] args) throws IOException {
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int n;
-        while (true) {
-            n = Integer.parseInt(st.nextToken());
-            if (n == 0)
-                break;
-            else {
-                input = new long[n];
-                seg = new node[2 * n];
-                for (int i = 0; i < n; i++)
-                    input[i] = Long.parseLong(st.nextToken());
-            }
-            output = 0;
-            inseg(0, 0, n - 1);
-            hist(0, n - 1);
-            bw.write(output + "\n");
-            st = new StringTokenizer(br.readLine());
-        }
-
+       StringTokenizer st = new StringTokenizer(br.readLine());
+       int k = Integer.parseInt(st.nextToken());
+       n = Integer.parseInt(st.nextToken());
+       for (int i = 0 ; i < n ; i ++)
+           wire.add(Integer.parseInt(br.readLine()));
+       Collections.sort(wire);
+        cut(0 ,k - 1);
         bw.flush();
         bw.close();
     }
-    static node inseg (int index, int start, int end){
-        if(start == end)
-            seg[index] = new node(start, end, input[start]);
-        else
-            seg[index] = new node(start, end, Math.min(inseg(2 * index , start, end / 2).val, inseg(2 * index + 1 , end / 2 + 1  , end).val ));
-        return seg[index];
+
+    static int cut(int start, int end){
+        int mid = (start + end) / 2;
+        int count = 0;
+        if(start == end){
+             return -1;
+        }
+        else{
+            for (int i = mid; i <= end ; i++)
+                count += wire.get(i) / wire.get(mid);
+            if(count > n)
+                cut(mid, end);
+            else if (count < n)
+                cut(start , mid);
+            else
+                return wire.get(mid);
+
+            return wire.get(mid);
+        }
     }
 
-    static node find()
-
-    static void hist(int start, int end) {
-        long min = input[start];
-        int spot = start;
-
-        for (int i = start + 1 ; i <= end ; i++)
-           if(input[i] < min){
-               min = input[i];
-               spot = i;
-           }
-       output = Math.max(min * (end - start + 1), output);
-       if(start != spot) hist (start , spot -1);
-       if(end != spot) hist (spot + 1, end);
-    }
-}
-
-class node {
-    int start;
-    int end;
-    public node(int start, int end, long val) {
-        this.start = start;
-        this.end = end;
-        this.val = val;
-    }
-    long val;
 }
 
 
