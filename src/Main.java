@@ -10,31 +10,27 @@ public class Main {
        StringTokenizer st = new StringTokenizer(br.readLine());
        int k = Integer.parseInt(st.nextToken());
        n = Integer.parseInt(st.nextToken());
-       for (int i = 0 ; i < n ; i ++)
+       for (int i = 0 ; i < k ; i ++)
            wire.add(Integer.parseInt(br.readLine()));
        Collections.sort(wire);
-        cut(0 ,k - 1);
+        cut(0 , wire.get(k - 1));
         bw.flush();
         bw.close();
     }
 
-    static int cut(int start, int end){
-        int mid = (start + end) / 2;
+    static void cut(int start, int end) throws IOException {
+        int mid = Math.toIntExact((long) (start + end) / 2);
         int count = 0;
-        if(start == end){
-             return -1;
-        }
+        if(mid == start)
+            bw.write(Integer.toString(start));
         else{
-            for (int i = mid; i <= end ; i++)
-                count += wire.get(i) / wire.get(mid);
+            for (Integer integer : wire) count += integer / mid;
             if(count > n)
-                cut(mid, end);
+                cut(mid + 1, end);
             else if (count < n)
-                cut(start , mid);
+                cut(start , mid - 1);
             else
-                return wire.get(mid);
-
-            return wire.get(mid);
+                cut(mid, end);
         }
     }
 
