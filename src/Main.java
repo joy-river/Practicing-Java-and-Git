@@ -18,20 +18,8 @@ public class Main {
         bw.close();
     }
 
-    static void cut(int start, int end) throws IOException {
-        int mid = Math.toIntExact((long) (start + end) / 2);
-        int count = 0;
-        if(mid == start)
-            bw.write(Integer.toString(start));
-        else{
-            for (Integer integer : wire) count += integer / mid;
-            if(count > n)
-                cut(mid + 1, end);
-            else if (count < n)
-                cut(start , mid - 1);
-            else
-                cut(mid, end);
-        }
+    static void setWifi(int start, int end) throws IOException {
+
     }
 
 }
