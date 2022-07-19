@@ -26,32 +26,12 @@ public class Main {
         if(m == 0)
             return;
         else {
-            int index = (start + end) / 2;
             long mid = (wire.get(start) + wire.get(end)) / 2;
-            if(mid > wire.get(index)){
-                for (int i  = index + 1; i < end; i ++){
-                    if(wire.get(i) >= mid) {
-                        index = i;
-                        break;
-                    }
-                }
-            }
-            else if(mid < wire.get(index)){
-                for (int i = index - 1; i > start ; i--)
-                    if(wire.get(i) <= mid){
-                        index = i;
-                        break;
-                    }
-            }
+            if(wire.contains(mid)){
 
-
-            if (left > right) {
-                output = Math.min(output, right);
-                setwifi(start, mid, m - 1);
             }
-            else {
-                output = Math.min(output,left);
-                setwifi(mid, end, m - 1);
+            else{
+
             }
         }
 
