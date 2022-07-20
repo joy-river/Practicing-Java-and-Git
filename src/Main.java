@@ -14,30 +14,22 @@ public class Main {
        for (int i = 0 ; i < n ; i ++)
            wire.add(Long.parseLong(br.readLine()));
 
+
        Collections.sort(wire);
-       output = wire.get(n - 1) - wire.get(0);
-       setwifi(0, n- 1, m - 2);
+        setwifi(n - 1, m);
         bw.write(Long.toString(output));
         bw.flush();
         bw.close();
     }
 
-    static void setwifi(int start, int end, int m) throws IOException{
-        if(m == 0)
-            return;
-        else {
-            long mid = (wire.get(start) + wire.get(end)) / 2;
-            if(wire.contains(mid)){
+    static void setwifi(int end, int m) throws IOException{
+        int mid = end / 2;
+        int count = 1;
+        long temp = wire.get(mid) - wire.get(0);
+        for (int i = mid; i <= end; i++)
 
-            }
-            else{
-
-            }
         }
-
-
     }
-
 }
 
 
