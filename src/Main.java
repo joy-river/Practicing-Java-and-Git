@@ -4,31 +4,30 @@ import java.util.*;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    static List<Long> wire = new ArrayList<>();
-    static int m;
-    static long output = 0;
+    static long output;
+    static long n;
     public static void main(String[] args) throws IOException {
-       StringTokenizer st = new StringTokenizer(br.readLine());
-       int n = Integer.parseInt(st.nextToken());
-       m = Integer.parseInt(st.nextToken());
-       for (int i = 0 ; i < n ; i ++)
-           wire.add(Long.parseLong(br.readLine()));
+         n = Long.parseLong(br.readLine());
+       long k = Long.parseLong(br.readLine());
 
-
-       Collections.sort(wire);
-        setwifi(n - 1, m);
+        knum(1, 2 * n - 1, k);
         bw.write(Long.toString(output));
-        bw.flush();
-        bw.close();
+       bw.flush();
+       bw.close();
     }
+    static void knum (long start, long end, long k){
+        long mid = (start + end) / 2;
 
-    static void setwifi(int end, int m) throws IOException{
-        int mid = end / 2;
-        int count = 1;
-        long temp = wire.get(mid) - wire.get(0);
-        for (int i = mid; i <= end; i++)
-
+    }
+    static long count(long start, long end){
+        long count = 0;
+        if(end >= n) {
+            count +=
+            end
         }
+        start = Math.abs(start - n);
+
+        for (int i = 0 ; i < )
     }
 }
 
