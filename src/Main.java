@@ -10,16 +10,14 @@ public class Main {
     public static void main(String[] args) throws IOException {
          n = Long.parseLong(br.readLine());
        long k = Long.parseLong(br.readLine());
-        knum(1, n, k);
+        knum(n * n ,k);
         bw.write(Long.toString(output));
        bw.flush();
        bw.close();
     }
-    static void knum (long start, long end, long k){
-        long mid = (start + end) / 2;
-        long arr = ( count(mid, mid);
+    static void knum (long num,long k){
+        long mid = num / 2;
 
-        if(arr > k)
 
     }
     static long count(long i) {
