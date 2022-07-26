@@ -4,30 +4,63 @@ import java.util.*;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    static final long M = 1234567891L;
 
     public static void main(String[] args) throws IOException {
-        int n = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int[] arr = new int[n];
-        int[] dp = new int[n + 1];
-        int max = 1;
-        for (int i = 0; i < n; i++)
-            arr[i] = Integer.parseInt(st.nextToken());
-        for (int i = 0; i < n + 1; i++)
-            dp[i] = 1;
+        int n = Integer.parseInt(st.nextToken());
+        int m = Integer.parseInt(st.nextToken());
+        int b = Integer.parseInt(st.nextToken());
+        int [] land = new int [257];
+        time [] a = new time[257];
+        int temp , min = 256, max = 0, save = 0;
+        out output;
 
-
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < i; j++) {
-                if (arr[i] > arr[j])
-                    dp[i] = Math.max(dp[j] + 1, dp[i]);
-                max = Math.max(dp[i], max);
+        for (int i = 0 ; i < n ; i ++){
+            st = new StringTokenizer(br.readLine());
+            for (int j = 0 ; j< m ;j ++) {
+                temp = Integer.parseInt(st.nextToken());
+                land[temp]++;
+                max = Math.max(max, temp);
+                min = Math.min(min,temp);
+                save += temp;
             }
+        }
 
-        bw.write(Integer.toString(max));
+            a[min] = new time(0, n * m - land[min], 0, save - (min * (n * m)));
+        output = new out(2 * a[min].right, min);
+        for (int i = min + 1 ;i <=max ;i++){
+            a[i] = new time(a[i-1].lc + land[i - 1], a[i - 1].rc - land[i], 2 * a[i - 1].left + land[i - 1], a[i - 1].right - a[i - 1].rc);
+            if(a[i].right + b >= a[i].left)
+                output = a[i].left + 2 * a[i].right <= output.out ? new out(a[i].left + 2 * a[i].right, i) : output;
+        }
+
+
+        bw.write(output.out + " " + output.i);
         bw.flush();
         bw.close();
     }
+    static class time {
+        public time(int lc, int rc, int left, int right) {
+            this.lc = lc;
+            this.rc = rc;
+            this.left = left;
+            this.right = right;
+        }
+        int lc;
+        int rc;
+        int left;
+        int right;
+    }
+    static class out{
+        public out (int out, int i){
+            this.out = out;
+            this.i = i;
+        }
+        int out;
+        int i;
+    }
+
 }
 
 
