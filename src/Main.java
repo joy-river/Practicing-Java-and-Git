@@ -4,7 +4,6 @@ import java.util.*;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    static final long M = 1234567891L;
 
     public static void main(String[] args) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -19,8 +18,7 @@ public class Main {
         for (int i = 0 ; i < n ; i ++){
             st = new StringTokenizer(br.readLine());
             for (int j = 0 ; j< m ;j ++) {
-                temp = Integer.parseInt(st.nextToken());
-                land[temp]++;
+                land[temp = Integer.parseInt(st.nextToken())]++;
                 max = Math.max(max, temp);
                 min = Math.min(min,temp);
                 save += temp;
@@ -30,7 +28,7 @@ public class Main {
             a[min] = new time(0, n * m - land[min], 0, save - (min * (n * m)));
         output = new out(2 * a[min].right, min);
         for (int i = min + 1 ;i <=max ;i++){
-            a[i] = new time(a[i-1].lc + land[i - 1], a[i - 1].rc - land[i], 2 * a[i - 1].left + land[i - 1], a[i - 1].right - a[i - 1].rc);
+            a[i] = new time(a[i-1].lc + land[i - 1], a[i - 1].rc - land[i], a[i - 1].left + a[i - 1].lc +land[i - 1], a[i - 1].right - a[i - 1].rc);
             if(a[i].right + b >= a[i].left)
                 output = a[i].left + 2 * a[i].right <= output.out ? new out(a[i].left + 2 * a[i].right, i) : output;
         }
