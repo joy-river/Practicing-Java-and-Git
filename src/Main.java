@@ -6,57 +6,63 @@ public class Main {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void main(String[] args) throws IOException {
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int n = Integer.parseInt(st.nextToken());
-        int m = Integer.parseInt(st.nextToken());
-        int b = Integer.parseInt(st.nextToken());
-        int [] land = new int [257];
-        time [] a = new time[257];
-        int temp , min = 256, max = 0, save = 0;
-        out output;
+        int n = Integer.parseInt(br.readLine());
+        int []mh = new int[n + 1];
+        int temp, last = 1;
 
         for (int i = 0 ; i < n ; i ++){
-            st = new StringTokenizer(br.readLine());
-            for (int j = 0 ; j< m ;j ++) {
-                land[temp = Integer.parseInt(st.nextToken())]++;
-                max = Math.max(max, temp);
-                min = Math.min(min,temp);
-                save += temp;
+            temp = Integer.parseInt(br.readLine());
+            if(temp == 0) {
+                bw.write(mh[1] + "\n");
+                if(last > 1) {
+                    mh[1] = mh[last];
+                    mh[last--] = 0;
+                    remove(mh, 1);
+                }
+            }
+            else{
+                mh[last] = temp;
+                insert(mh, last++);
             }
         }
 
-            a[min] = new time(0, n * m - land[min], 0, save - (min * (n * m)));
-        output = new out(2 * a[min].right, min);
-        for (int i = min + 1 ;i <=max ;i++){
-            a[i] = new time(a[i-1].lc + land[i - 1], a[i - 1].rc - land[i], a[i - 1].left + a[i - 1].lc +land[i - 1], a[i - 1].right - a[i - 1].rc);
-            if(a[i].right + b >= a[i].left)
-                output = a[i].left + 2 * a[i].right <= output.out ? new out(a[i].left + 2 * a[i].right, i) : output;
-        }
-
-
-        bw.write(output.out + " " + output.i);
         bw.flush();
         bw.close();
     }
-    static class time {
-        public time(int lc, int rc, int left, int right) {
-            this.lc = lc;
-            this.rc = rc;
-            this.left = left;
-            this.right = right;
+
+    static void insert(int[] mh, int last){
+        if(last == 1)
+            return;
+        else{
+            if(mh[last / 2] < mh[last]){
+                swap(mh, last, last/2);
+                last /= 2;
+                insert(mh, last);
+            }
+            else
+                return;
         }
-        int lc;
-        int rc;
-        int left;
-        int right;
     }
-    static class out{
-        public out (int out, int i){
-            this.out = out;
-            this.i = i;
+    static void remove(int[] mh, int root){
+        if(root * 2 >= mh.length)
+            return;
+        else{
+            if(mh[root] < mh[root * 2]){
+                swap(mh, root, root * 2);
+                remove(mh, root * 2);
+            }
+            else if (mh[root] < mh[root * 2 + 1]){
+                swap(mh, root, root * 2 + 1);
+                remove(mh, root* 2 + 1);
+            }
+            else
+                return;
         }
-        int out;
-        int i;
+    }
+    static void swap(int[] mh, int i , int j){
+        int temp = mh[j];
+        mh[j] = mh[i];
+        mh[i] = temp;
     }
 
 }
