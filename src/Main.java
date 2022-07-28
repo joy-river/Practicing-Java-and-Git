@@ -15,14 +15,14 @@ public class Main {
             if(temp == 0) {
                 bw.write(mh[1] + "\n");
                 if(last > 1) {
-                    mh[1] = mh[last];
-                    mh[last--] = 0;
-                    remove(mh, 1);
+                    mh[1] = mh[--last];
+                    mh[last] = 0;
+                    remove(mh, 1, mh[1]);
                 }
             }
             else{
                 mh[last] = temp;
-                insert(mh, last++);
+                insert(mh, last++, temp);
             }
         }
 
@@ -30,34 +30,17 @@ public class Main {
         bw.close();
     }
 
-    static void insert(int[] mh, int last){
+    static void insert(int[] mh, int last, int num){
         if(last == 1)
             return;
         else{
-            if(mh[last / 2] < mh[last]){
+            if(mh[last / 2] < num)
                 swap(mh, last, last/2);
-                last /= 2;
-                insert(mh, last);
-            }
-            else
-                return;
+            insert(mh, last / 2, num);
         }
     }
-    static void remove(int[] mh, int root){
-        if(root * 2 >= mh.length)
-            return;
-        else{
-            if(mh[root] < mh[root * 2]){
-                swap(mh, root, root * 2);
-                remove(mh, root * 2);
-            }
-            else if (mh[root] < mh[root * 2 + 1]){
-                swap(mh, root, root * 2 + 1);
-                remove(mh, root* 2 + 1);
-            }
-            else
-                return;
-        }
+    static void remove(int[] mh, int root, int num){
+
     }
     static void swap(int[] mh, int i , int j){
         int temp = mh[j];
