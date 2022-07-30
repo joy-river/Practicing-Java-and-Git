@@ -41,6 +41,8 @@ public class Main {
     }
     static void remove(int[] mh, int root, int num){
         //reverse insert..?
+        if(root * 2 + 1 >= mh.length )
+            return;
 
     }
     static void swap(int[] mh, int i , int j){
