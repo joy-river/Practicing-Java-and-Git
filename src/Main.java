@@ -43,6 +43,9 @@ public class Main {
         //reverse insert..?
         if(root * 2 + 1 >= mh.length )
             return;
+        else {
+            ...///
+        }
 
     }
     static void swap(int[] mh, int i , int j){
