@@ -6,53 +6,22 @@ public class Main {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void main(String[] args) throws IOException {
+        PriorityQueue<Integer> min = new PriorityQueue<>();
         int n = Integer.parseInt(br.readLine());
-        int []mh = new int[n + 1];
-        int temp, last = 1;
-
-        for (int i = 0 ; i < n ; i ++){
+        int temp;
+        for (int i =  0 ;  i < n; i++){
             temp = Integer.parseInt(br.readLine());
-            if(temp == 0) {
-                bw.write(mh[1] + "\n");
-                if(last > 1) {
-                    mh[1] = mh[--last];
-                    mh[last] = 0;
-                    remove(mh, 1, mh[1]);
-                }
+            if(temp == 0){
+                bw.write(min.isEmpty() ? "0\n" : min.poll() + "\n");
             }
-            else{
-                mh[last] = temp;
-                insert(mh, last++, temp);
-            }
-        }
+            else
+                min.add(temp);
 
+        }
         bw.flush();
         bw.close();
     }
 
-    static void insert(int[] mh, int last, int num){
-        if(last == 1)
-            return;
-        else{
-            if(mh[last / 2] < num)
-                swap(mh, last, last/2);
-            insert(mh, last / 2, num);
-        }
-    }
-    static void remove(int[] mh, int root, int num){
-        //reverse insert..?
-        if(root * 2 + 1 >= mh.length )
-            return;
-        else {
-            ...///
-        }
-
-    }
-    static void swap(int[] mh, int i , int j){
-        int temp = mh[j];
-        mh[j] = mh[i];
-        mh[i] = temp;
-    }
 
 }
 
