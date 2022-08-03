@@ -12,12 +12,11 @@ public class Main {
 
         int n = Integer.parseInt(br.readLine()), temp;
         for (int i = 0; i < n ;i++){
-            temp =Integer.parseInt(br.readLine());
-            if(i % 2 == 0) {
-                left.add(temp);
-            }
-            else
-                right.add(temp);
+            temp = Integer.parseInt(br.readLine());
+            right.add(temp);
+            if(right.size() - left.size() > 1)
+                left.add(right.poll());
+
         }
         bw.flush();
         bw.close();
