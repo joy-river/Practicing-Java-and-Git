@@ -11,6 +11,7 @@ public class Main {
         int n = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
         boolean[] able = new boolean[10];
+
         count = chan > 100 ? chan - 100 : 100 - chan;
         for (int i = 0 ; i < n ; i ++)
             able[Integer.parseInt(st.nextToken())] = true;
@@ -27,6 +28,9 @@ public class Main {
 
     }
 
+    static void smaller() {
+
+    }
 
 }
 
