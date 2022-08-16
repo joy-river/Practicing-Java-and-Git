@@ -24,8 +24,8 @@ public class Main {
         bw.close();
     }
 
-    static void bigger(){
-
+    static void bigger(boolean[] able, int num){
+        if(able[num])
     }
 
     static void smaller() {
