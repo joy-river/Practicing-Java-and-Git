@@ -25,7 +25,7 @@ public class Main {
     }
 
     static void bigger(boolean[] able, int num){
-        if(able[num])ssssss
+        if(able[num])// fucking yarona
     }
 
     static void smaller() {
