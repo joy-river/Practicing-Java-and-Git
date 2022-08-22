@@ -1,12 +1,14 @@
+package BruteForce;
+
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class RemoteControi {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static int count;
     public static void main(String[] args) throws IOException {
-        StringBuilder sb = new StringBuilder();
+
         int chan = Integer.parseInt(br.readLine());
         int beeg = (int) Math.log10(chan);
         int n = Integer.parseInt(br.readLine());
@@ -16,6 +18,7 @@ public class Main {
         count = chan > 100 ? chan - 100 : 100 - chan;
         for (int i = 0 ; i < n ; i ++)
             able[Integer.parseInt(st.nextToken())] = true;
+
 
         bw.flush();
         bw.close();
