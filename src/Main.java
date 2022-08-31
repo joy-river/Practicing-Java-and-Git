@@ -9,33 +9,44 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
-        int v = Integer.parseInt(st.nextToken());
-        int first , last;
-        ArrayList<node> graph = new ArrayList<>();
-        for (int i = 1 ; i <= n ; i++)
-            graph.add(new node(i, false));
-        for (int i = 0 ; i < m ; i ++){
+        int a, b;
+        int [][] link = new int[n + 1][n + 1];
+        for (int i = 0 ; i < m; i++){
             st = new StringTokenizer(br.readLine());
-            first = Integer.parseInt(st.nextToken()) - 1;
-            last =  Integer.parseInt(st.nextToken()) - 1;
-            graph.get(first).link.add(graph.get(last));
+            a = Integer.parseInt(st.nextToken());
+            b = Integer.parseInt(st.nextToken());
+            link[a][b] = 1;
+            link[b][a] = 1;
         }
-        dfs(graph.get(v - 1));
+        for (int )
 
         bw.flush();
         bw.close();
     }
-    static void dfs(node root){
+
+    static void bfs(node root) throws IOException {
+        Queue<node> bfs = new LinkedList<>();
+        bfs.add(root);
+        while(!bfs.isEmpty())
+            if(!bfs.peek().checked)
+                bfs.poll();
+            else{
+                bfs.peek().checked = false;
+                bw.write(bfs.peek().n + " ");
+                bfs.addAll(bfs.poll().link);
+            }
 
     }
-    static void bfs(){}
 
 }
 class node {
-    PriorityQueue<node> link = new PriorityQueue<>(Comparator.comparingInt(o -> o.n));
+    ArrayList<node> link = new ArrayList<>();
     public node(int n, boolean checked) {
         this.n = n;
         this.checked = checked;
+    }
+    public void sort() {
+        Collections.sort(this.link, Comparator.comparingInt(o -> o.n));
     }
     int n;
     boolean checked = false;
