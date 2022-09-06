@@ -9,23 +9,16 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
-        ArrayList<String> a = new ArrayList<>();
-        LinkedHashSet<String> b = new LinkedHashSet<>();
-        HashMap<Integer,String> c = new HashMap<>();
+        HashSet<String> jab = new HashSet<>();\
         String temp;
-        for (int i = 1 ; i <= n;  i++)
-            c.put(i, br.readLine());
-        for (int i = 0 ; i < m ; i++){
+        for (int i = 0 ; i < n ; i ++)
+            jab.add(br.readLine());
+        for (int i = 0 ; i < m ; i ++) {
             temp = br.readLine();
-            if(temp.charAt(0) > 64)
-                bw.write(b.s + 1 + "\n");
-            else
-                bw.write(a.get(Integer.parseInt(temp) - 1) + "\n");
+            if(j)
         }
-
-        bw.flush();
-        bw.close();
     }
+}
 }
 
 
