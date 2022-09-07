@@ -9,17 +9,37 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
-        HashSet<String> jab = new HashSet<>();\
-        String temp;
-        for (int i = 0 ; i < n ; i ++)
-            jab.add(br.readLine());
-        for (int i = 0 ; i < m ; i ++) {
-            temp = br.readLine();
-            if(j)
+        String [][] table = new String[n][m];
+        Queue<node> a = new LinkedList<>();
+        int time = 0, temp;
+        for (int i = 0; i < n; i++)
+            table[i] = br.readLine().split("");
+        a.add(new node(0, 0));
+        while(!a.isEmpty()){
+            time++;
+            temp = a.size();
+            for (int i = 0 ; i < temp; i++){
+
+            }
+
         }
+
+
+        bw.flush();
+        bw.close();
     }
+
 }
+class node{
+    public node(int row, int col) {
+        this.row = row;
+        this.col = col;
+    }
+    int row;
+    int col;
+
 }
+
 
 
 
