@@ -19,7 +19,10 @@ public class Main {
             time++;
             temp = a.size();
             for (int i = 0 ; i < temp; i++){
-
+                if(a.peek().row > 0 && table[a.peek().row - 1][a.peek().col].equals("1"));
+                if(a.peek().row < n - 1 && table[a.peek().row + 1][a.peek().col].equals("1"));
+                if(a.peek().col > 0 && table[a.peek().row][a.peek().col - 1].equals("1"));
+                if(a.peek().col < n - 1 && table[a.peek().row][a.peek().col + 1].equals("1"));
             }
 
         }
