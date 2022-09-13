@@ -6,41 +6,26 @@ public class Main {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void main(String[] args) throws IOException {
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int n = Integer.parseInt(st.nextToken());
-        int m = Integer.parseInt(st.nextToken());
-        String [][] table = new String[n][m];
-        Queue<node> a = new LinkedList<>();
-        int time = 0, temp;
-        for (int i = 0; i < n; i++)
-            table[i] = br.readLine().split("");
-        a.add(new node(0, 0));
-        while(!a.isEmpty()){
-            time++;
-            temp = a.size();
-            for (int i = 0 ; i < temp; i++){
-                if(a.peek().row > 0 && table[a.peek().row - 1][a.peek().col].equals("1"));
-                if(a.peek().row < n - 1 && table[a.peek().row + 1][a.peek().col].equals("1"));
-                if(a.peek().col > 0 && table[a.peek().row][a.peek().col - 1].equals("1"));
-                if(a.peek().col < n - 1 && table[a.peek().row][a.peek().col + 1].equals("1"));
-            }
+        StringTokenizer st;
+        int n = Integer.parseInt(br.readLine());
+        int m = Integer.parseInt(br.readLine());
+        Queue<Integer>[] com = new LinkedList[n];
+        int a, b;
+        for (int i = 0 ; i < m; i++) {
+            st = new StringTokenizer(br.readLine());
 
         }
 
 
+        bw.write(Integer.toString());
         bw.flush();
         bw.close();
     }
 
 }
-class node{
-    public node(int row, int col) {
-        this.row = row;
-        this.col = col;
-    }
-    int row;
-    int col;
-
+class com {
+    boolean check;
+    Queue<Integer.>
 }
 
 
