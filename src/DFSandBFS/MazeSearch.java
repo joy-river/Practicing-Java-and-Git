@@ -12,12 +12,12 @@ public class MazeSearch {
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
         String [][] table = new String[n][m];
-        Queue<node> a = new LinkedList<>();
+        Queue<Node> a = new LinkedList<>();
         int time = 0, temp, r, c;
         boolean reach = false;
         for (int i = 0; i < n; i++)
             table[i] = br.readLine().split("");
-        a.add(new node(0, 0));
+        a.add(new Node(0, 0));
         table[0][0] = "-1";
         while(!a.isEmpty()){
             time++;
@@ -30,22 +30,22 @@ public class MazeSearch {
                 else {
                     if (r > 0)
                         if(table[r - 1][c].equals("1")) {
-                            a.add(new node(r - 1, c));
+                            a.add(new Node(r - 1, c));
                             table[r- 1][c] = "-1";
                         }
                     if (r < n - 1)
                         if(table[r + 1][c].equals("1")) {
-                            a.add(new node(r + 1, c));
+                            a.add(new Node(r + 1, c));
                             table[r + 1][c] = "-1";
                         }
                     if (c > 0)
                         if(table[r][c - 1].equals("1")) {
-                            a.add(new node(r, c - 1));
+                            a.add(new Node(r, c - 1));
                             table[r][c - 1] = "-1";
                         }
                     if (c < m - 1)
                         if( table[r][c + 1].equals("1")) {
-                            a.add(new node(r, c + 1));
+                            a.add(new Node(r, c + 1));
                             table[r][c + 1] = "-1";
                         }
                 }
@@ -61,8 +61,8 @@ public class MazeSearch {
     }
 
 }
-class node{
-    public node(int row, int col) {
+class Node{
+    public Node(int row, int col) {
         this.row = row;
         this.col = col;
     }
