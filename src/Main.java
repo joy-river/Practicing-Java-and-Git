@@ -7,20 +7,21 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        int n = Integer.parseInt(br.readLine());
-        int m = Integer.parseInt(br.readLine());
-        StringTokenizer  st = new StringTokenizer(br.readLine());
+       int n = Integer.parseInt(br.readLine());
 
-        for (int i = 0; i < m; i++){
-            m
-        }
-
+        bw.write(Integer.toString(result));
         bw.flush();
         bw.close();
+
     }
 
 
+    static int gcd(){
+    }
 
+    static int xgcd(){
+
+    }
 
 }
 
