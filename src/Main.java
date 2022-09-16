@@ -42,6 +42,22 @@ public class Main {
         }
         bw.write(s0 +  "\n" + t0);
     }
+    ll exEuclid(ll a, ll b, ll &s, ll &t) {
+        if (b == 0) {
+            s = 1; t = 0;
+            return a;
+        }
+        ll gcd = exEuclid(b, a%b, s, t);
+        ll tmp = t;
+        t = s - (a / b)*t;
+        s = tmp;
+
+        if (s <= 0) { //s를 양수로
+            s += b;
+            t -= a;
+        }
+        return gcd;
+    }
 
 }
 
