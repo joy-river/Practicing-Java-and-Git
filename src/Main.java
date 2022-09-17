@@ -8,8 +8,17 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
        int n = Integer.parseInt(br.readLine());
+       StringTokenizer st;
+       int[] input = new int[4];
+       int[] ts = new int[2];
+       for (int i = 0 ; i < n ; i ++){
+           st = new StringTokenizer(br.readLine());
+           for (int j = 0; j < 4; j++)
+               input[j] = Integer.parseInt(st.nextToken());
+           xgcd(input[0], -input[1], ts);
 
-        EEA(10, -12);
+       }
+
         bw.flush();
         bw.close();
 
@@ -22,41 +31,23 @@ public class Main {
 
         return gcd(b, a % b);
     }
-    static void EEA(int a, int b) throws IOException {
-        int r0=a, r1=b;
-        int s0=1, s1=0;
-        int t0=0, t1=1;
-        int temp=0,q=0;
-
-        while(r1 != 0){
-            q=r0/r1;
-            temp=r0;
-            r0=r1;
-            r1=temp-r1*q;
-            temp=s0;
-            s0=s1;
-            s1=temp-s1*q;
-            temp=t0;
-            t0=t1;
-            t1=temp-t1*q;
-        }
-        bw.write(s0 +  "\n" + t0);
-    }
-    ll exEuclid(ll a, ll b, ll &s, ll &t) {
-        if (b == 0) {
-            s = 1; t = 0;
+    static int xgcd(int a, int b, int[] ts) throws IOException {
+        if(b == 0){
+            ts[0] = 1; ts[1] = 0;
             return a;
         }
-        ll gcd = exEuclid(b, a%b, s, t);
-        ll tmp = t;
-        t = s - (a / b)*t;
-        s = tmp;
+        int gcd = xgcd(b, a % b, ts);
+        int temp = ts[1];
+        ts[1] = ts[0] - (a / b) * ts[1];
+        ts[0] = temp;
 
-        if (s <= 0) { //s를 양수로
-            s += b;
-            t -= a;
+        if(ts[0] <= 0){
+            ts[0] += b;
+            ts[1] -= a;
         }
+
         return gcd;
+
     }
 
 }
