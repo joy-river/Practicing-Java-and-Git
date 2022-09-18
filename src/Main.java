@@ -15,7 +15,10 @@ public class Main {
            st = new StringTokenizer(br.readLine());
            for (int j = 0; j < 4; j++)
                input[j] = Integer.parseInt(st.nextToken());
-           xgcd(input[0], -input[1], ts);
+           if(input[3] - input[2] % gcd(input[0], input[1]) != 0)
+               bw.write(-1 + "\n");
+           else
+               xgcd(input[0], -input[1], ts);
 
        }
 
