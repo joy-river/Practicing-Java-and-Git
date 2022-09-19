@@ -21,8 +21,8 @@ public class Main {
            if((input[3] - input[2]) % gcd(input[0] , input[1]) != 0)
                bw.write(-1 + "\n");
 
-           else if(input[2] % input[1] == 0 ? input[1] == input[3] : input[2] % input[1] == input[3])
-               bw.write(input[1] + "\n");
+           else if(first == input[3])
+               bw.write(input[2] + "\n");
 
            else{
                count = 1;
@@ -50,30 +50,11 @@ public class Main {
 
     }
 
-
     static int gcd(int a, int b){
         if(b == 0)
             return a;
 
         return gcd(b, a % b);
-    }
-    static int xgcd(int a, int b, int[] ts) throws IOException {
-        if(b == 0){
-            ts[0] = 1; ts[1] = 0;
-            return a;
-        }
-        int gcd = xgcd(b, a % b, ts);
-        int temp = ts[1];
-        ts[1] = ts[0] - (a / b) * ts[1];
-        ts[0] = temp;
-
-        if(ts[0] <= 0){
-            ts[0] += b;
-            ts[1] -= a;
-        }
-
-        return gcd;
-
     }
 
 }
