@@ -14,8 +14,8 @@ public class Main {
             PriorityQueue<Integer> dual = new PriorityQueue<>();
             st = new StringTokenizer(br.readLine());
             temp = st.nextToken();
-            if(temp.equals("I")){}
-
+            if(temp.equals("I")){dual.add(Integer.parseInt(st.nextToken()));}
+            if(temp.equals("D")){dual.remove(Integer.parseInt(st.nextToken()));}
         }
 
 
