@@ -15,7 +15,7 @@ public class Main {
             st = new StringTokenizer(br.readLine());
             temp = st.nextToken();
             if(temp.equals("I")){dual.add(Integer.parseInt(st.nextToken()));}
-            if(temp.equals("D")){dual.remove(Integer.parseInt(st.nextToken()));}
+            if(temp.equals("D")){if(!dual.isEmpty())dual.remove(Integer.parseInt(st.nextToken()));}
         }
 
 
