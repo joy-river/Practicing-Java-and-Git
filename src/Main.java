@@ -9,13 +9,19 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int n = Integer.parseInt(br.readLine());
         String temp;
+        int input;
         StringTokenizer st;
         for (int i = 0 ; i < n ; i ++) {
             PriorityQueue<Integer> dual = new PriorityQueue<>();
             st = new StringTokenizer(br.readLine());
             temp = st.nextToken();
+            input = Integer.parseInt(st.nextToken());
             if(temp.equals("I")){dual.add(Integer.parseInt(st.nextToken()));}
-            if(temp.equals("D")){if(!dual.isEmpty())dual.remove(Integer.parseInt(st.nextToken()));}
+            if(temp.equals("D")){
+                if(!dual.isEmpty()){
+                    if()
+                }
+                    dual.remove(Integer.parseInt(st.nextToken()));}
         }
 
 
