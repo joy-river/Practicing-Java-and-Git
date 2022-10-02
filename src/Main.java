@@ -22,6 +22,8 @@ public class Main {
                     if(input == 1){}
                     if(input == -1){}
                 }
+                else
+                    break;
                     dual.remove(Integer.parseInt(st.nextToken()));}
         }
 
