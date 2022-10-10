@@ -17,7 +17,7 @@ public class Main {
             st = new StringTokenizer(br.readLine());
             temp = st.nextToken();
             input = Integer.parseInt(st.nextToken());
-            if(temp.equals("I")){dual.add(Integer.parseInt(st.nextToken()));}
+            if(temp.equals("I")){dual.add(Integer.parseInt(st.nextToken())); reverse.add(input);}
             if(temp.equals("D")){
                 if(!dual.isEmpty()){
                     if(input == 1){dual.poll()};
