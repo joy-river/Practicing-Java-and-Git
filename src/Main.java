@@ -7,24 +7,10 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        int n = Integer.parseInt(br.readLine());
-        String temp;
-        int input;
-        StringTokenizer st;
-        for (int i = 0 ; i < n ; i ++) {
-            PriorityQueue<Integer> dual = new PriorityQueue<>();
-            PriorityQueue<Integer> reverse = new PriorityQueue<>(Collections.reverseOrder());
-            st = new StringTokenizer(br.readLine());
-            temp = st.nextToken();
-            input = Integer.parseInt(st.nextToken());
-            if(temp.equals("I")){dual.add(Integer.parseInt(st.nextToken())); reverse.add(input);}
-            if(temp.equals("D")){
-                if(!dual.isEmpty()){
-                    if(input == 1){dual.poll()};
-                    if(input == -1){dual.remove(dual.)}
-                }
-                    dual.remove(Integer.parseInt(st.nextToken()));}
-        }
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+        int m = Integer.parseInt(st.nextToken());
+        for (int i = 1; i <= n ; i++)
 
 
 
@@ -32,5 +18,14 @@ public class Main {
         bw.close();
 
     }
-
 }
+class node{
+    public node(int num, ArrayList<Integer> link) {
+        this.num = num;
+        this.link = link;
+    }
+
+    int num;
+    ArrayList<Integer> link;
+}
+
