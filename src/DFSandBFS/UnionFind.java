@@ -6,19 +6,19 @@ import java.util.*;
 public class UnionFind {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    static node[] man;
+    static NODE[] man;
 
     public static void main(String[] args) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
         int knew , temp, count = 0;
-        Queue<node> find = new LinkedList<>();
+        Queue<NODE> find = new LinkedList<>();
         String[] party = new String[m];
-        man = new node[n + 1];
+        man = new NODE[n + 1];
 
         for (int i = 1 ; i <= n ; i++)
-            man[i] = new node(i, new HashSet<>(), i, false);
+            man[i] = new NODE(i, new HashSet<>(), i, false);
 
         st = new StringTokenizer(br.readLine());
         temp = Integer.parseInt(st.nextToken());
@@ -56,7 +56,7 @@ public class UnionFind {
     }
     static void Union (String input){
         StringTokenizer st = new StringTokenizer(input);
-        ArrayList<node> union =  new ArrayList<>();
+        ArrayList<NODE> union =  new ArrayList<>();
         int temp = Integer.parseInt(st.nextToken());
         for (int i = 0 ; i < temp; i++)
             union.add(man[Integer.parseInt(st.nextToken())]);
@@ -64,9 +64,9 @@ public class UnionFind {
             union.get(i).point.addAll(union);
     }
 
-    static void Find(node input){
+    static void Find(NODE input){
         if(input.know){
-            for (node j : input.point){
+            for (NODE j : input.point){
                 if(!j.know){
                     j.know = true;
                     j.parent = input.parent;
@@ -83,8 +83,8 @@ public class UnionFind {
         return false;
     }
 }
-class node {
-    public node(int self, HashSet<node> point, int parent, boolean know) {
+class NODE {
+    public NODE(int self, HashSet<NODE> point, int parent, boolean know) {
         this.self = self;
         this.point = point;
         this.parent = parent;
@@ -92,7 +92,7 @@ class node {
     }
 
     int self;
-    HashSet<node> point;
+    HashSet<NODE> point;
     int parent;
     boolean know;
 }
