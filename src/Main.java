@@ -4,86 +4,61 @@ import java.util.*;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    static node[] man;
-
+    static int result  = 0;
+    static int[][] wire;
     public static void main(String[] args) throws IOException {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            int n = Integer.parseInt(st.nextToken());
-            int m = Integer.parseInt(st.nextToken());
-            int temp, count = 0;
-            String[] party = new String[m];
-            man = new node[n + 1];
+            int n = Integer.parseInt(br.readLine());
+            wire = new int[n + 1][n + 1];
+            node1[] tree = new node1[n + 1];
+            int a, b;
+            for (int i = 1; i <= n; i++)
+                tree[i] = new node1(i, new ArrayList<>(), false);
 
-            for (int i = 1 ; i <= n ; i++)
-                man[i] = new node(i, new ArrayList<>(), i, false);
-
-            st = new StringTokenizer(br.readLine());
-            temp = Integer.parseInt(st.nextToken());
-
-            if(temp == 0){
-                bw.write(Integer.toString(m));
-            }
-            else {
-                for (int i = 0; i < temp; i++)
-                    man[Integer.parseInt(st.nextToken())].know = true;
-                for (int i = 0; i <m; i++){
-                    party[i] = br.readLine();
-                    Union(party[i]);
+            for (int i = 1 ; i <= n; i++) {
+                StringTokenizer st = new StringTokenizer(br.readLine());
+                st.nextToken();
+                while(true) {
+                    a = Integer.parseInt(st.nextToken());
+                    if (a == -1)
+                        break;
+                    else {
+                        b = Integer.parseInt(st.nextToken());
+                        wire[i][a] = b;
+                        wire[a][i] = b;
+                        tree[i].link.add(tree[a]);
+                    }
                 }
-                for (int i = 0 ; i < m ; i++)
-                    if(Know(party[i]))
-                        count++;
-                bw.write(Integer.toString(m - count));
             }
+            for  (int i = 1; i <= n; i++)
+                result = Math.max(result, dfs(tree[i]));
 
 
+            bw.write(Integer.toString(result));
             bw.flush();
             bw.close();
 
     }
-    static void Union (String input){
-        StringTokenizer st = new StringTokenizer(input);
-        ArrayList<node> union =  new ArrayList<>();
-        int temp = Integer.parseInt(st.nextToken());
-        for (int i = 0 ; i < temp; i++)
-            union.add(man[Integer.parseInt(st.nextToken())]);
-        for (int i = 0 ; i < temp; i++){
-            if(!union.get(i).know){
-                union.get(i).point.addAll(union);
-                Find(union.get(i));
-            }
+    static int dfs (node1 root){
+        int temp = 0;
+        if(!root.visited){
+            root.visited = true;
+            for (int i = 0  ; i <  root.link.size(); i++)
+                if(root.link.get(i).num > root.num)
+                    temp = Math.max(temp, wire[root.num][root.link.get(i).num] + dfs(root.link.get(i)));
         }
-    }
-    static void Find(node input){
-        for (int i = 0 ; i < input.point.size(); i++){
-            if(input.point.get(i).know){
-                input.know = true;
-                input.parent = input.point.get(i).parent;
-                break;
-            }
-        }
-        input.point.clear();
-    }
-    static boolean Know(String input){
-        StringTokenizer st = new StringTokenizer(input);
-        int temp  =  Integer.parseInt(st.nextToken());
-        for (int i = 0  ;  i<  temp ; i++)
-            if(man[Integer.parseInt(st.nextToken())].know)
-                return true;
-        return false;
+        return temp;
     }
 }
-class node {
-    public node(int self, ArrayList<node> point, int parent, boolean know) {
-        this.self = self;
-        this.point = point;
-        this.parent = parent;
-        this.know = know;
+class node1 {
+    public node1(int num, ArrayList<node1> link, boolean visited) {
+        this.num = num;
+        this.link = link;
+        this.visited = visited;
     }
 
-    int self;
-    ArrayList<node> point;
-    int parent;
-    boolean know;
+    int num;
+    ArrayList<node1> link;
+    boolean visited;
+
 }
 
