@@ -26,6 +26,7 @@ public class Main {
                         wire[i][a] = b;
                         wire[a][i] = b;
                         tree[i].link.add(tree[a]);
+                        tree[a].link.add(tree[i]);
                     }
                 }
             }
