@@ -4,67 +4,52 @@ import java.util.*;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    static node1[] tree;
+    static final int inf = 50000000;
 
     public static void main(String[] args) throws IOException {
-        int n = Integer.parseInt(br.readLine());
-        tree = new node1[n + 1];
-        int temp, a, b, result = 0;
-        for (int i = 0; i <= n; i++)
-            tree[i] = new node1(i, new ArrayList<>(), new ArrayList<>(), false, 0);
+       StringTokenizer st = new StringTokenizer(br.readLine());
+       int n = Integer.parseInt(st.nextToken());
+       int m = Integer.parseInt(st.nextToken());
+        int [][] weight = new int[n + 1][n + 1];
+        int [] dij = new int[n + 1];
 
-        for (int i = 1 ; i <= n; i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            temp = Integer.parseInt(st.nextToken());
-            while(true) {
-                a = Integer.parseInt(st.nextToken());
-                if (a == -1)
-                    break;
-                else {
-                    b = Integer.parseInt(st.nextToken());
-                    tree[temp].weight.add(b);
-                    tree[a].weight.add(b);
-                    tree[temp].link.add(tree[a]);
-                    tree[a].link.add(tree[temp]);
-                }
-            }
+        int start = Integer.parseInt(br.readLine());
+        int u, v, w;
+        PriorityQueue<Integer> next = new PriorityQueue<>(Comparator.comparingInt(o -> dij[o]));
+        ArrayList[] link = new ArrayList[n + 1];
+
+
+        for (int i = 1 ; i <= n; i ++){
+            link[i] = new ArrayList<Integer>();
+            dij[i] = inf;
         }
-        dfs(tree[1], 0);
-        for (int i = 0 ; i <= n ; i ++)
-            tree[i].visited = false;
-        dfs(tree[0], temp = tree[0].sum);
+
+        for (int i = 0 ; i < m; i ++){
+            st = new StringTokenizer(br.readLine());
+            u = Integer.parseInt(st.nextToken());
+            v = Integer.parseInt(st.nextToken());
+            w = Integer.parseInt(st.nextToken());
+            weight[u][v] = w;
+            weight[v][u] = w;
+            link[u].add(v);
+            link[v].add(u);
+        }
 
 
-        bw.write(Integer.toString(tree[0].sum - temp));
+        next.add(start);
+
+        while(!next.isEmpty()){
+
+        }
+
+
+
+
+        bw.write();
         bw.flush();
         bw.close();
 
     }
-    static void dfs (node1 root, int sum){
-        root.visited = true;
-        root.sum = sum;
-        if(tree[0].sum < sum)
-            tree[0] = root;
-        for (int i = 0  ; i < root.link.size(); i++)
-            if(!root.link.get(i).visited)
-                dfs(root.link.get(i), sum + root.weight.get(i));
-
-    }
-}
-class node1 {
-    public node1(int num, ArrayList<node1> link, ArrayList<Integer> weight, boolean visited, int sum) {
-        this.num = num;
-        this.link = link;
-        this.weight = weight;
-        this.visited = visited;
-        this.sum = sum;
-    }
-
-    int num;
-    ArrayList<node1> link;
-    ArrayList<Integer> weight;
-    boolean visited;
-    int sum;
 
 }
 
