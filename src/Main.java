@@ -4,86 +4,72 @@ import java.util.*;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    static final int inf = Integer.MAX_VALUE;
-
+    static int count;
     public static void main(String[] args) throws IOException {
-        int tc = Integer.parseInt(br.readLine());
 
-        for (int i = 0 ; i < tc; i ++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            int n = Integer.parseInt(st.nextToken());
-            int m = Integer.parseInt(st.nextToken());
-            int w = Integer.parseInt(st.nextToken());
-            boolean yn = false;
-            HashSet<Edge> edge = new HashSet<>();
-            HashSet<Integer> start = new HashSet<>();
+        int chan = Integer.parseInt(br.readLine());
+        int beeg = (int) Math.log10(chan);
+        int n = Integer.parseInt(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        boolean[] able = new boolean[10];
 
-            int [] bell = new int[n + 1];
-            int [][] weight = new int[n + 1][n + 1];
-            for (int j = 1; j <= n ; j++)
-                Arrays.fill(weight[j], inf);
-
-            for (int j = 0 ; j < m + w; j++){
-              st = new StringTokenizer(br.readLine());
-              int u = Integer.parseInt(st.nextToken());
-              int v = Integer.parseInt(st.nextToken());
-              int x = Integer.parseInt(st.nextToken());
-
-              start.add(u);
-              edge.add(new Edge(u, v));
-
-              if(j < m) {
-                    edge.add(new Edge(v, u));
-                  start.add(v);
-                  weight[u][v] = Math.min(weight[u][v], x);
-                  weight[v][u] = Math.min(weight[v][u], x);
-                }
-
-              else
-                  weight[u][v] = Math.min(weight[u][v], -1 * x);
+        count = chan > 100 ? chan - 100 : 100 - chan;
+        for (int i = 0 ; i < n ; i ++)
+            able[Integer.parseInt(st.nextToken())] = true;
+        if(count <= beeg)
+            bw.write(Integer.toString(count));
+        else{
+            if(able[chan / (int) Math.pow(10, beeg)]){
+                bw.write(same(able, chan, beeg));
             }
+            else{
 
-            for (int begin : start){
-                Arrays.fill(bell, inf);
-                bell[begin] = 0;
-                for (int s = 0; s <= n ; s++){
-                    for (Edge value : edge) {
-                        int from = value.from;
-                        int to = value.to;
-                        int wei = weight[from][to];
-                         if (bell[from] != inf)
-                            if (bell[to] > bell[from] + wei)
-                                if(s == n)
-                                    break;
-                                else
-                                    bell[to] = bell[from] + wei;
-                    }
-                }
-                if(bell[begin] < 0) {
-                        yn = true;
-                        break;
-                }
             }
-            bw.write(yn ? "YES\n" : "NO\n");
         }
-
-
         bw.flush();
         bw.close();
     }
 
-}
-
-class Edge{
-    int from;
-    int to;
-    public Edge(int from, int to) {
-        this.from = from;
-        this.to = to;
+    static int bigger(boolean[] able, int num, int digit){
+        int temp;
+       for (int i = num / (int) Math.pow(10,digit); i < 10; i ++){
+           if(able[i]){
+               temp = i * (int)Math.pow(10,digit--);
+               for (int j = 0 ; j < 10 ; j++){
+                   if(able[j]) {
+                       for (int s = 0; s <= digit; s++)
+                           temp += j * (int) Math.pow(10, s);
+                       break;
+                   }
+               }
+               return temp;
+           }
+       }
+        return Integer.MAX_VALUE;
     }
+    static int same(boolean[]able, int num,int digit){
+
+    }
+
+    static int smaller(boolean[] able, int num, int digit) {
+        int temp;
+        for (int i = 1; i < num / (int) Math.pow(10,digit); i ++){
+            if(able[i]){
+                temp = i * (int)Math.pow(10,digit--);
+                for (int j = 9 ; j >= 0 ; j--){
+                    if(able[j]) {
+                        for (int s = 0; s <= digit; s++)
+                            temp += j * (int) Math.pow(10, s);
+                        break;
+                    }
+                }
+                return temp;
+            }
+        }
+        return Integer.MAX_VALUE;
+    }
+
 }
-
-
 
 
 
