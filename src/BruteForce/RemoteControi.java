@@ -10,7 +10,6 @@ public class RemoteControi {
     public static void main(String[] args) throws IOException {
 
         int chan = Integer.parseInt(br.readLine());
-        int beeg = chan != 0 ? (int) Math.log10(chan) : 0;
         int n = Integer.parseInt(br.readLine());
         StringTokenizer st = null;
         if(n != 0) st = new StringTokenizer(br.readLine());
