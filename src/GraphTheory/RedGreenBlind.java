@@ -1,7 +1,9 @@
+package GraphTheory;
+
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class RedGreenBlind {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -80,5 +82,6 @@ class index{
     int j;
 
 }
+
 
 
