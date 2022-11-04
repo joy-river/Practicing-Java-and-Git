@@ -1,0 +1,122 @@
+Index: src/divandconq/Fibo6.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package divandconq;\r\n\r\nimport java.io.*;\r\n\r\npublic class Fibo6 {\r\n    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\r\n    static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));\r\n    static final long mod = 1000000007;\r\n    static matrix save;\r\n\r\n    public static void main(String[] args) throws IOException {\r\n        long n = Long.parseLong(br.readLine());\r\n        long[][] mat = {{1 , 1}, {1 , 0}};\r\n        save = new matrix(mat);\r\n\r\n        bw.write(Long.toString(Matexp(n,save).mat[0][1]));\r\n        bw.flush();\r\n        bw.close();\r\n    }\r\n    static matrix Matexp (long n, matrix mat){\r\n        matrix temp;\r\n        if (n != 1){\r\n            temp = Matexp(n /2 , mat);\r\n            mat = n % 2L == 0 ? mult(temp, temp) :  mult(mult(temp, temp), save);\r\n            return mat;\r\n        }\r\n        else\r\n            return save;\r\n\r\n    }\r\n    static matrix mult (matrix a, matrix b){\r\n        long temp;\r\n        matrix c = new matrix(new long [2][2]);\r\n        for (int i = 0 ; i < 2; i ++){\r\n            for (int s = 0 ; s < 2; s++) {\r\n                temp = 0;\r\n                for (int j = 0; j < 2; j++)\r\n                    temp += (a.mat[i][j]  * b.mat[j][s]) % mod;\r\n                c.mat[i][s] = temp % mod;\r\n            }\r\n        }\r\n        return c;\r\n    }\r\n}\r\nclass matrix {\r\n    public matrix(long[][] mat) {\r\n        this.mat = mat;\r\n    }\r\n    long[][] mat;\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/divandconq/Fibo6.java b/src/divandconq/Fibo6.java
+--- a/src/divandconq/Fibo6.java	(revision d918f88144bf98f30f9a441e4528b8a33d6ab65c)
++++ b/src/divandconq/Fibo6.java	(date 1657242832518)
+@@ -6,19 +6,19 @@
+     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+     static final long mod = 1000000007;
+-    static matrix save;
++    static matrix2 save;
+ 
+     public static void main(String[] args) throws IOException {
+         long n = Long.parseLong(br.readLine());
+         long[][] mat = {{1 , 1}, {1 , 0}};
+-        save = new matrix(mat);
++        save = new matrix2(mat);
+ 
+         bw.write(Long.toString(Matexp(n,save).mat[0][1]));
+         bw.flush();
+         bw.close();
+     }
+-    static matrix Matexp (long n, matrix mat){
+-        matrix temp;
++    static matrix2 Matexp (long n, matrix2 mat){
++        matrix2 temp;
+         if (n != 1){
+             temp = Matexp(n /2 , mat);
+             mat = n % 2L == 0 ? mult(temp, temp) :  mult(mult(temp, temp), save);
+@@ -28,9 +28,9 @@
+             return save;
+ 
+     }
+-    static matrix mult (matrix a, matrix b){
++    static matrix2 mult (matrix2 a, matrix2 b){
+         long temp;
+-        matrix c = new matrix(new long [2][2]);
++        matrix2 c = new matrix2(new long [2][2]);
+         for (int i = 0 ; i < 2; i ++){
+             for (int s = 0 ; s < 2; s++) {
+                 temp = 0;
+@@ -42,8 +42,8 @@
+         return c;
+     }
+ }
+-class matrix {
+-    public matrix(long[][] mat) {
++class matrix2 {
++    public matrix2(long[][] mat) {
+         this.mat = mat;
+     }
+     long[][] mat;
+Index: src/divandconq/MatrixExp.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package divandconq;\r\n\r\nimport java.io.*;\r\nimport java.util.StringTokenizer;\r\n\r\n\r\npublic class MatrixExp {\r\n    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\r\n    static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));\r\n    static final int mod = 1000;\r\n    static matrix save;\r\n\r\n    public static void main(String[] args) throws IOException {\r\n        StringTokenizer st = new StringTokenizer(br.readLine());\r\n        int size = Integer.parseInt(st.nextToken());\r\n        long n = Long.parseLong(st.nextToken());\r\n        int[][] mat = new int[size][size];\r\n        for (int i = 0 ; i < size; i++){\r\n            st = new StringTokenizer(br.readLine());\r\n            for (int j = 0 ; j < size; j++)\r\n                mat[i][j] = Integer.parseInt(st.nextToken()) % mod;\r\n        }\r\n        save = new matrix(mat);\r\n\r\n        matrix output = Matexp(size, n, save);\r\n        for (int i = 0  ;  i< size; i++) {\r\n            for (int j = 0; j < size; j++)\r\n                bw.write(output.mat[i][j] + \" \");\r\n            bw.newLine();\r\n        }\r\n\r\n        bw.flush();\r\n        bw.close();\r\n    }\r\n    static matrix Matexp (int size , long n, matrix mat){\r\n        matrix temp;\r\n        if (n != 1){\r\n            temp = Matexp(size , n /2 , mat);\r\n            mat = n % 2L == 0 ? mult(temp, temp, size) :  mult(mult(temp, temp, size), save, size);\r\n            return mat;\r\n        }\r\n        else{\r\n            return save;\r\n        }\r\n    }\r\n    static matrix mult (matrix a, matrix b , int size){\r\n        int temp;\r\n        matrix c = new matrix(new int [size][size]);\r\n        for (int i = 0 ; i < size; i ++){\r\n            for (int s = 0 ; s < size; s++) {\r\n                temp = 0;\r\n                for (int j = 0; j < size; j++)\r\n                    temp += (a.mat[i][j]  * b.mat[j][s]) % mod;\r\n                c.mat[i][s] = temp % mod;\r\n            }\r\n        }\r\n        return c;\r\n    }\r\n}\r\nclass matrix {\r\n    public matrix(int[][] mat) {\r\n        this.mat = mat;\r\n    }\r\n    int[][] mat;\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/divandconq/MatrixExp.java b/src/divandconq/MatrixExp.java
+--- a/src/divandconq/MatrixExp.java	(revision d918f88144bf98f30f9a441e4528b8a33d6ab65c)
++++ b/src/divandconq/MatrixExp.java	(date 1657242832540)
+@@ -8,7 +8,7 @@
+     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+     static final int mod = 1000;
+-    static matrix save;
++    static matrixexp save;
+ 
+     public static void main(String[] args) throws IOException {
+         StringTokenizer st = new StringTokenizer(br.readLine());
+@@ -20,9 +20,9 @@
+             for (int j = 0 ; j < size; j++)
+                 mat[i][j] = Integer.parseInt(st.nextToken()) % mod;
+         }
+-        save = new matrix(mat);
++        save = new matrixexp(mat);
+ 
+-        matrix output = Matexp(size, n, save);
++        matrixexp output = Matexp(size, n, save);
+         for (int i = 0  ;  i< size; i++) {
+             for (int j = 0; j < size; j++)
+                 bw.write(output.mat[i][j] + " ");
+@@ -32,8 +32,8 @@
+         bw.flush();
+         bw.close();
+     }
+-    static matrix Matexp (int size , long n, matrix mat){
+-        matrix temp;
++    static matrixexp Matexp (int size , long n, matrixexp mat){
++        matrixexp temp;
+         if (n != 1){
+             temp = Matexp(size , n /2 , mat);
+             mat = n % 2L == 0 ? mult(temp, temp, size) :  mult(mult(temp, temp, size), save, size);
+@@ -43,9 +43,9 @@
+             return save;
+         }
+     }
+-    static matrix mult (matrix a, matrix b , int size){
++    static matrixexp mult (matrixexp a, matrixexp b , int size){
+         int temp;
+-        matrix c = new matrix(new int [size][size]);
++        matrixexp c = new matrixexp(new int [size][size]);
+         for (int i = 0 ; i < size; i ++){
+             for (int s = 0 ; s < size; s++) {
+                 temp = 0;
+@@ -57,8 +57,8 @@
+         return c;
+     }
+ }
+-class matrix {
+-    public matrix(int[][] mat) {
++class matrixexp {
++    public matrixexp(int[][] mat) {
+         this.mat = mat;
+     }
+     int[][] mat;

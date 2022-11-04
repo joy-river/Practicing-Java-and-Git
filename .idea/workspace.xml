@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
+      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2135rX1w0HuR7RH1xN46edl6lh5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last.edited.regexp" value="[1,3,4,5]" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Queue/Card2.java" />
+    <property name="project.structure.last.edited" value="모듈" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/Queue/Card2.java" />
+  </component>
+  <component name="RunManager" selected="애플리케이션.Main">
+    <configuration name="LIS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP.LIS" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="13" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Practicing-Java-and-Git" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberOfPaper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="divandconq.NumberOfPaper" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="divandconq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueuePractice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Queue.QueuePractice2" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeDiameter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraphTheory.DFSandBFS.TreeDiameter" />
+      <module name="Practicing-Java-and-Git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GraphTheory.DFSandBFS.Dijkstra" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="애플리케이션.Main" />
+      <item itemvalue="애플리케이션.NumberOfPaper" />
+      <item itemvalue="애플리케이션.QueuePractice2" />
+      <item itemvalue="애플리케이션.LIS" />
+      <item itemvalue="애플리케이션.TreeDiameter" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.TreeDiameter" />
+        <item itemvalue="애플리케이션.LIS" />
+        <item itemvalue="애플리케이션.QueuePractice2" />
+        <item itemvalue="애플리케이션.NumberOfPaper" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="" />
+      <created>1637157129708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637157129708</updated>
+    </task>
+    <task id="LOCAL-00112" summary="백준 1697번 숨바꼭질 bfs문제&#10;&#10;자~~~ 조건문을 만들고 괄호를 제대로 안묶으면 당연히 프로그램이 제대로 안굴러가겠죠? 잘 묶도록 하고, 시간을 줄이기 위해서 방문한 숫자를 기록해둡시다.">
+      <created>1662442363317</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1662442363317</updated>
+    </task>
+    <task id="LOCAL-00113" summary="하는 중">
+      <created>1662452161062</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1662452161062</updated>
+    </task>
+    <task id="LOCAL-00114" summary="백준 1764번 듣보잡 해시문제&#10;&#10;그냥 해시셋으로 간단하게 풀었음. 출력형식이 '사전순'인거 놓치지 않아야함.">
+      <created>1662509173881</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1662509173881</updated>
+    </task>
+    <task id="LOCAL-00115" summary="하는 중">
+      <created>1662538853327</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1662538853327</updated>
+    </task>
+    <task id="LOCAL-00116" summary="백준 2178번 미로 탐색 bfs문제&#10;&#10;그냥 bfs하면 됨.">
+      <created>1663042840492</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1663042840492</updated>
+    </task>
+    <task id="LOCAL-00117" summary="2178 미로 탐색&#10;&#10;클래스 중복 수정">
+      <created>1663042972472</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1663042972472</updated>
+    </task>
+    <task id="LOCAL-00118" summary="하는 중">
+      <created>1663056905927</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1663056905927</updated>
+    </task>
+    <task id="LOCAL-00119" summary="백준 2606번 바이러스 bfs 문제&#10;&#10;ez">
+      <created>1663121856589</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1663121856589</updated>
+    </task>
+    <task id="LOCAL-00120" summary="백준 2667번 단지번호붙이기 bfs문제&#10;&#10;그냥 bfs쓰면 됨. 저번에 비슷한 다른 문제에 비해서 약간 코드를 깔끔하게 만들었음.">
+      <created>1663131136126</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1663131136126</updated>
+    </task>
+    <task id="LOCAL-00121" summary="하는 중">
+      <created>1663143230422</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1663143230422</updated>
+    </task>
+    <task id="LOCAL-00122" summary="백준 5525번 IOIOI 문제&#10;&#10;스택으로 풀기는 했음. 패턴매쳐나 다른 방법도 있었을듯? 반복문이 모두 끝났을때 패턴이 몇번 나왔는지 계산이 안됐을 수 있으므로 마지막에 계산해주면 됨.">
+      <created>1663217303910</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1663217303910</updated>
+    </task>
+    <task id="LOCAL-00123" summary="하는 중 확장 유클리드? 베주 머시기">
+      <created>1663229535560</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1663229535560</updated>
+    </task>
+    <task id="LOCAL-00124" summary="하는 중 확장 유클리드? 베주 머시기&#10;중국인의 나머지 정리...&#10;&#10;잘 몰루???">
+      <created>1663312472356</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1663312472356</updated>
+    </task>
+    <task id="LOCAL-00125" summary="하는 중 확장 유클리드? 베주 머시기&#10;중국인의 나머지 정리...&#10;&#10;잘 몰루???">
+      <created>1663315591441</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1663315591441</updated>
+    </task>
+    <task id="LOCAL-00126" summary="하는 중&#10;좀  더 생각 ㄱㄱ&#10;&#10;2 2 1 1 같은 케이스 잘 생각 ㄱ">
+      <created>1663575311872</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1663575311872</updated>
+    </task>
+    <task id="LOCAL-00127" summary="하는 중&#10;&#10;&#10;도마도 다른건 다 괜찮은데 &#10;5 3 2&#10;0 -1 0 0 0&#10;-1 -1 0 1 1&#10;0 0 0 1 1&#10;0 0 0 0 0&#10;0 0 0 0 0&#10;0 0 0 0 0&#10;&#10;출력 : 5&#10;&#10;정답 : 5&#10;&#10;4 3 2&#10;1 1 1 1&#10;1 1 1 1&#10;1 1 1 1&#10;1 1 1 1&#10;-1 -1 -1 -1&#10;0 1 1 -1&#10;&#10;출력 : 1&#10;정답 : 1&#10;&#10;5 3 1&#10;0 0 0 0 0&#10;0 1 0 1 0&#10;0 0 0 0 0&#10;&#10;출력 : 2&#10;정답 : 2&#10;&#10;4 2 1&#10;0 0 0 1&#10;0 0 0 0&#10;&#10;출력 : 4&#10;정답 : 4&#10;&#10;이거 함 잘 생각해보자.">
+      <created>1663661527601</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1663661527601</updated>
+    </task>
+    <task id="LOCAL-00128" summary="하는 중&#10;&#10;그래도 안된다 40 몇퍼에서 계속 나가리 왜 안되는지를 잘 모르겠음 한번 새로짜는게 나을수도&gt;">
+      <created>1663748200284</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1663748200284</updated>
+    </task>
+    <task id="LOCAL-00129" summary="백준 7569 토마토 bfs문제&#10;&#10;알고리즘 자체는 처음부터 제대로 되어있었음. 문제는 이미 가득 차 있는 경우랑 &#10;1 1 0 같은 경우 모두 익을 수 있지만 -1 하나가 방문되지 않아 출력이 -1인 경&#10;1 1 -1 우가 있었음. 이게 제일 문제여서 0이 남아있어야된다고 조건을 고쳤음.&#10;1 -1 -1">
+      <created>1663894623904</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1663894623904</updated>
+    </task>
+    <task id="LOCAL-00130" summary="백준 7576 토마토 bfs문제&#10;&#10;다른 토마토 문제에서 높이(층 쌓기)를 뺀 버전임. 좀 더 쉽고 코드 약간 최적화했음. 날먹">
+      <created>1663899628958</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1663899628958</updated>
+    </task>
+    <task id="LOCAL-00131" summary="백준 9095번 1,2,3 더하기 dp문제&#10;&#10;쉽다. dp[n] = dp[n-3] + dp[n-2] + dp[n-1];&#10;&#10;간단한 재귀식으로 마무리 가능">
+      <created>1663916184817</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1663916184817</updated>
+    </task>
+    <task id="LOCAL-00132" summary="백준 7662번 이중 우선순위 큐 큐 문제&#10;&#10;우선순위가 가장 높은것과 낮은것을 삭제하여야 함. 문제는 단순하게 우선순위 큐 두개 만들어서 돌리면 시간초과가 낭낭하게 나므로, 실제로 힙을 두 개 구현하는 방법(안해봄 수구), 링크드리스트로 하는거 그리고 완전 균형 이진 탐색 트리를 쓰는 방법이 있겠음. 자바는 트리셋이 균형 트리이므로 트리셋을 그대로 쓰기는 했는데 set특성상 중복을 안받아서 중복을 없애려고 노드로 만들었음. 차피 기본 정렬이 입력값 정렬이고 하나 지우면 다시 정렬되니까 코드 문제 없이 작동함.">
+      <created>1665470918104</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1665470918105</updated>
+    </task>
+    <task id="LOCAL-00133" summary="하는 중">
+      <created>1665476528501</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1665476528501</updated>
+    </task>
+    <task id="LOCAL-00134" summary="백준 11724번 연결요소의 개수 bfs문제&#10;&#10;간단한 bfs">
+      <created>1665555721099</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1665555721099</updated>
+    </task>
+    <task id="LOCAL-00135" summary="하는 중">
+      <created>1665562585889</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1665562585889</updated>
+    </task>
+    <task id="LOCAL-00136" summary="백준 11726번 2*n 타일링 dp문제&#10;&#10;맨 끝 타일을 보자. 맨 끝에 올 수 있는 경우의 수는 ㅣ하나 거나 = 이다. 이떄 ㅣ이 오면 맨 끝 한 줄을 떼낸 f(n-1)의 경우의 수와 같고, =이 오면 맨 끝 두 줄이 날아간 f(n-2)의 경우의 수와 같으므로 이 문제는 사실상 피보나치 수열이다.">
+      <created>1665635841165</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1665635841165</updated>
+    </task>
+    <task id="LOCAL-00137" summary="반복 한번으론 부족한걸지도..????&#10;&#10;10 10 &#10;1 1 &#10;2 10 1&#10;2 9 2&#10;2 8  3&#10;2 7  4&#10;2 6  5&#10;2 5  7 &#10;2 4  8&#10;2 3 9 &#10;2 2 10 &#10;1 1">
+      <created>1665648641731</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1665648641732</updated>
+    </task>
+    <task id="LOCAL-00138" summary="백준 1043번 거짓말 그래프이론&#10;&#10;어떤 친구가 어떤 친구와 같은 집합에 속하는지 찾아내는 문제. 진실을 아는 친구들과 모르는 친구들을 구분해서 찾아내는게 기본이 되겠음.">
+      <created>1665713469951</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1665713469951</updated>
+    </task>
+    <task id="LOCAL-00139" summary="백준 1043번 거짓말 그래프이론&#10;&#10;어떤 친구가 어떤 친구와 같은 집합에 속하는지 찾아내는 문제. 진실을 아는 친구들과 모르는 친구들을 구분해서 찾아내는게 기본이 되겠음.&#10;&#10;union 함수는 자기와 같은 집합인지 판단해서 하나의 집합에 합쳐주는 역할임. 여기서 누가 진실을 아는지는 판단하지 않음. 여기서 판단했을 경우 역순으로 진실을 아는 사람이 나왔을때 대응할 수 가 없음.&#10;&#10;Find 함수가 진실을 알고있는 노드를 받아와서 자기와 같은 집합에 소속된 모든 노드에게 진실을 퍼뜨리는 역할을 해줌. 이 Find함수는 일종의 bfs로 처음 주어진 진실을 아는 노드가 들어가있는 큐에서 시작됨.">
+      <created>1665713877469</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1665713877469</updated>
+    </task>
+    <task id="LOCAL-00140" summary="하는 중&#10;&#10;12&#10;1 2 1 3 1 -1&#10;2 1 1 4 3 5 5 -1&#10;3 1 1 6 1 -1&#10;4 7 2 2 3 -1&#10;5 2 5 8 4 9 2 -1&#10;6 3 1 10 1 11 1 -1&#10;7 4 2 -1&#10;8 5 4 12 5 -1&#10;9 5 2 -1&#10;10 6 1 -1&#10;11 6 1 -1&#10;12 8 5 -1">
+      <created>1665735452026</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1665735452026</updated>
+    </task>
+    <task id="LOCAL-00141" summary="하는 중&#10;&#10;12&#10;1 2 1 3 1 -1&#10;2 1 1 4 3 5 5 -1&#10;3 1 1 6 1 -1&#10;4 7 2 2 3 -1&#10;5 2 5 8 4 9 2 -1&#10;6 3 1 10 1 11 1 -1&#10;7 4 2 -1&#10;8 5 4 12 5 -1&#10;9 5 2 -1&#10;10 6 1 -1&#10;11 6 1 -1&#10;12 8 5 -1">
+      <created>1665994426130</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1665994426132</updated>
+    </task>
+    <task id="LOCAL-00142" summary="백준 1167번 트리의 지름 dfs 문제&#10;&#10;어느 정점을 정해놓는다. 그 정점에서 제일 먼 정점을 구한다. 구한 정점에서 제일 먼 정점을 구한다 == 트리의 지름을 구했다. dfs 두 번으로 해결할 수 있는 문제다.&#10;문제는 dfs 함수 안에 visited = false를 쳐넣어놓는 실수를 해서 시간초과가 계속 떴다. 그래서 그냥 통째로 false로 바꿔줬더니 통과가 됐다.">
+      <created>1666067865064</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1666067865064</updated>
+    </task>
+    <task id="LOCAL-00143" summary="백준 1967번 트리의 지름 dfs 문제&#10;&#10;어느 정점을 정해놓는다. 그 정점에서 제일 먼 정점을 구한다. 구한 정점에서 제일 먼 정점을 구한다 == 트리의 지름을 구했다. dfs 두 번으로 해결할 수 있는 문제다.&#10;&#10;다른 트리 지름 문제 코드를 약간 바꿨음 == 날먹">
+      <created>1666069112016</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1666069112017</updated>
+    </task>
+    <task id="LOCAL-00144" summary="하는 중">
+      <created>1666081092226</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1666081092226</updated>
+    </task>
+    <task id="LOCAL-00145" summary="백준 1753번 최단거리 다익스트라 문제&#10;&#10;가장 단순한 다익스트라로 최단거리 구하기. 방향그래프인거 조심">
+      <created>1666238683700</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1666238683700</updated>
+    </task>
+    <task id="LOCAL-00146" summary="하는 중">
+      <created>1666253649118</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1666253649118</updated>
+    </task>
+    <task id="LOCAL-00147" summary="백준 1504번 특정한 최단 거리 그래프 문제&#10;&#10;일단 왔던 간선을 똑같이 또 갈 수 있다는 걸 이용해서 그냥 플로이드 워셜 알고리즘을 썼음. 쓰고나서 1 부터 n 까지의 경로를 a 와 b 를 들러가게끔 분할함.&#10;1 2 2 3 3 N&#10;1 2 2 3 2 N&#10;1 2 2 3 1 N&#10;&#10;1 3 3 2 1 N&#10;1 3 3 2 3 N&#10;1 3 3 2 2 N&#10;&#10;&#10;1 2 1 3 1 N &#10;1 2 1 3 3 N&#10;1 2 1 3 2 N&#10;&#10;2 = a, 3 = b 인 식임. 여기서 a 와 b 가 1과 n일 가능성도 있으므로 같은 정점으로 가는 (=움직이지 않는) 간선 길이는 0으로 만들어줘야함. 또 특정 정점을 방문하고 나서 그 정점에서 출발하는게 아니라면 돌아오는 간선 길이도 당연히 합산해야함.">
+      <created>1666324691722</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1666324691722</updated>
+    </task>
+    <task id="LOCAL-00148" summary="백준 1238번 파티 그래프 문제&#10;&#10;플로이드 워셜로 풀었음. 최소 x까지 길 + x에서 다시 원래 자리로 돌아오는 길의 합이 최대인 것을 구하면 됨. 코드가 간단한 대신 약간 느릴 수 있음&#10;&#10;다익스트라를 n번(각 정점마다 ) 쓰는것도 방법이겠음. &#10;&#10;좋은 의견 =&gt; 가상의 점(0,0을 쓰면 될듯)이 다른 모든 정점에 대해 가중치가 0인 간선을 가지고있다고 한다면 가상의 점에 대해 다익스트라를 사용할 경우 모든 정점에 대해 다익스트라를 하는거나 마찬가지가 될 수 있겠음. 따라서 총합 두번의 다익스트라로 문제를 풀 수는 있다고 함.">
+      <created>1666331304301</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1666331304301</updated>
+    </task>
+    <task id="LOCAL-00149" summary="벨만 포드로 들어가보자">
+      <created>1666339784391</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1666339784391</updated>
+    </task>
+    <task id="LOCAL-00150" summary="시간 초과 3연타 뭐냐고~~~~~">
+      <created>1666599313579</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1666599313579</updated>
+    </task>
+    <task id="LOCAL-00151" summary="백준 1865번 웜홀 벨만 포드 알고리즘&#10;&#10;자. 이 문제 야발이 하고싶은 말은 실제로 원래 자리로 돌아오고, 그게 시간이 얼마나 줄어드는지가 궁금한 것이냐? 절대 아니다. 즉 실제 값을 구할 수는 있지만, 구할 필요가 없고, 구할 경우 시간초과가 나게끔 되어있다. 그럼 문제가 물어보는 것이 뭐냐면 그래프 전체에 음의 사이클이 있냐 없냐이다. 사이클을 통해서 감소된 시간으로 원래 자리로 돌아올 수 있느냐를 묻고 싶은것. 즉 우리가 할것은 전체 그래프에 음의 사이클이 있냐 없냐만 찾아내면 된다.&#10;&#10;그러므로 bell(=dist)거리 배열을 전부 0으로 해놓고 벨만 포드를 돌렸을때. 음의 사이클이 있는지를 바로 찾을 수 있으므로 문제를 풀 수 있다. 만약 실제 거리를 묻는다면 각 정점에 대해 벨만 포드를 돌려야된다.">
+      <created>1666843184883</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1666843184883</updated>
+    </task>
+    <task id="LOCAL-00152" summary="하는중">
+      <created>1666857979319</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1666857979319</updated>
+    </task>
+    <task id="LOCAL-00153" summary="난 쓰레기야 이따위 코드로는 안돼">
+      <created>1666939368202</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1666939368202</updated>
+    </task>
+    <task id="LOCAL-00154" summary="백준 1107번 리모컨 브루트 포스&#10;&#10;이렇게 쉬운걸 이 지랄을 해서 풀었다니 믿기지가 않는다. 좀 더 쉽게 풀려다가 한참 돌아갔었음. 지금 알고리즘은 가고싶은 채널에서 + - next해가면서 그 값이 valid 한 값인지 검사하는 거임. 모든 자리 수가 다 입력가능한지 판단하는 간단한 알고리즘이지만 시간은 꽤 오래 걸릴것.. 좀 더 쉽게 할 방법이 없을까 해서 작을때 클때  구분해서 접근하는 방식으로 했었는데 결국 실패.">
+      <created>1667272671745</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1667272671745</updated>
+    </task>
+    <task id="LOCAL-00155" summary="백준 1107번 리모컨 브루트 포스&#10;&#10;이렇게 쉬운걸 이 지랄을 해서 풀었다니 믿기지가 않는다. 좀 더 쉽게 풀려다가 한참 돌아갔었음. 지금 알고리즘은 가고싶은 채널에서 + - next해가면서 그 값이 valid 한 값인지 검사하는 거임. 모든 자리 수가 다 입력가능한지 판단하는 간단한 알고리즘이지만 시간은 꽤 오래 걸릴것.. 좀 더 쉽게 할 방법이 없을까 해서 작을때 클때  구분해서 접근하는 방식으로 했었는데 결국 실패.">
+      <created>1667273047134</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1667273047134</updated>
+    </task>
+    <task id="LOCAL-00156" summary="메모리 초과 오지게 뜸.">
+      <created>1667290531015</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1667290531015</updated>
+    </task>
+    <task id="LOCAL-00157" summary="백준 9019번 DSLR 그래프 문제&#10;&#10;굉장히 많은 우여곡절을 거친 문제. 일단 먼저 BFS사용을 하는건 맞음. 그런데 인수로 문자열을 넘겨주는게 문제가 됨.  따라서 문자열을 넘겨주지 않고 부모를 쫒아가게끔 만들었음. 다음은 방문 배열임. 이 방문 배열은 문자열이 아니라(문자열은 절대 중복으로 안나옴) 메소드를 거친 결과 숫자가 됨. 왜냐면 이미 거쳐간 수는 다시 DSLR할 필요가 없으므로. 이걸로 메모리 초과는 해결. 문제는 시간초과가 계속 떴음. &#10;거기서 깨달음. L과 R 을 스트링빌더로 만들어서 겁나 시간 낭비가 오졌던 거였음. 그래서 메소드 새로 짜서 통과">
+      <created>1667359621040</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1667359621041</updated>
+    </task>
+    <task id="LOCAL-00158" summary="백준 10026번 적록색약 그래프 문제&#10;&#10;BFS 두번 돌려도 시간초과 안남! 처음 BFS를 돌리면서 R,G,B 구역이 총 몇개 있는지를 찾아냄. 그러면서 동시에 G를 R로 바꿔줌. 그 다음 BFS를 한번 더 돌리면 (R +G ), B의 구역을 찾아낼 수 있음.">
+      <created>1667371364122</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1667371364122</updated>
+    </task>
+    <task id="LOCAL-00159" summary="백준 14500번 테트로미노 브루트포스 문제&#10;&#10;일단 정사각형 4개 붙이는건 19가지 방식이 있다고 함. 일단 dfs를 써서 어떤 한 점을 시작으로 하는 도형들은 싹다 커버 가능. 그 다음은 점 기준 사방면 중에서 3개를 고르는 것 (뻐큐모양) 이렇게로 전부 커버가 가능함. 이걸 모든 점에 대해서 다 돌리면 해결 가능.">
+      <created>1667457256441</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1667457256441</updated>
+    </task>
+    <task id="LOCAL-00160" summary="하는중">
+      <created>1667463065316</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1667463065316</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="백준 7576 토마토 bfs문제&#10;&#10;다른 토마토 문제에서 높이(층 쌓기)를 뺀 버전임. 좀 더 쉽고 코드 약간 최적화했음. 날먹" />
+    <MESSAGE value="백준 9095번 1,2,3 더하기 dp문제&#10;&#10;쉽다. dp[n] = dp[n-3] + dp[n-2] + dp[n-1];&#10;&#10;간단한 재귀식으로 마무리 가능" />
+    <MESSAGE value="백준 7662번 이중 우선순위 큐 큐 문제&#10;&#10;우선순위가 가장 높은것과 낮은것을 삭제하여야 함. 문제는 단순하게 우선순위 큐 두개 만들어서 돌리면 시간초과가 낭낭하게 나므로, 실제로 힙을 두 개 구현하는 방법(안해봄 수구), 링크드리스트로 하는거 그리고 완전 균형 이진 탐색 트리를 쓰는 방법이 있겠음. 자바는 트리셋이 균형 트리이므로 트리셋을 그대로 쓰기는 했는데 set특성상 중복을 안받아서 중복을 없애려고 노드로 만들었음. 차피 기본 정렬이 입력값 정렬이고 하나 지우면 다시 정렬되니까 코드 문제 없이 작동함." />
+    <MESSAGE value="백준 11724번 연결요소의 개수 bfs문제&#10;&#10;간단한 bfs" />
+    <MESSAGE value="백준 11726번 2*n 타일링 dp문제&#10;&#10;맨 끝 타일을 보자. 맨 끝에 올 수 있는 경우의 수는 ㅣ하나 거나 = 이다. 이떄 ㅣ이 오면 맨 끝 한 줄을 떼낸 f(n-1)의 경우의 수와 같고, =이 오면 맨 끝 두 줄이 날아간 f(n-2)의 경우의 수와 같으므로 이 문제는 사실상 피보나치 수열이다." />
+    <MESSAGE value="반복 한번으론 부족한걸지도..????&#10;&#10;10 10 &#10;1 1 &#10;2 10 1&#10;2 9 2&#10;2 8  3&#10;2 7  4&#10;2 6  5&#10;2 5  7 &#10;2 4  8&#10;2 3 9 &#10;2 2 10 &#10;1 1" />
+    <MESSAGE value="백준 1043번 거짓말 그래프이론&#10;&#10;어떤 친구가 어떤 친구와 같은 집합에 속하는지 찾아내는 문제. 진실을 아는 친구들과 모르는 친구들을 구분해서 찾아내는게 기본이 되겠음." />
+    <MESSAGE value="백준 1043번 거짓말 그래프이론&#10;&#10;어떤 친구가 어떤 친구와 같은 집합에 속하는지 찾아내는 문제. 진실을 아는 친구들과 모르는 친구들을 구분해서 찾아내는게 기본이 되겠음.&#10;&#10;union 함수는 자기와 같은 집합인지 판단해서 하나의 집합에 합쳐주는 역할임. 여기서 누가 진실을 아는지는 판단하지 않음. 여기서 판단했을 경우 역순으로 진실을 아는 사람이 나왔을때 대응할 수 가 없음.&#10;&#10;Find 함수가 진실을 알고있는 노드를 받아와서 자기와 같은 집합에 소속된 모든 노드에게 진실을 퍼뜨리는 역할을 해줌. 이 Find함수는 일종의 bfs로 처음 주어진 진실을 아는 노드가 들어가있는 큐에서 시작됨." />
+    <MESSAGE value="하는 중&#10;&#10;12&#10;1 2 1 3 1 -1&#10;2 1 1 4 3 5 5 -1&#10;3 1 1 6 1 -1&#10;4 7 2 2 3 -1&#10;5 2 5 8 4 9 2 -1&#10;6 3 1 10 1 11 1 -1&#10;7 4 2 -1&#10;8 5 4 12 5 -1&#10;9 5 2 -1&#10;10 6 1 -1&#10;11 6 1 -1&#10;12 8 5 -1" />
+    <MESSAGE value="백준 1167번 트리의 지름 dfs 문제&#10;&#10;어느 정점을 정해놓는다. 그 정점에서 제일 먼 정점을 구한다. 구한 정점에서 제일 먼 정점을 구한다 == 트리의 지름을 구했다. dfs 두 번으로 해결할 수 있는 문제다.&#10;문제는 dfs 함수 안에 visited = false를 쳐넣어놓는 실수를 해서 시간초과가 계속 떴다. 그래서 그냥 통째로 false로 바꿔줬더니 통과가 됐다." />
+    <MESSAGE value="백준 1967번 트리의 지름 dfs 문제&#10;&#10;어느 정점을 정해놓는다. 그 정점에서 제일 먼 정점을 구한다. 구한 정점에서 제일 먼 정점을 구한다 == 트리의 지름을 구했다. dfs 두 번으로 해결할 수 있는 문제다.&#10;&#10;다른 트리 지름 문제 코드를 약간 바꿨음 == 날먹" />
+    <MESSAGE value="백준 1753번 최단거리 다익스트라 문제&#10;&#10;가장 단순한 다익스트라로 최단거리 구하기. 방향그래프인거 조심" />
+    <MESSAGE value="하는 중" />
+    <MESSAGE value="백준 1504번 특정한 최단 거리 그래프 문제&#10;&#10;일단 왔던 간선을 똑같이 또 갈 수 있다는 걸 이용해서 그냥 플로이드 워셜 알고리즘을 썼음. 쓰고나서 1 부터 n 까지의 경로를 a 와 b 를 들러가게끔 분할함.&#10;1 2 2 3 3 N&#10;1 2 2 3 2 N&#10;1 2 2 3 1 N&#10;&#10;1 3 3 2 1 N&#10;1 3 3 2 3 N&#10;1 3 3 2 2 N&#10;&#10;&#10;1 2 1 3 1 N &#10;1 2 1 3 3 N&#10;1 2 1 3 2 N&#10;&#10;2 = a, 3 = b 인 식임. 여기서 a 와 b 가 1과 n일 가능성도 있으므로 같은 정점으로 가는 (=움직이지 않는) 간선 길이는 0으로 만들어줘야함. 또 특정 정점을 방문하고 나서 그 정점에서 출발하는게 아니라면 돌아오는 간선 길이도 당연히 합산해야함." />
+    <MESSAGE value="백준 1238번 파티 그래프 문제&#10;&#10;플로이드 워셜로 풀었음. 최소 x까지 길 + x에서 다시 원래 자리로 돌아오는 길의 합이 최대인 것을 구하면 됨. 코드가 간단한 대신 약간 느릴 수 있음&#10;&#10;다익스트라를 n번(각 정점마다 ) 쓰는것도 방법이겠음. &#10;&#10;좋은 의견 =&gt; 가상의 점(0,0을 쓰면 될듯)이 다른 모든 정점에 대해 가중치가 0인 간선을 가지고있다고 한다면 가상의 점에 대해 다익스트라를 사용할 경우 모든 정점에 대해 다익스트라를 하는거나 마찬가지가 될 수 있겠음. 따라서 총합 두번의 다익스트라로 문제를 풀 수는 있다고 함." />
+    <MESSAGE value="벨만 포드로 들어가보자" />
+    <MESSAGE value="시간 초과 3연타 뭐냐고~~~~~" />
+    <MESSAGE value="백준 1865번 웜홀 벨만 포드 알고리즘&#10;&#10;자. 이 문제 야발이 하고싶은 말은 실제로 원래 자리로 돌아오고, 그게 시간이 얼마나 줄어드는지가 궁금한 것이냐? 절대 아니다. 즉 실제 값을 구할 수는 있지만, 구할 필요가 없고, 구할 경우 시간초과가 나게끔 되어있다. 그럼 문제가 물어보는 것이 뭐냐면 그래프 전체에 음의 사이클이 있냐 없냐이다. 사이클을 통해서 감소된 시간으로 원래 자리로 돌아올 수 있느냐를 묻고 싶은것. 즉 우리가 할것은 전체 그래프에 음의 사이클이 있냐 없냐만 찾아내면 된다.&#10;&#10;그러므로 bell(=dist)거리 배열을 전부 0으로 해놓고 벨만 포드를 돌렸을때. 음의 사이클이 있는지를 바로 찾을 수 있으므로 문제를 풀 수 있다. 만약 실제 거리를 묻는다면 각 정점에 대해 벨만 포드를 돌려야된다." />
+    <MESSAGE value="난 쓰레기야 이따위 코드로는 안돼" />
+    <MESSAGE value="백준 1107번 리모컨 브루트 포스&#10;&#10;이렇게 쉬운걸 이 지랄을 해서 풀었다니 믿기지가 않는다. 좀 더 쉽게 풀려다가 한참 돌아갔었음. 지금 알고리즘은 가고싶은 채널에서 + - next해가면서 그 값이 valid 한 값인지 검사하는 거임. 모든 자리 수가 다 입력가능한지 판단하는 간단한 알고리즘이지만 시간은 꽤 오래 걸릴것.. 좀 더 쉽게 할 방법이 없을까 해서 작을때 클때  구분해서 접근하는 방식으로 했었는데 결국 실패." />
+    <MESSAGE value="메모리 초과 오지게 뜸." />
+    <MESSAGE value="백준 9019번 DSLR 그래프 문제&#10;&#10;굉장히 많은 우여곡절을 거친 문제. 일단 먼저 BFS사용을 하는건 맞음. 그런데 인수로 문자열을 넘겨주는게 문제가 됨.  따라서 문자열을 넘겨주지 않고 부모를 쫒아가게끔 만들었음. 다음은 방문 배열임. 이 방문 배열은 문자열이 아니라(문자열은 절대 중복으로 안나옴) 메소드를 거친 결과 숫자가 됨. 왜냐면 이미 거쳐간 수는 다시 DSLR할 필요가 없으므로. 이걸로 메모리 초과는 해결. 문제는 시간초과가 계속 떴음. &#10;거기서 깨달음. L과 R 을 스트링빌더로 만들어서 겁나 시간 낭비가 오졌던 거였음. 그래서 메소드 새로 짜서 통과" />
+    <MESSAGE value="백준 10026번 적록색약 그래프 문제&#10;&#10;BFS 두번 돌려도 시간초과 안남! 처음 BFS를 돌리면서 R,G,B 구역이 총 몇개 있는지를 찾아냄. 그러면서 동시에 G를 R로 바꿔줌. 그 다음 BFS를 한번 더 돌리면 (R +G ), B의 구역을 찾아낼 수 있음." />
+    <MESSAGE value="백준 14500번 테트로미노 브루트포스 문제&#10;&#10;일단 정사각형 4개 붙이는건 19가지 방식이 있다고 함. 일단 dfs를 써서 어떤 한 점을 시작으로 하는 도형들은 싹다 커버 가능. 그 다음은 점 기준 사방면 중에서 3개를 고르는 것 (뻐큐모양) 이렇게로 전부 커버가 가능함. 이걸 모든 점에 대해서 다 돌리면 해결 가능." />
+    <MESSAGE value="하는중" />
+    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArithmeticException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="34" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DP/BitonicLis.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DP/BitonicLis.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DP/LIS.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>35</line>
+          <properties class="Main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="com[2]" />
+        <watch expression="m" />
+        <watch expression="tree[0]" language="JAVA" />
+        <watch expression="((dslr)((LinkedList)bs).get(4)).num" custom="dslr,java.util.LinkedList" />
+        <watch expression="bs" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1663215566629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/untitled$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1653019956093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

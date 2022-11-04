@@ -1,0 +1,127 @@
+Index: src/LIS.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/LIS.java b/src/DP/LIS.java
+rename from src/LIS.java
+rename to src/DP/LIS.java
+--- a/src/LIS.java	
++++ b/src/DP/LIS.java	
+@@ -1,3 +1,5 @@
++package DP;
++
+ import java.io.*;
+ import java.util.StringTokenizer;
+ 
+Index: src/BitonicLis.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/BitonicLis.java b/src/DP/BitonicLis.java
+rename from src/BitonicLis.java
+rename to src/DP/BitonicLis.java
+--- a/src/BitonicLis.java	
++++ b/src/DP/BitonicLis.java	
+@@ -1,3 +1,5 @@
++package DP;
++
+ import java.io.*;
+ import java.util.StringTokenizer;
+ //참고로 부분 수열은 수열의 순서를 유지하는 수열임 ㅇㅇ
+Index: src/InTriangle.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/InTriangle.java b/src/DP/InTriangle.java
+rename from src/InTriangle.java
+rename to src/DP/InTriangle.java
+--- a/src/InTriangle.java	
++++ b/src/DP/InTriangle.java	
+@@ -1,3 +1,5 @@
++package DP;
++
+ import java.io.*;
+ import java.util.ArrayList;
+ import java.util.StringTokenizer;
+Index: src/TastingWine.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/TastingWine.java b/src/DP/TastingWine.java
+rename from src/TastingWine.java
+rename to src/DP/TastingWine.java
+--- a/src/TastingWine.java	
++++ b/src/DP/TastingWine.java	
+@@ -1,3 +1,5 @@
++package DP;
++
+ import java.io.*;
+ 
+ public class TastingWine {
+Index: src/goldbug.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/goldbug.java b/src/TRAAAASH/goldbug.java
+rename from src/goldbug.java
+rename to src/TRAAAASH/goldbug.java
+--- a/src/goldbug.java	
++++ b/src/TRAAAASH/goldbug.java	
+@@ -1,3 +1,5 @@
++package TRAAAASH;
++
+ import java.io.IOException;
+ import java.util.Scanner;
+ 
+Index: src/Ezstairnumber.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Ezstairnumber.java b/src/DP/Ezstairnumber.java
+rename from src/Ezstairnumber.java
+rename to src/DP/Ezstairnumber.java
+--- a/src/Ezstairnumber.java	
++++ b/src/DP/Ezstairnumber.java	
+@@ -1,3 +1,5 @@
++package DP;
++
+ import java.io.*;
+ 
+ public class Ezstairnumber {
+Index: src/makeone.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/makeone.java b/src/DP/makeone.java
+rename from src/makeone.java
+rename to src/DP/makeone.java
+--- a/src/makeone.java	
++++ b/src/DP/makeone.java	
+@@ -1,3 +1,5 @@
++package DP;
++
+ import java.io.*;
+ 
+ public class makeone {
+@@ -8,13 +10,7 @@
+         int n = Integer.parseInt(br.readLine());
+         int []d = new int [n + 1];
+ 
+-        for (int i = 2 ; i < n + 1 ; i ++){
+-            d[i] = d[i-1] + 1;
+-            if (i % 2 == 0)
+-                d[i] = Math.min(d[i] - 1, d[i / 2]) + 1;
+-            if(i % 3 == 0)
+-                d[i] = Math.min(d[i] - 1, d[i / 3]) + 1;
+-        }
++
+         bw.write(Integer.toString(d[n]));
+         bw.flush();
+         bw.close();
