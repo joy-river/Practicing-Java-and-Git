@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -142,20 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00112" summary="백준 1697번 숨바꼭질 bfs문제&#10;&#10;자~~~ 조건문을 만들고 괄호를 제대로 안묶으면 당연히 프로그램이 제대로 안굴러가겠죠? 잘 묶도록 하고, 시간을 줄이기 위해서 방문한 숫자를 기록해둡시다.">
-      <created>1662442363317</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1662442363317</updated>
-    </task>
-    <task id="LOCAL-00113" summary="하는 중">
-      <created>1662452161062</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1662452161062</updated>
     </task>
     <task id="LOCAL-00114" summary="백준 1764번 듣보잡 해시문제&#10;&#10;그냥 해시셋으로 간단하게 풀었음. 출력형식이 '사전순'인거 놓치지 않아야함.">
       <created>1662509173881</created>
@@ -486,7 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667463065316</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="백준 11403번 경로 찾기 플로이드 워셜 문제&#10;&#10;그냥 플로이드 워셜로 현재 0인 경로에다가 깔쌈하게 적용해주면 됨.">
+      <created>1667535255505</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1667535255505</updated>
+    </task>
+    <task id="LOCAL-00162" summary="백준 11727번 2*n 타일링 2 dp문제&#10;&#10;처음에 l 작대기를 그으면 = dp[n -1];&#10;처음에 = , ㅁ 두개 긋고 = 2 * dp[n -2];&#10;&#10;간단.">
+      <created>1667538969713</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1667538969713</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,8 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="백준 7576 토마토 bfs문제&#10;&#10;다른 토마토 문제에서 높이(층 쌓기)를 뺀 버전임. 좀 더 쉽고 코드 약간 최적화했음. 날먹" />
-    <MESSAGE value="백준 9095번 1,2,3 더하기 dp문제&#10;&#10;쉽다. dp[n] = dp[n-3] + dp[n-2] + dp[n-1];&#10;&#10;간단한 재귀식으로 마무리 가능" />
     <MESSAGE value="백준 7662번 이중 우선순위 큐 큐 문제&#10;&#10;우선순위가 가장 높은것과 낮은것을 삭제하여야 함. 문제는 단순하게 우선순위 큐 두개 만들어서 돌리면 시간초과가 낭낭하게 나므로, 실제로 힙을 두 개 구현하는 방법(안해봄 수구), 링크드리스트로 하는거 그리고 완전 균형 이진 탐색 트리를 쓰는 방법이 있겠음. 자바는 트리셋이 균형 트리이므로 트리셋을 그대로 쓰기는 했는데 set특성상 중복을 안받아서 중복을 없애려고 노드로 만들었음. 차피 기본 정렬이 입력값 정렬이고 하나 지우면 다시 정렬되니까 코드 문제 없이 작동함." />
     <MESSAGE value="백준 11724번 연결요소의 개수 bfs문제&#10;&#10;간단한 bfs" />
     <MESSAGE value="백준 11726번 2*n 타일링 dp문제&#10;&#10;맨 끝 타일을 보자. 맨 끝에 올 수 있는 경우의 수는 ㅣ하나 거나 = 이다. 이떄 ㅣ이 오면 맨 끝 한 줄을 떼낸 f(n-1)의 경우의 수와 같고, =이 오면 맨 끝 두 줄이 날아간 f(n-2)의 경우의 수와 같으므로 이 문제는 사실상 피보나치 수열이다." />
@@ -549,7 +548,9 @@
     <MESSAGE value="백준 10026번 적록색약 그래프 문제&#10;&#10;BFS 두번 돌려도 시간초과 안남! 처음 BFS를 돌리면서 R,G,B 구역이 총 몇개 있는지를 찾아냄. 그러면서 동시에 G를 R로 바꿔줌. 그 다음 BFS를 한번 더 돌리면 (R +G ), B의 구역을 찾아낼 수 있음." />
     <MESSAGE value="백준 14500번 테트로미노 브루트포스 문제&#10;&#10;일단 정사각형 4개 붙이는건 19가지 방식이 있다고 함. 일단 dfs를 써서 어떤 한 점을 시작으로 하는 도형들은 싹다 커버 가능. 그 다음은 점 기준 사방면 중에서 3개를 고르는 것 (뻐큐모양) 이렇게로 전부 커버가 가능함. 이걸 모든 점에 대해서 다 돌리면 해결 가능." />
     <MESSAGE value="하는중" />
-    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
+    <MESSAGE value="백준 11403번 경로 찾기 플로이드 워셜 문제&#10;&#10;그냥 플로이드 워셜로 현재 0인 경로에다가 깔쌈하게 적용해주면 됨." />
+    <MESSAGE value="백준 11727번 2*n 타일링 2 dp문제&#10;&#10;처음에 l 작대기를 그으면 = dp[n -1];&#10;처음에 = , ㅁ 두개 긋고 = 2 * dp[n -2];&#10;&#10;간단." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 11727번 2*n 타일링 2 dp문제&#10;&#10;처음에 l 작대기를 그으면 = dp[n -1];&#10;처음에 = , ㅁ 두개 긋고 = 2 * dp[n -2];&#10;&#10;간단." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -585,9 +586,14 @@
           <line>22</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DP/Tileing2.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>35</line>
+          <line>81</line>
           <properties class="Main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
