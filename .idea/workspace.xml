@@ -144,34 +144,6 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00114" summary="백준 1764번 듣보잡 해시문제&#10;&#10;그냥 해시셋으로 간단하게 풀었음. 출력형식이 '사전순'인거 놓치지 않아야함.">
-      <created>1662509173881</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1662509173881</updated>
-    </task>
-    <task id="LOCAL-00115" summary="하는 중">
-      <created>1662538853327</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1662538853327</updated>
-    </task>
-    <task id="LOCAL-00116" summary="백준 2178번 미로 탐색 bfs문제&#10;&#10;그냥 bfs하면 됨.">
-      <created>1663042840492</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1663042840492</updated>
-    </task>
-    <task id="LOCAL-00117" summary="2178 미로 탐색&#10;&#10;클래스 중복 수정">
-      <created>1663042972472</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1663042972472</updated>
-    </task>
     <task id="LOCAL-00118" summary="하는 중">
       <created>1663056905927</created>
       <option name="number" value="00118" />
@@ -487,7 +459,35 @@
       <option name="project" value="LOCAL" />
       <updated>1667538969713</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="하는중">
+      <created>1667546184379</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1667546184379</updated>
+    </task>
+    <task id="LOCAL-00164" summary="백준 16236번 아기 상어 bfs 문제&#10;&#10;일단 bfs로 가능한 물고기 찾고 먹고 다시 bfs를 계속 반복하는게 알고리즘.&#10;&#10;문제는 상어보다 큰 물고기 통과 못하게하는 코드를 잘 짜야되고,&#10;처음 Findfish를 돌릴때의 이중 for문이 잘 break되는지도 판단해야함.(break하나만 썼다가 틀렸음)">
+      <created>1667796787290</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1667796787290</updated>
+    </task>
+    <task id="LOCAL-00165" summary="백준 16928번 뱀과 사다리 게임 bfs 문제&#10;&#10;뱀과 사다리는 만약 있다면 무조건 타야됨. 탔을때 방문 체크는 하지 않아야함(더 줄어들 수 있음)(그런데 해도 괜찮을거 같기도 하고). 또 사다리의 목적지가 동일한 곳일 수 있음. -&gt; 그냥 큐가 아니라 우선순위 큐로 목적지에 도달 후에 바로 주사위를 굴릴 수 있게끔 하는게 좋겠음. 아니면 사다리 + 주사위값을 넣든지 해야함.">
+      <created>1667801892539</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1667801892540</updated>
+    </task>
+    <task id="LOCAL-00166" summary="백준 17219번 비밀번호 찾기 해시 문제&#10;&#10;아니 사람이 친절하게 해시 구현을 했으면 넘어가야지 이걸 틀리네 ㅋㅋ;&#10;해시맵으로 날먹함.">
+      <created>1667804930864</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1667804930864</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -525,9 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="백준 7662번 이중 우선순위 큐 큐 문제&#10;&#10;우선순위가 가장 높은것과 낮은것을 삭제하여야 함. 문제는 단순하게 우선순위 큐 두개 만들어서 돌리면 시간초과가 낭낭하게 나므로, 실제로 힙을 두 개 구현하는 방법(안해봄 수구), 링크드리스트로 하는거 그리고 완전 균형 이진 탐색 트리를 쓰는 방법이 있겠음. 자바는 트리셋이 균형 트리이므로 트리셋을 그대로 쓰기는 했는데 set특성상 중복을 안받아서 중복을 없애려고 노드로 만들었음. 차피 기본 정렬이 입력값 정렬이고 하나 지우면 다시 정렬되니까 코드 문제 없이 작동함." />
-    <MESSAGE value="백준 11724번 연결요소의 개수 bfs문제&#10;&#10;간단한 bfs" />
-    <MESSAGE value="백준 11726번 2*n 타일링 dp문제&#10;&#10;맨 끝 타일을 보자. 맨 끝에 올 수 있는 경우의 수는 ㅣ하나 거나 = 이다. 이떄 ㅣ이 오면 맨 끝 한 줄을 떼낸 f(n-1)의 경우의 수와 같고, =이 오면 맨 끝 두 줄이 날아간 f(n-2)의 경우의 수와 같으므로 이 문제는 사실상 피보나치 수열이다." />
     <MESSAGE value="반복 한번으론 부족한걸지도..????&#10;&#10;10 10 &#10;1 1 &#10;2 10 1&#10;2 9 2&#10;2 8  3&#10;2 7  4&#10;2 6  5&#10;2 5  7 &#10;2 4  8&#10;2 3 9 &#10;2 2 10 &#10;1 1" />
     <MESSAGE value="백준 1043번 거짓말 그래프이론&#10;&#10;어떤 친구가 어떤 친구와 같은 집합에 속하는지 찾아내는 문제. 진실을 아는 친구들과 모르는 친구들을 구분해서 찾아내는게 기본이 되겠음." />
     <MESSAGE value="백준 1043번 거짓말 그래프이론&#10;&#10;어떤 친구가 어떤 친구와 같은 집합에 속하는지 찾아내는 문제. 진실을 아는 친구들과 모르는 친구들을 구분해서 찾아내는게 기본이 되겠음.&#10;&#10;union 함수는 자기와 같은 집합인지 판단해서 하나의 집합에 합쳐주는 역할임. 여기서 누가 진실을 아는지는 판단하지 않음. 여기서 판단했을 경우 역순으로 진실을 아는 사람이 나왔을때 대응할 수 가 없음.&#10;&#10;Find 함수가 진실을 알고있는 노드를 받아와서 자기와 같은 집합에 소속된 모든 노드에게 진실을 퍼뜨리는 역할을 해줌. 이 Find함수는 일종의 bfs로 처음 주어진 진실을 아는 노드가 들어가있는 큐에서 시작됨." />
@@ -547,10 +544,13 @@
     <MESSAGE value="백준 9019번 DSLR 그래프 문제&#10;&#10;굉장히 많은 우여곡절을 거친 문제. 일단 먼저 BFS사용을 하는건 맞음. 그런데 인수로 문자열을 넘겨주는게 문제가 됨.  따라서 문자열을 넘겨주지 않고 부모를 쫒아가게끔 만들었음. 다음은 방문 배열임. 이 방문 배열은 문자열이 아니라(문자열은 절대 중복으로 안나옴) 메소드를 거친 결과 숫자가 됨. 왜냐면 이미 거쳐간 수는 다시 DSLR할 필요가 없으므로. 이걸로 메모리 초과는 해결. 문제는 시간초과가 계속 떴음. &#10;거기서 깨달음. L과 R 을 스트링빌더로 만들어서 겁나 시간 낭비가 오졌던 거였음. 그래서 메소드 새로 짜서 통과" />
     <MESSAGE value="백준 10026번 적록색약 그래프 문제&#10;&#10;BFS 두번 돌려도 시간초과 안남! 처음 BFS를 돌리면서 R,G,B 구역이 총 몇개 있는지를 찾아냄. 그러면서 동시에 G를 R로 바꿔줌. 그 다음 BFS를 한번 더 돌리면 (R +G ), B의 구역을 찾아낼 수 있음." />
     <MESSAGE value="백준 14500번 테트로미노 브루트포스 문제&#10;&#10;일단 정사각형 4개 붙이는건 19가지 방식이 있다고 함. 일단 dfs를 써서 어떤 한 점을 시작으로 하는 도형들은 싹다 커버 가능. 그 다음은 점 기준 사방면 중에서 3개를 고르는 것 (뻐큐모양) 이렇게로 전부 커버가 가능함. 이걸 모든 점에 대해서 다 돌리면 해결 가능." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 11403번 경로 찾기 플로이드 워셜 문제&#10;&#10;그냥 플로이드 워셜로 현재 0인 경로에다가 깔쌈하게 적용해주면 됨." />
     <MESSAGE value="백준 11727번 2*n 타일링 2 dp문제&#10;&#10;처음에 l 작대기를 그으면 = dp[n -1];&#10;처음에 = , ㅁ 두개 긋고 = 2 * dp[n -2];&#10;&#10;간단." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 11727번 2*n 타일링 2 dp문제&#10;&#10;처음에 l 작대기를 그으면 = dp[n -1];&#10;처음에 = , ㅁ 두개 긋고 = 2 * dp[n -2];&#10;&#10;간단." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 16236번 아기 상어 bfs 문제&#10;&#10;일단 bfs로 가능한 물고기 찾고 먹고 다시 bfs를 계속 반복하는게 알고리즘.&#10;&#10;문제는 상어보다 큰 물고기 통과 못하게하는 코드를 잘 짜야되고,&#10;처음 Findfish를 돌릴때의 이중 for문이 잘 break되는지도 판단해야함.(break하나만 썼다가 틀렸음)" />
+    <MESSAGE value="백준 16928번 뱀과 사다리 게임 bfs 문제&#10;&#10;뱀과 사다리는 만약 있다면 무조건 타야됨. 탔을때 방문 체크는 하지 않아야함(더 줄어들 수 있음)(그런데 해도 괜찮을거 같기도 하고). 또 사다리의 목적지가 동일한 곳일 수 있음. -&gt; 그냥 큐가 아니라 우선순위 큐로 목적지에 도달 후에 바로 주사위를 굴릴 수 있게끔 하는게 좋겠음. 아니면 사다리 + 주사위값을 넣든지 해야함." />
+    <MESSAGE value="백준 17219번 비밀번호 찾기 해시 문제&#10;&#10;아니 사람이 친절하게 해시 구현을 했으면 넘어가야지 이걸 틀리네 ㅋㅋ;&#10;해시맵으로 날먹함." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 17219번 비밀번호 찾기 해시 문제&#10;&#10;아니 사람이 친절하게 해시 구현을 했으면 넘어가야지 이걸 틀리네 ㅋㅋ;&#10;해시맵으로 날먹함." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -590,15 +590,6 @@
           <url>file://$PROJECT_DIR$/src/DP/Tileing2.java</url>
           <line>13</line>
           <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>81</line>
-          <properties class="Main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="131" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
