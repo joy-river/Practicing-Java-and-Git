@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,13 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00120" summary="백준 2667번 단지번호붙이기 bfs문제&#10;&#10;그냥 bfs쓰면 됨. 저번에 비슷한 다른 문제에 비해서 약간 코드를 깔끔하게 만들었음.">
-      <created>1663131136126</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1663131136126</updated>
     </task>
     <task id="LOCAL-00121" summary="하는 중">
       <created>1663143230422</created>
@@ -487,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667880744851</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="하는중">
+      <created>1667894862962</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1667894862962</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -548,9 +546,9 @@
     <MESSAGE value="백준 16236번 아기 상어 bfs 문제&#10;&#10;일단 bfs로 가능한 물고기 찾고 먹고 다시 bfs를 계속 반복하는게 알고리즘.&#10;&#10;문제는 상어보다 큰 물고기 통과 못하게하는 코드를 잘 짜야되고,&#10;처음 Findfish를 돌릴때의 이중 for문이 잘 break되는지도 판단해야함.(break하나만 썼다가 틀렸음)" />
     <MESSAGE value="백준 16928번 뱀과 사다리 게임 bfs 문제&#10;&#10;뱀과 사다리는 만약 있다면 무조건 타야됨. 탔을때 방문 체크는 하지 않아야함(더 줄어들 수 있음)(그런데 해도 괜찮을거 같기도 하고). 또 사다리의 목적지가 동일한 곳일 수 있음. -&gt; 그냥 큐가 아니라 우선순위 큐로 목적지에 도달 후에 바로 주사위를 굴릴 수 있게끔 하는게 좋겠음. 아니면 사다리 + 주사위값을 넣든지 해야함." />
     <MESSAGE value="백준 17219번 비밀번호 찾기 해시 문제&#10;&#10;아니 사람이 친절하게 해시 구현을 했으면 넘어가야지 이걸 틀리네 ㅋㅋ;&#10;해시맵으로 날먹함." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 17626번 FourSquare dp문제&#10;&#10;라그랑주의 네 제곱수 정리임. 일단 제곱수들은 전부 1이고, 제곱수가 아닌 친구들은 어떻게 구하느냐. 특정 수의 두배인 친구는 두배. 특정 수에 제곱수를 더한 값 이렇게 해서 구했는데 어찌저찌 통과는 됐음." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 17626번 FourSquare dp문제&#10;&#10;라그랑주의 네 제곱수 정리임. 일단 제곱수들은 전부 1이고, 제곱수가 아닌 친구들은 어떻게 구하느냐. 특정 수의 두배인 친구는 두배. 특정 수에 제곱수를 더한 값 이렇게 해서 구했는데 어찌저찌 통과는 됐음." />
+    <MESSAGE value="하는중" />
+    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

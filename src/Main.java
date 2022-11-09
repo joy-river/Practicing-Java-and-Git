@@ -8,39 +8,49 @@ public class Main {
     public static void main(String[] args) throws IOException {
         String[] input = br.readLine().split("");
         StringBuilder sb = new StringBuilder();
-        Stack<String> oper = new Stack<>();
+        Stack<oper> oper = new Stack<>();
         Stack<String> result = new Stack<>();
+        int b = 0;
 
-        boolean b =false;
         for (String s : input) {
             if (s.charAt(0) - 65 >= 0)
                 result.add(s);
-            else if (s.equals("("))
-                b = true;
-            else if (s.equals(")")) {
-                sb.append(print(alpha, bracket));
-                b = false;
+            else{
+                switch (s){
+                    case "+" :
+                    case "-" :
+                        oper.add(new oper(s, b)); break;
+                    case "*":
+                    case "/":
+                        oper.add(new oper(s, 1 +b)); break;
+                    case "(": b++; break;
+                    case ")": b--; break;
+                }
+
+               if(b == 0) check(oper, result);
             }
-            else if (s.equals("+") || s.equals("-")) {
-                if (!bracket.isEmpty())
-                    if (bracket.peek().equals("*") || bracket.peek().equals("/"))
-                        if(!b)
-                            sb.append(print(alpha, bracket));
-                bracket.push(s);
-            }
-            else
-                bracket.push(s);
         }
-        sb.append(print(alpha,bracket));
 
 
         bw.write(sb.toString());
         bw.flush();
         bw.close();
     }
+    static void check (Stack<oper> oper, Stack<String> result)) {
+
+    }
 
 }
+class oper {
+    public oper(String op, int prio) {
+        this.op = op;
+        this.prio = prio;
+    }
 
+    String op;
+    int prio;
+
+}
 
 
 
