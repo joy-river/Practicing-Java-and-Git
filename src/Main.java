@@ -26,18 +26,36 @@ public class Main {
                     case "(": b++; break;
                     case ")": b--; break;
                 }
-
-               if(b == 0) check(oper, result);
+                check(oper, result);
             }
         }
+        while(!oper.isEmpty())
+            result.add(oper.pop().op);
 
 
-        bw.write(sb.toString());
+        while(!result.isEmpty())
+          sb.append(result.pop());
+        bw.write(sb.reverse().toString());
         bw.flush();
         bw.close();
     }
-    static void check (Stack<oper> oper, Stack<String> result)) {
-
+    static void check (Stack<oper> oper, Stack<String> result) {
+        oper temp;
+        if(oper.size() == 1);
+        else{
+            temp = oper.pop();
+            if(temp.prio >= oper.peek().prio)
+                oper.add(temp);
+            else {
+                while (!oper.isEmpty()) {
+                    if (temp.prio <= oper.peek().prio)
+                        result.add(oper.pop().op);
+                    else
+                        break;
+                }
+                oper.add(temp);
+            }
+        }
     }
 
 }
