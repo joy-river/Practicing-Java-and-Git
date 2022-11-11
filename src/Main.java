@@ -6,68 +6,84 @@ public class Main {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void main(String[] args) throws IOException {
-        String[] input = br.readLine().split("");
-        StringBuilder sb = new StringBuilder();
-        Stack<oper> oper = new Stack<>();
-        Stack<String> result = new Stack<>();
-        int b = 0;
+        int n = Integer.parseInt(br.readLine());
+        StringTokenizer st;
+        int root, temp;
 
-        for (String s : input) {
-            if (s.charAt(0) - 65 >= 0)
-                result.add(s);
-            else{
-                switch (s){
-                    case "+" :
-                    case "-" :
-                        oper.add(new oper(s, b)); break;
-                    case "*":
-                    case "/":
-                        oper.add(new oper(s, 1 +b)); break;
-                    case "(": b++; break;
-                    case ")": b--; break;
-                }
-                check(oper, result);
+
+        travel[] tree = new travel[n];
+        for (int i = 0 ; i < n ; i ++)
+            tree[i] = new travel(i, null, null, null);
+        for (int i = 0 ; i < n ; i ++){
+            st = new StringTokenizer(br.readLine());
+            root = st.nextToken().charAt(0) - 65;
+            temp = st.nextToken().charAt(0) - 65;
+            if(temp >= 0){
+                tree[root].left = tree[temp];
+                tree[temp].parent = tree[root];
+            }
+            temp = st.nextToken().charAt(0) - 65;
+            if(temp >= 0) {
+                tree[root].right = tree[temp];
+                tree[temp].parent = tree[root];
             }
         }
-        while(!oper.isEmpty())
-            result.add(oper.pop().op);
+        bw.write(pre(tree, 0) + "\n" + in(tree, 0) + "\n" + post(tree, 0));
 
 
-        while(!result.isEmpty())
-          sb.append(result.pop());
-        bw.write(sb.reverse().toString());
         bw.flush();
         bw.close();
     }
-    static void check (Stack<oper> oper, Stack<String> result) {
-        oper temp;
-        if(oper.size() == 1);
-        else{
-            temp = oper.pop();
-            if(temp.prio >= oper.peek().prio)
-                oper.add(temp);
-            else {
-                while (!oper.isEmpty()) {
-                    if (temp.prio <= oper.peek().prio)
-                        result.add(oper.pop().op);
-                    else
-                        break;
-                }
-                oper.add(temp);
-            }
-        }
+    static String pre(travel[] tree, int root){
+        String temp = "";
+
+        temp += (char)(root +65);
+
+        if(tree[root].left != null)
+            temp += pre(tree, tree[root].left.init);
+
+        if(tree[root].right != null)
+            temp += pre(tree, tree[root].right.init);
+
+        return temp;
+    }
+    static String in(travel[] tree, int root){
+        String temp = "";
+
+        if(tree[root].left != null)
+            temp += in(tree, tree[root].left.init);
+
+        temp += (char)(root + 65);
+
+        if(tree[root].right != null)
+            temp += in(tree, tree[root].right.init);
+        return temp;
+    }
+    static String post(travel[] tree, int root){
+        String temp = "";
+        if(tree[root].left != null)
+            temp += post(tree, tree[root].left.init);
+
+        if(tree[root].right != null)
+            temp += post(tree, tree[root].right.init);
+
+        temp += (char)(root+65);
+        return temp;
     }
 
 }
-class oper {
-    public oper(String op, int prio) {
-        this.op = op;
-        this.prio = prio;
+class travel {
+    int init;
+    travel parent;
+    travel left;
+    travel right;
+
+    public travel(int init, travel parent, travel left, travel right) {
+        this.init = init;
+        this.parent = parent;
+        this.left = left;
+        this.right = right;
     }
-
-    String op;
-    int prio;
-
 }
 
 
