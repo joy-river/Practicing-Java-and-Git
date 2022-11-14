@@ -7,34 +7,38 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         int n = Integer.parseInt(br.readLine());
-        StringTokenizer st;
-        int root, temp;
+        String[] in = br.readLine().split(" ");
+        String[] post = br.readLine().split(" ");
 
 
-        travel[] tree = new travel[n];
-        for (int i = 0 ; i < n ; i ++)
-            tree[i] = new travel(i, null, null, null);
-        for (int i = 0 ; i < n ; i ++){
-            st = new StringTokenizer(br.readLine());
-            root = st.nextToken().charAt(0) - 65;
-            temp = st.nextToken().charAt(0) - 65;
-            if(temp >= 0){
-                tree[root].left = tree[temp];
-                tree[temp].parent = tree[root];
-            }
-            temp = st.nextToken().charAt(0) - 65;
-            if(temp >= 0) {
-                tree[root].right = tree[temp];
-                tree[temp].parent = tree[root];
-            }
-        }
-        bw.write(pre(tree, 0) + "\n" + in(tree, 0) + "\n" + post(tree, 0));
+
 
 
         bw.flush();
         bw.close();
     }
-    static String pre(travel[] tree, int root){
+    static void MakeTree(String[] in, String[] post, int n){
+        Travel[] tree = new Travel[n + 1];
+        int root = Integer.parseInt(post[post.length - 1]);
+        tree[root]  = new Travel(root, null, null, null);
+
+        int temp = 0;
+        tree[Integer.parseInt(in[temp])] = new Travel(Integer.parseInt(in[temp]), null, null,null);
+
+        for (int i = 1; i < n; i ++) {
+            if(Integer.parseInt(in[i]) == root)
+                break;
+
+
+
+
+
+        }
+
+
+
+    }
+    static String pre(Travel[] tree, int root){
         String temp = "";
 
         temp += (char)(root +65);
@@ -47,7 +51,7 @@ public class Main {
 
         return temp;
     }
-    static String in(travel[] tree, int root){
+    static String in(Travel[] tree, int root){
         String temp = "";
 
         if(tree[root].left != null)
@@ -59,7 +63,7 @@ public class Main {
             temp += in(tree, tree[root].right.init);
         return temp;
     }
-    static String post(travel[] tree, int root){
+    static String post(Travel[] tree, int root){
         String temp = "";
         if(tree[root].left != null)
             temp += post(tree, tree[root].left.init);
@@ -72,13 +76,13 @@ public class Main {
     }
 
 }
-class travel {
+class Travel {
     int init;
-    travel parent;
-    travel left;
-    travel right;
+    Travel parent;
+    Travel left;
+    Travel right;
 
-    public travel(int init, travel parent, travel left, travel right) {
+    public Travel(int init, Travel parent, Travel left, Travel right) {
         this.init = init;
         this.parent = parent;
         this.left = left;
