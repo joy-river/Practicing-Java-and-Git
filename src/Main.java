@@ -4,74 +4,61 @@ import java.util.*;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    static int n;
+    static String[] in;
+    static String[] post;
+    static Travel[] tree;
 
     public static void main(String[] args) throws IOException {
-        int n = Integer.parseInt(br.readLine());
-        String[] in = br.readLine().split(" ");
-        String[] post = br.readLine().split(" ");
+        n = Integer.parseInt(br.readLine());
+        in = br.readLine().split(" ");
+        post = br.readLine().split(" ");
+        tree = new Travel[n + 1];
+        int root = Integer.parseInt(post[post.length - 1]);
+        Travel a = tree[root]  = new Travel(root, null, null, null);
+
+        MakeTree(tree[root], 0 , n);
 
 
-
-
-
+        bw.write(pre(a));
         bw.flush();
         bw.close();
     }
-    static void MakeTree(String[] in, String[] post, int n){
-        Travel[] tree = new Travel[n + 1];
-        int root = Integer.parseInt(post[post.length - 1]);
-        tree[root]  = new Travel(root, null, null, null);
+    static void MakeTree(Travel root, int start, int end){
+        int left = 0, right = 0;
 
-        int temp = 0;
-        tree[Integer.parseInt(in[temp])] = new Travel(Integer.parseInt(in[temp]), null, null,null);
+        if(start >= end)
+            return;
 
-        for (int i = 1; i < n; i ++) {
-            if(Integer.parseInt(in[i]) == root)
+        for (int i = start ; i < end ; i ++)
+            if(Integer.parseInt(in[i]) == root.init) {
+                left = i - 1;
+                right = end - i - 1;
                 break;
-
-
-
-
-
-        }
-
-
-
+            }
+            if(left > 0) {
+                tree[left] = new Travel(Integer.parseInt(post[left]), root, null, null);
+                root.left = tree[left];
+                MakeTree(tree[left], start, left + 1);
+            }
+            if(right > 0) {
+                tree[right + left] = new Travel(Integer.parseInt(post[right + left]), root, null, null);
+                root.right = tree[right + left];
+                MakeTree(tree[right + left], left + 2, end);
+            }
     }
-    static String pre(Travel[] tree, int root){
+
+    static String pre(Travel root){
         String temp = "";
 
-        temp += (char)(root +65);
+        temp += root.init + " ";
 
-        if(tree[root].left != null)
-            temp += pre(tree, tree[root].left.init);
+        if(root.left != null)
+            temp += pre(root.left);
 
-        if(tree[root].right != null)
-            temp += pre(tree, tree[root].right.init);
+        if(root.right != null)
+            temp += pre(root.right);
 
-        return temp;
-    }
-    static String in(Travel[] tree, int root){
-        String temp = "";
-
-        if(tree[root].left != null)
-            temp += in(tree, tree[root].left.init);
-
-        temp += (char)(root + 65);
-
-        if(tree[root].right != null)
-            temp += in(tree, tree[root].right.init);
-        return temp;
-    }
-    static String post(Travel[] tree, int root){
-        String temp = "";
-        if(tree[root].left != null)
-            temp += post(tree, tree[root].left.init);
-
-        if(tree[root].right != null)
-            temp += post(tree, tree[root].right.init);
-
-        temp += (char)(root+65);
         return temp;
     }
 
