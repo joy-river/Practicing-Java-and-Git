@@ -25,26 +25,28 @@ public class Main {
         bw.close();
     }
     static void MakeTree(Travel root, int start, int end){
-        int left = 0, right = 0;
+        int  left = 0, right = 0, temp;
 
         if(start >= end)
             return;
 
         for (int i = start ; i < end ; i ++)
             if(Integer.parseInt(in[i]) == root.init) {
-                left = i - 1;
+                left = i;
                 right = end - i - 1;
                 break;
             }
-            if(left > 0) {
-                tree[left] = new Travel(Integer.parseInt(post[left]), root, null, null);
-                root.left = tree[left];
-                MakeTree(tree[left], start, left + 1);
-            }
+           if(left > start) {
+                temp = Integer.parseInt(post[left - 1]);
+                tree[temp] = new Travel(temp, root, null, null);
+                root.left = tree[temp];
+               MakeTree(tree[temp], start, left);
+          }
             if(right > 0) {
-                tree[right + left] = new Travel(Integer.parseInt(post[right + left]), root, null, null);
-                root.right = tree[right + left];
-                MakeTree(tree[right + left], left + 2, end);
+                temp = Integer.parseInt(post[right + left - 1]);
+                tree[temp] = new Travel(temp, root, null, null);
+                root.right = tree[temp];
+                MakeTree(tree[temp], left + 1, end);
             }
     }
 
