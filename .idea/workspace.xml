@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="조금만 더 하면 될거같다.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphTheory/TreeTraversalReverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphTheory/TreeTraversalReverse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,13 +142,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00129" summary="백준 7569 토마토 bfs문제&#10;&#10;알고리즘 자체는 처음부터 제대로 되어있었음. 문제는 이미 가득 차 있는 경우랑 &#10;1 1 0 같은 경우 모두 익을 수 있지만 -1 하나가 방문되지 않아 출력이 -1인 경&#10;1 1 -1 우가 있었음. 이게 제일 문제여서 0이 남아있어야된다고 조건을 고쳤음.&#10;1 -1 -1">
-      <created>1663894623904</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1663894623904</updated>
     </task>
     <task id="LOCAL-00130" summary="백준 7576 토마토 bfs문제&#10;&#10;다른 토마토 문제에서 높이(층 쌓기)를 뺀 버전임. 좀 더 쉽고 코드 약간 최적화했음. 날먹">
       <created>1663899628958</created>
@@ -487,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668586799420</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="백준 2263번 트리의 순회 트리 문제&#10;&#10;in, postorder로 주어진 순회로 pre오더를 찾는것. 기본 알고리즘은 다음과 같다.&#10;&#10;post의 마지막 요소 값이 root가 된다.&#10;in에서 root의 위치를 찾으면, root보다 낮은 인덱스는 left subtree이고, 높은 인덱스는 right subtree이다.&#10;&#10;를 재귀적으로 반복하면 pre오더로 순회값을 구할 수 있다. 처음에는 실제 트리를 만들었는데, 굳이 그럴 필요는 없으므로 출력만 해주는걸로 바꿨다. 재귀도 많이 고쳤다. 함수 내에서 왼, 오 루트를 골라줬는데 그러지 않게 바꿨다. 그 다음 &#10;알고리즘의 두 번째 단계인 inorder에서 root의 위치 찾기에서 반복문이 너무 많이 돈다. 최악의 경우 n이 n번 돌기때문에 시간초과를 뿜어낸다. 요소의 중복이 없고, 원래 있는 index값이 변화하지도 않기때문에 hashmap으로 string을 넣어 원래 index를 반환하게 만들었다.">
+      <created>1668754234904</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1668754234904</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -525,7 +524,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="백준 1167번 트리의 지름 dfs 문제&#10;&#10;어느 정점을 정해놓는다. 그 정점에서 제일 먼 정점을 구한다. 구한 정점에서 제일 먼 정점을 구한다 == 트리의 지름을 구했다. dfs 두 번으로 해결할 수 있는 문제다.&#10;문제는 dfs 함수 안에 visited = false를 쳐넣어놓는 실수를 해서 시간초과가 계속 떴다. 그래서 그냥 통째로 false로 바꿔줬더니 통과가 됐다." />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="백준 1967번 트리의 지름 dfs 문제&#10;&#10;어느 정점을 정해놓는다. 그 정점에서 제일 먼 정점을 구한다. 구한 정점에서 제일 먼 정점을 구한다 == 트리의 지름을 구했다. dfs 두 번으로 해결할 수 있는 문제다.&#10;&#10;다른 트리 지름 문제 코드를 약간 바꿨음 == 날먹" />
     <MESSAGE value="백준 1753번 최단거리 다익스트라 문제&#10;&#10;가장 단순한 다익스트라로 최단거리 구하기. 방향그래프인거 조심" />
     <MESSAGE value="하는 중" />
@@ -550,7 +549,8 @@
     <MESSAGE value="백준 1991번 트리 순회 그래프 문제&#10;&#10;전위(preorder)  = 루트 - 왼 - 오&#10;중위(inorder) = 왼 - 루트 - 오&#10;후위(postorder) = 왼 - 오 - 루트&#10;&#10;재귀함수 3개 만듦" />
     <MESSAGE value="하는중" />
     <MESSAGE value="조금만 더 하면 될거같다." />
-    <option name="LAST_COMMIT_MESSAGE" value="조금만 더 하면 될거같다." />
+    <MESSAGE value="백준 2263번 트리의 순회 트리 문제&#10;&#10;in, postorder로 주어진 순회로 pre오더를 찾는것. 기본 알고리즘은 다음과 같다.&#10;&#10;post의 마지막 요소 값이 root가 된다.&#10;in에서 root의 위치를 찾으면, root보다 낮은 인덱스는 left subtree이고, 높은 인덱스는 right subtree이다.&#10;&#10;를 재귀적으로 반복하면 pre오더로 순회값을 구할 수 있다. 처음에는 실제 트리를 만들었는데, 굳이 그럴 필요는 없으므로 출력만 해주는걸로 바꿨다. 재귀도 많이 고쳤다. 함수 내에서 왼, 오 루트를 골라줬는데 그러지 않게 바꿨다. 그 다음 &#10;알고리즘의 두 번째 단계인 inorder에서 root의 위치 찾기에서 반복문이 너무 많이 돈다. 최악의 경우 n이 n번 돌기때문에 시간초과를 뿜어낸다. 요소의 중복이 없고, 원래 있는 index값이 변화하지도 않기때문에 hashmap으로 string을 넣어 원래 index를 반환하게 만들었다." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 2263번 트리의 순회 트리 문제&#10;&#10;in, postorder로 주어진 순회로 pre오더를 찾는것. 기본 알고리즘은 다음과 같다.&#10;&#10;post의 마지막 요소 값이 root가 된다.&#10;in에서 root의 위치를 찾으면, root보다 낮은 인덱스는 left subtree이고, 높은 인덱스는 right subtree이다.&#10;&#10;를 재귀적으로 반복하면 pre오더로 순회값을 구할 수 있다. 처음에는 실제 트리를 만들었는데, 굳이 그럴 필요는 없으므로 출력만 해주는걸로 바꿨다. 재귀도 많이 고쳤다. 함수 내에서 왼, 오 루트를 골라줬는데 그러지 않게 바꿨다. 그 다음 &#10;알고리즘의 두 번째 단계인 inorder에서 root의 위치 찾기에서 반복문이 너무 많이 돈다. 최악의 경우 n이 n번 돌기때문에 시간초과를 뿜어낸다. 요소의 중복이 없고, 원래 있는 index값이 변화하지도 않기때문에 hashmap으로 string을 넣어 원래 index를 반환하게 만들었다." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
