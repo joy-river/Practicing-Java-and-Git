@@ -4,8 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="조금만 더 하면 될거같다.">
-      <change beforePath="$PROJECT_DIR$/src/GraphTheory/TreeTraversalReverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphTheory/TreeTraversalReverse.java" afterDir="false" />
+    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,13 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00130" summary="백준 7576 토마토 bfs문제&#10;&#10;다른 토마토 문제에서 높이(층 쌓기)를 뺀 버전임. 좀 더 쉽고 코드 약간 최적화했음. 날먹">
-      <created>1663899628958</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1663899628958</updated>
     </task>
     <task id="LOCAL-00131" summary="백준 9095번 1,2,3 더하기 dp문제&#10;&#10;쉽다. dp[n] = dp[n-3] + dp[n-2] + dp[n-1];&#10;&#10;간단한 재귀식으로 마무리 가능">
       <created>1663916184817</created>
@@ -486,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668754234904</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="하는중">
+      <created>1668759162352</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1668759162352</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -547,10 +548,10 @@
     <MESSAGE value="백준 17626번 FourSquare dp문제&#10;&#10;라그랑주의 네 제곱수 정리임. 일단 제곱수들은 전부 1이고, 제곱수가 아닌 친구들은 어떻게 구하느냐. 특정 수의 두배인 친구는 두배. 특정 수에 제곱수를 더한 값 이렇게 해서 구했는데 어찌저찌 통과는 됐음." />
     <MESSAGE value="백준 1918번 후위표기식 스택 문제&#10;&#10;들어오는 연산자들을 우선순위를 매긴다. */ 는 +-보다 우선순위가 높고, 괄호는 최우선이므로 최대 연산길이 100을 우선순위에 더해준다. 만약 다음 연산자가 현재 연산자 스택의 맨 위 보다 우선순위가 낮다면, 그 우선순위까지의 연산을 모두 실행한다(pop해준다). 피연산자들은 그냥 바로 result스택에 넣어도 된다." />
     <MESSAGE value="백준 1991번 트리 순회 그래프 문제&#10;&#10;전위(preorder)  = 루트 - 왼 - 오&#10;중위(inorder) = 왼 - 루트 - 오&#10;후위(postorder) = 왼 - 오 - 루트&#10;&#10;재귀함수 3개 만듦" />
-    <MESSAGE value="하는중" />
     <MESSAGE value="조금만 더 하면 될거같다." />
     <MESSAGE value="백준 2263번 트리의 순회 트리 문제&#10;&#10;in, postorder로 주어진 순회로 pre오더를 찾는것. 기본 알고리즘은 다음과 같다.&#10;&#10;post의 마지막 요소 값이 root가 된다.&#10;in에서 root의 위치를 찾으면, root보다 낮은 인덱스는 left subtree이고, 높은 인덱스는 right subtree이다.&#10;&#10;를 재귀적으로 반복하면 pre오더로 순회값을 구할 수 있다. 처음에는 실제 트리를 만들었는데, 굳이 그럴 필요는 없으므로 출력만 해주는걸로 바꿨다. 재귀도 많이 고쳤다. 함수 내에서 왼, 오 루트를 골라줬는데 그러지 않게 바꿨다. 그 다음 &#10;알고리즘의 두 번째 단계인 inorder에서 root의 위치 찾기에서 반복문이 너무 많이 돈다. 최악의 경우 n이 n번 돌기때문에 시간초과를 뿜어낸다. 요소의 중복이 없고, 원래 있는 index값이 변화하지도 않기때문에 hashmap으로 string을 넣어 원래 index를 반환하게 만들었다." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 2263번 트리의 순회 트리 문제&#10;&#10;in, postorder로 주어진 순회로 pre오더를 찾는것. 기본 알고리즘은 다음과 같다.&#10;&#10;post의 마지막 요소 값이 root가 된다.&#10;in에서 root의 위치를 찾으면, root보다 낮은 인덱스는 left subtree이고, 높은 인덱스는 right subtree이다.&#10;&#10;를 재귀적으로 반복하면 pre오더로 순회값을 구할 수 있다. 처음에는 실제 트리를 만들었는데, 굳이 그럴 필요는 없으므로 출력만 해주는걸로 바꿨다. 재귀도 많이 고쳤다. 함수 내에서 왼, 오 루트를 골라줬는데 그러지 않게 바꿨다. 그 다음 &#10;알고리즘의 두 번째 단계인 inorder에서 root의 위치 찾기에서 반복문이 너무 많이 돈다. 최악의 경우 n이 n번 돌기때문에 시간초과를 뿜어낸다. 요소의 중복이 없고, 원래 있는 index값이 변화하지도 않기때문에 hashmap으로 string을 넣어 원래 index를 반환하게 만들었다." />
+    <MESSAGE value="하는중" />
+    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -590,15 +591,6 @@
           <url>file://$PROJECT_DIR$/src/DP/Tileing2.java</url>
           <line>13</line>
           <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>26</line>
-          <properties class="Main" method="MakeTree">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="149" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
