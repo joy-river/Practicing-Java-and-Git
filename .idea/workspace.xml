@@ -144,13 +144,6 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00131" summary="백준 9095번 1,2,3 더하기 dp문제&#10;&#10;쉽다. dp[n] = dp[n-3] + dp[n-2] + dp[n-1];&#10;&#10;간단한 재귀식으로 마무리 가능">
-      <created>1663916184817</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1663916184817</updated>
-    </task>
     <task id="LOCAL-00132" summary="백준 7662번 이중 우선순위 큐 큐 문제&#10;&#10;우선순위가 가장 높은것과 낮은것을 삭제하여야 함. 문제는 단순하게 우선순위 큐 두개 만들어서 돌리면 시간초과가 낭낭하게 나므로, 실제로 힙을 두 개 구현하는 방법(안해봄 수구), 링크드리스트로 하는거 그리고 완전 균형 이진 탐색 트리를 쓰는 방법이 있겠음. 자바는 트리셋이 균형 트리이므로 트리셋을 그대로 쓰기는 했는데 set특성상 중복을 안받아서 중복을 없애려고 노드로 만들었음. 차피 기본 정렬이 입력값 정렬이고 하나 지우면 다시 정렬되니까 코드 문제 없이 작동함.">
       <created>1665470918104</created>
       <option name="number" value="00132" />
@@ -487,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668759162352</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="하는중">
+      <created>1669018196950</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1669018196951</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -591,6 +591,15 @@
           <url>file://$PROJECT_DIR$/src/DP/Tileing2.java</url>
           <line>13</line>
           <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>29</line>
+          <properties class="Main" method="bfs">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="163" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
