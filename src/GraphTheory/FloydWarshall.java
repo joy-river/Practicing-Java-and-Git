@@ -1,7 +1,9 @@
+package GraphTheory;
+
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class FloydWarshall {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -24,7 +26,7 @@ public class Main {
         for (int i = 1; i <= n; i ++)
             for (int j = 1; j <= n; j++)
                 for(int s = 1; s <= n; s++) {
-                   if(link[j][i] != 0 && link[i][s] != 0)
+                    if(link[j][i] != 0 && link[i][s] != 0)
                         link[j][s] = link[j][s] != 0 ? Math.min(link[j][s],link[j][i] + link[i][s]) : link[j][i] + link[i][s];
                 }
 
@@ -40,6 +42,7 @@ public class Main {
     }
 
 }
+
 
 
 
