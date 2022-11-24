@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
+    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="백준 11404번 플로이드 플로이드 워셜 문제&#10;&#10;플로이드 워셜 연습용 문제임. 그런데 약간 비틀어서 추정 예상되는 가장 큰 비용값으로 경로 배열을 초기화하지 않고 0으로 초기화 해놓고 플로이드 워셜을 썼음. 이것도 가능은 하네 ㅇㅅㅇ;;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -143,13 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00137" summary="반복 한번으론 부족한걸지도..????&#10;&#10;10 10 &#10;1 1 &#10;2 10 1&#10;2 9 2&#10;2 8  3&#10;2 7  4&#10;2 6  5&#10;2 5  7 &#10;2 4  8&#10;2 3 9 &#10;2 2 10 &#10;1 1">
-      <created>1665648641731</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1665648641732</updated>
     </task>
     <task id="LOCAL-00138" summary="백준 1043번 거짓말 그래프이론&#10;&#10;어떤 친구가 어떤 친구와 같은 집합에 속하는지 찾아내는 문제. 진실을 아는 친구들과 모르는 친구들을 구분해서 찾아내는게 기본이 되겠음.">
       <created>1665713469951</created>
@@ -487,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669255232406</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="백준 11404번 플로이드 플로이드 워셜 문제&#10;&#10;플로이드 워셜 연습용 문제임. 그런데 약간 비틀어서 추정 예상되는 가장 큰 비용값으로 경로 배열을 초기화하지 않고 0으로 초기화 해놓고 플로이드 워셜을 썼음. 이것도 가능은 하네 ㅇㅅㅇ;;">
+      <created>1669264742735</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1669264742735</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -526,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 1504번 특정한 최단 거리 그래프 문제&#10;&#10;일단 왔던 간선을 똑같이 또 갈 수 있다는 걸 이용해서 그냥 플로이드 워셜 알고리즘을 썼음. 쓰고나서 1 부터 n 까지의 경로를 a 와 b 를 들러가게끔 분할함.&#10;1 2 2 3 3 N&#10;1 2 2 3 2 N&#10;1 2 2 3 1 N&#10;&#10;1 3 3 2 1 N&#10;1 3 3 2 3 N&#10;1 3 3 2 2 N&#10;&#10;&#10;1 2 1 3 1 N &#10;1 2 1 3 3 N&#10;1 2 1 3 2 N&#10;&#10;2 = a, 3 = b 인 식임. 여기서 a 와 b 가 1과 n일 가능성도 있으므로 같은 정점으로 가는 (=움직이지 않는) 간선 길이는 0으로 만들어줘야함. 또 특정 정점을 방문하고 나서 그 정점에서 출발하는게 아니라면 돌아오는 간선 길이도 당연히 합산해야함." />
     <MESSAGE value="백준 1238번 파티 그래프 문제&#10;&#10;플로이드 워셜로 풀었음. 최소 x까지 길 + x에서 다시 원래 자리로 돌아오는 길의 합이 최대인 것을 구하면 됨. 코드가 간단한 대신 약간 느릴 수 있음&#10;&#10;다익스트라를 n번(각 정점마다 ) 쓰는것도 방법이겠음. &#10;&#10;좋은 의견 =&gt; 가상의 점(0,0을 쓰면 될듯)이 다른 모든 정점에 대해 가중치가 0인 간선을 가지고있다고 한다면 가상의 점에 대해 다익스트라를 사용할 경우 모든 정점에 대해 다익스트라를 하는거나 마찬가지가 될 수 있겠음. 따라서 총합 두번의 다익스트라로 문제를 풀 수는 있다고 함." />
     <MESSAGE value="벨만 포드로 들어가보자" />
     <MESSAGE value="시간 초과 3연타 뭐냐고~~~~~" />
@@ -551,7 +550,8 @@
     <MESSAGE value="백준 2407번 조합 정수론&#10;&#10;100c50이 너무 크긴 함. 문자열으로 계산하면 됨. 개같이 빅---인트" />
     <MESSAGE value="하는중" />
     <MESSAGE value="백준 9465번 스티커 dp문제&#10;&#10;스티커를 뽑을 때, j - 1위치에서 사선에 위치한 j 스티커를 뽑을 수도있고,&#10;&#10;j -2 위치에서 어느 위치든 j 스티커를 뽑을 수 있다(위 아래 둘 다 선택 가능)&#10;&#10;따라서 dp[i][j] = max(dp[i - 1][j-1] , dp[i - 1][j - 2], dp[i][j - 2] + sticker[i][j]점화식이 나오게된다." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 9465번 스티커 dp문제&#10;&#10;스티커를 뽑을 때, j - 1위치에서 사선에 위치한 j 스티커를 뽑을 수도있고,&#10;&#10;j -2 위치에서 어느 위치든 j 스티커를 뽑을 수 있다(위 아래 둘 다 선택 가능)&#10;&#10;따라서 dp[i][j] = max(dp[i - 1][j-1] , dp[i - 1][j - 2], dp[i][j - 2] + sticker[i][j]점화식이 나오게된다." />
+    <MESSAGE value="백준 11404번 플로이드 플로이드 워셜 문제&#10;&#10;플로이드 워셜 연습용 문제임. 그런데 약간 비틀어서 추정 예상되는 가장 큰 비용값으로 경로 배열을 초기화하지 않고 0으로 초기화 해놓고 플로이드 워셜을 썼음. 이것도 가능은 하네 ㅇㅅㅇ;;" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 11404번 플로이드 플로이드 워셜 문제&#10;&#10;플로이드 워셜 연습용 문제임. 그런데 약간 비틀어서 추정 예상되는 가장 큰 비용값으로 경로 배열을 초기화하지 않고 0으로 초기화 해놓고 플로이드 워셜을 썼음. 이것도 가능은 하네 ㅇㅅㅇ;;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -594,7 +594,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>23</line>
+          <line>20</line>
           <option name="timeStamp" value="167" />
         </line-breakpoint>
       </breakpoints>

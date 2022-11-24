@@ -8,37 +8,33 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         int n = Integer.parseInt(br.readLine());
-        int m = Integer.parseInt(br.readLine());
         StringTokenizer st;
-        int a, b, c;
-        int [][] link = new int[n + 1][n + 1];
+        int a, b;
+        PriorityQueue<FindRoot> nodes = new PriorityQueue<>(Comparator.comparingInt(o -> o.num));
 
-        for (int i = 0; i < m ; i++) {
+        for (int i = 1 ; i < n ;i ++){
             st = new StringTokenizer(br.readLine());
             a = Integer.parseInt(st.nextToken());
             b = Integer.parseInt(st.nextToken());
-            c = Integer.parseInt(st.nextToken());
-            link[a][b] = link[a][b] != 0 ? Math.min(link[a][b], c) : c;
+            nodes.add(new FindRoot(b, a));
         }
 
-        for (int i = 1; i <= n; i ++)
-            for (int j = 1; j <= n; j++)
-                for(int s = 1; s <= n; s++) {
-                   if(link[j][i] != 0 && link[i][s] != 0)
-                        link[j][s] = link[j][s] != 0 ? Math.min(link[j][s],link[j][i] + link[i][s]) : link[j][i] + link[i][s];
-                }
-
-        for (int i = 1; i <=n; i++) {
-            for (int j = 1 ; j <= n; j++)
-                bw.write((i == j ? "0" : link[i][j]) + " ");
-            bw.newLine();
+        while(!nodes.isEmpty()){
+            bw.write(nodes.poll().parent + "\n");
         }
-
-
         bw.flush();
         bw.close();
     }
 
+}
+class FindRoot{
+    public FindRoot(int num, int parent) {
+        this.num = num;
+        this.parent = parent;
+    }
+
+    int num;
+    int link;
 }
 
 
