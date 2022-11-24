@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
+      <change afterPath="$PROJECT_DIR$/src/DP/Sticker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -143,13 +144,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00135" summary="하는 중">
-      <created>1665562585889</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1665562585889</updated>
     </task>
     <task id="LOCAL-00136" summary="백준 11726번 2*n 타일링 dp문제&#10;&#10;맨 끝 타일을 보자. 맨 끝에 올 수 있는 경우의 수는 ㅣ하나 거나 = 이다. 이떄 ㅣ이 오면 맨 끝 한 줄을 떼낸 f(n-1)의 경우의 수와 같고, =이 오면 맨 끝 두 줄이 날아간 f(n-2)의 경우의 수와 같으므로 이 문제는 사실상 피보나치 수열이다.">
       <created>1665635841165</created>
@@ -487,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669176689499</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="하는중">
+      <created>1669190881998</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1669190881998</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -548,10 +549,10 @@
     <MESSAGE value="백준 1991번 트리 순회 그래프 문제&#10;&#10;전위(preorder)  = 루트 - 왼 - 오&#10;중위(inorder) = 왼 - 루트 - 오&#10;후위(postorder) = 왼 - 오 - 루트&#10;&#10;재귀함수 3개 만듦" />
     <MESSAGE value="조금만 더 하면 될거같다." />
     <MESSAGE value="백준 2263번 트리의 순회 트리 문제&#10;&#10;in, postorder로 주어진 순회로 pre오더를 찾는것. 기본 알고리즘은 다음과 같다.&#10;&#10;post의 마지막 요소 값이 root가 된다.&#10;in에서 root의 위치를 찾으면, root보다 낮은 인덱스는 left subtree이고, 높은 인덱스는 right subtree이다.&#10;&#10;를 재귀적으로 반복하면 pre오더로 순회값을 구할 수 있다. 처음에는 실제 트리를 만들었는데, 굳이 그럴 필요는 없으므로 출력만 해주는걸로 바꿨다. 재귀도 많이 고쳤다. 함수 내에서 왼, 오 루트를 골라줬는데 그러지 않게 바꿨다. 그 다음 &#10;알고리즘의 두 번째 단계인 inorder에서 root의 위치 찾기에서 반복문이 너무 많이 돈다. 최악의 경우 n이 n번 돌기때문에 시간초과를 뿜어낸다. 요소의 중복이 없고, 원래 있는 index값이 변화하지도 않기때문에 hashmap으로 string을 넣어 원래 index를 반환하게 만들었다." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 2206번 벽 부수고 이동하기 bfs문제&#10;&#10;처음에는 단순한 bfs로 했는데 실패. 문제가 벽을 뚫을 수 있으면 다 뚫어봐야됨. 그래서 뭔 생각을 했냐면 for문 돌려서 벽이 나올때마다 벽에서 bfs를 돌리자 =&gt;개같이 실패. 그 다음은 스타트 지점에서 bfs를 돌리면서 가다가, 벽이 나오면 벽에서 bfs를 해서 목적지에 도달할 수 있는지 재귀로 판단하자 -&gt; 개같이 시간초과. 생각만 한거는 방문을 벽을 뚫음 = 1, 안뚫음 = 0 으로 해서 bfs가 두개 돌아가게 만들자고 생각했는데 방법을 고민하다가 너무 복잡한거 같아서 포기함. &#10;결론적으로 마지막이 정답. 그런데 구현방법을 새로운 클래스를 정의한다든지가 아니라, 삼차원 배열을 써서 z값을 벽을 부쉈나 안부쉈나로 판단했음. 간단히 해결됨." />
     <MESSAGE value="백준 2407번 조합 정수론&#10;&#10;100c50이 너무 크긴 함. 문자열으로 계산하면 됨. 개같이 빅---인트" />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 2407번 조합 정수론&#10;&#10;100c50이 너무 크긴 함. 문자열으로 계산하면 됨. 개같이 빅---인트" />
+    <MESSAGE value="하는중" />
+    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -594,8 +595,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>27</line>
+          <line>41</line>
           <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="166" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
