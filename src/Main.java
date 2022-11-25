@@ -1,4 +1,5 @@
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main {
@@ -7,34 +8,26 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        int n = Integer.parseInt(br.readLine());
-        StringTokenizer st;
-        int a, b;
-        PriorityQueue<FindRoot> nodes = new PriorityQueue<>(Comparator.comparingInt(o -> o.num));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+        int k = Integer.parseInt(st.nextToken());
+        boolean [] visited = new boolean[200001];
 
-        for (int i = 1 ; i < n ;i ++){
-            st = new StringTokenizer(br.readLine());
-            a = Integer.parseInt(st.nextToken());
-            b = Integer.parseInt(st.nextToken());
-            nodes.add(new FindRoot(b, a));
-        }
 
-        while(!nodes.isEmpty()){
-            bw.write(nodes.poll().parent + "\n");
-        }
         bw.flush();
         bw.close();
     }
 
 }
-class FindRoot{
-    public FindRoot(int num, int parent) {
-        this.num = num;
-        this.parent = parent;
+class Pos{
+    int Pos;
+
+    public Pos(int pos, int time) {
+        Pos = pos;
+        this.time = time;
     }
 
-    int num;
-    int link;
+    int time;
 }
 
 
