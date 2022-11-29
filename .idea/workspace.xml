@@ -54,12 +54,12 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/Queue/Card2.java" />
   </component>
   <component name="RunManager" selected="애플리케이션.Main">
-    <configuration name="FourSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP.FourSquare" />
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DFSandBFS.Dijkstra" />
       <module name="Practicing-Java-and-Git" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DP.*" />
+          <option name="PATTERN" value="DFSandBFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,9 +67,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LIS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP.LIS" />
-      <module name="untitled" />
+    <configuration name="FourSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP.FourSquare" />
+      <module name="Practicing-Java-and-Git" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="DP.*" />
@@ -117,18 +117,18 @@
     </configuration>
     <list>
       <item itemvalue="애플리케이션.Main" />
-      <item itemvalue="애플리케이션.LIS" />
       <item itemvalue="애플리케이션.TreeDiameter" />
       <item itemvalue="애플리케이션.FourSquare" />
       <item itemvalue="애플리케이션.TreeTraversal" />
+      <item itemvalue="애플리케이션.Dijkstra" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.Dijkstra" />
         <item itemvalue="애플리케이션.TreeTraversal" />
         <item itemvalue="애플리케이션.FourSquare" />
         <item itemvalue="애플리케이션.TreeDiameter" />
-        <item itemvalue="애플리케이션.LIS" />
       </list>
     </recent_temporary>
   </component>
@@ -143,20 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00143" summary="백준 1967번 트리의 지름 dfs 문제&#10;&#10;어느 정점을 정해놓는다. 그 정점에서 제일 먼 정점을 구한다. 구한 정점에서 제일 먼 정점을 구한다 == 트리의 지름을 구했다. dfs 두 번으로 해결할 수 있는 문제다.&#10;&#10;다른 트리 지름 문제 코드를 약간 바꿨음 == 날먹">
-      <created>1666069112016</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1666069112017</updated>
-    </task>
-    <task id="LOCAL-00144" summary="하는 중">
-      <created>1666081092226</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1666081092226</updated>
     </task>
     <task id="LOCAL-00145" summary="백준 1753번 최단거리 다익스트라 문제&#10;&#10;가장 단순한 다익스트라로 최단거리 구하기. 방향그래프인거 조심">
       <created>1666238683700</created>
@@ -487,7 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669613672937</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="하는중">
+      <created>1669623315936</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1669623315936</updated>
+    </task>
+    <task id="LOCAL-00193" summary="백준 1916번 최소비용구하기 다익스트라 문제&#10;&#10;작성자님께서 ﻿﻿﻿﻿33,34번 줄에서 저장된 값이 0일 경우 입력 받은 수를 그대로 넣어주는 방식으로 코드를 짜셨는데, 이 문제에서는 버스의 비용이 0인 경우가 존재합니다. 따라서 배열에 값이 들어온 적이 없는것인지, 혹은 배열에 값이 들어왔는데 0인지를 판단할 수 없습니다. 여기서 문제가 발생한 것 같습니다.&#10;예를 들자면&#10;&#10;1 4 3&#10;&#10;1 4 0&#10;&#10;1 4 1&#10;&#10;같은 입력이 들어올 경우 원래라면 최소 비용인 0이 배열에 저장되어야하지만, 현재 코드 상으로 0이 저장된 이후에 배열에 바로 다음 값인 1이 저장되게 되므로 최소 비용을 저장하지 못합니다. 이 부분을 고치신다면 통과할 수 있으실것 같습니다.&#10;단순한 다익스트라였는데 비용을 입력받을 때 삐꾸나서 틀림.">
+      <created>1669706466168</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1669706466168</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -526,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 1865번 웜홀 벨만 포드 알고리즘&#10;&#10;자. 이 문제 야발이 하고싶은 말은 실제로 원래 자리로 돌아오고, 그게 시간이 얼마나 줄어드는지가 궁금한 것이냐? 절대 아니다. 즉 실제 값을 구할 수는 있지만, 구할 필요가 없고, 구할 경우 시간초과가 나게끔 되어있다. 그럼 문제가 물어보는 것이 뭐냐면 그래프 전체에 음의 사이클이 있냐 없냐이다. 사이클을 통해서 감소된 시간으로 원래 자리로 돌아올 수 있느냐를 묻고 싶은것. 즉 우리가 할것은 전체 그래프에 음의 사이클이 있냐 없냐만 찾아내면 된다.&#10;&#10;그러므로 bell(=dist)거리 배열을 전부 0으로 해놓고 벨만 포드를 돌렸을때. 음의 사이클이 있는지를 바로 찾을 수 있으므로 문제를 풀 수 있다. 만약 실제 거리를 묻는다면 각 정점에 대해 벨만 포드를 돌려야된다." />
     <MESSAGE value="난 쓰레기야 이따위 코드로는 안돼" />
     <MESSAGE value="백준 1107번 리모컨 브루트 포스&#10;&#10;이렇게 쉬운걸 이 지랄을 해서 풀었다니 믿기지가 않는다. 좀 더 쉽게 풀려다가 한참 돌아갔었음. 지금 알고리즘은 가고싶은 채널에서 + - next해가면서 그 값이 valid 한 값인지 검사하는 거임. 모든 자리 수가 다 입력가능한지 판단하는 간단한 알고리즘이지만 시간은 꽤 오래 걸릴것.. 좀 더 쉽게 할 방법이 없을까 해서 작을때 클때  구분해서 접근하는 방식으로 했었는데 결국 실패." />
     <MESSAGE value="메모리 초과 오지게 뜸." />
@@ -548,10 +547,11 @@
     <MESSAGE value="백준 9465번 스티커 dp문제&#10;&#10;스티커를 뽑을 때, j - 1위치에서 사선에 위치한 j 스티커를 뽑을 수도있고,&#10;&#10;j -2 위치에서 어느 위치든 j 스티커를 뽑을 수 있다(위 아래 둘 다 선택 가능)&#10;&#10;따라서 dp[i][j] = max(dp[i - 1][j-1] , dp[i - 1][j - 2], dp[i][j - 2] + sticker[i][j]점화식이 나오게된다." />
     <MESSAGE value="백준 11404번 플로이드 플로이드 워셜 문제&#10;&#10;플로이드 워셜 연습용 문제임. 그런데 약간 비틀어서 추정 예상되는 가장 큰 비용값으로 경로 배열을 초기화하지 않고 0으로 초기화 해놓고 플로이드 워셜을 썼음. 이것도 가능은 하네 ㅇㅅㅇ;;" />
     <MESSAGE value="백준 11725번 트리의 부모 찾기 트리 문제&#10;&#10;해시로 할까 생각하다가 그냥 관둠. 스탠다드한 bfs로 풀었음." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 13549번 숨바꼭질 3 bfs문제&#10;&#10;단순한 bfs로 풀 수 있는데 우선순위 큐를 잘 쓸것. 일단 시간 순으로 나열하되, 같은 시간일 경우 위치의 크기 순으로 나열이 되어있어야 가장 빠르게 k값에 도달할 수 있다." />
     <MESSAGE value="백준 15654번 n과 m 5 dfs문제&#10;&#10;dfs로 풀면 됨." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 15654번 n과 m 5 dfs문제&#10;&#10;dfs로 풀면 됨." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 1916번 최소비용구하기 다익스트라 문제&#10;&#10;작성자님께서 ﻿﻿﻿﻿33,34번 줄에서 저장된 값이 0일 경우 입력 받은 수를 그대로 넣어주는 방식으로 코드를 짜셨는데, 이 문제에서는 버스의 비용이 0인 경우가 존재합니다. 따라서 배열에 값이 들어온 적이 없는것인지, 혹은 배열에 값이 들어왔는데 0인지를 판단할 수 없습니다. 여기서 문제가 발생한 것 같습니다.&#10;예를 들자면&#10;&#10;1 4 3&#10;&#10;1 4 0&#10;&#10;1 4 1&#10;&#10;같은 입력이 들어올 경우 원래라면 최소 비용인 0이 배열에 저장되어야하지만, 현재 코드 상으로 0이 저장된 이후에 배열에 바로 다음 값인 1이 저장되게 되므로 최소 비용을 저장하지 못합니다. 이 부분을 고치신다면 통과할 수 있으실것 같습니다.&#10;단순한 다익스트라였는데 비용을 입력받을 때 삐꾸나서 틀림." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 1916번 최소비용구하기 다익스트라 문제&#10;&#10;작성자님께서 ﻿﻿﻿﻿33,34번 줄에서 저장된 값이 0일 경우 입력 받은 수를 그대로 넣어주는 방식으로 코드를 짜셨는데, 이 문제에서는 버스의 비용이 0인 경우가 존재합니다. 따라서 배열에 값이 들어온 적이 없는것인지, 혹은 배열에 값이 들어왔는데 0인지를 판단할 수 없습니다. 여기서 문제가 발생한 것 같습니다.&#10;예를 들자면&#10;&#10;1 4 3&#10;&#10;1 4 0&#10;&#10;1 4 1&#10;&#10;같은 입력이 들어올 경우 원래라면 최소 비용인 0이 배열에 저장되어야하지만, 현재 코드 상으로 0이 저장된 이후에 배열에 바로 다음 값인 1이 저장되게 되므로 최소 비용을 저장하지 못합니다. 이 부분을 고치신다면 통과할 수 있으실것 같습니다.&#10;단순한 다익스트라였는데 비용을 입력받을 때 삐꾸나서 틀림." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -591,6 +591,11 @@
           <url>file://$PROJECT_DIR$/src/DP/Tileing2.java</url>
           <line>13</line>
           <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="171" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
