@@ -144,20 +144,6 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00145" summary="백준 1753번 최단거리 다익스트라 문제&#10;&#10;가장 단순한 다익스트라로 최단거리 구하기. 방향그래프인거 조심">
-      <created>1666238683700</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1666238683700</updated>
-    </task>
-    <task id="LOCAL-00146" summary="하는 중">
-      <created>1666253649118</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1666253649118</updated>
-    </task>
     <task id="LOCAL-00147" summary="백준 1504번 특정한 최단 거리 그래프 문제&#10;&#10;일단 왔던 간선을 똑같이 또 갈 수 있다는 걸 이용해서 그냥 플로이드 워셜 알고리즘을 썼음. 쓰고나서 1 부터 n 까지의 경로를 a 와 b 를 들러가게끔 분할함.&#10;1 2 2 3 3 N&#10;1 2 2 3 2 N&#10;1 2 2 3 1 N&#10;&#10;1 3 3 2 1 N&#10;1 3 3 2 3 N&#10;1 3 3 2 2 N&#10;&#10;&#10;1 2 1 3 1 N &#10;1 2 1 3 3 N&#10;1 2 1 3 2 N&#10;&#10;2 = a, 3 = b 인 식임. 여기서 a 와 b 가 1과 n일 가능성도 있으므로 같은 정점으로 가는 (=움직이지 않는) 간선 길이는 0으로 만들어줘야함. 또 특정 정점을 방문하고 나서 그 정점에서 출발하는게 아니라면 돌아오는 간선 길이도 당연히 합산해야함.">
       <created>1666324691722</created>
       <option name="number" value="00147" />
@@ -487,7 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669706466168</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="하는중">
+      <created>1669709897836</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1669709897837</updated>
+    </task>
+    <task id="LOCAL-00195" summary="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함.">
+      <created>1669872580621</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1669872580622</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -526,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="난 쓰레기야 이따위 코드로는 안돼" />
     <MESSAGE value="백준 1107번 리모컨 브루트 포스&#10;&#10;이렇게 쉬운걸 이 지랄을 해서 풀었다니 믿기지가 않는다. 좀 더 쉽게 풀려다가 한참 돌아갔었음. 지금 알고리즘은 가고싶은 채널에서 + - next해가면서 그 값이 valid 한 값인지 검사하는 거임. 모든 자리 수가 다 입력가능한지 판단하는 간단한 알고리즘이지만 시간은 꽤 오래 걸릴것.. 좀 더 쉽게 할 방법이 없을까 해서 작을때 클때  구분해서 접근하는 방식으로 했었는데 결국 실패." />
     <MESSAGE value="메모리 초과 오지게 뜸." />
     <MESSAGE value="백준 9019번 DSLR 그래프 문제&#10;&#10;굉장히 많은 우여곡절을 거친 문제. 일단 먼저 BFS사용을 하는건 맞음. 그런데 인수로 문자열을 넘겨주는게 문제가 됨.  따라서 문자열을 넘겨주지 않고 부모를 쫒아가게끔 만들었음. 다음은 방문 배열임. 이 방문 배열은 문자열이 아니라(문자열은 절대 중복으로 안나옴) 메소드를 거친 결과 숫자가 됨. 왜냐면 이미 거쳐간 수는 다시 DSLR할 필요가 없으므로. 이걸로 메모리 초과는 해결. 문제는 시간초과가 계속 떴음. &#10;거기서 깨달음. L과 R 을 스트링빌더로 만들어서 겁나 시간 낭비가 오졌던 거였음. 그래서 메소드 새로 짜서 통과" />
@@ -549,9 +548,10 @@
     <MESSAGE value="백준 11725번 트리의 부모 찾기 트리 문제&#10;&#10;해시로 할까 생각하다가 그냥 관둠. 스탠다드한 bfs로 풀었음." />
     <MESSAGE value="백준 13549번 숨바꼭질 3 bfs문제&#10;&#10;단순한 bfs로 풀 수 있는데 우선순위 큐를 잘 쓸것. 일단 시간 순으로 나열하되, 같은 시간일 경우 위치의 크기 순으로 나열이 되어있어야 가장 빠르게 k값에 도달할 수 있다." />
     <MESSAGE value="백준 15654번 n과 m 5 dfs문제&#10;&#10;dfs로 풀면 됨." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 1916번 최소비용구하기 다익스트라 문제&#10;&#10;작성자님께서 ﻿﻿﻿﻿33,34번 줄에서 저장된 값이 0일 경우 입력 받은 수를 그대로 넣어주는 방식으로 코드를 짜셨는데, 이 문제에서는 버스의 비용이 0인 경우가 존재합니다. 따라서 배열에 값이 들어온 적이 없는것인지, 혹은 배열에 값이 들어왔는데 0인지를 판단할 수 없습니다. 여기서 문제가 발생한 것 같습니다.&#10;예를 들자면&#10;&#10;1 4 3&#10;&#10;1 4 0&#10;&#10;1 4 1&#10;&#10;같은 입력이 들어올 경우 원래라면 최소 비용인 0이 배열에 저장되어야하지만, 현재 코드 상으로 0이 저장된 이후에 배열에 바로 다음 값인 1이 저장되게 되므로 최소 비용을 저장하지 못합니다. 이 부분을 고치신다면 통과할 수 있으실것 같습니다.&#10;단순한 다익스트라였는데 비용을 입력받을 때 삐꾸나서 틀림." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 1916번 최소비용구하기 다익스트라 문제&#10;&#10;작성자님께서 ﻿﻿﻿﻿33,34번 줄에서 저장된 값이 0일 경우 입력 받은 수를 그대로 넣어주는 방식으로 코드를 짜셨는데, 이 문제에서는 버스의 비용이 0인 경우가 존재합니다. 따라서 배열에 값이 들어온 적이 없는것인지, 혹은 배열에 값이 들어왔는데 0인지를 판단할 수 없습니다. 여기서 문제가 발생한 것 같습니다.&#10;예를 들자면&#10;&#10;1 4 3&#10;&#10;1 4 0&#10;&#10;1 4 1&#10;&#10;같은 입력이 들어올 경우 원래라면 최소 비용인 0이 배열에 저장되어야하지만, 현재 코드 상으로 0이 저장된 이후에 배열에 바로 다음 값인 1이 저장되게 되므로 최소 비용을 저장하지 못합니다. 이 부분을 고치신다면 통과할 수 있으실것 같습니다.&#10;단순한 다익스트라였는데 비용을 입력받을 때 삐꾸나서 틀림." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -591,11 +591,6 @@
           <url>file://$PROJECT_DIR$/src/DP/Tileing2.java</url>
           <line>13</line>
           <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="171" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
