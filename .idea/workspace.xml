@@ -144,20 +144,6 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00147" summary="백준 1504번 특정한 최단 거리 그래프 문제&#10;&#10;일단 왔던 간선을 똑같이 또 갈 수 있다는 걸 이용해서 그냥 플로이드 워셜 알고리즘을 썼음. 쓰고나서 1 부터 n 까지의 경로를 a 와 b 를 들러가게끔 분할함.&#10;1 2 2 3 3 N&#10;1 2 2 3 2 N&#10;1 2 2 3 1 N&#10;&#10;1 3 3 2 1 N&#10;1 3 3 2 3 N&#10;1 3 3 2 2 N&#10;&#10;&#10;1 2 1 3 1 N &#10;1 2 1 3 3 N&#10;1 2 1 3 2 N&#10;&#10;2 = a, 3 = b 인 식임. 여기서 a 와 b 가 1과 n일 가능성도 있으므로 같은 정점으로 가는 (=움직이지 않는) 간선 길이는 0으로 만들어줘야함. 또 특정 정점을 방문하고 나서 그 정점에서 출발하는게 아니라면 돌아오는 간선 길이도 당연히 합산해야함.">
-      <created>1666324691722</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1666324691722</updated>
-    </task>
-    <task id="LOCAL-00148" summary="백준 1238번 파티 그래프 문제&#10;&#10;플로이드 워셜로 풀었음. 최소 x까지 길 + x에서 다시 원래 자리로 돌아오는 길의 합이 최대인 것을 구하면 됨. 코드가 간단한 대신 약간 느릴 수 있음&#10;&#10;다익스트라를 n번(각 정점마다 ) 쓰는것도 방법이겠음. &#10;&#10;좋은 의견 =&gt; 가상의 점(0,0을 쓰면 될듯)이 다른 모든 정점에 대해 가중치가 0인 간선을 가지고있다고 한다면 가상의 점에 대해 다익스트라를 사용할 경우 모든 정점에 대해 다익스트라를 하는거나 마찬가지가 될 수 있겠음. 따라서 총합 두번의 다익스트라로 문제를 풀 수는 있다고 함.">
-      <created>1666331304301</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1666331304301</updated>
-    </task>
     <task id="LOCAL-00149" summary="벨만 포드로 들어가보자">
       <created>1666339784391</created>
       <option name="number" value="00149" />
@@ -487,7 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669872580622</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="하는중">
+      <created>1669882148942</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1669882148942</updated>
+    </task>
+    <task id="LOCAL-00197" summary="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯.">
+      <created>1669950564387</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1669950564387</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -526,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 1107번 리모컨 브루트 포스&#10;&#10;이렇게 쉬운걸 이 지랄을 해서 풀었다니 믿기지가 않는다. 좀 더 쉽게 풀려다가 한참 돌아갔었음. 지금 알고리즘은 가고싶은 채널에서 + - next해가면서 그 값이 valid 한 값인지 검사하는 거임. 모든 자리 수가 다 입력가능한지 판단하는 간단한 알고리즘이지만 시간은 꽤 오래 걸릴것.. 좀 더 쉽게 할 방법이 없을까 해서 작을때 클때  구분해서 접근하는 방식으로 했었는데 결국 실패." />
     <MESSAGE value="메모리 초과 오지게 뜸." />
     <MESSAGE value="백준 9019번 DSLR 그래프 문제&#10;&#10;굉장히 많은 우여곡절을 거친 문제. 일단 먼저 BFS사용을 하는건 맞음. 그런데 인수로 문자열을 넘겨주는게 문제가 됨.  따라서 문자열을 넘겨주지 않고 부모를 쫒아가게끔 만들었음. 다음은 방문 배열임. 이 방문 배열은 문자열이 아니라(문자열은 절대 중복으로 안나옴) 메소드를 거친 결과 숫자가 됨. 왜냐면 이미 거쳐간 수는 다시 DSLR할 필요가 없으므로. 이걸로 메모리 초과는 해결. 문제는 시간초과가 계속 떴음. &#10;거기서 깨달음. L과 R 을 스트링빌더로 만들어서 겁나 시간 낭비가 오졌던 거였음. 그래서 메소드 새로 짜서 통과" />
     <MESSAGE value="백준 10026번 적록색약 그래프 문제&#10;&#10;BFS 두번 돌려도 시간초과 안남! 처음 BFS를 돌리면서 R,G,B 구역이 총 몇개 있는지를 찾아냄. 그러면서 동시에 G를 R로 바꿔줌. 그 다음 BFS를 한번 더 돌리면 (R +G ), B의 구역을 찾아낼 수 있음." />
@@ -549,9 +548,10 @@
     <MESSAGE value="백준 13549번 숨바꼭질 3 bfs문제&#10;&#10;단순한 bfs로 풀 수 있는데 우선순위 큐를 잘 쓸것. 일단 시간 순으로 나열하되, 같은 시간일 경우 위치의 크기 순으로 나열이 되어있어야 가장 빠르게 k값에 도달할 수 있다." />
     <MESSAGE value="백준 15654번 n과 m 5 dfs문제&#10;&#10;dfs로 풀면 됨." />
     <MESSAGE value="백준 1916번 최소비용구하기 다익스트라 문제&#10;&#10;작성자님께서 ﻿﻿﻿﻿33,34번 줄에서 저장된 값이 0일 경우 입력 받은 수를 그대로 넣어주는 방식으로 코드를 짜셨는데, 이 문제에서는 버스의 비용이 0인 경우가 존재합니다. 따라서 배열에 값이 들어온 적이 없는것인지, 혹은 배열에 값이 들어왔는데 0인지를 판단할 수 없습니다. 여기서 문제가 발생한 것 같습니다.&#10;예를 들자면&#10;&#10;1 4 3&#10;&#10;1 4 0&#10;&#10;1 4 1&#10;&#10;같은 입력이 들어올 경우 원래라면 최소 비용인 0이 배열에 저장되어야하지만, 현재 코드 상으로 0이 저장된 이후에 배열에 바로 다음 값인 1이 저장되게 되므로 최소 비용을 저장하지 못합니다. 이 부분을 고치신다면 통과할 수 있으실것 같습니다.&#10;단순한 다익스트라였는데 비용을 입력받을 때 삐꾸나서 틀림." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -608,7 +608,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1669607355365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1669963544423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/untitled$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1653019956093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
