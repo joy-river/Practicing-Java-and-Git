@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
+    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -54,6 +54,19 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/Queue/Card2.java" />
   </component>
   <component name="RunManager" selected="애플리케이션.Main">
+    <configuration name="Cheese" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraphTheory.Cheese" />
+      <module name="Practicing-Java-and-Git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GraphTheory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DFSandBFS.Dijkstra" />
       <module name="Practicing-Java-and-Git" />
@@ -81,23 +94,8 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="13" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Practicing-Java-and-Git" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeDiameter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphTheory.DFSandBFS.TreeDiameter" />
-      <module name="Practicing-Java-and-Git" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GraphTheory.DFSandBFS.Dijkstra" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,19 +114,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="애플리케이션.Main" />
-      <item itemvalue="애플리케이션.TreeDiameter" />
       <item itemvalue="애플리케이션.FourSquare" />
       <item itemvalue="애플리케이션.TreeTraversal" />
       <item itemvalue="애플리케이션.Dijkstra" />
+      <item itemvalue="애플리케이션.Cheese" />
+      <item itemvalue="애플리케이션.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.Cheese" />
+        <item itemvalue="애플리케이션.Main" />
         <item itemvalue="애플리케이션.Dijkstra" />
         <item itemvalue="애플리케이션.TreeTraversal" />
-        <item itemvalue="애플리케이션.FourSquare" />
-        <item itemvalue="애플리케이션.TreeDiameter" />
       </list>
     </recent_temporary>
   </component>
@@ -143,13 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00149" summary="벨만 포드로 들어가보자">
-      <created>1666339784391</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1666339784391</updated>
     </task>
     <task id="LOCAL-00150" summary="시간 초과 3연타 뭐냐고~~~~~">
       <created>1666599313579</created>
@@ -487,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669950564387</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
+      <created>1669969040139</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1669969040139</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -526,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="메모리 초과 오지게 뜸." />
     <MESSAGE value="백준 9019번 DSLR 그래프 문제&#10;&#10;굉장히 많은 우여곡절을 거친 문제. 일단 먼저 BFS사용을 하는건 맞음. 그런데 인수로 문자열을 넘겨주는게 문제가 됨.  따라서 문자열을 넘겨주지 않고 부모를 쫒아가게끔 만들었음. 다음은 방문 배열임. 이 방문 배열은 문자열이 아니라(문자열은 절대 중복으로 안나옴) 메소드를 거친 결과 숫자가 됨. 왜냐면 이미 거쳐간 수는 다시 DSLR할 필요가 없으므로. 이걸로 메모리 초과는 해결. 문제는 시간초과가 계속 떴음. &#10;거기서 깨달음. L과 R 을 스트링빌더로 만들어서 겁나 시간 낭비가 오졌던 거였음. 그래서 메소드 새로 짜서 통과" />
     <MESSAGE value="백준 10026번 적록색약 그래프 문제&#10;&#10;BFS 두번 돌려도 시간초과 안남! 처음 BFS를 돌리면서 R,G,B 구역이 총 몇개 있는지를 찾아냄. 그러면서 동시에 G를 R로 바꿔줌. 그 다음 BFS를 한번 더 돌리면 (R +G ), B의 구역을 찾아낼 수 있음." />
     <MESSAGE value="백준 14500번 테트로미노 브루트포스 문제&#10;&#10;일단 정사각형 4개 붙이는건 19가지 방식이 있다고 함. 일단 dfs를 써서 어떤 한 점을 시작으로 하는 도형들은 싹다 커버 가능. 그 다음은 점 기준 사방면 중에서 3개를 고르는 것 (뻐큐모양) 이렇게로 전부 커버가 가능함. 이걸 모든 점에 대해서 다 돌리면 해결 가능." />
@@ -551,7 +548,8 @@
     <MESSAGE value="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함." />
     <MESSAGE value="하는중" />
     <MESSAGE value="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯." />
+    <MESSAGE value="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -591,6 +589,24 @@
           <url>file://$PROJECT_DIR$/src/DP/Tileing2.java</url>
           <line>13</line>
           <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
+          <line>24</line>
+          <properties class="GraphTheory.Cheese">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>17</line>
+          <properties class="Main" method="Tree">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="179" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
