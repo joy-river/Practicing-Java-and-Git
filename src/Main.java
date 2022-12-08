@@ -6,87 +6,69 @@ public class Main {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     public static void main(String[] args) throws IOException {
-        int n = Integer.parseInt(br.readLine());
-        int m = Integer.parseInt(br.readLine());
-        StringTokenizer st;
-        ArrayList<Integer> result = new ArrayList<>();
-        int a, b, temp;
-        Bus poll;
-        Bus[] list = new Bus[n + 1];
-        int [] dij = new int[n + 1];
-        PriorityQueue<Bus> next = new PriorityQueue<>(Comparator.comparingInt(o -> dij[o.num]));
-        int [][] cost = new int [n + 1][n + 1];
-        Arrays.fill(dij, Integer.MAX_VALUE);
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+        int k = Integer.parseInt(st.nextToken());
+        int pos, time, mintime = Integer.MAX_VALUE, count = 0;
+        boolean [] visited = new boolean[200001];
+        PriorityQueue<Pos> next = new PriorityQueue<>((o1, o2) -> {
+            if(o1.time == o2.time)
+                return Integer.compare(o1.Pos, o2.Pos);
+            else
+                return Integer.compare(o1.time, o2.time);
+        });
 
-        for (int i = 1; i <= n; i++) {
-            list[i] = new Bus(i,0, 0,false);
-            Arrays.fill(cost[i], Integer.MAX_VALUE);
-            cost[i][i] = 0;
-        }
-
-
-        for (int i = 0 ; i < m; i ++){
-            st = new StringTokenizer(br.readLine());
-            a = Integer.parseInt(st.nextToken());
-            b = Integer.parseInt(st.nextToken());
-            temp = Integer.parseInt(st.nextToken());
-            cost[a][b] = Math.min(cost[a][b], temp);
-        }
-
-        st = new StringTokenizer(br.readLine());
-        a = Integer.parseInt(st.nextToken());
-        b = Integer.parseInt(st.nextToken());
-
-        dij[a] = 0;
-        next.add(list[a]);
+        visited[n] = true;
+        next.add(new Pos(n, 1));
 
         while(!next.isEmpty()){
-            poll = next.poll();
-            if(!poll.visited) {
-                poll.visited = true;
-                for (int i = 1; i <= n; i++) {
-                    if(cost[poll.num][i] < Integer.MAX_VALUE && i != poll.num) {
-                        dij[i] = Math.min(dij[i], dij[poll.num] + cost[poll.num][i]);
-                        list[i].count = poll.count + 1;
-                        list[i].parent = poll.num;
-                        next.add(list[i]);
-                    }
-                }
+            pos = next.peek().Pos;
+            time = next.poll().time;
+
+            if(time > mintime){
+                bw.write(mintime +"\n" +count);
+                break;
             }
+            if(pos == k){
+                count++;
+                mintime = time;
+                continue;
+            }
+
+            if(pos < k)
+                if(!visited[pos * 2]){
+                    visited[pos * 2] = true;
+                    next.add(new Pos(pos * 2, time + 1));
+                }
+            if(pos > 0)
+                if(!visited[pos -1]){
+                    visited[pos - 1] = true;
+                    next.add(new Pos(pos - 1, time + 1));
+                }
+            if(pos < 100000)
+                if(!visited[pos + 1]){
+                    visited[pos + 1] = true;
+                    next.add(new Pos(pos + 1, time + 1));
+                }
+
         }
-
-        bw.write(dij[b] +"\n" + (list[b].count + 1) + "\n");
-
-        temp = b;
-        while(temp != a){
-            result.add(temp);
-            temp = list[temp].parent;
-        }
-
-        result.add(a);
-        for (int i = result.size() - 1 ; i >= 0 ; i--)
-            bw.write(result.get(i) + " ");
 
         bw.flush();
         bw.close();
     }
 
 }
-class Bus {
-    int num;
-    int count;
-    int parent;
-    boolean visited;
+class Pos{
+    int Pos;
+    int time;
 
-    public Bus(int num, int count, int parent, boolean visited) {
-        this.num = num;
-        this.count = count;
-        this.parent = parent;
-        this.visited = visited;
+    public Pos(int pos, int time) {
+        this.Pos = pos;
+        this.time = time;
     }
+
+
 }
-
-
 
 
 

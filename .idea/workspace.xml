@@ -4,12 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-05-27__11_24_________Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-05-27__11_24_________Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-05-27__11_37_________Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-05-27__11_37_________Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-05-27__12_15_________Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-05-27__12_15_________Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-05-27__12_21_________Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-05-27__12_21_________Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-07-11__8_57_________Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-07-11__8_57_________Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -47,13 +42,31 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last.edited.regexp" value="[1,3,4,5]" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Queue/Card2.java" />
+    <property name="project.structure.last.edited" value="모듈" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/Queue/Card2.java" />
+  </component>
   <component name="RunManager" selected="애플리케이션.Main">
+    <configuration name="Cheese" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraphTheory.Cheese" />
+      <module name="Practicing-Java-and-Git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GraphTheory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DFSandBFS.Dijkstra" />
       <module name="Practicing-Java-and-Git" />
@@ -67,12 +80,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FourSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP.FourSquare" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Practicing-Java-and-Git" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinimumCost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DFSandBFS.MinimumCost" />
       <module name="Practicing-Java-and-Git" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DP.*" />
+          <option name="PATTERN" value="DFSandBFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphTheory.TreeTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TreeTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GraphTheory.TreeTraversal" />
       <module name="Practicing-Java-and-Git" />
       <extension name="coverage">
@@ -93,42 +113,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="13" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Practicing-Java-and-Git" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeDiameter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphTheory.DFSandBFS.TreeDiameter" />
-      <module name="Practicing-Java-and-Git" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GraphTheory.DFSandBFS.Dijkstra" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="애플리케이션.GraphTheory.TreeTraversal" />
-      <item itemvalue="애플리케이션.Main" />
-      <item itemvalue="애플리케이션.TreeDiameter" />
-      <item itemvalue="애플리케이션.FourSquare" />
+      <item itemvalue="애플리케이션.TreeTraversal" />
       <item itemvalue="애플리케이션.Dijkstra" />
+      <item itemvalue="애플리케이션.Cheese" />
+      <item itemvalue="애플리케이션.Main" />
+      <item itemvalue="애플리케이션.MinimumCost" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.MinimumCost" />
+        <item itemvalue="애플리케이션.Cheese" />
+        <item itemvalue="애플리케이션.Main" />
         <item itemvalue="애플리케이션.Dijkstra" />
-        <item itemvalue="애플리케이션.GraphTheory.TreeTraversal" />
-        <item itemvalue="애플리케이션.FourSquare" />
-        <item itemvalue="애플리케이션.TreeDiameter" />
       </list>
     </recent_temporary>
   </component>
@@ -143,27 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00150" summary="시간 초과 3연타 뭐냐고~~~~~">
-      <created>1666599313579</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1666599313579</updated>
-    </task>
-    <task id="LOCAL-00151" summary="백준 1865번 웜홀 벨만 포드 알고리즘&#10;&#10;자. 이 문제 야발이 하고싶은 말은 실제로 원래 자리로 돌아오고, 그게 시간이 얼마나 줄어드는지가 궁금한 것이냐? 절대 아니다. 즉 실제 값을 구할 수는 있지만, 구할 필요가 없고, 구할 경우 시간초과가 나게끔 되어있다. 그럼 문제가 물어보는 것이 뭐냐면 그래프 전체에 음의 사이클이 있냐 없냐이다. 사이클을 통해서 감소된 시간으로 원래 자리로 돌아올 수 있느냐를 묻고 싶은것. 즉 우리가 할것은 전체 그래프에 음의 사이클이 있냐 없냐만 찾아내면 된다.&#10;&#10;그러므로 bell(=dist)거리 배열을 전부 0으로 해놓고 벨만 포드를 돌렸을때. 음의 사이클이 있는지를 바로 찾을 수 있으므로 문제를 풀 수 있다. 만약 실제 거리를 묻는다면 각 정점에 대해 벨만 포드를 돌려야된다.">
-      <created>1666843184883</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1666843184883</updated>
-    </task>
-    <task id="LOCAL-00152" summary="하는중">
-      <created>1666857979319</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1666857979319</updated>
     </task>
     <task id="LOCAL-00153" summary="난 쓰레기야 이따위 코드로는 안돼">
       <created>1666939368202</created>
@@ -480,14 +457,35 @@
       <option name="project" value="LOCAL" />
       <updated>1669950564387</updated>
     </task>
-    <task id="LOCAL-00198" summary="백준 5639번 이진 검색 트리 그래프 문제&#10;&#10;전위 순회를 후위 순회로 바꿔주는 것.&#10;&#10;기본 알고리즘은 정해놓은 루트를 기준으로 리스트에서 루트 다음 값들을 검색해서&#10;루트보다 큰 수가 나오는 지점까지 == 루트의 왼쪽 서브 루트&#10;루트보다 큰 수 == 루트의 오른쪽 서브 루트의 루트 임. &#10;후위 순회는 왼 - 오 - 루트 순으로 순회하므로, 왼쪽 서브루트의 끝부터 하나씩 출력해서 루트로 돌아오면 됨. &#10;&#10;틀린 이유는 입력에서 입력 종료 지점(EOF)를 탐지못해서 그럼. 키보드로 CTRL + D하면 강제 EOF입력 가능함. equals.(&quot;&quot;)는 못써먹었음. null값 대조할 것.">
-      <created>1670316299042</created>
+    <task id="LOCAL-00198" summary="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
+      <created>1669969040139</created>
       <option name="number" value="00198" />
       <option name="presentableId" value="LOCAL-00198" />
       <option name="project" value="LOCAL" />
-      <updated>1670316299043</updated>
+      <updated>1669969040139</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="백준 9935번 문자열 폭발 스택 문제&#10;&#10;일단 문자열을 죄다 스택에 넣음. 스택 꼭다리가 폭발 문자열의 마지막 글자(패턴의 마지막)일때 폭발하는지 검사함. 스택에서 패턴만큼 비교하면서 뽑음. 이때 뽑은 갯수가 맞으면 통과 -&gt; 삭제, 아니면 통과 x -&gt; 다시 스택에 집어넣음을 반복함. 이러면 폭발 후에 합치는 것도 그렇게 걱정할 필요 없음.">
+      <created>1670390527125</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1670390527125</updated>
+    </task>
+    <task id="LOCAL-00200" summary="하는중">
+      <created>1670400082928</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1670400082928</updated>
+    </task>
+    <task id="LOCAL-00201" summary="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함.">
+      <created>1670471917386</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1670471917386</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -526,8 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 9019번 DSLR 그래프 문제&#10;&#10;굉장히 많은 우여곡절을 거친 문제. 일단 먼저 BFS사용을 하는건 맞음. 그런데 인수로 문자열을 넘겨주는게 문제가 됨.  따라서 문자열을 넘겨주지 않고 부모를 쫒아가게끔 만들었음. 다음은 방문 배열임. 이 방문 배열은 문자열이 아니라(문자열은 절대 중복으로 안나옴) 메소드를 거친 결과 숫자가 됨. 왜냐면 이미 거쳐간 수는 다시 DSLR할 필요가 없으므로. 이걸로 메모리 초과는 해결. 문제는 시간초과가 계속 떴음. &#10;거기서 깨달음. L과 R 을 스트링빌더로 만들어서 겁나 시간 낭비가 오졌던 거였음. 그래서 메소드 새로 짜서 통과" />
-    <MESSAGE value="백준 10026번 적록색약 그래프 문제&#10;&#10;BFS 두번 돌려도 시간초과 안남! 처음 BFS를 돌리면서 R,G,B 구역이 총 몇개 있는지를 찾아냄. 그러면서 동시에 G를 R로 바꿔줌. 그 다음 BFS를 한번 더 돌리면 (R +G ), B의 구역을 찾아낼 수 있음." />
     <MESSAGE value="백준 14500번 테트로미노 브루트포스 문제&#10;&#10;일단 정사각형 4개 붙이는건 19가지 방식이 있다고 함. 일단 dfs를 써서 어떤 한 점을 시작으로 하는 도형들은 싹다 커버 가능. 그 다음은 점 기준 사방면 중에서 3개를 고르는 것 (뻐큐모양) 이렇게로 전부 커버가 가능함. 이걸 모든 점에 대해서 다 돌리면 해결 가능." />
     <MESSAGE value="백준 11403번 경로 찾기 플로이드 워셜 문제&#10;&#10;그냥 플로이드 워셜로 현재 0인 경로에다가 깔쌈하게 적용해주면 됨." />
     <MESSAGE value="백준 11727번 2*n 타일링 2 dp문제&#10;&#10;처음에 l 작대기를 그으면 = dp[n -1];&#10;처음에 = , ㅁ 두개 긋고 = 2 * dp[n -2];&#10;&#10;간단." />
@@ -548,10 +544,12 @@
     <MESSAGE value="백준 15654번 n과 m 5 dfs문제&#10;&#10;dfs로 풀면 됨." />
     <MESSAGE value="백준 1916번 최소비용구하기 다익스트라 문제&#10;&#10;작성자님께서 ﻿﻿﻿﻿33,34번 줄에서 저장된 값이 0일 경우 입력 받은 수를 그대로 넣어주는 방식으로 코드를 짜셨는데, 이 문제에서는 버스의 비용이 0인 경우가 존재합니다. 따라서 배열에 값이 들어온 적이 없는것인지, 혹은 배열에 값이 들어왔는데 0인지를 판단할 수 없습니다. 여기서 문제가 발생한 것 같습니다.&#10;예를 들자면&#10;&#10;1 4 3&#10;&#10;1 4 0&#10;&#10;1 4 1&#10;&#10;같은 입력이 들어올 경우 원래라면 최소 비용인 0이 배열에 저장되어야하지만, 현재 코드 상으로 0이 저장된 이후에 배열에 바로 다음 값인 1이 저장되게 되므로 최소 비용을 저장하지 못합니다. 이 부분을 고치신다면 통과할 수 있으실것 같습니다.&#10;단순한 다익스트라였는데 비용을 입력받을 때 삐꾸나서 틀림." />
     <MESSAGE value="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯." />
-    <MESSAGE value="백준 5639번 이진 검색 트리 그래프 문제&#10;&#10;전위 순회를 후위 순회로 바꿔주는 것.&#10;&#10;기본 알고리즘은 정해놓은 루트를 기준으로 리스트에서 루트 다음 값들을 검색해서&#10;루트보다 큰 수가 나오는 지점까지 == 루트의 왼쪽 서브 루트&#10;루트보다 큰 수 == 루트의 오른쪽 서브 루트의 루트 임. &#10;후위 순회는 왼 - 오 - 루트 순으로 순회하므로, 왼쪽 서브루트의 끝부터 하나씩 출력해서 루트로 돌아오면 됨. &#10;&#10;틀린 이유는 입력에서 입력 종료 지점(EOF)를 탐지못해서 그럼. 키보드로 CTRL + D하면 강제 EOF입력 가능함. equals.(&quot;&quot;)는 못써먹었음. null값 대조할 것." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 5639번 이진 검색 트리 그래프 문제&#10;&#10;전위 순회를 후위 순회로 바꿔주는 것.&#10;&#10;기본 알고리즘은 정해놓은 루트를 기준으로 리스트에서 루트 다음 값들을 검색해서&#10;루트보다 큰 수가 나오는 지점까지 == 루트의 왼쪽 서브 루트&#10;루트보다 큰 수 == 루트의 오른쪽 서브 루트의 루트 임. &#10;후위 순회는 왼 - 오 - 루트 순으로 순회하므로, 왼쪽 서브루트의 끝부터 하나씩 출력해서 루트로 돌아오면 됨. &#10;&#10;틀린 이유는 입력에서 입력 종료 지점(EOF)를 탐지못해서 그럼. 키보드로 CTRL + D하면 강제 EOF입력 가능함. equals.(&quot;&quot;)는 못써먹었음. null값 대조할 것." />
+    <MESSAGE value="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,." />
+    <MESSAGE value="백준 9935번 문자열 폭발 스택 문제&#10;&#10;일단 문자열을 죄다 스택에 넣음. 스택 꼭다리가 폭발 문자열의 마지막 글자(패턴의 마지막)일때 폭발하는지 검사함. 스택에서 패턴만큼 비교하면서 뽑음. 이때 뽑은 갯수가 맞으면 통과 -&gt; 삭제, 아니면 통과 x -&gt; 다시 스택에 집어넣음을 반복함. 이러면 폭발 후에 합치는 것도 그렇게 걱정할 필요 없음." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -592,6 +590,20 @@
           <line>13</line>
           <option name="timeStamp" value="135" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DFSandBFS/MinimumCost.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
+          <line>24</line>
+          <properties class="GraphTheory.Cheese">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -608,7 +620,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1659011936841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1670472243668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/untitled$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1653019956093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
