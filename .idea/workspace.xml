@@ -4,9 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
+    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/index.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/index.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -142,27 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00156" summary="메모리 초과 오지게 뜸.">
-      <created>1667290531015</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1667290531015</updated>
-    </task>
-    <task id="LOCAL-00157" summary="백준 9019번 DSLR 그래프 문제&#10;&#10;굉장히 많은 우여곡절을 거친 문제. 일단 먼저 BFS사용을 하는건 맞음. 그런데 인수로 문자열을 넘겨주는게 문제가 됨.  따라서 문자열을 넘겨주지 않고 부모를 쫒아가게끔 만들었음. 다음은 방문 배열임. 이 방문 배열은 문자열이 아니라(문자열은 절대 중복으로 안나옴) 메소드를 거친 결과 숫자가 됨. 왜냐면 이미 거쳐간 수는 다시 DSLR할 필요가 없으므로. 이걸로 메모리 초과는 해결. 문제는 시간초과가 계속 떴음. &#10;거기서 깨달음. L과 R 을 스트링빌더로 만들어서 겁나 시간 낭비가 오졌던 거였음. 그래서 메소드 새로 짜서 통과">
-      <created>1667359621040</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1667359621041</updated>
-    </task>
-    <task id="LOCAL-00158" summary="백준 10026번 적록색약 그래프 문제&#10;&#10;BFS 두번 돌려도 시간초과 안남! 처음 BFS를 돌리면서 R,G,B 구역이 총 몇개 있는지를 찾아냄. 그러면서 동시에 G를 R로 바꿔줌. 그 다음 BFS를 한번 더 돌리면 (R +G ), B의 구역을 찾아낼 수 있음.">
-      <created>1667371364122</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1667371364122</updated>
     </task>
     <task id="LOCAL-00159" summary="백준 14500번 테트로미노 브루트포스 문제&#10;&#10;일단 정사각형 4개 붙이는건 19가지 방식이 있다고 함. 일단 dfs를 써서 어떤 한 점을 시작으로 하는 도형들은 싹다 커버 가능. 그 다음은 점 기준 사방면 중에서 3개를 고르는 것 (뻐큐모양) 이렇게로 전부 커버가 가능함. 이걸 모든 점에 대해서 다 돌리면 해결 가능.">
       <created>1667457256441</created>
@@ -486,7 +464,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670832907714</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="하는중">
+      <created>1670919358332</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1670919358332</updated>
+    </task>
+    <task id="LOCAL-00206" summary="백준 14052번 연구소 bfs 문제&#10;&#10;브루트포스로 풀면 됨 (시간 초과 안남. bfs만 제대로 짜면). 벽을 세워야하는 장소를 큐로 저장해놓고 큐에서 3개 뽑는 방법을 썼음. 바이러스가 있는 곳은 리스트로 저장되어있으므로 그냥 그대로 bfs 큐에 넣어서 돌리면 됨.">
+      <created>1670997367407</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1670997367407</updated>
+    </task>
+    <task id="LOCAL-00207" summary="백준 13172번 시그마 모듈러 연산 역원 구하기 문제&#10;&#10;모듈러 역원을 구함. 구하는 방법은 확장 유클리드를 재귀를 돌림. 재귀인데 일종의 dp처럼 함수가 호출될때 값이 변경되고, 그 변경 된 값을 그 전 함수에서 바로 이용가능하게끔 atomicLong을 썼음. 왜 틀렸는지는 잘 모르겠음. 아마도 확장 유클리드 함수에서 s가 음수가 됐을 때를 고쳤더니 맞은 것 같음.">
+      <created>1670997528090</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1670997528090</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -525,8 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 11403번 경로 찾기 플로이드 워셜 문제&#10;&#10;그냥 플로이드 워셜로 현재 0인 경로에다가 깔쌈하게 적용해주면 됨." />
-    <MESSAGE value="백준 11727번 2*n 타일링 2 dp문제&#10;&#10;처음에 l 작대기를 그으면 = dp[n -1];&#10;처음에 = , ㅁ 두개 긋고 = 2 * dp[n -2];&#10;&#10;간단." />
     <MESSAGE value="백준 16236번 아기 상어 bfs 문제&#10;&#10;일단 bfs로 가능한 물고기 찾고 먹고 다시 bfs를 계속 반복하는게 알고리즘.&#10;&#10;문제는 상어보다 큰 물고기 통과 못하게하는 코드를 잘 짜야되고,&#10;처음 Findfish를 돌릴때의 이중 for문이 잘 break되는지도 판단해야함.(break하나만 썼다가 틀렸음)" />
     <MESSAGE value="백준 16928번 뱀과 사다리 게임 bfs 문제&#10;&#10;뱀과 사다리는 만약 있다면 무조건 타야됨. 탔을때 방문 체크는 하지 않아야함(더 줄어들 수 있음)(그런데 해도 괜찮을거 같기도 하고). 또 사다리의 목적지가 동일한 곳일 수 있음. -&gt; 그냥 큐가 아니라 우선순위 큐로 목적지에 도달 후에 바로 주사위를 굴릴 수 있게끔 하는게 좋겠음. 아니면 사다리 + 주사위값을 넣든지 해야함." />
     <MESSAGE value="백준 17219번 비밀번호 찾기 해시 문제&#10;&#10;아니 사람이 친절하게 해시 구현을 했으면 넘어가야지 이걸 틀리네 ㅋㅋ;&#10;해시맵으로 날먹함." />
@@ -546,11 +543,13 @@
     <MESSAGE value="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함." />
     <MESSAGE value="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯." />
     <MESSAGE value="백준 9935번 문자열 폭발 스택 문제&#10;&#10;일단 문자열을 죄다 스택에 넣음. 스택 꼭다리가 폭발 문자열의 마지막 글자(패턴의 마지막)일때 폭발하는지 검사함. 스택에서 패턴만큼 비교하면서 뽑음. 이때 뽑은 갯수가 맞으면 통과 -&gt; 삭제, 아니면 통과 x -&gt; 다시 스택에 집어넣음을 반복함. 이러면 폭발 후에 합치는 것도 그렇게 걱정할 필요 없음." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함." />
     <MESSAGE value="백준 12851번 숨바꼭질 2 bfs문제&#10;&#10;숨바꼭질 3 코드에서 시간재는 코드 + 방문 체크를 while문 시작지점에 만들었음.(같은 시간내에 동일한 지점에 오는건 상관 없음, 더 늦게 오면 어차피 최단 거리가 아님)" />
     <MESSAGE value="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 14052번 연구소 bfs 문제&#10;&#10;브루트포스로 풀면 됨 (시간 초과 안남. bfs만 제대로 짜면). 벽을 세워야하는 장소를 큐로 저장해놓고 큐에서 3개 뽑는 방법을 썼음. 바이러스가 있는 곳은 리스트로 저장되어있으므로 그냥 그대로 bfs 큐에 넣어서 돌리면 됨." />
+    <MESSAGE value="백준 13172번 시그마 모듈러 연산 역원 구하기 문제&#10;&#10;모듈러 역원을 구함. 구하는 방법은 확장 유클리드를 재귀를 돌림. 재귀인데 일종의 dp처럼 함수가 호출될때 값이 변경되고, 그 변경 된 값을 그 전 함수에서 바로 이용가능하게끔 atomicLong을 썼음. 왜 틀렸는지는 잘 모르겠음. 아마도 확장 유클리드 함수에서 s가 음수가 됐을 때를 고쳤더니 맞은 것 같음." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 13172번 시그마 모듈러 연산 역원 구하기 문제&#10;&#10;모듈러 역원을 구함. 구하는 방법은 확장 유클리드를 재귀를 돌림. 재귀인데 일종의 dp처럼 함수가 호출될때 값이 변경되고, 그 변경 된 값을 그 전 함수에서 바로 이용가능하게끔 atomicLong을 썼음. 왜 틀렸는지는 잘 모르겠음. 아마도 확장 유클리드 함수에서 s가 음수가 됐을 때를 고쳤더니 맞은 것 같음." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -595,11 +594,6 @@
           <url>file://$PROJECT_DIR$/src/DFSandBFS/MinimumCost.java</url>
           <line>57</line>
           <option name="timeStamp" value="183" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
