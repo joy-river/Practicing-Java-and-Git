@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,13 +140,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00159" summary="백준 14500번 테트로미노 브루트포스 문제&#10;&#10;일단 정사각형 4개 붙이는건 19가지 방식이 있다고 함. 일단 dfs를 써서 어떤 한 점을 시작으로 하는 도형들은 싹다 커버 가능. 그 다음은 점 기준 사방면 중에서 3개를 고르는 것 (뻐큐모양) 이렇게로 전부 커버가 가능함. 이걸 모든 점에 대해서 다 돌리면 해결 가능.">
-      <created>1667457256441</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1667457256441</updated>
     </task>
     <task id="LOCAL-00160" summary="하는중">
       <created>1667463065316</created>
@@ -485,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670997528090</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="하는중">
+      <created>1671005527353</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1671005527353</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -546,10 +545,10 @@
     <MESSAGE value="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함." />
     <MESSAGE value="백준 12851번 숨바꼭질 2 bfs문제&#10;&#10;숨바꼭질 3 코드에서 시간재는 코드 + 방문 체크를 while문 시작지점에 만들었음.(같은 시간내에 동일한 지점에 오는건 상관 없음, 더 늦게 오면 어차피 최단 거리가 아님)" />
     <MESSAGE value="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 14052번 연구소 bfs 문제&#10;&#10;브루트포스로 풀면 됨 (시간 초과 안남. bfs만 제대로 짜면). 벽을 세워야하는 장소를 큐로 저장해놓고 큐에서 3개 뽑는 방법을 썼음. 바이러스가 있는 곳은 리스트로 저장되어있으므로 그냥 그대로 bfs 큐에 넣어서 돌리면 됨." />
     <MESSAGE value="백준 13172번 시그마 모듈러 연산 역원 구하기 문제&#10;&#10;모듈러 역원을 구함. 구하는 방법은 확장 유클리드를 재귀를 돌림. 재귀인데 일종의 dp처럼 함수가 호출될때 값이 변경되고, 그 변경 된 값을 그 전 함수에서 바로 이용가능하게끔 atomicLong을 썼음. 왜 틀렸는지는 잘 모르겠음. 아마도 확장 유클리드 함수에서 s가 음수가 됐을 때를 고쳤더니 맞은 것 같음." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 13172번 시그마 모듈러 연산 역원 구하기 문제&#10;&#10;모듈러 역원을 구함. 구하는 방법은 확장 유클리드를 재귀를 돌림. 재귀인데 일종의 dp처럼 함수가 호출될때 값이 변경되고, 그 변경 된 값을 그 전 함수에서 바로 이용가능하게끔 atomicLong을 썼음. 왜 틀렸는지는 잘 모르겠음. 아마도 확장 유클리드 함수에서 s가 음수가 됐을 때를 고쳤더니 맞은 것 같음." />
+    <MESSAGE value="하는중" />
+    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
