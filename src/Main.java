@@ -4,45 +4,39 @@ import java.util.*;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    static int n, m, r;
+    static int n, m;
+    static HashSet<String> dupe = new HashSet<>();
 
     public static void main(String[] args) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
-        r = Integer.parseInt(st.nextToken());
-
-        int a, b, c;
-        Item[] place = new Item[n + 1];
+        ArrayList<Integer> list = new ArrayList<>();
         st = new StringTokenizer(br.readLine());
-        for (int i = 1; i <= n ; i++)
-            place[i] = new Item(i, Integer.parseInt(st.nextToken()), new HashMap<>());
-        for (int i = 0; i < r; i ++){
-            st = new StringTokenizer(br.readLine());
-            a = Integer.parseInt(st.nextToken());
-            b = Integer.parseInt(st.nextToken());
-            c = Integer.parseInt(st.nextToken());
-            place[a].link.put(b, c);
-            place[b].link.put(a, c);
-        }
+        for (int i = 0 ; i < n; i++)
+            list.add(Integer.parseInt(st.nextToken()));
 
+        Collections.sort(list);
+
+        print(new StringBuilder(), list, 0, 0);
 
         bw.flush();
         bw.close();
     }
-    static int Get_Item(int )
 
-}
-class Item {
-    int num;
-    int num_item;
-    HashMap<Integer, Integer> link;
-
-    public Item(int num, int num_item, HashMap<Integer, Integer> link) {
-        this.num = num;
-        this.num_item = num_item;
-        this.link = link;
+    static void print(StringBuilder sb, ArrayList<Integer> list, int index, int count) throws IOException {
+        if(count == m - 1)
+            while (index < n) {
+                if(!dupe.contains(sb.toString() + list.get(index))) {
+                    dupe.add(sb.toString() + list.get(index));
+                    bw.write(sb.toString() + list.get(index) + "\n");
+                }
+                index++;
+            }
+        else while(index < n)
+            print(new StringBuilder(sb).append(list.get(index)).append(" "), list, index++, count + 1);
     }
+
 }
 
 

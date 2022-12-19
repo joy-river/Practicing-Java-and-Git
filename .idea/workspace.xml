@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,34 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00160" summary="하는중">
-      <created>1667463065316</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1667463065316</updated>
-    </task>
-    <task id="LOCAL-00161" summary="백준 11403번 경로 찾기 플로이드 워셜 문제&#10;&#10;그냥 플로이드 워셜로 현재 0인 경로에다가 깔쌈하게 적용해주면 됨.">
-      <created>1667535255505</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1667535255505</updated>
-    </task>
-    <task id="LOCAL-00162" summary="백준 11727번 2*n 타일링 2 dp문제&#10;&#10;처음에 l 작대기를 그으면 = dp[n -1];&#10;처음에 = , ㅁ 두개 긋고 = 2 * dp[n -2];&#10;&#10;간단.">
-      <created>1667538969713</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1667538969713</updated>
-    </task>
-    <task id="LOCAL-00163" summary="하는중">
-      <created>1667546184379</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1667546184379</updated>
     </task>
     <task id="LOCAL-00164" summary="백준 16236번 아기 상어 bfs 문제&#10;&#10;일단 bfs로 가능한 물고기 찾고 먹고 다시 bfs를 계속 반복하는게 알고리즘.&#10;&#10;문제는 상어보다 큰 물고기 통과 못하게하는 코드를 잘 짜야되고,&#10;처음 Findfish를 돌릴때의 이중 for문이 잘 break되는지도 판단해야함.(break하나만 썼다가 틀렸음)">
       <created>1667796787290</created>
@@ -484,7 +457,35 @@
       <option name="project" value="LOCAL" />
       <updated>1671005527353</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="하는중">
+      <created>1671092061924</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1671092061924</updated>
+    </task>
+    <task id="LOCAL-00210" summary="백준 14938번 서강그라운드 그래프 문제&#10;&#10;언럭키 다익스트라? 우선순위 큐로 거리 별로 탐색하는 알고리즘인데 bfs로 수색하게끔 만들었음. 방문이 중요한게 아니라 실제 지점의 아이템을 더했냐 안했냐가 중요한것임.">
+      <created>1671167050133</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1671167050133</updated>
+    </task>
+    <task id="LOCAL-00211" summary="백준 15657 N과 M(8) 재귀로 푼 문제&#10;&#10;스트링빌더를 재귀로 넣어서 풀었음. 중복으로 수를 뽑는게 가능하므로 재귀에서 인덱스를 상위 인덱스 그대로 받아오게끔 만들었고, 비내림차 순이므로 입력된 값은 리스트에 넣어 정렬함(우선순위 큐도 생각은 했는데 귀찮았음). 스트링빌더에서 delete나 replace 메소드는 스트링빌더의 인덱스를 기준으로 잡는데, 리스트에 입력된 값이 몇 자리 수일지는 모르기 때문에 사용하기 힘듦.">
+      <created>1671420749757</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1671420749757</updated>
+    </task>
+    <task id="LOCAL-00212" summary="백준 15663번 N과 M(9) 백트래킹 문제&#10;&#10;그냥 재귀로 풀긴했음. 중복없이 탐색해야되므로 visited 배열을 써서 리스트 내에서 중복 탐색을 막았고, hashset으로 만약 리스트 내에 중복 값이 있어 같은 결과가 출력될 경우 막을 수 있게끔 조치했음.">
+      <created>1671438235472</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1671438235472</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -523,9 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 16236번 아기 상어 bfs 문제&#10;&#10;일단 bfs로 가능한 물고기 찾고 먹고 다시 bfs를 계속 반복하는게 알고리즘.&#10;&#10;문제는 상어보다 큰 물고기 통과 못하게하는 코드를 잘 짜야되고,&#10;처음 Findfish를 돌릴때의 이중 for문이 잘 break되는지도 판단해야함.(break하나만 썼다가 틀렸음)" />
-    <MESSAGE value="백준 16928번 뱀과 사다리 게임 bfs 문제&#10;&#10;뱀과 사다리는 만약 있다면 무조건 타야됨. 탔을때 방문 체크는 하지 않아야함(더 줄어들 수 있음)(그런데 해도 괜찮을거 같기도 하고). 또 사다리의 목적지가 동일한 곳일 수 있음. -&gt; 그냥 큐가 아니라 우선순위 큐로 목적지에 도달 후에 바로 주사위를 굴릴 수 있게끔 하는게 좋겠음. 아니면 사다리 + 주사위값을 넣든지 해야함." />
-    <MESSAGE value="백준 17219번 비밀번호 찾기 해시 문제&#10;&#10;아니 사람이 친절하게 해시 구현을 했으면 넘어가야지 이걸 틀리네 ㅋㅋ;&#10;해시맵으로 날먹함." />
     <MESSAGE value="백준 17626번 FourSquare dp문제&#10;&#10;라그랑주의 네 제곱수 정리임. 일단 제곱수들은 전부 1이고, 제곱수가 아닌 친구들은 어떻게 구하느냐. 특정 수의 두배인 친구는 두배. 특정 수에 제곱수를 더한 값 이렇게 해서 구했는데 어찌저찌 통과는 됐음." />
     <MESSAGE value="백준 1918번 후위표기식 스택 문제&#10;&#10;들어오는 연산자들을 우선순위를 매긴다. */ 는 +-보다 우선순위가 높고, 괄호는 최우선이므로 최대 연산길이 100을 우선순위에 더해준다. 만약 다음 연산자가 현재 연산자 스택의 맨 위 보다 우선순위가 낮다면, 그 우선순위까지의 연산을 모두 실행한다(pop해준다). 피연산자들은 그냥 바로 result스택에 넣어도 된다." />
     <MESSAGE value="백준 1991번 트리 순회 그래프 문제&#10;&#10;전위(preorder)  = 루트 - 왼 - 오&#10;중위(inorder) = 왼 - 루트 - 오&#10;후위(postorder) = 왼 - 오 - 루트&#10;&#10;재귀함수 3개 만듦" />
@@ -548,7 +546,10 @@
     <MESSAGE value="백준 14052번 연구소 bfs 문제&#10;&#10;브루트포스로 풀면 됨 (시간 초과 안남. bfs만 제대로 짜면). 벽을 세워야하는 장소를 큐로 저장해놓고 큐에서 3개 뽑는 방법을 썼음. 바이러스가 있는 곳은 리스트로 저장되어있으므로 그냥 그대로 bfs 큐에 넣어서 돌리면 됨." />
     <MESSAGE value="백준 13172번 시그마 모듈러 연산 역원 구하기 문제&#10;&#10;모듈러 역원을 구함. 구하는 방법은 확장 유클리드를 재귀를 돌림. 재귀인데 일종의 dp처럼 함수가 호출될때 값이 변경되고, 그 변경 된 값을 그 전 함수에서 바로 이용가능하게끔 atomicLong을 썼음. 왜 틀렸는지는 잘 모르겠음. 아마도 확장 유클리드 함수에서 s가 음수가 됐을 때를 고쳤더니 맞은 것 같음." />
     <MESSAGE value="하는중" />
-    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
+    <MESSAGE value="백준 14938번 서강그라운드 그래프 문제&#10;&#10;언럭키 다익스트라? 우선순위 큐로 거리 별로 탐색하는 알고리즘인데 bfs로 수색하게끔 만들었음. 방문이 중요한게 아니라 실제 지점의 아이템을 더했냐 안했냐가 중요한것임." />
+    <MESSAGE value="백준 15657 N과 M(8) 재귀로 푼 문제&#10;&#10;스트링빌더를 재귀로 넣어서 풀었음. 중복으로 수를 뽑는게 가능하므로 재귀에서 인덱스를 상위 인덱스 그대로 받아오게끔 만들었고, 비내림차 순이므로 입력된 값은 리스트에 넣어 정렬함(우선순위 큐도 생각은 했는데 귀찮았음). 스트링빌더에서 delete나 replace 메소드는 스트링빌더의 인덱스를 기준으로 잡는데, 리스트에 입력된 값이 몇 자리 수일지는 모르기 때문에 사용하기 힘듦." />
+    <MESSAGE value="백준 15663번 N과 M(9) 백트래킹 문제&#10;&#10;그냥 재귀로 풀긴했음. 중복없이 탐색해야되므로 visited 배열을 써서 리스트 내에서 중복 탐색을 막았고, hashset으로 만약 리스트 내에 중복 값이 있어 같은 결과가 출력될 경우 막을 수 있게끔 조치했음." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 15663번 N과 M(9) 백트래킹 문제&#10;&#10;그냥 재귀로 풀긴했음. 중복없이 탐색해야되므로 visited 배열을 써서 리스트 내에서 중복 탐색을 막았고, hashset으로 만약 리스트 내에 중복 값이 있어 같은 결과가 출력될 경우 막을 수 있게끔 조치했음." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -602,6 +603,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>25</line>
+          <properties class="Main" method="print">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="195" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
