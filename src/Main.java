@@ -4,61 +4,53 @@ import java.util.*;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
+    static int r, c, t;
 
     public static void main(String[] args) throws IOException {
-        int n = Integer.parseInt(br.readLine());
-        String[][] table = new String [n][];
-        for (int i = 0 ; i < n ; i++)
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        r = Integer.parseInt(st.nextToken());
+        c = Integer.parseInt(st.nextToken());
+        t = Integer.parseInt(st.nextToken());
+        String [][] table = new String[r][];
+        for (int i = 0 ; i < r ; i++)
             table[i] = br.readLine().split(" ");
-
-        bw.write(Integer.toString(bfs(table, n)));
 
         bw.flush();
         bw.close();
     }
-    //가로 : 0, 세로 : 1, 대각 : 2
-    static int bfs(String[][] table, int n){
-        int count = 0, x, y;
-        Pipe temp;
-        Queue<Pipe> next = new LinkedList<>();
-        next.add(new Pipe(0, 1 , 0 ));
-
-        while(!next.isEmpty()){
-            temp = next.poll();
-            x = temp.x;
-            y = temp.y;
-            if(x == n - 1 && y == n - 1)
-                count++;
-            else{
-                if(x < n - 1 && y < n - 1){
-                    if(table[x + 1][y].equals)
+    static int MiMun(String[][] table){
+        Dust puri = null;
+        Queue<Dust> dust = new LinkedList<>();
+        for (int i = 0 ; i < r ; i ++)
+            for (int j = 0 ; j < c; j ++) {
+                if (table[i][j].equals("-1")) {
+                    if (puri == null) puri = new Dust(i, j, -1);
                 }
-                if (temp.x < n - 1){
-
-                }
-                if(temp.y < n - 1){
-
-                }
+                else if (!table[i][j].equals("0"))
+                    dust.add(new Dust(i, j, Integer.parseInt(table[i][j])));
             }
 
-        }
+    }
+    static void diff(){
 
+    }
+    static void flow(){
 
-        return count;
     }
 }
-class Pipe{
-    int x, y;
+class Dust {
+    int x;
 
-    public Pipe(int x, int y, int pos) {
+    public Dust(int x, int y, int amount) {
         this.x = x;
         this.y = y;
-        this.pos = pos;
+        this.amount = amount;
     }
 
-    int pos;
+    int y;
+    int amount;
 }
+
 
 
 
