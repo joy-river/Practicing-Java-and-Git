@@ -142,13 +142,6 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00170" summary="하는중">
-      <created>1667981702122</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1667981702122</updated>
-    </task>
     <task id="LOCAL-00171" summary="하는중">
       <created>1668067389989</created>
       <option name="number" value="00171" />
@@ -485,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671771670521</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="하는중">
+      <created>1671783408745</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1671783408745</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -547,9 +547,9 @@
     <MESSAGE value="백준 15666번 N과 M(12) 재귀로 푼 문제&#10;&#10;N과 M(8)번 소스에서 중복된 수열 출력하지 않게끔 Hashset으로 조정한게 다임." />
     <MESSAGE value="백준 15686번 치킨 배달 백트래킹 문제&#10;&#10;좌표의 절댓값 차이만큼의 거리가 있고, 각 집에서 치킨 집 까지의 최소 거리의 합산을 구하는 문제. 브루트포스로 모든 경우의 수를 찾아보는 방법을 썼는데, BFS로 할까 고민했는데 재귀로 풀었음. 재귀 과정에서 변수가 변경되는 경우를 잘 고려해야함. &lt;- 실수가 잦음." />
     <MESSAGE value="백준 16953번 A -&gt; B BFS 문제&#10;&#10;간단한 BFS로 풀 수 있는데, 다음 노드로 넘어갈때 INT 한계치를 넘어가는 경우가 있음. 이걸 LONG으로 고치면 통과" />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함." />
+    <MESSAGE value="하는중" />
+    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -594,6 +594,21 @@
           <url>file://$PROJECT_DIR$/src/DFSandBFS/MinimumCost.java</url>
           <line>57</line>
           <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="206" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
