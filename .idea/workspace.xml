@@ -142,20 +142,6 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00171" summary="하는중">
-      <created>1668067389989</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1668067389989</updated>
-    </task>
-    <task id="LOCAL-00172" summary="백준 1918번 후위표기식 스택 문제&#10;&#10;들어오는 연산자들을 우선순위를 매긴다. */ 는 +-보다 우선순위가 높고, 괄호는 최우선이므로 최대 연산길이 100을 우선순위에 더해준다. 만약 다음 연산자가 현재 연산자 스택의 맨 위 보다 우선순위가 낮다면, 그 우선순위까지의 연산을 모두 실행한다(pop해준다). 피연산자들은 그냥 바로 result스택에 넣어도 된다.">
-      <created>1668137120439</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1668137120439</updated>
-    </task>
     <task id="LOCAL-00173" summary="백준 1991번 트리 순회 그래프 문제&#10;&#10;전위(preorder)  = 루트 - 왼 - 오&#10;중위(inorder) = 왼 - 루트 - 오&#10;후위(postorder) = 왼 - 오 - 루트&#10;&#10;재귀함수 3개 만듦">
       <created>1668146396231</created>
       <option name="number" value="00173" />
@@ -485,7 +471,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671783408745</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="하는중">
+      <created>1672042122042</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1672042122042</updated>
+    </task>
+    <task id="LOCAL-00221" summary="백준 17144번 미세먼지 안녕 구현 문제&#10;&#10;너무 개같아요.. 미먼의 위치를 큐에다 넣어놓고 그 미먼을 -&gt; 확산 -&gt; 흐름으로 돌리는 구조임. 중요한건 미먼 위치가 중복으로 들어오면 안되니까 잘 체크해야되고, 배열을 새로 선언해야 확산단계에서 꼬이는 걸 막아줄 수 있음.">
+      <created>1672107271773</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1672107271773</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 2263번 트리의 순회 트리 문제&#10;&#10;in, postorder로 주어진 순회로 pre오더를 찾는것. 기본 알고리즘은 다음과 같다.&#10;&#10;post의 마지막 요소 값이 root가 된다.&#10;in에서 root의 위치를 찾으면, root보다 낮은 인덱스는 left subtree이고, 높은 인덱스는 right subtree이다.&#10;&#10;를 재귀적으로 반복하면 pre오더로 순회값을 구할 수 있다. 처음에는 실제 트리를 만들었는데, 굳이 그럴 필요는 없으므로 출력만 해주는걸로 바꿨다. 재귀도 많이 고쳤다. 함수 내에서 왼, 오 루트를 골라줬는데 그러지 않게 바꿨다. 그 다음 &#10;알고리즘의 두 번째 단계인 inorder에서 root의 위치 찾기에서 반복문이 너무 많이 돈다. 최악의 경우 n이 n번 돌기때문에 시간초과를 뿜어낸다. 요소의 중복이 없고, 원래 있는 index값이 변화하지도 않기때문에 hashmap으로 string을 넣어 원래 index를 반환하게 만들었다." />
     <MESSAGE value="백준 2206번 벽 부수고 이동하기 bfs문제&#10;&#10;처음에는 단순한 bfs로 했는데 실패. 문제가 벽을 뚫을 수 있으면 다 뚫어봐야됨. 그래서 뭔 생각을 했냐면 for문 돌려서 벽이 나올때마다 벽에서 bfs를 돌리자 =&gt;개같이 실패. 그 다음은 스타트 지점에서 bfs를 돌리면서 가다가, 벽이 나오면 벽에서 bfs를 해서 목적지에 도달할 수 있는지 재귀로 판단하자 -&gt; 개같이 시간초과. 생각만 한거는 방문을 벽을 뚫음 = 1, 안뚫음 = 0 으로 해서 bfs가 두개 돌아가게 만들자고 생각했는데 방법을 고민하다가 너무 복잡한거 같아서 포기함. &#10;결론적으로 마지막이 정답. 그런데 구현방법을 새로운 클래스를 정의한다든지가 아니라, 삼차원 배열을 써서 z값을 벽을 부쉈나 안부쉈나로 판단했음. 간단히 해결됨." />
     <MESSAGE value="백준 2407번 조합 정수론&#10;&#10;100c50이 너무 크긴 함. 문자열으로 계산하면 됨. 개같이 빅---인트" />
     <MESSAGE value="백준 9465번 스티커 dp문제&#10;&#10;스티커를 뽑을 때, j - 1위치에서 사선에 위치한 j 스티커를 뽑을 수도있고,&#10;&#10;j -2 위치에서 어느 위치든 j 스티커를 뽑을 수 있다(위 아래 둘 다 선택 가능)&#10;&#10;따라서 dp[i][j] = max(dp[i - 1][j-1] , dp[i - 1][j - 2], dp[i][j - 2] + sticker[i][j]점화식이 나오게된다." />
@@ -549,7 +548,8 @@
     <MESSAGE value="백준 16953번 A -&gt; B BFS 문제&#10;&#10;간단한 BFS로 풀 수 있는데, 다음 노드로 넘어갈때 INT 한계치를 넘어가는 경우가 있음. 이걸 LONG으로 고치면 통과" />
     <MESSAGE value="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함." />
     <MESSAGE value="하는중" />
-    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
+    <MESSAGE value="백준 17144번 미세먼지 안녕 구현 문제&#10;&#10;너무 개같아요.. 미먼의 위치를 큐에다 넣어놓고 그 미먼을 -&gt; 확산 -&gt; 흐름으로 돌리는 구조임. 중요한건 미먼 위치가 중복으로 들어오면 안되니까 잘 체크해야되고, 배열을 새로 선언해야 확산단계에서 꼬이는 걸 막아줄 수 있음." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 17144번 미세먼지 안녕 구현 문제&#10;&#10;너무 개같아요.. 미먼의 위치를 큐에다 넣어놓고 그 미먼을 -&gt; 확산 -&gt; 흐름으로 돌리는 구조임. 중요한건 미먼 위치가 중복으로 들어오면 안되니까 잘 체크해야되고, 배열을 새로 선언해야 확산단계에서 꼬이는 걸 막아줄 수 있음." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -594,21 +594,6 @@
           <url>file://$PROJECT_DIR$/src/DFSandBFS/MinimumCost.java</url>
           <line>57</line>
           <option name="timeStamp" value="183" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="204" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="205" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="206" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
