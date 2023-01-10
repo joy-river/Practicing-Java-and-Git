@@ -15,11 +15,12 @@ public class Main {
             sum = Double.MAX_VALUE;
             for (int j = 0 ; j < n ; j++){
                 st = new StringTokenizer(br.readLine());
-                list.add(new vec(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()), false));
+                list.add(new vec(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())));
             }
 
-            brute(n, new vec(0, 0, false) , list);
+            brute(n, new vec(0, 0) , list);
 
+            bw.write(sum + "\n");
 
 
         }
@@ -34,40 +35,30 @@ public class Main {
             sum = Math.min(sum, temp.getLength());
         }
         else{
-           for (int i = 0 ; i < list.size(); i++){
-               if(!list.get(i).visited){
-                   a = list.get(i);
-                   a.visited = true;
-                   for (int j = i + 1; j < list.size(); j++){
-                       if(!list.get(j).visited){
-                           b = list.get(j);
-                           b.visited = true;
-                           brute(n - 2, new vec(temp.x + (a.x - b.x), temp.y + (a.y - b.y), false), list);
-                           brute(n - 2, new vec(temp.x + (b.x - a.x), temp.y + (b.y - a.y), false), list);
-                           b.visited = false;
-                       }
-                   }
-                   a.visited = false;
-               }
-           }
+            a = list.remove(0);
+            for (int j = 0; j < list.size(); j++){
+                b = list.remove(0);
+                brute(n - 2, new vec(temp.x + (a.x - b.x), temp.y + (a.y - b.y)), list);
+                brute(n - 2, new vec(temp.x + (b.x - a.x), temp.y + (b.y - a.y)), list);
+                list.add(b);
+            }
+            list.add(a);
         }
-
     }
+
 }
 class vec {
     double x;
     double y;
 
-    public vec(double x, double y, boolean visited) {
+    public vec(double x, double y) {
         this.x = x;
         this.y = y;
-        this.visited = visited;
     }
 
     public double getLength(){
         return Math.sqrt(this.x * this.x + this.y * this.y);
     }
-    boolean visited;
 
 }
 
