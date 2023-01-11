@@ -142,13 +142,6 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00179" summary="하는중">
-      <created>1668759162352</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1668759162352</updated>
-    </task>
     <task id="LOCAL-00180" summary="하는중">
       <created>1669018196950</created>
       <option name="number" value="00180" />
@@ -485,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673251411185</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="하는중">
+      <created>1673338582283</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1673338582283</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -606,7 +606,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>31</line>
+          <line>37</line>
           <properties class="Main" method="brute">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
