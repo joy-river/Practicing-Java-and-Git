@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/Edge.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -141,20 +142,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00183" summary="백준 2407번 조합 정수론&#10;&#10;100c50이 너무 크긴 함. 문자열으로 계산하면 됨. 개같이 빅---인트">
-      <created>1669176689499</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1669176689499</updated>
-    </task>
-    <task id="LOCAL-00184" summary="하는중">
-      <created>1669190881998</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1669190881998</updated>
     </task>
     <task id="LOCAL-00185" summary="백준 9465번 스티커 dp문제&#10;&#10;스티커를 뽑을 때, j - 1위치에서 사선에 위치한 j 스티커를 뽑을 수도있고,&#10;&#10;j -2 위치에서 어느 위치든 j 스티커를 뽑을 수 있다(위 아래 둘 다 선택 가능)&#10;&#10;따라서 dp[i][j] = max(dp[i - 1][j-1] , dp[i - 1][j - 2], dp[i][j - 2] + sticker[i][j]점화식이 나오게된다.">
       <created>1669255232406</created>
@@ -485,7 +472,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673501679124</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="하는중">
+      <created>1673510901242</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1673510901242</updated>
+    </task>
+    <task id="LOCAL-00233" summary="백준 1202번 보석 도둑 우선순위 큐(그리디)&#10;&#10;가방에 들어갈 수 있는 보석 중에 가장 가치가 높은 보석을 계속 넣는 알고리즘..&#10;&#10;간단하게 해결할 수 있는데 if else문에서 else 처리가 잘못되어서 보석 가치의 큐에 이상한 값이 계속 들어가서 틀렸었음 &lt;- 개멍청">
+      <created>1673592700709</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1673592700710</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,7 +525,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 11404번 플로이드 플로이드 워셜 문제&#10;&#10;플로이드 워셜 연습용 문제임. 그런데 약간 비틀어서 추정 예상되는 가장 큰 비용값으로 경로 배열을 초기화하지 않고 0으로 초기화 해놓고 플로이드 워셜을 썼음. 이것도 가능은 하네 ㅇㅅㅇ;;" />
     <MESSAGE value="백준 11725번 트리의 부모 찾기 트리 문제&#10;&#10;해시로 할까 생각하다가 그냥 관둠. 스탠다드한 bfs로 풀었음." />
     <MESSAGE value="백준 13549번 숨바꼭질 3 bfs문제&#10;&#10;단순한 bfs로 풀 수 있는데 우선순위 큐를 잘 쓸것. 일단 시간 순으로 나열하되, 같은 시간일 경우 위치의 크기 순으로 나열이 되어있어야 가장 빠르게 k값에 도달할 수 있다." />
     <MESSAGE value="백준 15654번 n과 m 5 dfs문제&#10;&#10;dfs로 풀면 됨." />
@@ -546,10 +546,11 @@
     <MESSAGE value="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함." />
     <MESSAGE value="백준 17144번 미세먼지 안녕 구현 문제&#10;&#10;너무 개같아요.. 미먼의 위치를 큐에다 넣어놓고 그 미먼을 -&gt; 확산 -&gt; 흐름으로 돌리는 구조임. 중요한건 미먼 위치가 중복으로 들어오면 안되니까 잘 체크해야되고, 배열을 새로 선언해야 확산단계에서 꼬이는 걸 막아줄 수 있음." />
     <MESSAGE value="백준 1005번 ACM Craft 위상 정렬 문제&#10;&#10;기념비적인 첫 위상정렬. 위상 정렬은 사이클이 없는 그래프에서, 행동해야하는 순서를 잡아주는 것.&#10;이 문제에서는 몇번 건물을 어느 시간에 지을 수 있냐를 결정하는 문제였음.&#10;&#10;여기서 우선순위 큐 now가 해주는 역할은 현재 어떤 건물이 건설 중인지를 알려줌.시간이 가장 짧은 노드 즉 큐의 가장 앞에 있는 값이 다음으로 지어질 건물이 됨. 그걸 가지고 건물을 짓고, 그 건물이 선행조건인 다른 건물들을 다시 우선순위 큐에 집어넣어주면 계속해서 건물을 순차적으로 올릴 수 있음." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 1007번 벡터 매칭 브루트포스 문제&#10;&#10;일단 모든 점의 x, y를 더함. 그리고 점 갯수의 반을 뽑아서 각각의 x, y를 두배 한 값을 빼주면 벡터의 합의 길이가 나옴. 문제는 이 점 갯수의 반을 뽑는 과정에서 시간초과가 뿜어질 위험이 있음. 조합을 구현하느냐에 따라 달라질 수 있는데, 백트래킹은 계속 시간초과가 떠서 재귀로 만들었더니 통과함." />
     <MESSAGE value="백준 1197번 최소 스패닝 트리 크루스칼 알고리즘(Union Find)&#10;&#10;크루스칼은 그리디의 일종인데, 최소 비용의 간선을 뽑고(우선순위 큐로 빠르게 함) 이 간선이 사이클을 형성하지 않으면 연결한다. 이렇게 연결이 끝나면 모든 노드를 한번씩 방문하는 최소 비용의 트리를 만들 수 있다는 알고리즘임. 여기서 사이클을 형성한다 -&gt; 간선의 양 끝 노드가 같은 부모를 공유한다. -&gt; 같은 집합 내에 있다는 점을 이용해서 Union Find로 문제를 풀 수 있음." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 1197번 최소 스패닝 트리 크루스칼 알고리즘(Union Find)&#10;&#10;크루스칼은 그리디의 일종인데, 최소 비용의 간선을 뽑고(우선순위 큐로 빠르게 함) 이 간선이 사이클을 형성하지 않으면 연결한다. 이렇게 연결이 끝나면 모든 노드를 한번씩 방문하는 최소 비용의 트리를 만들 수 있다는 알고리즘임. 여기서 사이클을 형성한다 -&gt; 간선의 양 끝 노드가 같은 부모를 공유한다. -&gt; 같은 집합 내에 있다는 점을 이용해서 Union Find로 문제를 풀 수 있음." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 1202번 보석 도둑 우선순위 큐(그리디)&#10;&#10;가방에 들어갈 수 있는 보석 중에 가장 가치가 높은 보석을 계속 넣는 알고리즘..&#10;&#10;간단하게 해결할 수 있는데 if else문에서 else 처리가 잘못되어서 보석 가치의 큐에 이상한 값이 계속 들어가서 틀렸었음 &lt;- 개멍청" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 1202번 보석 도둑 우선순위 큐(그리디)&#10;&#10;가방에 들어갈 수 있는 보석 중에 가장 가치가 높은 보석을 계속 넣는 알고리즘..&#10;&#10;간단하게 해결할 수 있는데 if else문에서 else 처리가 잘못되어서 보석 가치의 큐에 이상한 값이 계속 들어가서 틀렸었음 &lt;- 개멍청" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -604,11 +605,21 @@
           </properties>
           <option name="timeStamp" value="177" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>30</line>
+          <properties class="Main" method="Pick">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="vlist" language="JAVA" />
+        <watch expression="Jlist" />
       </configuration>
     </watches-manager>
   </component>
