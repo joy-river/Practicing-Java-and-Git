@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00188" summary="백준 11725번 트리의 부모 찾기 트리 문제&#10;&#10;해시로 할까 생각하다가 그냥 관둠. 스탠다드한 bfs로 풀었음.">
-      <created>1669346991573</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1669346991574</updated>
     </task>
     <task id="LOCAL-00189" summary="하는중">
       <created>1669363777581</created>
@@ -485,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674020269253</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <task id="LOCAL-00237" summary="하는중">
+      <created>1674029415582</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1674029415582</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -547,9 +545,9 @@
     <MESSAGE value="백준 1007번 벡터 매칭 브루트포스 문제&#10;&#10;일단 모든 점의 x, y를 더함. 그리고 점 갯수의 반을 뽑아서 각각의 x, y를 두배 한 값을 빼주면 벡터의 합의 길이가 나옴. 문제는 이 점 갯수의 반을 뽑는 과정에서 시간초과가 뿜어질 위험이 있음. 조합을 구현하느냐에 따라 달라질 수 있는데, 백트래킹은 계속 시간초과가 떠서 재귀로 만들었더니 통과함." />
     <MESSAGE value="백준 1197번 최소 스패닝 트리 크루스칼 알고리즘(Union Find)&#10;&#10;크루스칼은 그리디의 일종인데, 최소 비용의 간선을 뽑고(우선순위 큐로 빠르게 함) 이 간선이 사이클을 형성하지 않으면 연결한다. 이렇게 연결이 끝나면 모든 노드를 한번씩 방문하는 최소 비용의 트리를 만들 수 있다는 알고리즘임. 여기서 사이클을 형성한다 -&gt; 간선의 양 끝 노드가 같은 부모를 공유한다. -&gt; 같은 집합 내에 있다는 점을 이용해서 Union Find로 문제를 풀 수 있음." />
     <MESSAGE value="백준 1202번 보석 도둑 우선순위 큐(그리디)&#10;&#10;가방에 들어갈 수 있는 보석 중에 가장 가치가 높은 보석을 계속 넣는 알고리즘..&#10;&#10;간단하게 해결할 수 있는데 if else문에서 else 처리가 잘못되어서 보석 가치의 큐에 이상한 값이 계속 들어가서 틀렸었음 &lt;- 개멍청" />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 1208번 부분수열의 합 2 이분탐색 문제&#10;&#10;이진탐색이라기엔 이분탐색.. 말 그대로 문제를 반토막 내서 반을 연산하고, 나머지 반을 다시 연산함. &#10;&#10;배열을 반토막 내서 그 배열의 부분 집합을 모두 구함. 집합 전체를 구할 필요는 없고 집합의 합(부분 합)만 구해서 쉽게 찾을 수 있게끔 해시 맵에 넣어둠.&#10;&#10;나머지 반의 배열에서 부분 합을 구하고, 합쳐서 s를 만들 수 있는 값을 해시 맵에서 꺼내와서 결과 값에 더해주는 방식임. 결과 값이 40!개 있을 수 있으니 long형을 써야함." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 1208번 부분수열의 합 2 이분탐색 문제&#10;&#10;이진탐색이라기엔 이분탐색.. 말 그대로 문제를 반토막 내서 반을 연산하고, 나머지 반을 다시 연산함. &#10;&#10;배열을 반토막 내서 그 배열의 부분 집합을 모두 구함. 집합 전체를 구할 필요는 없고 집합의 합(부분 합)만 구해서 쉽게 찾을 수 있게끔 해시 맵에 넣어둠.&#10;&#10;나머지 반의 배열에서 부분 합을 구하고, 합쳐서 s를 만들 수 있는 값을 해시 맵에서 꺼내와서 결과 값에 더해주는 방식임. 결과 값이 40!개 있을 수 있으니 long형을 써야함." />
+    <MESSAGE value="하는중" />
+    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
