@@ -142,20 +142,6 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00194" summary="하는중">
-      <created>1669709897836</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1669709897837</updated>
-    </task>
-    <task id="LOCAL-00195" summary="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함.">
-      <created>1669872580621</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1669872580622</updated>
-    </task>
     <task id="LOCAL-00196" summary="하는중">
       <created>1669882148942</created>
       <option name="number" value="00196" />
@@ -485,7 +471,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674785727961</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="하는중">
+      <created>1674807828488</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1674807828488</updated>
+    </task>
+    <task id="LOCAL-00244" summary="백준 1644번 소수의 연속합 정수론 문제&#10;&#10;누적합으로 풀었음, 굳이 투 포인터 쓸 필요도 없이 큐에다가 누적합을 넣어서 n값과 비교하는 방법을 썼음.">
+      <created>1675043982757</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1675043982757</updated>
+    </task>
+    <option name="localTasksCounter" value="245" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 1916번 최소비용구하기 다익스트라 문제&#10;&#10;작성자님께서 ﻿﻿﻿﻿33,34번 줄에서 저장된 값이 0일 경우 입력 받은 수를 그대로 넣어주는 방식으로 코드를 짜셨는데, 이 문제에서는 버스의 비용이 0인 경우가 존재합니다. 따라서 배열에 값이 들어온 적이 없는것인지, 혹은 배열에 값이 들어왔는데 0인지를 판단할 수 없습니다. 여기서 문제가 발생한 것 같습니다.&#10;예를 들자면&#10;&#10;1 4 3&#10;&#10;1 4 0&#10;&#10;1 4 1&#10;&#10;같은 입력이 들어올 경우 원래라면 최소 비용인 0이 배열에 저장되어야하지만, 현재 코드 상으로 0이 저장된 이후에 배열에 바로 다음 값인 1이 저장되게 되므로 최소 비용을 저장하지 못합니다. 이 부분을 고치신다면 통과할 수 있으실것 같습니다.&#10;단순한 다익스트라였는데 비용을 입력받을 때 삐꾸나서 틀림." />
     <MESSAGE value="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함." />
     <MESSAGE value="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯." />
     <MESSAGE value="백준 9935번 문자열 폭발 스택 문제&#10;&#10;일단 문자열을 죄다 스택에 넣음. 스택 꼭다리가 폭발 문자열의 마지막 글자(패턴의 마지막)일때 폭발하는지 검사함. 스택에서 패턴만큼 비교하면서 뽑음. 이때 뽑은 갯수가 맞으면 통과 -&gt; 삭제, 아니면 통과 x -&gt; 다시 스택에 집어넣음을 반복함. 이러면 폭발 후에 합치는 것도 그렇게 걱정할 필요 없음." />
@@ -547,9 +546,10 @@
     <MESSAGE value="백준 1202번 보석 도둑 우선순위 큐(그리디)&#10;&#10;가방에 들어갈 수 있는 보석 중에 가장 가치가 높은 보석을 계속 넣는 알고리즘..&#10;&#10;간단하게 해결할 수 있는데 if else문에서 else 처리가 잘못되어서 보석 가치의 큐에 이상한 값이 계속 들어가서 틀렸었음 &lt;- 개멍청" />
     <MESSAGE value="백준 1208번 부분수열의 합 2 이분탐색 문제&#10;&#10;이진탐색이라기엔 이분탐색.. 말 그대로 문제를 반토막 내서 반을 연산하고, 나머지 반을 다시 연산함. &#10;&#10;배열을 반토막 내서 그 배열의 부분 집합을 모두 구함. 집합 전체를 구할 필요는 없고 집합의 합(부분 합)만 구해서 쉽게 찾을 수 있게끔 해시 맵에 넣어둠.&#10;&#10;나머지 반의 배열에서 부분 합을 구하고, 합쳐서 s를 만들 수 있는 값을 해시 맵에서 꺼내와서 결과 값에 더해주는 방식임. 결과 값이 40!개 있을 수 있으니 long형을 써야함." />
     <MESSAGE value="백준 1509, 2079번 팰린드롬 분할 dp문제&#10;&#10;일단 팰린드롬인지 판별하는 메소드 하나, 문자열의 어떤 범위가 팰린드롬인지 메모하는 이차원 배열을 놓고 dp를 함.&#10;&#10;i 값을 점차 올려가는데, j 값을 따라올려가면서 j ~ i 범위에 팰린드롬을 찾아내고, 이 팰린드롬을 분할에 넣을지 말지 판별함. 이걸 통해서 최소 팰린드롬 분할을 찾아내는데, 나는 못했음..(재귀로 풀려고했음)" />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 1562번 계단 수 dp문제&#10;&#10;아 dp 너무 어렵다. 비트 마스크를 쓴다 -&gt; k 자리의 비트가 k 수가 포함되어있는지를 판별한다. &#10;&#10;그래서 수를 만들어나가는데, i = 지금 자리 수 , j = 지금 자리 수에 무슨 수가 들어가있는지, k = 지금까지 무슨 수들이 나왔는지로 한다. &#10;&#10;그래서 비트마스크는 서순이 중요한게 아니라 나오기만 하면 되므로, 첫자리에서 n번 자리로 거꾸로 올라간다." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 1562번 계단 수 dp문제&#10;&#10;아 dp 너무 어렵다. 비트 마스크를 쓴다 -&gt; k 자리의 비트가 k 수가 포함되어있는지를 판별한다. &#10;&#10;그래서 수를 만들어나가는데, i = 지금 자리 수 , j = 지금 자리 수에 무슨 수가 들어가있는지, k = 지금까지 무슨 수들이 나왔는지로 한다. &#10;&#10;그래서 비트마스크는 서순이 중요한게 아니라 나오기만 하면 되므로, 첫자리에서 n번 자리로 거꾸로 올라간다." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 1644번 소수의 연속합 정수론 문제&#10;&#10;누적합으로 풀었음, 굳이 투 포인터 쓸 필요도 없이 큐에다가 누적합을 넣어서 n값과 비교하는 방법을 썼음." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 1644번 소수의 연속합 정수론 문제&#10;&#10;누적합으로 풀었음, 굳이 투 포인터 쓸 필요도 없이 큐에다가 누적합을 넣어서 n값과 비교하는 방법을 썼음." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -603,15 +603,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="177" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>45</line>
-          <properties class="Main" method="Make_Sum">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="233" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
