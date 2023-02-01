@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/Edge.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -141,34 +142,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00196" summary="하는중">
-      <created>1669882148942</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1669882148942</updated>
-    </task>
-    <task id="LOCAL-00197" summary="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯.">
-      <created>1669950564387</created>
-      <option name="number" value="00197" />
-      <option name="presentableId" value="LOCAL-00197" />
-      <option name="project" value="LOCAL" />
-      <updated>1669950564387</updated>
-    </task>
-    <task id="LOCAL-00198" summary="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
-      <created>1669969040139</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1669969040139</updated>
-    </task>
-    <task id="LOCAL-00199" summary="백준 9935번 문자열 폭발 스택 문제&#10;&#10;일단 문자열을 죄다 스택에 넣음. 스택 꼭다리가 폭발 문자열의 마지막 글자(패턴의 마지막)일때 폭발하는지 검사함. 스택에서 패턴만큼 비교하면서 뽑음. 이때 뽑은 갯수가 맞으면 통과 -&gt; 삭제, 아니면 통과 x -&gt; 다시 스택에 집어넣음을 반복함. 이러면 폭발 후에 합치는 것도 그렇게 걱정할 필요 없음.">
-      <created>1670390527125</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1670390527125</updated>
     </task>
     <task id="LOCAL-00200" summary="하는중">
       <created>1670400082928</created>
@@ -485,7 +458,35 @@
       <option name="project" value="LOCAL" />
       <updated>1675043982757</updated>
     </task>
-    <option name="localTasksCounter" value="245" />
+    <task id="LOCAL-00245" summary="하는중">
+      <created>1675059018909</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1675059018909</updated>
+    </task>
+    <task id="LOCAL-00246" summary="백준 1647번 도시 분할 계획 MST문제&#10;&#10;MST 문제 소스에 썼던 크루스칼을 그대로 들고왔음. 그걸 좀 개선한게 이번 코드임.&#10;&#10;vertex 클래스를 없애고 단순히 배열로 저장하게 만들었음. find_cycle 함수를 살짝 고쳐서 재귀로 바꿨음. 재귀를 돌리면서 계속 plist값을 갱신할 수 있게끔 만들어서 한번 호출하고 나서 시간을 줄일 수 있게 했음.">
+      <created>1675231972655</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1675231972655</updated>
+    </task>
+    <task id="LOCAL-00247" summary="백준 1647번 도시 분할 계획 MST문제&#10;&#10;크루스칼 말고 프림으로 풀어봄.">
+      <created>1675233932875</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1675233932875</updated>
+    </task>
+    <task id="LOCAL-00248" summary="백준 1766번 문제집 위상정렬 문제&#10;&#10;단순한 위상정렬로 풀었음. 각자 가리키는 수를 link에 저장해놓고, 나를 가리키는 간선이 몇개 있는지는 In_Degree에 저장되어있음. In_d가 0인 수부터 시작해서(여기서 해시 셋으로 우선순위 큐에 바로 넣었음) 만약 In_d가 0이 되면 우선순위 큐에 넣는걸 반복(풀 수 있는 가장 쉬운 문제집부터 품).">
+      <created>1675236649157</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1675236649157</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,9 +525,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함." />
-    <MESSAGE value="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯." />
-    <MESSAGE value="백준 9935번 문자열 폭발 스택 문제&#10;&#10;일단 문자열을 죄다 스택에 넣음. 스택 꼭다리가 폭발 문자열의 마지막 글자(패턴의 마지막)일때 폭발하는지 검사함. 스택에서 패턴만큼 비교하면서 뽑음. 이때 뽑은 갯수가 맞으면 통과 -&gt; 삭제, 아니면 통과 x -&gt; 다시 스택에 집어넣음을 반복함. 이러면 폭발 후에 합치는 것도 그렇게 걱정할 필요 없음." />
     <MESSAGE value="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함." />
     <MESSAGE value="백준 12851번 숨바꼭질 2 bfs문제&#10;&#10;숨바꼭질 3 코드에서 시간재는 코드 + 방문 체크를 while문 시작지점에 만들었음.(같은 시간내에 동일한 지점에 오는건 상관 없음, 더 늦게 오면 어차피 최단 거리가 아님)" />
     <MESSAGE value="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,." />
@@ -547,9 +545,12 @@
     <MESSAGE value="백준 1208번 부분수열의 합 2 이분탐색 문제&#10;&#10;이진탐색이라기엔 이분탐색.. 말 그대로 문제를 반토막 내서 반을 연산하고, 나머지 반을 다시 연산함. &#10;&#10;배열을 반토막 내서 그 배열의 부분 집합을 모두 구함. 집합 전체를 구할 필요는 없고 집합의 합(부분 합)만 구해서 쉽게 찾을 수 있게끔 해시 맵에 넣어둠.&#10;&#10;나머지 반의 배열에서 부분 합을 구하고, 합쳐서 s를 만들 수 있는 값을 해시 맵에서 꺼내와서 결과 값에 더해주는 방식임. 결과 값이 40!개 있을 수 있으니 long형을 써야함." />
     <MESSAGE value="백준 1509, 2079번 팰린드롬 분할 dp문제&#10;&#10;일단 팰린드롬인지 판별하는 메소드 하나, 문자열의 어떤 범위가 팰린드롬인지 메모하는 이차원 배열을 놓고 dp를 함.&#10;&#10;i 값을 점차 올려가는데, j 값을 따라올려가면서 j ~ i 범위에 팰린드롬을 찾아내고, 이 팰린드롬을 분할에 넣을지 말지 판별함. 이걸 통해서 최소 팰린드롬 분할을 찾아내는데, 나는 못했음..(재귀로 풀려고했음)" />
     <MESSAGE value="백준 1562번 계단 수 dp문제&#10;&#10;아 dp 너무 어렵다. 비트 마스크를 쓴다 -&gt; k 자리의 비트가 k 수가 포함되어있는지를 판별한다. &#10;&#10;그래서 수를 만들어나가는데, i = 지금 자리 수 , j = 지금 자리 수에 무슨 수가 들어가있는지, k = 지금까지 무슨 수들이 나왔는지로 한다. &#10;&#10;그래서 비트마스크는 서순이 중요한게 아니라 나오기만 하면 되므로, 첫자리에서 n번 자리로 거꾸로 올라간다." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 1644번 소수의 연속합 정수론 문제&#10;&#10;누적합으로 풀었음, 굳이 투 포인터 쓸 필요도 없이 큐에다가 누적합을 넣어서 n값과 비교하는 방법을 썼음." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 1644번 소수의 연속합 정수론 문제&#10;&#10;누적합으로 풀었음, 굳이 투 포인터 쓸 필요도 없이 큐에다가 누적합을 넣어서 n값과 비교하는 방법을 썼음." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 1647번 도시 분할 계획 MST문제&#10;&#10;MST 문제 소스에 썼던 크루스칼을 그대로 들고왔음. 그걸 좀 개선한게 이번 코드임.&#10;&#10;vertex 클래스를 없애고 단순히 배열로 저장하게 만들었음. find_cycle 함수를 살짝 고쳐서 재귀로 바꿨음. 재귀를 돌리면서 계속 plist값을 갱신할 수 있게끔 만들어서 한번 호출하고 나서 시간을 줄일 수 있게 했음." />
+    <MESSAGE value="백준 1647번 도시 분할 계획 MST문제&#10;&#10;크루스칼 말고 프림으로 풀어봄." />
+    <MESSAGE value="백준 1766번 문제집 위상정렬 문제&#10;&#10;단순한 위상정렬로 풀었음. 각자 가리키는 수를 link에 저장해놓고, 나를 가리키는 간선이 몇개 있는지는 In_Degree에 저장되어있음. In_d가 0인 수부터 시작해서(여기서 해시 셋으로 우선순위 큐에 바로 넣었음) 만약 In_d가 0이 되면 우선순위 큐에 넣는걸 반복(풀 수 있는 가장 쉬운 문제집부터 품)." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 1766번 문제집 위상정렬 문제&#10;&#10;단순한 위상정렬로 풀었음. 각자 가리키는 수를 link에 저장해놓고, 나를 가리키는 간선이 몇개 있는지는 In_Degree에 저장되어있음. In_d가 0인 수부터 시작해서(여기서 해시 셋으로 우선순위 큐에 바로 넣었음) 만약 In_d가 0이 되면 우선순위 큐에 넣는걸 반복(풀 수 있는 가장 쉬운 문제집부터 품)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -612,11 +613,12 @@
         <watch expression="Jlist" />
         <watch expression="((java.util.LinkedList)next).get(2)" custom="java.util.LinkedList" />
         <watch expression="((java.util.LinkedList)next).get(2)" custom="java.util.LinkedList" />
+        <watch expression="select" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1670472243668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1675226483651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/untitled$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1653019956093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
