@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/Edge.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -142,13 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00200" summary="하는중">
-      <created>1670400082928</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1670400082928</updated>
     </task>
     <task id="LOCAL-00201" summary="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함.">
       <created>1670471917386</created>
@@ -486,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675236649157</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="하는중">
+      <created>1675238856909</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1675238856909</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -546,11 +545,11 @@
     <MESSAGE value="백준 1509, 2079번 팰린드롬 분할 dp문제&#10;&#10;일단 팰린드롬인지 판별하는 메소드 하나, 문자열의 어떤 범위가 팰린드롬인지 메모하는 이차원 배열을 놓고 dp를 함.&#10;&#10;i 값을 점차 올려가는데, j 값을 따라올려가면서 j ~ i 범위에 팰린드롬을 찾아내고, 이 팰린드롬을 분할에 넣을지 말지 판별함. 이걸 통해서 최소 팰린드롬 분할을 찾아내는데, 나는 못했음..(재귀로 풀려고했음)" />
     <MESSAGE value="백준 1562번 계단 수 dp문제&#10;&#10;아 dp 너무 어렵다. 비트 마스크를 쓴다 -&gt; k 자리의 비트가 k 수가 포함되어있는지를 판별한다. &#10;&#10;그래서 수를 만들어나가는데, i = 지금 자리 수 , j = 지금 자리 수에 무슨 수가 들어가있는지, k = 지금까지 무슨 수들이 나왔는지로 한다. &#10;&#10;그래서 비트마스크는 서순이 중요한게 아니라 나오기만 하면 되므로, 첫자리에서 n번 자리로 거꾸로 올라간다." />
     <MESSAGE value="백준 1644번 소수의 연속합 정수론 문제&#10;&#10;누적합으로 풀었음, 굳이 투 포인터 쓸 필요도 없이 큐에다가 누적합을 넣어서 n값과 비교하는 방법을 썼음." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 1647번 도시 분할 계획 MST문제&#10;&#10;MST 문제 소스에 썼던 크루스칼을 그대로 들고왔음. 그걸 좀 개선한게 이번 코드임.&#10;&#10;vertex 클래스를 없애고 단순히 배열로 저장하게 만들었음. find_cycle 함수를 살짝 고쳐서 재귀로 바꿨음. 재귀를 돌리면서 계속 plist값을 갱신할 수 있게끔 만들어서 한번 호출하고 나서 시간을 줄일 수 있게 했음." />
     <MESSAGE value="백준 1647번 도시 분할 계획 MST문제&#10;&#10;크루스칼 말고 프림으로 풀어봄." />
     <MESSAGE value="백준 1766번 문제집 위상정렬 문제&#10;&#10;단순한 위상정렬로 풀었음. 각자 가리키는 수를 link에 저장해놓고, 나를 가리키는 간선이 몇개 있는지는 In_Degree에 저장되어있음. In_d가 0인 수부터 시작해서(여기서 해시 셋으로 우선순위 큐에 바로 넣었음) 만약 In_d가 0이 되면 우선순위 큐에 넣는걸 반복(풀 수 있는 가장 쉬운 문제집부터 품)." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 1766번 문제집 위상정렬 문제&#10;&#10;단순한 위상정렬로 풀었음. 각자 가리키는 수를 link에 저장해놓고, 나를 가리키는 간선이 몇개 있는지는 In_Degree에 저장되어있음. In_d가 0인 수부터 시작해서(여기서 해시 셋으로 우선순위 큐에 바로 넣었음) 만약 In_d가 0이 되면 우선순위 큐에 넣는걸 반복(풀 수 있는 가장 쉬운 문제집부터 품)." />
+    <MESSAGE value="하는중" />
+    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
