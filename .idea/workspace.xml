@@ -67,19 +67,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DFSandBFS.Dijkstra" />
-      <module name="Practicing-Java-and-Git" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DFSandBFS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HideAndSeek3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GraphTheory.HideAndSeek3" />
       <module name="Practicing-Java-and-Git" />
@@ -113,20 +100,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StairNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP.StairNumber" />
+      <module name="Practicing-Java-and-Git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="애플리케이션.Dijkstra" />
       <item itemvalue="애플리케이션.Cheese" />
       <item itemvalue="애플리케이션.Main" />
       <item itemvalue="애플리케이션.MinimumCost" />
       <item itemvalue="애플리케이션.HideAndSeek3" />
+      <item itemvalue="애플리케이션.StairNumber" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.StairNumber" />
         <item itemvalue="애플리케이션.HideAndSeek3" />
         <item itemvalue="애플리케이션.MinimumCost" />
         <item itemvalue="애플리케이션.Cheese" />
-        <item itemvalue="애플리케이션.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -141,48 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00201" summary="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함.">
-      <created>1670471917386</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1670471917386</updated>
-    </task>
-    <task id="LOCAL-00202" summary="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
-      <created>1670475880701</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1670475880701</updated>
-    </task>
-    <task id="LOCAL-00203" summary="백준 12851번 숨바꼭질 2 bfs문제&#10;&#10;숨바꼭질 3 코드에서 시간재는 코드 + 방문 체크를 while문 시작지점에 만들었음.(같은 시간내에 동일한 지점에 오는건 상관 없음, 더 늦게 오면 어차피 최단 거리가 아님)">
-      <created>1670826173620</created>
-      <option name="number" value="00203" />
-      <option name="presentableId" value="LOCAL-00203" />
-      <option name="project" value="LOCAL" />
-      <updated>1670826173620</updated>
-    </task>
-    <task id="LOCAL-00204" summary="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
-      <created>1670832907714</created>
-      <option name="number" value="00204" />
-      <option name="presentableId" value="LOCAL-00204" />
-      <option name="project" value="LOCAL" />
-      <updated>1670832907714</updated>
-    </task>
-    <task id="LOCAL-00205" summary="하는중">
-      <created>1670919358332</created>
-      <option name="number" value="00205" />
-      <option name="presentableId" value="LOCAL-00205" />
-      <option name="project" value="LOCAL" />
-      <updated>1670919358332</updated>
-    </task>
-    <task id="LOCAL-00206" summary="백준 14052번 연구소 bfs 문제&#10;&#10;브루트포스로 풀면 됨 (시간 초과 안남. bfs만 제대로 짜면). 벽을 세워야하는 장소를 큐로 저장해놓고 큐에서 3개 뽑는 방법을 썼음. 바이러스가 있는 곳은 리스트로 저장되어있으므로 그냥 그대로 bfs 큐에 넣어서 돌리면 됨.">
-      <created>1670997367407</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1670997367407</updated>
     </task>
     <task id="LOCAL-00207" summary="백준 13172번 시그마 모듈러 연산 역원 구하기 문제&#10;&#10;모듈러 역원을 구함. 구하는 방법은 확장 유클리드를 재귀를 돌림. 재귀인데 일종의 dp처럼 함수가 호출될때 값이 변경되고, 그 변경 된 값을 그 전 함수에서 바로 이용가능하게끔 atomicLong을 썼음. 왜 틀렸는지는 잘 모르겠음. 아마도 확장 유클리드 함수에서 s가 음수가 됐을 때를 고쳤더니 맞은 것 같음.">
       <created>1670997528090</created>
@@ -485,7 +443,49 @@
       <option name="project" value="LOCAL" />
       <updated>1675238856909</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="하는중">
+      <created>1675325370877</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1675325370878</updated>
+    </task>
+    <task id="LOCAL-00251" summary="백준 1799번 비숍 백트래킹 문제&#10;&#10;일종의 DFS로 풀었음. 우하단 방향 대각선이랑, 우상단 대각선을 성분으로 가짐&#10;index 값은 몇 번쨰 우상단 대각선인지가 나오고, list[index] 안의 값은 우상단 대각선들이 몇번째 우하단 방향 대각선 위에 있는지를 저장하고 있음. 약간 그리디처럼 우상단 대각선에서 선택할 수 있으면 무조건 비숍을 놓는게 유리함 (안 놓을 이유가 없음 왜냐면 어지간해서는 다른 비숍과 겹치지 않게 놓을 수 있으므로). 따라서 모두 겹쳐서 못놓거나 애초에 대각선에 비숍을 못넣는 경우만 다음으로 넘겨주면 됨.&#10;&#10;여기서 메모리 초과 발생&#10;&#10;생각해보니 좌하단 대각선이 겹치려면 우상단 대각선의 간격이 만들어져야됨 -&gt; 어? 그럼 체스판을 사실상 반으로 분할해서 풀 수 있는거 아님? -&gt; 했더니 메모리 초과 해결됨.&#10;&#10;방문체크도 할까 했는데 경우의 수가 너무 많음.">
+      <created>1675399218747</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1675399218747</updated>
+    </task>
+    <task id="LOCAL-00252" summary="백준 1806번 부분합 부분 합 문제&#10;&#10;소수의 연속 합과 풀이 자체는 거의 비슷함. 대신 주어진 s 값 &quot;이상&quot; 이 되는 부분합임.">
+      <created>1675408444689</created>
+      <option name="number" value="00252" />
+      <option name="presentableId" value="LOCAL-00252" />
+      <option name="project" value="LOCAL" />
+      <updated>1675408444689</updated>
+    </task>
+    <task id="LOCAL-00253" summary="백준 1987번 알파벳 백트래킹 문제&#10;&#10;아주 간단한 백트래킹임. 해시로 중복 체크함.">
+      <created>1675732041681</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1675732041681</updated>
+    </task>
+    <task id="LOCAL-00254" summary="백준 2098번 외판원 순회 DP문제&#10;&#10;야호 내가 해냈다. 비트마스킹으로 각 도시의 방문 여부를 체크함. DP를 통해서 먼저 모든 도시를 방문하고 0으로 돌아올 수 있는지를 DFS로 얻어내고, 가능할 경우 그 경로에 있는 모든 비용을 더해주는 방식임. &#10;처음엔 DP[i][k] 값을 합산해줬는데 이럴 경우 처음 출발지(0,1)에서 정답이 나오는 경우 상관없지만 나중가면 점차 합산된 수가 누적되므로 무조건 틀림.&#10;다음은 dp[i][k] 값을 메모해뒀는데, 처음 구현일때는 함수의 인수로 이번 경로의 코스트를 입력받고 dp[i][k]에 저장했음. 이럴 경우 dp[i][k]에서의 최소 비용 + j -&gt; i 까지의 경로 비용이 dp[i][k]에 저장되므로 나중에 메모된 값을 참고할떄 경로 비용때문에 원하는 값을 얻어내지 못함. 따라서 인수에 있는 cost는 지워주고 전 단계에서 경로 비용을 계산하게 바꿨더니 통과.">
+      <created>1675814960519</created>
+      <option name="number" value="00254" />
+      <option name="presentableId" value="LOCAL-00254" />
+      <option name="project" value="LOCAL" />
+      <updated>1675814960519</updated>
+    </task>
+    <task id="LOCAL-00255" summary="백준 두 배열의 합 2143번 누적 합 문제&#10;&#10;두 개의 배열을 받아와서 두 배열의 합이 t가 될 수 있게 하는 문제&#10;&#10;해시 맵을 3개 써서&#10;temp에는 1 부터 n 까지의 누적합들이 들어가있음&#10;다음 입력이 들어올때마다 temp에 저장되어있는 값을 전부 빼면서 Sum_count에 넣어주면 a 배열에서 만들 수 있는 모든 누적합과 개수가 나오게 됨. b 배열에도 같은 일을 하고, a 배열의 key 값 하나에 대해 b 배열에서 t -key값을 가지면 그 개수를 넣어주면 됨.* 경우의 수이므로 곱해줘야됨 * 그런데 곱했을 경우 int 범위를 넘어갈 가능성이 있기때문에 long으로 처리했음.">
+      <created>1675834694379</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1675834694379</updated>
+    </task>
+    <option name="localTasksCounter" value="256" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,11 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함." />
-    <MESSAGE value="백준 12851번 숨바꼭질 2 bfs문제&#10;&#10;숨바꼭질 3 코드에서 시간재는 코드 + 방문 체크를 while문 시작지점에 만들었음.(같은 시간내에 동일한 지점에 오는건 상관 없음, 더 늦게 오면 어차피 최단 거리가 아님)" />
-    <MESSAGE value="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,." />
-    <MESSAGE value="백준 14052번 연구소 bfs 문제&#10;&#10;브루트포스로 풀면 됨 (시간 초과 안남. bfs만 제대로 짜면). 벽을 세워야하는 장소를 큐로 저장해놓고 큐에서 3개 뽑는 방법을 썼음. 바이러스가 있는 곳은 리스트로 저장되어있으므로 그냥 그대로 bfs 큐에 넣어서 돌리면 됨." />
-    <MESSAGE value="백준 13172번 시그마 모듈러 연산 역원 구하기 문제&#10;&#10;모듈러 역원을 구함. 구하는 방법은 확장 유클리드를 재귀를 돌림. 재귀인데 일종의 dp처럼 함수가 호출될때 값이 변경되고, 그 변경 된 값을 그 전 함수에서 바로 이용가능하게끔 atomicLong을 썼음. 왜 틀렸는지는 잘 모르겠음. 아마도 확장 유클리드 함수에서 s가 음수가 됐을 때를 고쳤더니 맞은 것 같음." />
     <MESSAGE value="백준 14938번 서강그라운드 그래프 문제&#10;&#10;언럭키 다익스트라? 우선순위 큐로 거리 별로 탐색하는 알고리즘인데 bfs로 수색하게끔 만들었음. 방문이 중요한게 아니라 실제 지점의 아이템을 더했냐 안했냐가 중요한것임." />
     <MESSAGE value="백준 15657 N과 M(8) 재귀로 푼 문제&#10;&#10;스트링빌더를 재귀로 넣어서 풀었음. 중복으로 수를 뽑는게 가능하므로 재귀에서 인덱스를 상위 인덱스 그대로 받아오게끔 만들었고, 비내림차 순이므로 입력된 값은 리스트에 넣어 정렬함(우선순위 큐도 생각은 했는데 귀찮았음). 스트링빌더에서 delete나 replace 메소드는 스트링빌더의 인덱스를 기준으로 잡는데, 리스트에 입력된 값이 몇 자리 수일지는 모르기 때문에 사용하기 힘듦." />
     <MESSAGE value="백준 15663번 N과 M(9) 백트래킹 문제&#10;&#10;그냥 재귀로 풀긴했음. 중복없이 탐색해야되므로 visited 배열을 써서 리스트 내에서 중복 탐색을 막았고, hashset으로 만약 리스트 내에 중복 값이 있어 같은 결과가 출력될 경우 막을 수 있게끔 조치했음." />
@@ -549,7 +544,12 @@
     <MESSAGE value="백준 1647번 도시 분할 계획 MST문제&#10;&#10;크루스칼 말고 프림으로 풀어봄." />
     <MESSAGE value="백준 1766번 문제집 위상정렬 문제&#10;&#10;단순한 위상정렬로 풀었음. 각자 가리키는 수를 link에 저장해놓고, 나를 가리키는 간선이 몇개 있는지는 In_Degree에 저장되어있음. In_d가 0인 수부터 시작해서(여기서 해시 셋으로 우선순위 큐에 바로 넣었음) 만약 In_d가 0이 되면 우선순위 큐에 넣는걸 반복(풀 수 있는 가장 쉬운 문제집부터 품)." />
     <MESSAGE value="하는중" />
-    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
+    <MESSAGE value="백준 1799번 비숍 백트래킹 문제&#10;&#10;일종의 DFS로 풀었음. 우하단 방향 대각선이랑, 우상단 대각선을 성분으로 가짐&#10;index 값은 몇 번쨰 우상단 대각선인지가 나오고, list[index] 안의 값은 우상단 대각선들이 몇번째 우하단 방향 대각선 위에 있는지를 저장하고 있음. 약간 그리디처럼 우상단 대각선에서 선택할 수 있으면 무조건 비숍을 놓는게 유리함 (안 놓을 이유가 없음 왜냐면 어지간해서는 다른 비숍과 겹치지 않게 놓을 수 있으므로). 따라서 모두 겹쳐서 못놓거나 애초에 대각선에 비숍을 못넣는 경우만 다음으로 넘겨주면 됨.&#10;&#10;여기서 메모리 초과 발생&#10;&#10;생각해보니 좌하단 대각선이 겹치려면 우상단 대각선의 간격이 만들어져야됨 -&gt; 어? 그럼 체스판을 사실상 반으로 분할해서 풀 수 있는거 아님? -&gt; 했더니 메모리 초과 해결됨.&#10;&#10;방문체크도 할까 했는데 경우의 수가 너무 많음." />
+    <MESSAGE value="백준 1806번 부분합 부분 합 문제&#10;&#10;소수의 연속 합과 풀이 자체는 거의 비슷함. 대신 주어진 s 값 &quot;이상&quot; 이 되는 부분합임." />
+    <MESSAGE value="백준 1987번 알파벳 백트래킹 문제&#10;&#10;아주 간단한 백트래킹임. 해시로 중복 체크함." />
+    <MESSAGE value="백준 2098번 외판원 순회 DP문제&#10;&#10;야호 내가 해냈다. 비트마스킹으로 각 도시의 방문 여부를 체크함. DP를 통해서 먼저 모든 도시를 방문하고 0으로 돌아올 수 있는지를 DFS로 얻어내고, 가능할 경우 그 경로에 있는 모든 비용을 더해주는 방식임. &#10;처음엔 DP[i][k] 값을 합산해줬는데 이럴 경우 처음 출발지(0,1)에서 정답이 나오는 경우 상관없지만 나중가면 점차 합산된 수가 누적되므로 무조건 틀림.&#10;다음은 dp[i][k] 값을 메모해뒀는데, 처음 구현일때는 함수의 인수로 이번 경로의 코스트를 입력받고 dp[i][k]에 저장했음. 이럴 경우 dp[i][k]에서의 최소 비용 + j -&gt; i 까지의 경로 비용이 dp[i][k]에 저장되므로 나중에 메모된 값을 참고할떄 경로 비용때문에 원하는 값을 얻어내지 못함. 따라서 인수에 있는 cost는 지워주고 전 단계에서 경로 비용을 계산하게 바꿨더니 통과." />
+    <MESSAGE value="백준 두 배열의 합 2143번 누적 합 문제&#10;&#10;두 개의 배열을 받아와서 두 배열의 합이 t가 될 수 있게 하는 문제&#10;&#10;해시 맵을 3개 써서&#10;temp에는 1 부터 n 까지의 누적합들이 들어가있음&#10;다음 입력이 들어올때마다 temp에 저장되어있는 값을 전부 빼면서 Sum_count에 넣어주면 a 배열에서 만들 수 있는 모든 누적합과 개수가 나오게 됨. b 배열에도 같은 일을 하고, a 배열의 key 값 하나에 대해 b 배열에서 t -key값을 가지면 그 개수를 넣어주면 됨.* 경우의 수이므로 곱해줘야됨 * 그런데 곱했을 경우 int 범위를 넘어갈 가능성이 있기때문에 long으로 처리했음." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 두 배열의 합 2143번 누적 합 문제&#10;&#10;두 개의 배열을 받아와서 두 배열의 합이 t가 될 수 있게 하는 문제&#10;&#10;해시 맵을 3개 써서&#10;temp에는 1 부터 n 까지의 누적합들이 들어가있음&#10;다음 입력이 들어올때마다 temp에 저장되어있는 값을 전부 빼면서 Sum_count에 넣어주면 a 배열에서 만들 수 있는 모든 누적합과 개수가 나오게 됨. b 배열에도 같은 일을 하고, a 배열의 key 값 하나에 대해 b 배열에서 t -key값을 가지면 그 개수를 넣어주면 됨.* 경우의 수이므로 곱해줘야됨 * 그런데 곱했을 경우 int 범위를 넘어갈 가능성이 있기때문에 long으로 처리했음." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -613,11 +613,12 @@
         <watch expression="((java.util.LinkedList)next).get(2)" custom="java.util.LinkedList" />
         <watch expression="((java.util.LinkedList)next).get(2)" custom="java.util.LinkedList" />
         <watch expression="select" />
+        <watch expression="sum" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1675226483651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1675831981176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/untitled$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1653019956093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
