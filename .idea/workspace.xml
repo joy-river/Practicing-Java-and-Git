@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/Edge.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -142,27 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00211" summary="백준 15657 N과 M(8) 재귀로 푼 문제&#10;&#10;스트링빌더를 재귀로 넣어서 풀었음. 중복으로 수를 뽑는게 가능하므로 재귀에서 인덱스를 상위 인덱스 그대로 받아오게끔 만들었고, 비내림차 순이므로 입력된 값은 리스트에 넣어 정렬함(우선순위 큐도 생각은 했는데 귀찮았음). 스트링빌더에서 delete나 replace 메소드는 스트링빌더의 인덱스를 기준으로 잡는데, 리스트에 입력된 값이 몇 자리 수일지는 모르기 때문에 사용하기 힘듦.">
-      <created>1671420749757</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
-      <option name="project" value="LOCAL" />
-      <updated>1671420749757</updated>
-    </task>
-    <task id="LOCAL-00212" summary="백준 15663번 N과 M(9) 백트래킹 문제&#10;&#10;그냥 재귀로 풀긴했음. 중복없이 탐색해야되므로 visited 배열을 써서 리스트 내에서 중복 탐색을 막았고, hashset으로 만약 리스트 내에 중복 값이 있어 같은 결과가 출력될 경우 막을 수 있게끔 조치했음.">
-      <created>1671438235472</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
-      <option name="project" value="LOCAL" />
-      <updated>1671438235472</updated>
-    </task>
-    <task id="LOCAL-00213" summary="하는중">
-      <created>1671438478934</created>
-      <option name="number" value="00213" />
-      <option name="presentableId" value="LOCAL-00213" />
-      <option name="project" value="LOCAL" />
-      <updated>1671438478934</updated>
     </task>
     <task id="LOCAL-00214" summary="백준 15666번 N과 M(12) 재귀로 푼 문제&#10;&#10;N과 M(8)번 소스에서 중복된 수열 출력하지 않게끔 Hashset으로 조정한게 다임.">
       <created>1671495002522</created>
@@ -486,7 +464,28 @@
       <option name="project" value="LOCAL" />
       <updated>1675921452915</updated>
     </task>
-    <option name="localTasksCounter" value="260" />
+    <task id="LOCAL-00260" summary="하는중">
+      <created>1675930836650</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1675930836650</updated>
+    </task>
+    <task id="LOCAL-00261" summary="백준 20149번 선분 교차 3 기하학(CCW) 문제&#10;&#10;교차점 찾는거는 문제가 없었는데, 문제가 되는 부분이 바로&#10;&#10;두 선분의 끝점이 한 점을 공유하면서 일직선으로 뻗는 경우( 1 1 5 5&#10;                                                5 5 9 9)&#10;                                                &#10;이런 경우 교차점을 찾아내는 함수를 만듦(OnePointCover) 이거만 조심하면 통과.">
+      <created>1675987950283</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1675987950283</updated>
+    </task>
+    <task id="LOCAL-00262" summary="백준 2166번 다각형의 면적 기하학 문제(신발끈)&#10;&#10;다각형이 어떤 다각형인지 말한 적 없음 -&gt; 오목한 다각형일 수 있음(삼각형으로 분할 못시키는 다각형). 이건 너무한거 아니냐고.">
+      <created>1676012479267</created>
+      <option name="number" value="00262" />
+      <option name="presentableId" value="LOCAL-00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1676012479267</updated>
+    </task>
+    <option name="localTasksCounter" value="263" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -525,8 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 15666번 N과 M(12) 재귀로 푼 문제&#10;&#10;N과 M(8)번 소스에서 중복된 수열 출력하지 않게끔 Hashset으로 조정한게 다임." />
-    <MESSAGE value="백준 15686번 치킨 배달 백트래킹 문제&#10;&#10;좌표의 절댓값 차이만큼의 거리가 있고, 각 집에서 치킨 집 까지의 최소 거리의 합산을 구하는 문제. 브루트포스로 모든 경우의 수를 찾아보는 방법을 썼는데, BFS로 할까 고민했는데 재귀로 풀었음. 재귀 과정에서 변수가 변경되는 경우를 잘 고려해야함. &lt;- 실수가 잦음." />
     <MESSAGE value="백준 16953번 A -&gt; B BFS 문제&#10;&#10;간단한 BFS로 풀 수 있는데, 다음 노드로 넘어갈때 INT 한계치를 넘어가는 경우가 있음. 이걸 LONG으로 고치면 통과" />
     <MESSAGE value="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함." />
     <MESSAGE value="백준 17144번 미세먼지 안녕 구현 문제&#10;&#10;너무 개같아요.. 미먼의 위치를 큐에다 넣어놓고 그 미먼을 -&gt; 확산 -&gt; 흐름으로 돌리는 구조임. 중요한건 미먼 위치가 중복으로 들어오면 안되니까 잘 체크해야되고, 배열을 새로 선언해야 확산단계에서 꼬이는 걸 막아줄 수 있음." />
@@ -546,11 +543,13 @@
     <MESSAGE value="백준 1987번 알파벳 백트래킹 문제&#10;&#10;아주 간단한 백트래킹임. 해시로 중복 체크함." />
     <MESSAGE value="백준 2098번 외판원 순회 DP문제&#10;&#10;야호 내가 해냈다. 비트마스킹으로 각 도시의 방문 여부를 체크함. DP를 통해서 먼저 모든 도시를 방문하고 0으로 돌아올 수 있는지를 DFS로 얻어내고, 가능할 경우 그 경로에 있는 모든 비용을 더해주는 방식임. &#10;처음엔 DP[i][k] 값을 합산해줬는데 이럴 경우 처음 출발지(0,1)에서 정답이 나오는 경우 상관없지만 나중가면 점차 합산된 수가 누적되므로 무조건 틀림.&#10;다음은 dp[i][k] 값을 메모해뒀는데, 처음 구현일때는 함수의 인수로 이번 경로의 코스트를 입력받고 dp[i][k]에 저장했음. 이럴 경우 dp[i][k]에서의 최소 비용 + j -&gt; i 까지의 경로 비용이 dp[i][k]에 저장되므로 나중에 메모된 값을 참고할떄 경로 비용때문에 원하는 값을 얻어내지 못함. 따라서 인수에 있는 cost는 지워주고 전 단계에서 경로 비용을 계산하게 바꿨더니 통과." />
     <MESSAGE value="백준 두 배열의 합 2143번 누적 합 문제&#10;&#10;두 개의 배열을 받아와서 두 배열의 합이 t가 될 수 있게 하는 문제&#10;&#10;해시 맵을 3개 써서&#10;temp에는 1 부터 n 까지의 누적합들이 들어가있음&#10;다음 입력이 들어올때마다 temp에 저장되어있는 값을 전부 빼면서 Sum_count에 넣어주면 a 배열에서 만들 수 있는 모든 누적합과 개수가 나오게 됨. b 배열에도 같은 일을 하고, a 배열의 key 값 하나에 대해 b 배열에서 t -key값을 가지면 그 개수를 넣어주면 됨.* 경우의 수이므로 곱해줘야됨 * 그런데 곱했을 경우 int 범위를 넘어갈 가능성이 있기때문에 long으로 처리했음." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 2162번 선분 그룹 기하하하하하학 문제&#10;&#10;선분 교차 판정 알고리즘 + UnionFind 섞은 문제&#10;&#10;선분 교차 판정은 -&gt; CCW 알고리즘을 써서 판정을 내림. 선분의 양 끝점 네개에서 세개를 뽑아서 외적을 구함(CCW 판정) 두 외적의 값이 음수일 경우 시계방향으로 가는 외적이고, 양수일 경우 반시계방향(Counter Clock Wise)임. 0일 경우 일직선에 놓여있음.&#10;&#10;만약에 두 선분의 끝점으로 만들어낸 ccw 값이 부호가 전부 음수면 교차한다고 판정내리는 알고리즘임.&#10;&#10;복잡함.." />
     <MESSAGE value="백준 17386번 선분 교차 1 기하학 문제&#10;&#10;선분 그룹 소스 약간 변형함 (CCW 알고리즘)" />
     <MESSAGE value="백준 17387번 선분 교차 2 기하학 문제&#10;&#10;선분 교차 1과 완전히 똑같음 (이미 선분 교차 1에서 겹치거나 끝 점일때 교차하는걸로 판정했었기 떄문에)" />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 17387번 선분 교차 2 기하학 문제&#10;&#10;선분 교차 1과 완전히 똑같음 (이미 선분 교차 1에서 겹치거나 끝 점일때 교차하는걸로 판정했었기 떄문에)" />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 20149번 선분 교차 3 기하학(CCW) 문제&#10;&#10;교차점 찾는거는 문제가 없었는데, 문제가 되는 부분이 바로&#10;&#10;두 선분의 끝점이 한 점을 공유하면서 일직선으로 뻗는 경우( 1 1 5 5&#10;                                                5 5 9 9)&#10;                                                &#10;이런 경우 교차점을 찾아내는 함수를 만듦(OnePointCover) 이거만 조심하면 통과." />
+    <MESSAGE value="백준 2166번 다각형의 면적 기하학 문제(신발끈)&#10;&#10;다각형이 어떤 다각형인지 말한 적 없음 -&gt; 오목한 다각형일 수 있음(삼각형으로 분할 못시키는 다각형). 이건 너무한거 아니냐고." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 2166번 다각형의 면적 기하학 문제(신발끈)&#10;&#10;다각형이 어떤 다각형인지 말한 적 없음 -&gt; 오목한 다각형일 수 있음(삼각형으로 분할 못시키는 다각형). 이건 너무한거 아니냐고." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -604,42 +603,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="177" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>28</line>
-          <properties class="Main" method="Cross_Point">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="258" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>75</line>
-          <properties class="Main" method="Meet">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="259" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>43</line>
-          <properties class="Main" method="OnePointCover">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="262" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>70</line>
-          <properties class="Main" method="slope">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="263" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
