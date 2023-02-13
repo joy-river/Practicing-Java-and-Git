@@ -142,20 +142,6 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00214" summary="백준 15666번 N과 M(12) 재귀로 푼 문제&#10;&#10;N과 M(8)번 소스에서 중복된 수열 출력하지 않게끔 Hashset으로 조정한게 다임.">
-      <created>1671495002522</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
-      <option name="project" value="LOCAL" />
-      <updated>1671495002522</updated>
-    </task>
-    <task id="LOCAL-00215" summary="백준 15686번 치킨 배달 백트래킹 문제&#10;&#10;좌표의 절댓값 차이만큼의 거리가 있고, 각 집에서 치킨 집 까지의 최소 거리의 합산을 구하는 문제. 브루트포스로 모든 경우의 수를 찾아보는 방법을 썼는데, BFS로 할까 고민했는데 재귀로 풀었음. 재귀 과정에서 변수가 변경되는 경우를 잘 고려해야함. &lt;- 실수가 잦음.">
-      <created>1671524336566</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1671524336566</updated>
-    </task>
     <task id="LOCAL-00216" summary="백준 16953번 A -&gt; B BFS 문제&#10;&#10;간단한 BFS로 풀 수 있는데, 다음 노드로 넘어갈때 INT 한계치를 넘어가는 경우가 있음. 이걸 LONG으로 고치면 통과">
       <created>1671680848968</created>
       <option name="number" value="00216" />
@@ -485,7 +471,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676012479267</updated>
     </task>
-    <option name="localTasksCounter" value="263" />
+    <task id="LOCAL-00263" summary="하는중">
+      <created>1676017046680</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1676017046681</updated>
+    </task>
+    <task id="LOCAL-00264" summary="백준 2239번 스도쿠 백트래킹 문제&#10;&#10;음 그냥 해시써서 체크함. 메모리는 많이 먹어도 시간은 좀 절약이 될듯..?">
+      <created>1676270741499</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1676270741499</updated>
+    </task>
+    <option name="localTasksCounter" value="265" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 16953번 A -&gt; B BFS 문제&#10;&#10;간단한 BFS로 풀 수 있는데, 다음 노드로 넘어갈때 INT 한계치를 넘어가는 경우가 있음. 이걸 LONG으로 고치면 통과" />
     <MESSAGE value="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함." />
     <MESSAGE value="백준 17144번 미세먼지 안녕 구현 문제&#10;&#10;너무 개같아요.. 미먼의 위치를 큐에다 넣어놓고 그 미먼을 -&gt; 확산 -&gt; 흐름으로 돌리는 구조임. 중요한건 미먼 위치가 중복으로 들어오면 안되니까 잘 체크해야되고, 배열을 새로 선언해야 확산단계에서 꼬이는 걸 막아줄 수 있음." />
     <MESSAGE value="백준 1005번 ACM Craft 위상 정렬 문제&#10;&#10;기념비적인 첫 위상정렬. 위상 정렬은 사이클이 없는 그래프에서, 행동해야하는 순서를 잡아주는 것.&#10;이 문제에서는 몇번 건물을 어느 시간에 지을 수 있냐를 결정하는 문제였음.&#10;&#10;여기서 우선순위 큐 now가 해주는 역할은 현재 어떤 건물이 건설 중인지를 알려줌.시간이 가장 짧은 노드 즉 큐의 가장 앞에 있는 값이 다음으로 지어질 건물이 됨. 그걸 가지고 건물을 짓고, 그 건물이 선행조건인 다른 건물들을 다시 우선순위 큐에 집어넣어주면 계속해서 건물을 순차적으로 올릴 수 있음." />
@@ -546,10 +545,11 @@
     <MESSAGE value="백준 2162번 선분 그룹 기하하하하하학 문제&#10;&#10;선분 교차 판정 알고리즘 + UnionFind 섞은 문제&#10;&#10;선분 교차 판정은 -&gt; CCW 알고리즘을 써서 판정을 내림. 선분의 양 끝점 네개에서 세개를 뽑아서 외적을 구함(CCW 판정) 두 외적의 값이 음수일 경우 시계방향으로 가는 외적이고, 양수일 경우 반시계방향(Counter Clock Wise)임. 0일 경우 일직선에 놓여있음.&#10;&#10;만약에 두 선분의 끝점으로 만들어낸 ccw 값이 부호가 전부 음수면 교차한다고 판정내리는 알고리즘임.&#10;&#10;복잡함.." />
     <MESSAGE value="백준 17386번 선분 교차 1 기하학 문제&#10;&#10;선분 그룹 소스 약간 변형함 (CCW 알고리즘)" />
     <MESSAGE value="백준 17387번 선분 교차 2 기하학 문제&#10;&#10;선분 교차 1과 완전히 똑같음 (이미 선분 교차 1에서 겹치거나 끝 점일때 교차하는걸로 판정했었기 떄문에)" />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 20149번 선분 교차 3 기하학(CCW) 문제&#10;&#10;교차점 찾는거는 문제가 없었는데, 문제가 되는 부분이 바로&#10;&#10;두 선분의 끝점이 한 점을 공유하면서 일직선으로 뻗는 경우( 1 1 5 5&#10;                                                5 5 9 9)&#10;                                                &#10;이런 경우 교차점을 찾아내는 함수를 만듦(OnePointCover) 이거만 조심하면 통과." />
     <MESSAGE value="백준 2166번 다각형의 면적 기하학 문제(신발끈)&#10;&#10;다각형이 어떤 다각형인지 말한 적 없음 -&gt; 오목한 다각형일 수 있음(삼각형으로 분할 못시키는 다각형). 이건 너무한거 아니냐고." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 2166번 다각형의 면적 기하학 문제(신발끈)&#10;&#10;다각형이 어떤 다각형인지 말한 적 없음 -&gt; 오목한 다각형일 수 있음(삼각형으로 분할 못시키는 다각형). 이건 너무한거 아니냐고." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 2239번 스도쿠 백트래킹 문제&#10;&#10;음 그냥 해시써서 체크함. 메모리는 많이 먹어도 시간은 좀 절약이 될듯..?" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 2239번 스도쿠 백트래킹 문제&#10;&#10;음 그냥 해시써서 체크함. 메모리는 많이 먹어도 시간은 좀 절약이 될듯..?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
