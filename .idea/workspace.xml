@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
+    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="백준 2252번 줄 세우기 위상정렬 문제&#10;&#10;기본적인 위상정렬, 우선순위 큐 써서 풀어서 사전순 최소 순서로 나옴.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -141,27 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00216" summary="백준 16953번 A -&gt; B BFS 문제&#10;&#10;간단한 BFS로 풀 수 있는데, 다음 노드로 넘어갈때 INT 한계치를 넘어가는 경우가 있음. 이걸 LONG으로 고치면 통과">
-      <created>1671680848968</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
-      <option name="project" value="LOCAL" />
-      <updated>1671680848968</updated>
-    </task>
-    <task id="LOCAL-00217" summary="하는중">
-      <created>1671696744070</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1671696744070</updated>
-    </task>
-    <task id="LOCAL-00218" summary="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함.">
-      <created>1671771670521</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1671771670521</updated>
     </task>
     <task id="LOCAL-00219" summary="하는중">
       <created>1671783408745</created>
@@ -485,7 +464,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676270741499</updated>
     </task>
-    <option name="localTasksCounter" value="265" />
+    <task id="LOCAL-00265" summary="백준 2252번 줄 세우기 위상정렬 문제&#10;&#10;기본적인 위상정렬, 우선순위 큐 써서 풀어서 사전순 최소 순서로 나옴.">
+      <created>1676273573234</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1676273573234</updated>
+    </task>
+    <task id="LOCAL-00266" summary="백준 2467번 용액 투 포인터 문제&#10;&#10;투 포인터로 계속 비교해가면서 절대값이 가장 작은 두 용액을 찾아냄.">
+      <created>1676353043103</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1676353043103</updated>
+    </task>
+    <task id="LOCAL-00267" summary="백준 2473번 용액 투 포인터 문제&#10;&#10;처음에 했던건 투 포인터로 두 수를 결정하고, 두 수 사이에 있는 값들 중에 절댓값을 최소로 만드는 값을 이분 탐색으로 찾겠다고 알고리즘을 짰는데 대차게 실패함.&#10;&#10;그래서 무식하게 반복문으로 0번부터 n - 2번까지 한개 골라놓고, 나머지 두개를 투포인터로 찾아내는 방식으로 바꿨음. 또한 입력 값이 워낙 커서 long 자료형을 써야함.">
+      <created>1676436030067</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1676436030067</updated>
+    </task>
+    <option name="localTasksCounter" value="268" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,9 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함." />
-    <MESSAGE value="백준 17144번 미세먼지 안녕 구현 문제&#10;&#10;너무 개같아요.. 미먼의 위치를 큐에다 넣어놓고 그 미먼을 -&gt; 확산 -&gt; 흐름으로 돌리는 구조임. 중요한건 미먼 위치가 중복으로 들어오면 안되니까 잘 체크해야되고, 배열을 새로 선언해야 확산단계에서 꼬이는 걸 막아줄 수 있음." />
-    <MESSAGE value="백준 1005번 ACM Craft 위상 정렬 문제&#10;&#10;기념비적인 첫 위상정렬. 위상 정렬은 사이클이 없는 그래프에서, 행동해야하는 순서를 잡아주는 것.&#10;이 문제에서는 몇번 건물을 어느 시간에 지을 수 있냐를 결정하는 문제였음.&#10;&#10;여기서 우선순위 큐 now가 해주는 역할은 현재 어떤 건물이 건설 중인지를 알려줌.시간이 가장 짧은 노드 즉 큐의 가장 앞에 있는 값이 다음으로 지어질 건물이 됨. 그걸 가지고 건물을 짓고, 그 건물이 선행조건인 다른 건물들을 다시 우선순위 큐에 집어넣어주면 계속해서 건물을 순차적으로 올릴 수 있음." />
     <MESSAGE value="백준 1007번 벡터 매칭 브루트포스 문제&#10;&#10;일단 모든 점의 x, y를 더함. 그리고 점 갯수의 반을 뽑아서 각각의 x, y를 두배 한 값을 빼주면 벡터의 합의 길이가 나옴. 문제는 이 점 갯수의 반을 뽑는 과정에서 시간초과가 뿜어질 위험이 있음. 조합을 구현하느냐에 따라 달라질 수 있는데, 백트래킹은 계속 시간초과가 떠서 재귀로 만들었더니 통과함." />
     <MESSAGE value="백준 1197번 최소 스패닝 트리 크루스칼 알고리즘(Union Find)&#10;&#10;크루스칼은 그리디의 일종인데, 최소 비용의 간선을 뽑고(우선순위 큐로 빠르게 함) 이 간선이 사이클을 형성하지 않으면 연결한다. 이렇게 연결이 끝나면 모든 노드를 한번씩 방문하는 최소 비용의 트리를 만들 수 있다는 알고리즘임. 여기서 사이클을 형성한다 -&gt; 간선의 양 끝 노드가 같은 부모를 공유한다. -&gt; 같은 집합 내에 있다는 점을 이용해서 Union Find로 문제를 풀 수 있음." />
     <MESSAGE value="백준 1202번 보석 도둑 우선순위 큐(그리디)&#10;&#10;가방에 들어갈 수 있는 보석 중에 가장 가치가 높은 보석을 계속 넣는 알고리즘..&#10;&#10;간단하게 해결할 수 있는데 if else문에서 else 처리가 잘못되어서 보석 가치의 큐에 이상한 값이 계속 들어가서 틀렸었음 &lt;- 개멍청" />
@@ -549,7 +546,10 @@
     <MESSAGE value="백준 2166번 다각형의 면적 기하학 문제(신발끈)&#10;&#10;다각형이 어떤 다각형인지 말한 적 없음 -&gt; 오목한 다각형일 수 있음(삼각형으로 분할 못시키는 다각형). 이건 너무한거 아니냐고." />
     <MESSAGE value="하는중" />
     <MESSAGE value="백준 2239번 스도쿠 백트래킹 문제&#10;&#10;음 그냥 해시써서 체크함. 메모리는 많이 먹어도 시간은 좀 절약이 될듯..?" />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 2239번 스도쿠 백트래킹 문제&#10;&#10;음 그냥 해시써서 체크함. 메모리는 많이 먹어도 시간은 좀 절약이 될듯..?" />
+    <MESSAGE value="백준 2252번 줄 세우기 위상정렬 문제&#10;&#10;기본적인 위상정렬, 우선순위 큐 써서 풀어서 사전순 최소 순서로 나옴." />
+    <MESSAGE value="백준 2467번 용액 투 포인터 문제&#10;&#10;투 포인터로 계속 비교해가면서 절대값이 가장 작은 두 용액을 찾아냄." />
+    <MESSAGE value="백준 2473번 용액 투 포인터 문제&#10;&#10;처음에 했던건 투 포인터로 두 수를 결정하고, 두 수 사이에 있는 값들 중에 절댓값을 최소로 만드는 값을 이분 탐색으로 찾겠다고 알고리즘을 짰는데 대차게 실패함.&#10;&#10;그래서 무식하게 반복문으로 0번부터 n - 2번까지 한개 골라놓고, 나머지 두개를 투포인터로 찾아내는 방식으로 바꿨음. 또한 입력 값이 워낙 커서 long 자료형을 써야함." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 2473번 용액 투 포인터 문제&#10;&#10;처음에 했던건 투 포인터로 두 수를 결정하고, 두 수 사이에 있는 값들 중에 절댓값을 최소로 만드는 값을 이분 탐색으로 찾겠다고 알고리즘을 짰는데 대차게 실패함.&#10;&#10;그래서 무식하게 반복문으로 0번부터 n - 2번까지 한개 골라놓고, 나머지 두개를 투포인터로 찾아내는 방식으로 바꿨음. 또한 입력 값이 워낙 커서 long 자료형을 써야함." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
