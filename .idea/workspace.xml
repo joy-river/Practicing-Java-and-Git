@@ -4,10 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="백준 2252번 줄 세우기 위상정렬 문제&#10;&#10;기본적인 위상정렬, 우선순위 큐 써서 풀어서 사전순 최소 순서로 나옴.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
+      <change afterPath="$PROJECT_DIR$/src/Topologicalsort/MusicProgram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00219" summary="하는중">
-      <created>1671783408745</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1671783408745</updated>
     </task>
     <task id="LOCAL-00220" summary="하는중">
       <created>1672042122042</created>
@@ -485,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676436030067</updated>
     </task>
-    <option name="localTasksCounter" value="268" />
+    <task id="LOCAL-00268" summary="하는중">
+      <created>1676448907549</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1676448907549</updated>
+    </task>
+    <option name="localTasksCounter" value="269" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -544,12 +542,12 @@
     <MESSAGE value="백준 17387번 선분 교차 2 기하학 문제&#10;&#10;선분 교차 1과 완전히 똑같음 (이미 선분 교차 1에서 겹치거나 끝 점일때 교차하는걸로 판정했었기 떄문에)" />
     <MESSAGE value="백준 20149번 선분 교차 3 기하학(CCW) 문제&#10;&#10;교차점 찾는거는 문제가 없었는데, 문제가 되는 부분이 바로&#10;&#10;두 선분의 끝점이 한 점을 공유하면서 일직선으로 뻗는 경우( 1 1 5 5&#10;                                                5 5 9 9)&#10;                                                &#10;이런 경우 교차점을 찾아내는 함수를 만듦(OnePointCover) 이거만 조심하면 통과." />
     <MESSAGE value="백준 2166번 다각형의 면적 기하학 문제(신발끈)&#10;&#10;다각형이 어떤 다각형인지 말한 적 없음 -&gt; 오목한 다각형일 수 있음(삼각형으로 분할 못시키는 다각형). 이건 너무한거 아니냐고." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 2239번 스도쿠 백트래킹 문제&#10;&#10;음 그냥 해시써서 체크함. 메모리는 많이 먹어도 시간은 좀 절약이 될듯..?" />
     <MESSAGE value="백준 2252번 줄 세우기 위상정렬 문제&#10;&#10;기본적인 위상정렬, 우선순위 큐 써서 풀어서 사전순 최소 순서로 나옴." />
     <MESSAGE value="백준 2467번 용액 투 포인터 문제&#10;&#10;투 포인터로 계속 비교해가면서 절대값이 가장 작은 두 용액을 찾아냄." />
     <MESSAGE value="백준 2473번 용액 투 포인터 문제&#10;&#10;처음에 했던건 투 포인터로 두 수를 결정하고, 두 수 사이에 있는 값들 중에 절댓값을 최소로 만드는 값을 이분 탐색으로 찾겠다고 알고리즘을 짰는데 대차게 실패함.&#10;&#10;그래서 무식하게 반복문으로 0번부터 n - 2번까지 한개 골라놓고, 나머지 두개를 투포인터로 찾아내는 방식으로 바꿨음. 또한 입력 값이 워낙 커서 long 자료형을 써야함." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 2473번 용액 투 포인터 문제&#10;&#10;처음에 했던건 투 포인터로 두 수를 결정하고, 두 수 사이에 있는 값들 중에 절댓값을 최소로 만드는 값을 이분 탐색으로 찾겠다고 알고리즘을 짰는데 대차게 실패함.&#10;&#10;그래서 무식하게 반복문으로 0번부터 n - 2번까지 한개 골라놓고, 나머지 두개를 투포인터로 찾아내는 방식으로 바꿨음. 또한 입력 값이 워낙 커서 long 자료형을 써야함." />
+    <MESSAGE value="하는중" />
+    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
