@@ -1,3 +1,4 @@
+import javax.crypto.Cipher;
 import java.io.*;
 import java.util.*;
 
@@ -5,57 +6,48 @@ import java.util.*;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    static String [][] Memo_Cost = new String[2][];
+    static int [][] Dp_Cost;
+    static int n, m, Min_Cost = Integer.MAX_VALUE, Max_Cost = 0;
+    static Queue<Integer> Recent_Cost = new LinkedList<>();
 
     public static void main(String[] args) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
-        StringBuilder sb = new StringBuilder();
-        int n = Integer.parseInt(st.nextToken());
-        int m = Integer.parseInt(st.nextToken());
-        int[] In_Degree = new int[n + 1];
-        Queue<Integer>[] link = new Queue[n + 1];
-        HashSet<Integer> full_set = new HashSet<>();
+        n = Integer.parseInt(st.nextToken());
+        m = Integer.parseInt(st.nextToken());
 
-        for (int i = 1; i <= n ; i++) {
-            link[i] = new LinkedList<>();
-            full_set.add(i);
-        }
+        for(int i = 0 ; i < 2 ; i++)
+            Memo_Cost[i] = br.readLine().split(" ");
+        for(String a : Memo_Cost[1])
+            Max_Cost += Integer.parseInt(a);
 
-        int u, a, b;
+        Dp_Cost = new int[Max_Cost + 1][n + 1];
 
-        for (int i = 0; i < m ; i++){
-            st = new StringTokenizer(br.readLine());
-            u = Integer.parseInt(st.nextToken());
-            b = Integer.parseInt(st.nextToken());
-            for (int j = 0; j < u - 1 ; j++){
-                a = b;
-                b = Integer.parseInt(st.nextToken());
+        ShutDownApp();
 
-                In_Degree[b]++;
-                link[a].add(b);
-                full_set.remove(b);
-            }
-        }
-        PriorityQueue<Integer> next = new PriorityQueue<>(full_set);
-
-        while(!next.isEmpty()){
-            a = next.poll();
-            full_set.add(a);
-            sb.append(a + "\n");
-
-            while(!link[a].isEmpty()){
-                b = link[a].poll();
-                if(--In_Degree[b] == 0)
-                    next.add(b);
-            }
-
-        }
-
-        bw.write(full_set.size() != n ? "0" :  sb.toString());
+        bw.write(Integer.toString(Min_Cost));
         bw.flush();
         bw.close();
 
-
     }
+
+    static void ShutDownApp (){
+        Recent_Cost.add(0);
+
+
+        for(int i = 0; i <= Max_Cost; i++){
+            for (int j = 1; j <= n; j++) {
+                int i_Memory = Integer.parseInt(Memo_Cost[0][i - 1]);
+                int i_Cost = Integer.parseInt(Memo_Cost[1][i - 1]);
+                int q_Size = Recent_Cost.size();
+                int cost;
+            }
+
+
+
+        }
+    }
+
 
 }
 
