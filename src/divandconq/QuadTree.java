@@ -10,7 +10,7 @@ public class QuadTree {
     public static void main(String[] args) throws IOException {
         n = Integer.parseInt(br.readLine());
         int [][] table = new int[n][n];
-        String [] line;
+        String [] line = null;
 
         for (int i = 0 ; i < n ; i ++){
             line = br.readLine().split("");
@@ -20,7 +20,7 @@ public class QuadTree {
 
         counting(table,  0, 0 , n);
 
-        bw.write(sb.toString());
+        bw.write(n == 1 ? line[0] :sb.toString());
         bw.flush();
         bw.close();
     }
@@ -68,3 +68,4 @@ public class QuadTree {
         }
     }
 }
+
