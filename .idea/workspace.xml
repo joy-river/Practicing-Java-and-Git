@@ -7,6 +7,7 @@
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/divandconq/QuadTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/divandconq/QuadTree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,20 +142,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00225" summary="하는중">
-      <created>1672387882928</created>
-      <option name="number" value="00225" />
-      <option name="presentableId" value="LOCAL-00225" />
-      <option name="project" value="LOCAL" />
-      <updated>1672387882928</updated>
-    </task>
-    <task id="LOCAL-00226" summary="하는중">
-      <created>1672733249727</created>
-      <option name="number" value="00226" />
-      <option name="presentableId" value="LOCAL-00226" />
-      <option name="project" value="LOCAL" />
-      <updated>1672733249728</updated>
     </task>
     <task id="LOCAL-00227" summary="하는중">
       <created>1673251411185</created>
@@ -485,7 +472,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676876751283</updated>
     </task>
-    <option name="localTasksCounter" value="274" />
+    <task id="LOCAL-00274" summary="하는중">
+      <created>1676880480254</created>
+      <option name="number" value="00274" />
+      <option name="presentableId" value="LOCAL-00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1676880480254</updated>
+    </task>
+    <task id="LOCAL-00275" summary="백준 9328번 열쇠 bfs문제&#10;&#10;그냥 bfs를 하면 되기는하는데, 문을 발견했을때 지금 열쇠가 없더라도 나중에 열쇠를 얻을 수 있으니 따로 저장해 놔야함. 문제는 같은 대문자로 된 문이 여러개 나올 수 있으니 Hashmap&lt;String, Steal_Index&gt; 으론 하나밖에 저장 못하므로 &#10;밸류를 큐로 바꿔서 대문자로 된 모든 문을 다 검사할 수 있게 하면 됨.">
+      <created>1676952008323</created>
+      <option name="number" value="00275" />
+      <option name="presentableId" value="LOCAL-00275" />
+      <option name="project" value="LOCAL" />
+      <updated>1676952008323</updated>
+    </task>
+    <option name="localTasksCounter" value="276" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,7 +525,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 1509, 2079번 팰린드롬 분할 dp문제&#10;&#10;일단 팰린드롬인지 판별하는 메소드 하나, 문자열의 어떤 범위가 팰린드롬인지 메모하는 이차원 배열을 놓고 dp를 함.&#10;&#10;i 값을 점차 올려가는데, j 값을 따라올려가면서 j ~ i 범위에 팰린드롬을 찾아내고, 이 팰린드롬을 분할에 넣을지 말지 판별함. 이걸 통해서 최소 팰린드롬 분할을 찾아내는데, 나는 못했음..(재귀로 풀려고했음)" />
     <MESSAGE value="백준 1562번 계단 수 dp문제&#10;&#10;아 dp 너무 어렵다. 비트 마스크를 쓴다 -&gt; k 자리의 비트가 k 수가 포함되어있는지를 판별한다. &#10;&#10;그래서 수를 만들어나가는데, i = 지금 자리 수 , j = 지금 자리 수에 무슨 수가 들어가있는지, k = 지금까지 무슨 수들이 나왔는지로 한다. &#10;&#10;그래서 비트마스크는 서순이 중요한게 아니라 나오기만 하면 되므로, 첫자리에서 n번 자리로 거꾸로 올라간다." />
     <MESSAGE value="백준 1644번 소수의 연속합 정수론 문제&#10;&#10;누적합으로 풀었음, 굳이 투 포인터 쓸 필요도 없이 큐에다가 누적합을 넣어서 n값과 비교하는 방법을 썼음." />
     <MESSAGE value="백준 1647번 도시 분할 계획 MST문제&#10;&#10;MST 문제 소스에 썼던 크루스칼을 그대로 들고왔음. 그걸 좀 개선한게 이번 코드임.&#10;&#10;vertex 클래스를 없애고 단순히 배열로 저장하게 만들었음. find_cycle 함수를 살짝 고쳐서 재귀로 바꿨음. 재귀를 돌리면서 계속 plist값을 갱신할 수 있게끔 만들어서 한번 호출하고 나서 시간을 줄일 수 있게 했음." />
@@ -547,9 +547,10 @@
     <MESSAGE value="백준 2623번 음악프로그램 위상정렬 문제&#10;&#10;단순한 위상정렬인데 출력 조건이 있으므로 잘 보고 하면 됨." />
     <MESSAGE value="백준 7579번 앱 냅색(dp) 문제&#10;&#10;냅색처럼 풀면 되는데, 문제 조건이 좀 달라서 헷갈릴 수 있음. 기본적으로 가치가 제일 높은걸 찾으면 됨. 배낭 크기 조건이 딱히 없어서 담을 수 있는 걸 모두 담다가 메모리가 요구 조건을 만족시키면 그때의 코스트를 출력해주면 됨. 이렇게 하기 위해서 이중 for문에서 코스트를 첫 반복인자로 삼아야 됨." />
     <MESSAGE value="백준 9252번 LCS 2 DP문제&#10;&#10;와 이거 생각보다 어려웠네. 스트링빌더 배열 만드니까 바로 시간초과떠서 실패. 배열 초기화 안하고 i, j = 0일때만 초기화하고 돌리니까 제대로 정답이 안나옴.&#10;&#10;결국 역추적해야겠다 싶어서 새로 클래스 만들어서 최근 char 값과 다음 char가 들어있는 인덱스를 저장하게 만듦." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 1992번 쿼드트리 분할 정복 문제&#10;&#10;입력에 n = 1 인 경우의 출력을 고쳤음." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 1992번 쿼드트리 분할 정복 문제&#10;&#10;입력에 n = 1 인 경우의 출력을 고쳤음." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 9328번 열쇠 bfs문제&#10;&#10;그냥 bfs를 하면 되기는하는데, 문을 발견했을때 지금 열쇠가 없더라도 나중에 열쇠를 얻을 수 있으니 따로 저장해 놔야함. 문제는 같은 대문자로 된 문이 여러개 나올 수 있으니 Hashmap&lt;String, Steal_Index&gt; 으론 하나밖에 저장 못하므로 &#10;밸류를 큐로 바꿔서 대문자로 된 모든 문을 다 검사할 수 있게 하면 됨." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 9328번 열쇠 bfs문제&#10;&#10;그냥 bfs를 하면 되기는하는데, 문을 발견했을때 지금 열쇠가 없더라도 나중에 열쇠를 얻을 수 있으니 따로 저장해 놔야함. 문제는 같은 대문자로 된 문이 여러개 나올 수 있으니 Hashmap&lt;String, Steal_Index&gt; 으론 하나밖에 저장 못하므로 &#10;밸류를 큐로 바꿔서 대문자로 된 모든 문을 다 검사할 수 있게 하면 됨." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
