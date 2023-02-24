@@ -7,7 +7,6 @@
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/divandconq/QuadTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/divandconq/QuadTree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,41 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00227" summary="하는중">
-      <created>1673251411185</created>
-      <option name="number" value="00227" />
-      <option name="presentableId" value="LOCAL-00227" />
-      <option name="project" value="LOCAL" />
-      <updated>1673251411185</updated>
-    </task>
-    <task id="LOCAL-00228" summary="하는중">
-      <created>1673338582283</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
-      <option name="project" value="LOCAL" />
-      <updated>1673338582283</updated>
-    </task>
-    <task id="LOCAL-00229" summary="하는중">
-      <created>1673425228083</created>
-      <option name="number" value="00229" />
-      <option name="presentableId" value="LOCAL-00229" />
-      <option name="project" value="LOCAL" />
-      <updated>1673425228083</updated>
-    </task>
-    <task id="LOCAL-00230" summary="백준 1007번 벡터 매칭 브루트포스 문제&#10;&#10;일단 모든 점의 x, y를 더함. 그리고 점 갯수의 반을 뽑아서 각각의 x, y를 두배 한 값을 빼주면 벡터의 합의 길이가 나옴. 문제는 이 점 갯수의 반을 뽑는 과정에서 시간초과가 뿜어질 위험이 있음. 조합을 구현하느냐에 따라 달라질 수 있는데, 백트래킹은 계속 시간초과가 떠서 재귀로 만들었더니 통과함.">
-      <created>1673482091985</created>
-      <option name="number" value="00230" />
-      <option name="presentableId" value="LOCAL-00230" />
-      <option name="project" value="LOCAL" />
-      <updated>1673482091985</updated>
-    </task>
-    <task id="LOCAL-00231" summary="백준 1197번 최소 스패닝 트리 크루스칼 알고리즘(Union Find)&#10;&#10;크루스칼은 그리디의 일종인데, 최소 비용의 간선을 뽑고(우선순위 큐로 빠르게 함) 이 간선이 사이클을 형성하지 않으면 연결한다. 이렇게 연결이 끝나면 모든 노드를 한번씩 방문하는 최소 비용의 트리를 만들 수 있다는 알고리즘임. 여기서 사이클을 형성한다 -&gt; 간선의 양 끝 노드가 같은 부모를 공유한다. -&gt; 같은 집합 내에 있다는 점을 이용해서 Union Find로 문제를 풀 수 있음.">
-      <created>1673501679124</created>
-      <option name="number" value="00231" />
-      <option name="presentableId" value="LOCAL-00231" />
-      <option name="project" value="LOCAL" />
-      <updated>1673501679124</updated>
     </task>
     <task id="LOCAL-00232" summary="하는중">
       <created>1673510901242</created>
@@ -486,7 +450,42 @@
       <option name="project" value="LOCAL" />
       <updated>1676952008323</updated>
     </task>
-    <option name="localTasksCounter" value="276" />
+    <task id="LOCAL-00276" summary="하는중">
+      <created>1676966892027</created>
+      <option name="number" value="00276" />
+      <option name="presentableId" value="LOCAL-00276" />
+      <option name="project" value="LOCAL" />
+      <updated>1676966892027</updated>
+    </task>
+    <task id="LOCAL-00277" summary="백준 9466번 텀 프로젝트 DFS 문제&#10;&#10;사이클을 찾을 수 있으면 =&gt; 걔네들 끼리 팀을 짜고 사이클에 못들어간 친구는 다 팀이 아니게 된다.">
+      <created>1677027735993</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1677027735993</updated>
+    </task>
+    <task id="LOCAL-00278" summary="백준 10942번 팰린드롬? dp문제&#10;&#10;무지성 풀이 실패! 5분컷 ㄲㅂ; 메모 써서 팰린드롬 검사 해놓은거 두번 안하게 바꿔주면 됨. 검사한 적 없을 때 = 0 이므로 검사돌리면 됨.">
+      <created>1677029487158</created>
+      <option name="number" value="00278" />
+      <option name="presentableId" value="LOCAL-00278" />
+      <option name="project" value="LOCAL" />
+      <updated>1677029487158</updated>
+    </task>
+    <task id="LOCAL-00279" summary="백준 12100번 2048(Easy) 구현, 백트래킹 문제&#10;&#10;아니 이거 왤케 복잡함. 구현 문제이니만큼 좀 무식하게 직접 구현해서 통과하는게 정공법인거 같음. 배열 얕은 복사랑 깊은 복사 유의해서 잘하고.&#10;한 번 합쳐진 블럭은 다음 이동 전까지는 다시 합쳐지지 않음.&#10;&#10;왼쪽으로 이동 후 뒤집기는 오른쪽으로 이동한게 아님!!!! 중요한 포인트&#10;&#10;배열 전체를 원점 대칭으로 회전시키고 왼쪽으로 이동한 배열을 다시 회전시킴 -&gt; 오른쪽 이동임 -&gt; 굉장히 복잡함!!&#10;코드 개선할 부분이 좀 많음. 엄청 더러움. 지금은 퇴근해야되므로 추후에 하는걸로,.">
+      <created>1677140207325</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1677140207327</updated>
+    </task>
+    <task id="LOCAL-00280" summary="백준 12852번 1로 만들기 2 bfs 문제&#10;&#10;bfs 감 떨어져서 재귀로 만들었다가 뭔가 이상한걸 깨달았음. 그냥 쉬운 bfs.">
+      <created>1677205190474</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1677205190474</updated>
+    </task>
+    <option name="localTasksCounter" value="281" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -525,10 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 1562번 계단 수 dp문제&#10;&#10;아 dp 너무 어렵다. 비트 마스크를 쓴다 -&gt; k 자리의 비트가 k 수가 포함되어있는지를 판별한다. &#10;&#10;그래서 수를 만들어나가는데, i = 지금 자리 수 , j = 지금 자리 수에 무슨 수가 들어가있는지, k = 지금까지 무슨 수들이 나왔는지로 한다. &#10;&#10;그래서 비트마스크는 서순이 중요한게 아니라 나오기만 하면 되므로, 첫자리에서 n번 자리로 거꾸로 올라간다." />
-    <MESSAGE value="백준 1644번 소수의 연속합 정수론 문제&#10;&#10;누적합으로 풀었음, 굳이 투 포인터 쓸 필요도 없이 큐에다가 누적합을 넣어서 n값과 비교하는 방법을 썼음." />
-    <MESSAGE value="백준 1647번 도시 분할 계획 MST문제&#10;&#10;MST 문제 소스에 썼던 크루스칼을 그대로 들고왔음. 그걸 좀 개선한게 이번 코드임.&#10;&#10;vertex 클래스를 없애고 단순히 배열로 저장하게 만들었음. find_cycle 함수를 살짝 고쳐서 재귀로 바꿨음. 재귀를 돌리면서 계속 plist값을 갱신할 수 있게끔 만들어서 한번 호출하고 나서 시간을 줄일 수 있게 했음." />
-    <MESSAGE value="백준 1647번 도시 분할 계획 MST문제&#10;&#10;크루스칼 말고 프림으로 풀어봄." />
     <MESSAGE value="백준 1766번 문제집 위상정렬 문제&#10;&#10;단순한 위상정렬로 풀었음. 각자 가리키는 수를 link에 저장해놓고, 나를 가리키는 간선이 몇개 있는지는 In_Degree에 저장되어있음. In_d가 0인 수부터 시작해서(여기서 해시 셋으로 우선순위 큐에 바로 넣었음) 만약 In_d가 0이 되면 우선순위 큐에 넣는걸 반복(풀 수 있는 가장 쉬운 문제집부터 품)." />
     <MESSAGE value="백준 1799번 비숍 백트래킹 문제&#10;&#10;일종의 DFS로 풀었음. 우하단 방향 대각선이랑, 우상단 대각선을 성분으로 가짐&#10;index 값은 몇 번쨰 우상단 대각선인지가 나오고, list[index] 안의 값은 우상단 대각선들이 몇번째 우하단 방향 대각선 위에 있는지를 저장하고 있음. 약간 그리디처럼 우상단 대각선에서 선택할 수 있으면 무조건 비숍을 놓는게 유리함 (안 놓을 이유가 없음 왜냐면 어지간해서는 다른 비숍과 겹치지 않게 놓을 수 있으므로). 따라서 모두 겹쳐서 못놓거나 애초에 대각선에 비숍을 못넣는 경우만 다음으로 넘겨주면 됨.&#10;&#10;여기서 메모리 초과 발생&#10;&#10;생각해보니 좌하단 대각선이 겹치려면 우상단 대각선의 간격이 만들어져야됨 -&gt; 어? 그럼 체스판을 사실상 반으로 분할해서 풀 수 있는거 아님? -&gt; 했더니 메모리 초과 해결됨.&#10;&#10;방문체크도 할까 했는데 경우의 수가 너무 많음." />
     <MESSAGE value="백준 1806번 부분합 부분 합 문제&#10;&#10;소수의 연속 합과 풀이 자체는 거의 비슷함. 대신 주어진 s 값 &quot;이상&quot; 이 되는 부분합임." />
@@ -548,9 +543,13 @@
     <MESSAGE value="백준 7579번 앱 냅색(dp) 문제&#10;&#10;냅색처럼 풀면 되는데, 문제 조건이 좀 달라서 헷갈릴 수 있음. 기본적으로 가치가 제일 높은걸 찾으면 됨. 배낭 크기 조건이 딱히 없어서 담을 수 있는 걸 모두 담다가 메모리가 요구 조건을 만족시키면 그때의 코스트를 출력해주면 됨. 이렇게 하기 위해서 이중 for문에서 코스트를 첫 반복인자로 삼아야 됨." />
     <MESSAGE value="백준 9252번 LCS 2 DP문제&#10;&#10;와 이거 생각보다 어려웠네. 스트링빌더 배열 만드니까 바로 시간초과떠서 실패. 배열 초기화 안하고 i, j = 0일때만 초기화하고 돌리니까 제대로 정답이 안나옴.&#10;&#10;결국 역추적해야겠다 싶어서 새로 클래스 만들어서 최근 char 값과 다음 char가 들어있는 인덱스를 저장하게 만듦." />
     <MESSAGE value="백준 1992번 쿼드트리 분할 정복 문제&#10;&#10;입력에 n = 1 인 경우의 출력을 고쳤음." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 9328번 열쇠 bfs문제&#10;&#10;그냥 bfs를 하면 되기는하는데, 문을 발견했을때 지금 열쇠가 없더라도 나중에 열쇠를 얻을 수 있으니 따로 저장해 놔야함. 문제는 같은 대문자로 된 문이 여러개 나올 수 있으니 Hashmap&lt;String, Steal_Index&gt; 으론 하나밖에 저장 못하므로 &#10;밸류를 큐로 바꿔서 대문자로 된 모든 문을 다 검사할 수 있게 하면 됨." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 9328번 열쇠 bfs문제&#10;&#10;그냥 bfs를 하면 되기는하는데, 문을 발견했을때 지금 열쇠가 없더라도 나중에 열쇠를 얻을 수 있으니 따로 저장해 놔야함. 문제는 같은 대문자로 된 문이 여러개 나올 수 있으니 Hashmap&lt;String, Steal_Index&gt; 으론 하나밖에 저장 못하므로 &#10;밸류를 큐로 바꿔서 대문자로 된 모든 문을 다 검사할 수 있게 하면 됨." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 9466번 텀 프로젝트 DFS 문제&#10;&#10;사이클을 찾을 수 있으면 =&gt; 걔네들 끼리 팀을 짜고 사이클에 못들어간 친구는 다 팀이 아니게 된다." />
+    <MESSAGE value="백준 10942번 팰린드롬? dp문제&#10;&#10;무지성 풀이 실패! 5분컷 ㄲㅂ; 메모 써서 팰린드롬 검사 해놓은거 두번 안하게 바꿔주면 됨. 검사한 적 없을 때 = 0 이므로 검사돌리면 됨." />
+    <MESSAGE value="백준 12100번 2048(Easy) 구현, 백트래킹 문제&#10;&#10;아니 이거 왤케 복잡함. 구현 문제이니만큼 좀 무식하게 직접 구현해서 통과하는게 정공법인거 같음. 배열 얕은 복사랑 깊은 복사 유의해서 잘하고.&#10;한 번 합쳐진 블럭은 다음 이동 전까지는 다시 합쳐지지 않음.&#10;&#10;왼쪽으로 이동 후 뒤집기는 오른쪽으로 이동한게 아님!!!! 중요한 포인트&#10;&#10;배열 전체를 원점 대칭으로 회전시키고 왼쪽으로 이동한 배열을 다시 회전시킴 -&gt; 오른쪽 이동임 -&gt; 굉장히 복잡함!!&#10;코드 개선할 부분이 좀 많음. 엄청 더러움. 지금은 퇴근해야되므로 추후에 하는걸로,." />
+    <MESSAGE value="백준 12852번 1로 만들기 2 bfs 문제&#10;&#10;bfs 감 떨어져서 재귀로 만들었다가 뭔가 이상한걸 깨달았음. 그냥 쉬운 bfs." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 12852번 1로 만들기 2 bfs 문제&#10;&#10;bfs 감 떨어져서 재귀로 만들었다가 뭔가 이상한걸 깨달았음. 그냥 쉬운 bfs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -596,6 +595,11 @@
           <line>57</line>
           <option name="timeStamp" value="183" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
           <line>24</line>
@@ -604,6 +608,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>54</line>
+          <properties class="Main" method="Move_Left">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="286" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
