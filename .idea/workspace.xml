@@ -53,7 +53,20 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/Queue/Card2.java" />
   </component>
-  <component name="RunManager" selected="애플리케이션.Main">
+  <component name="RunManager" selected="애플리케이션.BallEscape4">
+    <configuration name="BallEscape4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Simulation.BallEscape4" />
+      <module name="Practicing-Java-and-Git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Simulation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HideAndSeek3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GraphTheory.HideAndSeek3" />
       <module name="Practicing-Java-and-Git" />
@@ -70,19 +83,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Practicing-Java-and-Git" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MinimumCost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DFSandBFS.MinimumCost" />
-      <module name="Practicing-Java-and-Git" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DFSandBFS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,18 +115,18 @@
     </configuration>
     <list>
       <item itemvalue="애플리케이션.Main" />
-      <item itemvalue="애플리케이션.MinimumCost" />
       <item itemvalue="애플리케이션.HideAndSeek3" />
       <item itemvalue="애플리케이션.StairNumber" />
       <item itemvalue="애플리케이션.SegmentCross1" />
+      <item itemvalue="애플리케이션.BallEscape4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.BallEscape4" />
         <item itemvalue="애플리케이션.Main" />
         <item itemvalue="애플리케이션.SegmentCross1" />
         <item itemvalue="애플리케이션.StairNumber" />
         <item itemvalue="애플리케이션.HideAndSeek3" />
-        <item itemvalue="애플리케이션.MinimumCost" />
       </list>
     </recent_temporary>
   </component>
@@ -141,48 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00232" summary="하는중">
-      <created>1673510901242</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
-      <option name="project" value="LOCAL" />
-      <updated>1673510901242</updated>
-    </task>
-    <task id="LOCAL-00233" summary="백준 1202번 보석 도둑 우선순위 큐(그리디)&#10;&#10;가방에 들어갈 수 있는 보석 중에 가장 가치가 높은 보석을 계속 넣는 알고리즘..&#10;&#10;간단하게 해결할 수 있는데 if else문에서 else 처리가 잘못되어서 보석 가치의 큐에 이상한 값이 계속 들어가서 틀렸었음 &lt;- 개멍청">
-      <created>1673592700709</created>
-      <option name="number" value="00233" />
-      <option name="presentableId" value="LOCAL-00233" />
-      <option name="project" value="LOCAL" />
-      <updated>1673592700710</updated>
-    </task>
-    <task id="LOCAL-00234" summary="하는중">
-      <created>1673597548897</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
-      <option name="project" value="LOCAL" />
-      <updated>1673597548897</updated>
-    </task>
-    <task id="LOCAL-00235" summary="하는중">
-      <created>1673856542449</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
-      <option name="project" value="LOCAL" />
-      <updated>1673856542449</updated>
-    </task>
-    <task id="LOCAL-00236" summary="백준 1208번 부분수열의 합 2 이분탐색 문제&#10;&#10;이진탐색이라기엔 이분탐색.. 말 그대로 문제를 반토막 내서 반을 연산하고, 나머지 반을 다시 연산함. &#10;&#10;배열을 반토막 내서 그 배열의 부분 집합을 모두 구함. 집합 전체를 구할 필요는 없고 집합의 합(부분 합)만 구해서 쉽게 찾을 수 있게끔 해시 맵에 넣어둠.&#10;&#10;나머지 반의 배열에서 부분 합을 구하고, 합쳐서 s를 만들 수 있는 값을 해시 맵에서 꺼내와서 결과 값에 더해주는 방식임. 결과 값이 40!개 있을 수 있으니 long형을 써야함.">
-      <created>1674020269253</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1674020269253</updated>
-    </task>
-    <task id="LOCAL-00237" summary="하는중">
-      <created>1674029415582</created>
-      <option name="number" value="00237" />
-      <option name="presentableId" value="LOCAL-00237" />
-      <option name="project" value="LOCAL" />
-      <updated>1674029415582</updated>
     </task>
     <task id="LOCAL-00238" summary="하는중">
       <created>1674115749298</created>
@@ -485,7 +443,49 @@
       <option name="project" value="LOCAL" />
       <updated>1677205190474</updated>
     </task>
-    <option name="localTasksCounter" value="281" />
+    <task id="LOCAL-00281" summary="하는중">
+      <created>1677226687869</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1677226687869</updated>
+    </task>
+    <task id="LOCAL-00282" summary="백준 13460번 구슬 탈출 2 구현(bfs 문제)&#10;&#10;아 왤케 섹시하게 코드를 못짜겠지. 너무 더러운 코드갔워요~~~">
+      <created>1677471417017</created>
+      <option name="number" value="00282" />
+      <option name="presentableId" value="LOCAL-00282" />
+      <option name="project" value="LOCAL" />
+      <updated>1677471417017</updated>
+    </task>
+    <task id="LOCAL-00283" summary="백준 13460번 구슬 탈출 2 구현(bfs 문제)&#10;&#10;아 왤케 섹시하게 코드를 못짜겠지. 너무 더러운 코드갔워요~~~">
+      <created>1677479221643</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1677479221643</updated>
+    </task>
+    <task id="LOCAL-00284" summary="백준 13459번 구슬 탈출 구현(bfs) 문제&#10;&#10;저번 구슬 탈출 2를 엄청 개선했음!!!!&#10;&#10;x y좌표로 1씩 움직이는 방법을 배웠다!">
+      <created>1677479272685</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1677479272685</updated>
+    </task>
+    <task id="LOCAL-00285" summary="백준 15653번 구슬 탈출 4 구현(bfs)문제&#10;&#10;아니 구슬 1 에서 개선한 코드가 있었는데, 중복 방문 체크를 Red, Blue로 해놔가지고 무한 루프를 도는 경우가 발생함. 그걸 temp로 고쳐서 해결">
+      <created>1677548843933</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1677548843933</updated>
+    </task>
+    <task id="LOCAL-00286" summary="백준 15644번 구슬 탈출 3 구현 문제&#10;&#10;구슬 탈출 4 에서 중복 배열 체크 개선한 코드에 역추적으로 기울인 방향을 구할 수 있게 만든 코드">
+      <created>1677548905583</created>
+      <option name="number" value="00286" />
+      <option name="presentableId" value="LOCAL-00286" />
+      <option name="project" value="LOCAL" />
+      <updated>1677548905583</updated>
+    </task>
+    <option name="localTasksCounter" value="287" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,10 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 1766번 문제집 위상정렬 문제&#10;&#10;단순한 위상정렬로 풀었음. 각자 가리키는 수를 link에 저장해놓고, 나를 가리키는 간선이 몇개 있는지는 In_Degree에 저장되어있음. In_d가 0인 수부터 시작해서(여기서 해시 셋으로 우선순위 큐에 바로 넣었음) 만약 In_d가 0이 되면 우선순위 큐에 넣는걸 반복(풀 수 있는 가장 쉬운 문제집부터 품)." />
-    <MESSAGE value="백준 1799번 비숍 백트래킹 문제&#10;&#10;일종의 DFS로 풀었음. 우하단 방향 대각선이랑, 우상단 대각선을 성분으로 가짐&#10;index 값은 몇 번쨰 우상단 대각선인지가 나오고, list[index] 안의 값은 우상단 대각선들이 몇번째 우하단 방향 대각선 위에 있는지를 저장하고 있음. 약간 그리디처럼 우상단 대각선에서 선택할 수 있으면 무조건 비숍을 놓는게 유리함 (안 놓을 이유가 없음 왜냐면 어지간해서는 다른 비숍과 겹치지 않게 놓을 수 있으므로). 따라서 모두 겹쳐서 못놓거나 애초에 대각선에 비숍을 못넣는 경우만 다음으로 넘겨주면 됨.&#10;&#10;여기서 메모리 초과 발생&#10;&#10;생각해보니 좌하단 대각선이 겹치려면 우상단 대각선의 간격이 만들어져야됨 -&gt; 어? 그럼 체스판을 사실상 반으로 분할해서 풀 수 있는거 아님? -&gt; 했더니 메모리 초과 해결됨.&#10;&#10;방문체크도 할까 했는데 경우의 수가 너무 많음." />
-    <MESSAGE value="백준 1806번 부분합 부분 합 문제&#10;&#10;소수의 연속 합과 풀이 자체는 거의 비슷함. 대신 주어진 s 값 &quot;이상&quot; 이 되는 부분합임." />
-    <MESSAGE value="백준 1987번 알파벳 백트래킹 문제&#10;&#10;아주 간단한 백트래킹임. 해시로 중복 체크함." />
     <MESSAGE value="백준 2098번 외판원 순회 DP문제&#10;&#10;야호 내가 해냈다. 비트마스킹으로 각 도시의 방문 여부를 체크함. DP를 통해서 먼저 모든 도시를 방문하고 0으로 돌아올 수 있는지를 DFS로 얻어내고, 가능할 경우 그 경로에 있는 모든 비용을 더해주는 방식임. &#10;처음엔 DP[i][k] 값을 합산해줬는데 이럴 경우 처음 출발지(0,1)에서 정답이 나오는 경우 상관없지만 나중가면 점차 합산된 수가 누적되므로 무조건 틀림.&#10;다음은 dp[i][k] 값을 메모해뒀는데, 처음 구현일때는 함수의 인수로 이번 경로의 코스트를 입력받고 dp[i][k]에 저장했음. 이럴 경우 dp[i][k]에서의 최소 비용 + j -&gt; i 까지의 경로 비용이 dp[i][k]에 저장되므로 나중에 메모된 값을 참고할떄 경로 비용때문에 원하는 값을 얻어내지 못함. 따라서 인수에 있는 cost는 지워주고 전 단계에서 경로 비용을 계산하게 바꿨더니 통과." />
     <MESSAGE value="백준 두 배열의 합 2143번 누적 합 문제&#10;&#10;두 개의 배열을 받아와서 두 배열의 합이 t가 될 수 있게 하는 문제&#10;&#10;해시 맵을 3개 써서&#10;temp에는 1 부터 n 까지의 누적합들이 들어가있음&#10;다음 입력이 들어올때마다 temp에 저장되어있는 값을 전부 빼면서 Sum_count에 넣어주면 a 배열에서 만들 수 있는 모든 누적합과 개수가 나오게 됨. b 배열에도 같은 일을 하고, a 배열의 key 값 하나에 대해 b 배열에서 t -key값을 가지면 그 개수를 넣어주면 됨.* 경우의 수이므로 곱해줘야됨 * 그런데 곱했을 경우 int 범위를 넘어갈 가능성이 있기때문에 long으로 처리했음." />
     <MESSAGE value="백준 2162번 선분 그룹 기하하하하하학 문제&#10;&#10;선분 교차 판정 알고리즘 + UnionFind 섞은 문제&#10;&#10;선분 교차 판정은 -&gt; CCW 알고리즘을 써서 판정을 내림. 선분의 양 끝점 네개에서 세개를 뽑아서 외적을 구함(CCW 판정) 두 외적의 값이 음수일 경우 시계방향으로 가는 외적이고, 양수일 경우 반시계방향(Counter Clock Wise)임. 0일 경우 일직선에 놓여있음.&#10;&#10;만약에 두 선분의 끝점으로 만들어낸 ccw 값이 부호가 전부 음수면 교차한다고 판정내리는 알고리즘임.&#10;&#10;복잡함.." />
@@ -544,12 +540,16 @@
     <MESSAGE value="백준 9252번 LCS 2 DP문제&#10;&#10;와 이거 생각보다 어려웠네. 스트링빌더 배열 만드니까 바로 시간초과떠서 실패. 배열 초기화 안하고 i, j = 0일때만 초기화하고 돌리니까 제대로 정답이 안나옴.&#10;&#10;결국 역추적해야겠다 싶어서 새로 클래스 만들어서 최근 char 값과 다음 char가 들어있는 인덱스를 저장하게 만듦." />
     <MESSAGE value="백준 1992번 쿼드트리 분할 정복 문제&#10;&#10;입력에 n = 1 인 경우의 출력을 고쳤음." />
     <MESSAGE value="백준 9328번 열쇠 bfs문제&#10;&#10;그냥 bfs를 하면 되기는하는데, 문을 발견했을때 지금 열쇠가 없더라도 나중에 열쇠를 얻을 수 있으니 따로 저장해 놔야함. 문제는 같은 대문자로 된 문이 여러개 나올 수 있으니 Hashmap&lt;String, Steal_Index&gt; 으론 하나밖에 저장 못하므로 &#10;밸류를 큐로 바꿔서 대문자로 된 모든 문을 다 검사할 수 있게 하면 됨." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 9466번 텀 프로젝트 DFS 문제&#10;&#10;사이클을 찾을 수 있으면 =&gt; 걔네들 끼리 팀을 짜고 사이클에 못들어간 친구는 다 팀이 아니게 된다." />
     <MESSAGE value="백준 10942번 팰린드롬? dp문제&#10;&#10;무지성 풀이 실패! 5분컷 ㄲㅂ; 메모 써서 팰린드롬 검사 해놓은거 두번 안하게 바꿔주면 됨. 검사한 적 없을 때 = 0 이므로 검사돌리면 됨." />
     <MESSAGE value="백준 12100번 2048(Easy) 구현, 백트래킹 문제&#10;&#10;아니 이거 왤케 복잡함. 구현 문제이니만큼 좀 무식하게 직접 구현해서 통과하는게 정공법인거 같음. 배열 얕은 복사랑 깊은 복사 유의해서 잘하고.&#10;한 번 합쳐진 블럭은 다음 이동 전까지는 다시 합쳐지지 않음.&#10;&#10;왼쪽으로 이동 후 뒤집기는 오른쪽으로 이동한게 아님!!!! 중요한 포인트&#10;&#10;배열 전체를 원점 대칭으로 회전시키고 왼쪽으로 이동한 배열을 다시 회전시킴 -&gt; 오른쪽 이동임 -&gt; 굉장히 복잡함!!&#10;코드 개선할 부분이 좀 많음. 엄청 더러움. 지금은 퇴근해야되므로 추후에 하는걸로,." />
     <MESSAGE value="백준 12852번 1로 만들기 2 bfs 문제&#10;&#10;bfs 감 떨어져서 재귀로 만들었다가 뭔가 이상한걸 깨달았음. 그냥 쉬운 bfs." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 12852번 1로 만들기 2 bfs 문제&#10;&#10;bfs 감 떨어져서 재귀로 만들었다가 뭔가 이상한걸 깨달았음. 그냥 쉬운 bfs." />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 13460번 구슬 탈출 2 구현(bfs 문제)&#10;&#10;아 왤케 섹시하게 코드를 못짜겠지. 너무 더러운 코드갔워요~~~" />
+    <MESSAGE value="백준 13459번 구슬 탈출 구현(bfs) 문제&#10;&#10;저번 구슬 탈출 2를 엄청 개선했음!!!!&#10;&#10;x y좌표로 1씩 움직이는 방법을 배웠다!" />
+    <MESSAGE value="백준 15653번 구슬 탈출 4 구현(bfs)문제&#10;&#10;아니 구슬 1 에서 개선한 코드가 있었는데, 중복 방문 체크를 Red, Blue로 해놔가지고 무한 루프를 도는 경우가 발생함. 그걸 temp로 고쳐서 해결" />
+    <MESSAGE value="백준 15644번 구슬 탈출 3 구현 문제&#10;&#10;구슬 탈출 4 에서 중복 배열 체크 개선한 코드에 역추적으로 기울인 방향을 구할 수 있게 만든 코드" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 15644번 구슬 탈출 3 구현 문제&#10;&#10;구슬 탈출 4 에서 중복 배열 체크 개선한 코드에 역추적으로 기울인 방향을 구할 수 있게 만든 코드" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -597,8 +597,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="284" />
+          <line>11</line>
+          <option name="timeStamp" value="293" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
@@ -608,15 +608,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="177" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>54</line>
-          <properties class="Main" method="Move_Left">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="286" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -630,6 +621,7 @@
         <watch expression="sum" />
         <watch expression="b" />
         <watch expression="recent[i - 1]" language="JAVA" />
+        <watch expression="st" />
       </configuration>
     </watches-manager>
   </component>
