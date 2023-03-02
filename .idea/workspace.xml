@@ -7,7 +7,6 @@
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/Queue/Card2.java" />
   </component>
-  <component name="RunManager" selected="애플리케이션.BallEscape4">
+  <component name="RunManager" selected="애플리케이션.Main">
     <configuration name="BallEscape4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Simulation.BallEscape4" />
       <module name="Practicing-Java-and-Git" />
@@ -122,8 +121,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.BallEscape4" />
         <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.BallEscape4" />
         <item itemvalue="애플리케이션.SegmentCross1" />
         <item itemvalue="애플리케이션.StairNumber" />
         <item itemvalue="애플리케이션.HideAndSeek3" />
@@ -141,34 +140,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00238" summary="하는중">
-      <created>1674115749298</created>
-      <option name="number" value="00238" />
-      <option name="presentableId" value="LOCAL-00238" />
-      <option name="project" value="LOCAL" />
-      <updated>1674115749299</updated>
-    </task>
-    <task id="LOCAL-00239" summary="백준 1509, 2079번 팰린드롬 분할 dp문제&#10;&#10;일단 팰린드롬인지 판별하는 메소드 하나, 문자열의 어떤 범위가 팰린드롬인지 메모하는 이차원 배열을 놓고 dp를 함.&#10;&#10;i 값을 점차 올려가는데, j 값을 따라올려가면서 j ~ i 범위에 팰린드롬을 찾아내고, 이 팰린드롬을 분할에 넣을지 말지 판별함. 이걸 통해서 최소 팰린드롬 분할을 찾아내는데, 나는 못했음..(재귀로 풀려고했음)">
-      <created>1674630498359</created>
-      <option name="number" value="00239" />
-      <option name="presentableId" value="LOCAL-00239" />
-      <option name="project" value="LOCAL" />
-      <updated>1674630498360</updated>
-    </task>
-    <task id="LOCAL-00240" summary="하는중">
-      <created>1674634261204</created>
-      <option name="number" value="00240" />
-      <option name="presentableId" value="LOCAL-00240" />
-      <option name="project" value="LOCAL" />
-      <updated>1674634261204</updated>
-    </task>
-    <task id="LOCAL-00241" summary="하는중">
-      <created>1674720766039</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
-      <option name="project" value="LOCAL" />
-      <updated>1674720766039</updated>
     </task>
     <task id="LOCAL-00242" summary="백준 1562번 계단 수 dp문제&#10;&#10;아 dp 너무 어렵다. 비트 마스크를 쓴다 -&gt; k 자리의 비트가 k 수가 포함되어있는지를 판별한다. &#10;&#10;그래서 수를 만들어나가는데, i = 지금 자리 수 , j = 지금 자리 수에 무슨 수가 들어가있는지, k = 지금까지 무슨 수들이 나왔는지로 한다. &#10;&#10;그래서 비트마스크는 서순이 중요한게 아니라 나오기만 하면 되므로, 첫자리에서 n번 자리로 거꾸로 올라간다.">
       <created>1674785727961</created>
@@ -485,7 +456,35 @@
       <option name="project" value="LOCAL" />
       <updated>1677548905583</updated>
     </task>
-    <option name="localTasksCounter" value="287" />
+    <task id="LOCAL-00287" summary="하는중">
+      <created>1677572030595</created>
+      <option name="number" value="00287" />
+      <option name="presentableId" value="LOCAL-00287" />
+      <option name="project" value="LOCAL" />
+      <updated>1677572030595</updated>
+    </task>
+    <task id="LOCAL-00288" summary="백준 14003번 가장 긴 증가하는 부분 수열 5 LIS문제(nlogn)&#10;&#10;이미 LIS를 바이너리로 해놓은 코드(LIS2)가 있어서 거기다 역추적을 어떻게 잘 끼워넣은 코드임.">
+      <created>1677740572594</created>
+      <option name="number" value="00288" />
+      <option name="presentableId" value="LOCAL-00288" />
+      <option name="project" value="LOCAL" />
+      <updated>1677740572594</updated>
+    </task>
+    <task id="LOCAL-00289" summary="백준 12738번 가장 긴 증가하는 부분 수열 3 LIS&#10;&#10;마 바이너리로 후딱 해치워라!">
+      <created>1677740791741</created>
+      <option name="number" value="00289" />
+      <option name="presentableId" value="LOCAL-00289" />
+      <option name="project" value="LOCAL" />
+      <updated>1677740791741</updated>
+    </task>
+    <task id="LOCAL-00290" summary="백준 14002번 가장 긴 증가하는 부분 수열 4 LIS&#10;&#10;LIS5랑 완전히 동일하게 풀면 되지만 입력 값이 널널해서 NlogN 까지 필요없는 문제.">
+      <created>1677740864599</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1677740864599</updated>
+    </task>
+    <option name="localTasksCounter" value="291" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,9 +523,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 2098번 외판원 순회 DP문제&#10;&#10;야호 내가 해냈다. 비트마스킹으로 각 도시의 방문 여부를 체크함. DP를 통해서 먼저 모든 도시를 방문하고 0으로 돌아올 수 있는지를 DFS로 얻어내고, 가능할 경우 그 경로에 있는 모든 비용을 더해주는 방식임. &#10;처음엔 DP[i][k] 값을 합산해줬는데 이럴 경우 처음 출발지(0,1)에서 정답이 나오는 경우 상관없지만 나중가면 점차 합산된 수가 누적되므로 무조건 틀림.&#10;다음은 dp[i][k] 값을 메모해뒀는데, 처음 구현일때는 함수의 인수로 이번 경로의 코스트를 입력받고 dp[i][k]에 저장했음. 이럴 경우 dp[i][k]에서의 최소 비용 + j -&gt; i 까지의 경로 비용이 dp[i][k]에 저장되므로 나중에 메모된 값을 참고할떄 경로 비용때문에 원하는 값을 얻어내지 못함. 따라서 인수에 있는 cost는 지워주고 전 단계에서 경로 비용을 계산하게 바꿨더니 통과." />
-    <MESSAGE value="백준 두 배열의 합 2143번 누적 합 문제&#10;&#10;두 개의 배열을 받아와서 두 배열의 합이 t가 될 수 있게 하는 문제&#10;&#10;해시 맵을 3개 써서&#10;temp에는 1 부터 n 까지의 누적합들이 들어가있음&#10;다음 입력이 들어올때마다 temp에 저장되어있는 값을 전부 빼면서 Sum_count에 넣어주면 a 배열에서 만들 수 있는 모든 누적합과 개수가 나오게 됨. b 배열에도 같은 일을 하고, a 배열의 key 값 하나에 대해 b 배열에서 t -key값을 가지면 그 개수를 넣어주면 됨.* 경우의 수이므로 곱해줘야됨 * 그런데 곱했을 경우 int 범위를 넘어갈 가능성이 있기때문에 long으로 처리했음." />
-    <MESSAGE value="백준 2162번 선분 그룹 기하하하하하학 문제&#10;&#10;선분 교차 판정 알고리즘 + UnionFind 섞은 문제&#10;&#10;선분 교차 판정은 -&gt; CCW 알고리즘을 써서 판정을 내림. 선분의 양 끝점 네개에서 세개를 뽑아서 외적을 구함(CCW 판정) 두 외적의 값이 음수일 경우 시계방향으로 가는 외적이고, 양수일 경우 반시계방향(Counter Clock Wise)임. 0일 경우 일직선에 놓여있음.&#10;&#10;만약에 두 선분의 끝점으로 만들어낸 ccw 값이 부호가 전부 음수면 교차한다고 판정내리는 알고리즘임.&#10;&#10;복잡함.." />
     <MESSAGE value="백준 17386번 선분 교차 1 기하학 문제&#10;&#10;선분 그룹 소스 약간 변형함 (CCW 알고리즘)" />
     <MESSAGE value="백준 17387번 선분 교차 2 기하학 문제&#10;&#10;선분 교차 1과 완전히 똑같음 (이미 선분 교차 1에서 겹치거나 끝 점일때 교차하는걸로 판정했었기 떄문에)" />
     <MESSAGE value="백준 20149번 선분 교차 3 기하학(CCW) 문제&#10;&#10;교차점 찾는거는 문제가 없었는데, 문제가 되는 부분이 바로&#10;&#10;두 선분의 끝점이 한 점을 공유하면서 일직선으로 뻗는 경우( 1 1 5 5&#10;                                                5 5 9 9)&#10;                                                &#10;이런 경우 교차점을 찾아내는 함수를 만듦(OnePointCover) 이거만 조심하면 통과." />
@@ -544,12 +540,15 @@
     <MESSAGE value="백준 10942번 팰린드롬? dp문제&#10;&#10;무지성 풀이 실패! 5분컷 ㄲㅂ; 메모 써서 팰린드롬 검사 해놓은거 두번 안하게 바꿔주면 됨. 검사한 적 없을 때 = 0 이므로 검사돌리면 됨." />
     <MESSAGE value="백준 12100번 2048(Easy) 구현, 백트래킹 문제&#10;&#10;아니 이거 왤케 복잡함. 구현 문제이니만큼 좀 무식하게 직접 구현해서 통과하는게 정공법인거 같음. 배열 얕은 복사랑 깊은 복사 유의해서 잘하고.&#10;한 번 합쳐진 블럭은 다음 이동 전까지는 다시 합쳐지지 않음.&#10;&#10;왼쪽으로 이동 후 뒤집기는 오른쪽으로 이동한게 아님!!!! 중요한 포인트&#10;&#10;배열 전체를 원점 대칭으로 회전시키고 왼쪽으로 이동한 배열을 다시 회전시킴 -&gt; 오른쪽 이동임 -&gt; 굉장히 복잡함!!&#10;코드 개선할 부분이 좀 많음. 엄청 더러움. 지금은 퇴근해야되므로 추후에 하는걸로,." />
     <MESSAGE value="백준 12852번 1로 만들기 2 bfs 문제&#10;&#10;bfs 감 떨어져서 재귀로 만들었다가 뭔가 이상한걸 깨달았음. 그냥 쉬운 bfs." />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 13460번 구슬 탈출 2 구현(bfs 문제)&#10;&#10;아 왤케 섹시하게 코드를 못짜겠지. 너무 더러운 코드갔워요~~~" />
     <MESSAGE value="백준 13459번 구슬 탈출 구현(bfs) 문제&#10;&#10;저번 구슬 탈출 2를 엄청 개선했음!!!!&#10;&#10;x y좌표로 1씩 움직이는 방법을 배웠다!" />
     <MESSAGE value="백준 15653번 구슬 탈출 4 구현(bfs)문제&#10;&#10;아니 구슬 1 에서 개선한 코드가 있었는데, 중복 방문 체크를 Red, Blue로 해놔가지고 무한 루프를 도는 경우가 발생함. 그걸 temp로 고쳐서 해결" />
     <MESSAGE value="백준 15644번 구슬 탈출 3 구현 문제&#10;&#10;구슬 탈출 4 에서 중복 배열 체크 개선한 코드에 역추적으로 기울인 방향을 구할 수 있게 만든 코드" />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 15644번 구슬 탈출 3 구현 문제&#10;&#10;구슬 탈출 4 에서 중복 배열 체크 개선한 코드에 역추적으로 기울인 방향을 구할 수 있게 만든 코드" />
+    <MESSAGE value="하는중" />
+    <MESSAGE value="백준 14003번 가장 긴 증가하는 부분 수열 5 LIS문제(nlogn)&#10;&#10;이미 LIS를 바이너리로 해놓은 코드(LIS2)가 있어서 거기다 역추적을 어떻게 잘 끼워넣은 코드임." />
+    <MESSAGE value="백준 12738번 가장 긴 증가하는 부분 수열 3 LIS&#10;&#10;마 바이너리로 후딱 해치워라!" />
+    <MESSAGE value="백준 14002번 가장 긴 증가하는 부분 수열 4 LIS&#10;&#10;LIS5랑 완전히 동일하게 풀면 되지만 입력 값이 널널해서 NlogN 까지 필요없는 문제." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 14002번 가장 긴 증가하는 부분 수열 4 LIS&#10;&#10;LIS5랑 완전히 동일하게 풀면 되지만 입력 값이 널널해서 NlogN 까지 필요없는 문제." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -597,8 +596,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>11</line>
+          <line>12</line>
           <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BinarySearch/LIS2.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
