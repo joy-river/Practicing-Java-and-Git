@@ -7,6 +7,7 @@
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,13 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
-    </task>
-    <task id="LOCAL-00242" summary="백준 1562번 계단 수 dp문제&#10;&#10;아 dp 너무 어렵다. 비트 마스크를 쓴다 -&gt; k 자리의 비트가 k 수가 포함되어있는지를 판별한다. &#10;&#10;그래서 수를 만들어나가는데, i = 지금 자리 수 , j = 지금 자리 수에 무슨 수가 들어가있는지, k = 지금까지 무슨 수들이 나왔는지로 한다. &#10;&#10;그래서 비트마스크는 서순이 중요한게 아니라 나오기만 하면 되므로, 첫자리에서 n번 자리로 거꾸로 올라간다.">
-      <created>1674785727961</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
-      <option name="project" value="LOCAL" />
-      <updated>1674785727961</updated>
     </task>
     <task id="LOCAL-00243" summary="하는중">
       <created>1674807828488</created>
@@ -484,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677740864599</updated>
     </task>
-    <option name="localTasksCounter" value="291" />
+    <task id="LOCAL-00291" summary="하는중">
+      <created>1677745165807</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1677745165807</updated>
+    </task>
+    <option name="localTasksCounter" value="292" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -544,11 +545,11 @@
     <MESSAGE value="백준 13459번 구슬 탈출 구현(bfs) 문제&#10;&#10;저번 구슬 탈출 2를 엄청 개선했음!!!!&#10;&#10;x y좌표로 1씩 움직이는 방법을 배웠다!" />
     <MESSAGE value="백준 15653번 구슬 탈출 4 구현(bfs)문제&#10;&#10;아니 구슬 1 에서 개선한 코드가 있었는데, 중복 방문 체크를 Red, Blue로 해놔가지고 무한 루프를 도는 경우가 발생함. 그걸 temp로 고쳐서 해결" />
     <MESSAGE value="백준 15644번 구슬 탈출 3 구현 문제&#10;&#10;구슬 탈출 4 에서 중복 배열 체크 개선한 코드에 역추적으로 기울인 방향을 구할 수 있게 만든 코드" />
-    <MESSAGE value="하는중" />
     <MESSAGE value="백준 14003번 가장 긴 증가하는 부분 수열 5 LIS문제(nlogn)&#10;&#10;이미 LIS를 바이너리로 해놓은 코드(LIS2)가 있어서 거기다 역추적을 어떻게 잘 끼워넣은 코드임." />
     <MESSAGE value="백준 12738번 가장 긴 증가하는 부분 수열 3 LIS&#10;&#10;마 바이너리로 후딱 해치워라!" />
     <MESSAGE value="백준 14002번 가장 긴 증가하는 부분 수열 4 LIS&#10;&#10;LIS5랑 완전히 동일하게 풀면 되지만 입력 값이 널널해서 NlogN 까지 필요없는 문제." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 14002번 가장 긴 증가하는 부분 수열 4 LIS&#10;&#10;LIS5랑 완전히 동일하게 풀면 되지만 입력 값이 널널해서 NlogN 까지 필요없는 문제." />
+    <MESSAGE value="하는중" />
+    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -595,19 +596,14 @@
           <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="293" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BinarySearch/LIS2.java</url>
           <line>21</line>
           <option name="timeStamp" value="295" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="297" />
+          <line>16</line>
+          <option name="timeStamp" value="298" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
