@@ -142,20 +142,6 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00243" summary="하는중">
-      <created>1674807828488</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
-      <option name="project" value="LOCAL" />
-      <updated>1674807828488</updated>
-    </task>
-    <task id="LOCAL-00244" summary="백준 1644번 소수의 연속합 정수론 문제&#10;&#10;누적합으로 풀었음, 굳이 투 포인터 쓸 필요도 없이 큐에다가 누적합을 넣어서 n값과 비교하는 방법을 썼음.">
-      <created>1675043982757</created>
-      <option name="number" value="00244" />
-      <option name="presentableId" value="LOCAL-00244" />
-      <option name="project" value="LOCAL" />
-      <updated>1675043982757</updated>
-    </task>
     <task id="LOCAL-00245" summary="하는중">
       <created>1675059018909</created>
       <option name="number" value="00245" />
@@ -485,7 +471,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677745165807</updated>
     </task>
-    <option name="localTasksCounter" value="292" />
+    <task id="LOCAL-00292" summary="하는중">
+      <created>1677830733735</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1677830733735</updated>
+    </task>
+    <task id="LOCAL-00293" summary="백준 2342번 DDR DP문제&#10;&#10;처음엔 그리디로 풀었음 -&gt; 현재 발 위치 기억해놓고 움직이는 방식 =&gt; 망함&#10;&#10;DP로 풀어야됨. 다음 가야될 위치를 왼발로 밟을때, 오른발로 밟을 떄의 비용을 메모하고 돌리면 됨.">
+      <created>1678078710544</created>
+      <option name="number" value="00293" />
+      <option name="presentableId" value="LOCAL-00293" />
+      <option name="project" value="LOCAL" />
+      <updated>1678078710544</updated>
+    </task>
+    <option name="localTasksCounter" value="294" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 17386번 선분 교차 1 기하학 문제&#10;&#10;선분 그룹 소스 약간 변형함 (CCW 알고리즘)" />
     <MESSAGE value="백준 17387번 선분 교차 2 기하학 문제&#10;&#10;선분 교차 1과 완전히 똑같음 (이미 선분 교차 1에서 겹치거나 끝 점일때 교차하는걸로 판정했었기 떄문에)" />
     <MESSAGE value="백준 20149번 선분 교차 3 기하학(CCW) 문제&#10;&#10;교차점 찾는거는 문제가 없었는데, 문제가 되는 부분이 바로&#10;&#10;두 선분의 끝점이 한 점을 공유하면서 일직선으로 뻗는 경우( 1 1 5 5&#10;                                                5 5 9 9)&#10;                                                &#10;이런 경우 교차점을 찾아내는 함수를 만듦(OnePointCover) 이거만 조심하면 통과." />
     <MESSAGE value="백준 2166번 다각형의 면적 기하학 문제(신발끈)&#10;&#10;다각형이 어떤 다각형인지 말한 적 없음 -&gt; 오목한 다각형일 수 있음(삼각형으로 분할 못시키는 다각형). 이건 너무한거 아니냐고." />
@@ -549,7 +548,8 @@
     <MESSAGE value="백준 12738번 가장 긴 증가하는 부분 수열 3 LIS&#10;&#10;마 바이너리로 후딱 해치워라!" />
     <MESSAGE value="백준 14002번 가장 긴 증가하는 부분 수열 4 LIS&#10;&#10;LIS5랑 완전히 동일하게 풀면 되지만 입력 값이 널널해서 NlogN 까지 필요없는 문제." />
     <MESSAGE value="하는중" />
-    <option name="LAST_COMMIT_MESSAGE" value="하는중" />
+    <MESSAGE value="백준 2342번 DDR DP문제&#10;&#10;처음엔 그리디로 풀었음 -&gt; 현재 발 위치 기억해놓고 움직이는 방식 =&gt; 망함&#10;&#10;DP로 풀어야됨. 다음 가야될 위치를 왼발로 밟을때, 오른발로 밟을 떄의 비용을 메모하고 돌리면 됨." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 2342번 DDR DP문제&#10;&#10;처음엔 그리디로 풀었음 -&gt; 현재 발 위치 기억해놓고 움직이는 방식 =&gt; 망함&#10;&#10;DP로 풀어야됨. 다음 가야될 위치를 왼발로 밟을때, 오른발로 밟을 떄의 비용을 메모하고 돌리면 됨." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -602,8 +602,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="298" />
+          <line>22</line>
+          <option name="timeStamp" value="300" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
