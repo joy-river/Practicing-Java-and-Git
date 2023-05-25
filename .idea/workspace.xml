@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0496aaa-cdd3-48da-9997-1a22298cde73" name="Default Changelist" comment="하는중">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-05-27__11_24_________Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-05-27__11_24_________Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-05-27__11_37_________Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-05-27__11_37_________Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-05-27__12_15_________Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-05-27__12_15_________Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-05-27__12_21_________Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-05-27__12_21_________Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-07-11__8_57_________Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-07-11__8_57_________Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/GraphTheory/Edge.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practicing-Java-and-Git/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -54,12 +60,25 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/Queue/Card2.java" />
   </component>
   <component name="RunManager" selected="애플리케이션.Main">
-    <configuration name="BallEscape4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Simulation.BallEscape4" />
+    <configuration name="Cheese" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraphTheory.Cheese" />
       <module name="Practicing-Java-and-Git" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Simulation.*" />
+          <option name="PATTERN" value="GraphTheory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DFSandBFS.Dijkstra" />
+      <module name="Practicing-Java-and-Git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DFSandBFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,25 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SegmentCross1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Geometry.SegmentCross1" />
+    <configuration name="MinimumCost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DFSandBFS.MinimumCost" />
       <module name="Practicing-Java-and-Git" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Geometry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StairNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP.StairNumber" />
-      <module name="Practicing-Java-and-Git" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DP.*" />
+          <option name="PATTERN" value="DFSandBFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,19 +120,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="애플리케이션.Dijkstra" />
+      <item itemvalue="애플리케이션.Cheese" />
       <item itemvalue="애플리케이션.Main" />
+      <item itemvalue="애플리케이션.MinimumCost" />
       <item itemvalue="애플리케이션.HideAndSeek3" />
-      <item itemvalue="애플리케이션.StairNumber" />
-      <item itemvalue="애플리케이션.SegmentCross1" />
-      <item itemvalue="애플리케이션.BallEscape4" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
-        <item itemvalue="애플리케이션.BallEscape4" />
-        <item itemvalue="애플리케이션.SegmentCross1" />
-        <item itemvalue="애플리케이션.StairNumber" />
         <item itemvalue="애플리케이션.HideAndSeek3" />
+        <item itemvalue="애플리케이션.MinimumCost" />
+        <item itemvalue="애플리케이션.Cheese" />
+        <item itemvalue="애플리케이션.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -142,350 +148,350 @@
       <option name="presentableId" value="Default" />
       <updated>1637157129708</updated>
     </task>
-    <task id="LOCAL-00245" summary="하는중">
-      <created>1675059018909</created>
-      <option name="number" value="00245" />
-      <option name="presentableId" value="LOCAL-00245" />
+    <task id="LOCAL-00170" summary="하는중">
+      <created>1667981702122</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
       <option name="project" value="LOCAL" />
-      <updated>1675059018909</updated>
+      <updated>1667981702122</updated>
     </task>
-    <task id="LOCAL-00246" summary="백준 1647번 도시 분할 계획 MST문제&#10;&#10;MST 문제 소스에 썼던 크루스칼을 그대로 들고왔음. 그걸 좀 개선한게 이번 코드임.&#10;&#10;vertex 클래스를 없애고 단순히 배열로 저장하게 만들었음. find_cycle 함수를 살짝 고쳐서 재귀로 바꿨음. 재귀를 돌리면서 계속 plist값을 갱신할 수 있게끔 만들어서 한번 호출하고 나서 시간을 줄일 수 있게 했음.">
-      <created>1675231972655</created>
-      <option name="number" value="00246" />
-      <option name="presentableId" value="LOCAL-00246" />
+    <task id="LOCAL-00171" summary="하는중">
+      <created>1668067389989</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
       <option name="project" value="LOCAL" />
-      <updated>1675231972655</updated>
+      <updated>1668067389989</updated>
     </task>
-    <task id="LOCAL-00247" summary="백준 1647번 도시 분할 계획 MST문제&#10;&#10;크루스칼 말고 프림으로 풀어봄.">
-      <created>1675233932875</created>
-      <option name="number" value="00247" />
-      <option name="presentableId" value="LOCAL-00247" />
+    <task id="LOCAL-00172" summary="백준 1918번 후위표기식 스택 문제&#10;&#10;들어오는 연산자들을 우선순위를 매긴다. */ 는 +-보다 우선순위가 높고, 괄호는 최우선이므로 최대 연산길이 100을 우선순위에 더해준다. 만약 다음 연산자가 현재 연산자 스택의 맨 위 보다 우선순위가 낮다면, 그 우선순위까지의 연산을 모두 실행한다(pop해준다). 피연산자들은 그냥 바로 result스택에 넣어도 된다.">
+      <created>1668137120439</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
       <option name="project" value="LOCAL" />
-      <updated>1675233932875</updated>
+      <updated>1668137120439</updated>
     </task>
-    <task id="LOCAL-00248" summary="백준 1766번 문제집 위상정렬 문제&#10;&#10;단순한 위상정렬로 풀었음. 각자 가리키는 수를 link에 저장해놓고, 나를 가리키는 간선이 몇개 있는지는 In_Degree에 저장되어있음. In_d가 0인 수부터 시작해서(여기서 해시 셋으로 우선순위 큐에 바로 넣었음) 만약 In_d가 0이 되면 우선순위 큐에 넣는걸 반복(풀 수 있는 가장 쉬운 문제집부터 품).">
-      <created>1675236649157</created>
-      <option name="number" value="00248" />
-      <option name="presentableId" value="LOCAL-00248" />
+    <task id="LOCAL-00173" summary="백준 1991번 트리 순회 그래프 문제&#10;&#10;전위(preorder)  = 루트 - 왼 - 오&#10;중위(inorder) = 왼 - 루트 - 오&#10;후위(postorder) = 왼 - 오 - 루트&#10;&#10;재귀함수 3개 만듦">
+      <created>1668146396231</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
       <option name="project" value="LOCAL" />
-      <updated>1675236649157</updated>
+      <updated>1668146396231</updated>
     </task>
-    <task id="LOCAL-00249" summary="하는중">
-      <created>1675238856909</created>
-      <option name="number" value="00249" />
-      <option name="presentableId" value="LOCAL-00249" />
+    <task id="LOCAL-00174" summary="하는중">
+      <created>1668151705594</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
       <option name="project" value="LOCAL" />
-      <updated>1675238856909</updated>
+      <updated>1668151705594</updated>
     </task>
-    <task id="LOCAL-00250" summary="하는중">
-      <created>1675325370877</created>
-      <option name="number" value="00250" />
-      <option name="presentableId" value="LOCAL-00250" />
+    <task id="LOCAL-00175" summary="하는중">
+      <created>1668413440591</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
       <option name="project" value="LOCAL" />
-      <updated>1675325370878</updated>
+      <updated>1668413440591</updated>
     </task>
-    <task id="LOCAL-00251" summary="백준 1799번 비숍 백트래킹 문제&#10;&#10;일종의 DFS로 풀었음. 우하단 방향 대각선이랑, 우상단 대각선을 성분으로 가짐&#10;index 값은 몇 번쨰 우상단 대각선인지가 나오고, list[index] 안의 값은 우상단 대각선들이 몇번째 우하단 방향 대각선 위에 있는지를 저장하고 있음. 약간 그리디처럼 우상단 대각선에서 선택할 수 있으면 무조건 비숍을 놓는게 유리함 (안 놓을 이유가 없음 왜냐면 어지간해서는 다른 비숍과 겹치지 않게 놓을 수 있으므로). 따라서 모두 겹쳐서 못놓거나 애초에 대각선에 비숍을 못넣는 경우만 다음으로 넘겨주면 됨.&#10;&#10;여기서 메모리 초과 발생&#10;&#10;생각해보니 좌하단 대각선이 겹치려면 우상단 대각선의 간격이 만들어져야됨 -&gt; 어? 그럼 체스판을 사실상 반으로 분할해서 풀 수 있는거 아님? -&gt; 했더니 메모리 초과 해결됨.&#10;&#10;방문체크도 할까 했는데 경우의 수가 너무 많음.">
-      <created>1675399218747</created>
-      <option name="number" value="00251" />
-      <option name="presentableId" value="LOCAL-00251" />
+    <task id="LOCAL-00176" summary="하는중">
+      <created>1668499776387</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
       <option name="project" value="LOCAL" />
-      <updated>1675399218747</updated>
+      <updated>1668499776387</updated>
     </task>
-    <task id="LOCAL-00252" summary="백준 1806번 부분합 부분 합 문제&#10;&#10;소수의 연속 합과 풀이 자체는 거의 비슷함. 대신 주어진 s 값 &quot;이상&quot; 이 되는 부분합임.">
-      <created>1675408444689</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
+    <task id="LOCAL-00177" summary="조금만 더 하면 될거같다.">
+      <created>1668586799420</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
       <option name="project" value="LOCAL" />
-      <updated>1675408444689</updated>
+      <updated>1668586799420</updated>
     </task>
-    <task id="LOCAL-00253" summary="백준 1987번 알파벳 백트래킹 문제&#10;&#10;아주 간단한 백트래킹임. 해시로 중복 체크함.">
-      <created>1675732041681</created>
-      <option name="number" value="00253" />
-      <option name="presentableId" value="LOCAL-00253" />
+    <task id="LOCAL-00178" summary="백준 2263번 트리의 순회 트리 문제&#10;&#10;in, postorder로 주어진 순회로 pre오더를 찾는것. 기본 알고리즘은 다음과 같다.&#10;&#10;post의 마지막 요소 값이 root가 된다.&#10;in에서 root의 위치를 찾으면, root보다 낮은 인덱스는 left subtree이고, 높은 인덱스는 right subtree이다.&#10;&#10;를 재귀적으로 반복하면 pre오더로 순회값을 구할 수 있다. 처음에는 실제 트리를 만들었는데, 굳이 그럴 필요는 없으므로 출력만 해주는걸로 바꿨다. 재귀도 많이 고쳤다. 함수 내에서 왼, 오 루트를 골라줬는데 그러지 않게 바꿨다. 그 다음 &#10;알고리즘의 두 번째 단계인 inorder에서 root의 위치 찾기에서 반복문이 너무 많이 돈다. 최악의 경우 n이 n번 돌기때문에 시간초과를 뿜어낸다. 요소의 중복이 없고, 원래 있는 index값이 변화하지도 않기때문에 hashmap으로 string을 넣어 원래 index를 반환하게 만들었다.">
+      <created>1668754234904</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
       <option name="project" value="LOCAL" />
-      <updated>1675732041681</updated>
+      <updated>1668754234904</updated>
     </task>
-    <task id="LOCAL-00254" summary="백준 2098번 외판원 순회 DP문제&#10;&#10;야호 내가 해냈다. 비트마스킹으로 각 도시의 방문 여부를 체크함. DP를 통해서 먼저 모든 도시를 방문하고 0으로 돌아올 수 있는지를 DFS로 얻어내고, 가능할 경우 그 경로에 있는 모든 비용을 더해주는 방식임. &#10;처음엔 DP[i][k] 값을 합산해줬는데 이럴 경우 처음 출발지(0,1)에서 정답이 나오는 경우 상관없지만 나중가면 점차 합산된 수가 누적되므로 무조건 틀림.&#10;다음은 dp[i][k] 값을 메모해뒀는데, 처음 구현일때는 함수의 인수로 이번 경로의 코스트를 입력받고 dp[i][k]에 저장했음. 이럴 경우 dp[i][k]에서의 최소 비용 + j -&gt; i 까지의 경로 비용이 dp[i][k]에 저장되므로 나중에 메모된 값을 참고할떄 경로 비용때문에 원하는 값을 얻어내지 못함. 따라서 인수에 있는 cost는 지워주고 전 단계에서 경로 비용을 계산하게 바꿨더니 통과.">
-      <created>1675814960519</created>
-      <option name="number" value="00254" />
-      <option name="presentableId" value="LOCAL-00254" />
+    <task id="LOCAL-00179" summary="하는중">
+      <created>1668759162352</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
       <option name="project" value="LOCAL" />
-      <updated>1675814960519</updated>
+      <updated>1668759162352</updated>
     </task>
-    <task id="LOCAL-00255" summary="백준 두 배열의 합 2143번 누적 합 문제&#10;&#10;두 개의 배열을 받아와서 두 배열의 합이 t가 될 수 있게 하는 문제&#10;&#10;해시 맵을 3개 써서&#10;temp에는 1 부터 n 까지의 누적합들이 들어가있음&#10;다음 입력이 들어올때마다 temp에 저장되어있는 값을 전부 빼면서 Sum_count에 넣어주면 a 배열에서 만들 수 있는 모든 누적합과 개수가 나오게 됨. b 배열에도 같은 일을 하고, a 배열의 key 값 하나에 대해 b 배열에서 t -key값을 가지면 그 개수를 넣어주면 됨.* 경우의 수이므로 곱해줘야됨 * 그런데 곱했을 경우 int 범위를 넘어갈 가능성이 있기때문에 long으로 처리했음.">
-      <created>1675834694379</created>
-      <option name="number" value="00255" />
-      <option name="presentableId" value="LOCAL-00255" />
+    <task id="LOCAL-00180" summary="하는중">
+      <created>1669018196950</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
       <option name="project" value="LOCAL" />
-      <updated>1675834694379</updated>
+      <updated>1669018196951</updated>
     </task>
-    <task id="LOCAL-00256" summary="하는중">
-      <created>1675843588822</created>
-      <option name="number" value="00256" />
-      <option name="presentableId" value="LOCAL-00256" />
+    <task id="LOCAL-00181" summary="하는중">
+      <created>1669104958752</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
       <option name="project" value="LOCAL" />
-      <updated>1675843588822</updated>
+      <updated>1669104958752</updated>
     </task>
-    <task id="LOCAL-00257" summary="백준 2162번 선분 그룹 기하하하하하학 문제&#10;&#10;선분 교차 판정 알고리즘 + UnionFind 섞은 문제&#10;&#10;선분 교차 판정은 -&gt; CCW 알고리즘을 써서 판정을 내림. 선분의 양 끝점 네개에서 세개를 뽑아서 외적을 구함(CCW 판정) 두 외적의 값이 음수일 경우 시계방향으로 가는 외적이고, 양수일 경우 반시계방향(Counter Clock Wise)임. 0일 경우 일직선에 놓여있음.&#10;&#10;만약에 두 선분의 끝점으로 만들어낸 ccw 값이 부호가 전부 음수면 교차한다고 판정내리는 알고리즘임.&#10;&#10;복잡함..">
-      <created>1675920282106</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
+    <task id="LOCAL-00182" summary="백준 2206번 벽 부수고 이동하기 bfs문제&#10;&#10;처음에는 단순한 bfs로 했는데 실패. 문제가 벽을 뚫을 수 있으면 다 뚫어봐야됨. 그래서 뭔 생각을 했냐면 for문 돌려서 벽이 나올때마다 벽에서 bfs를 돌리자 =&gt;개같이 실패. 그 다음은 스타트 지점에서 bfs를 돌리면서 가다가, 벽이 나오면 벽에서 bfs를 해서 목적지에 도달할 수 있는지 재귀로 판단하자 -&gt; 개같이 시간초과. 생각만 한거는 방문을 벽을 뚫음 = 1, 안뚫음 = 0 으로 해서 bfs가 두개 돌아가게 만들자고 생각했는데 방법을 고민하다가 너무 복잡한거 같아서 포기함. &#10;결론적으로 마지막이 정답. 그런데 구현방법을 새로운 클래스를 정의한다든지가 아니라, 삼차원 배열을 써서 z값을 벽을 부쉈나 안부쉈나로 판단했음. 간단히 해결됨.">
+      <created>1669168877441</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
       <option name="project" value="LOCAL" />
-      <updated>1675920282106</updated>
+      <updated>1669168877441</updated>
     </task>
-    <task id="LOCAL-00258" summary="백준 17386번 선분 교차 1 기하학 문제&#10;&#10;선분 그룹 소스 약간 변형함 (CCW 알고리즘)">
-      <created>1675921065193</created>
-      <option name="number" value="00258" />
-      <option name="presentableId" value="LOCAL-00258" />
+    <task id="LOCAL-00183" summary="백준 2407번 조합 정수론&#10;&#10;100c50이 너무 크긴 함. 문자열으로 계산하면 됨. 개같이 빅---인트">
+      <created>1669176689499</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
       <option name="project" value="LOCAL" />
-      <updated>1675921065193</updated>
+      <updated>1669176689499</updated>
     </task>
-    <task id="LOCAL-00259" summary="백준 17387번 선분 교차 2 기하학 문제&#10;&#10;선분 교차 1과 완전히 똑같음 (이미 선분 교차 1에서 겹치거나 끝 점일때 교차하는걸로 판정했었기 떄문에)">
-      <created>1675921452915</created>
-      <option name="number" value="00259" />
-      <option name="presentableId" value="LOCAL-00259" />
+    <task id="LOCAL-00184" summary="하는중">
+      <created>1669190881998</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
       <option name="project" value="LOCAL" />
-      <updated>1675921452915</updated>
+      <updated>1669190881998</updated>
     </task>
-    <task id="LOCAL-00260" summary="하는중">
-      <created>1675930836650</created>
-      <option name="number" value="00260" />
-      <option name="presentableId" value="LOCAL-00260" />
+    <task id="LOCAL-00185" summary="백준 9465번 스티커 dp문제&#10;&#10;스티커를 뽑을 때, j - 1위치에서 사선에 위치한 j 스티커를 뽑을 수도있고,&#10;&#10;j -2 위치에서 어느 위치든 j 스티커를 뽑을 수 있다(위 아래 둘 다 선택 가능)&#10;&#10;따라서 dp[i][j] = max(dp[i - 1][j-1] , dp[i - 1][j - 2], dp[i][j - 2] + sticker[i][j]점화식이 나오게된다.">
+      <created>1669255232406</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
       <option name="project" value="LOCAL" />
-      <updated>1675930836650</updated>
+      <updated>1669255232406</updated>
     </task>
-    <task id="LOCAL-00261" summary="백준 20149번 선분 교차 3 기하학(CCW) 문제&#10;&#10;교차점 찾는거는 문제가 없었는데, 문제가 되는 부분이 바로&#10;&#10;두 선분의 끝점이 한 점을 공유하면서 일직선으로 뻗는 경우( 1 1 5 5&#10;                                                5 5 9 9)&#10;                                                &#10;이런 경우 교차점을 찾아내는 함수를 만듦(OnePointCover) 이거만 조심하면 통과.">
-      <created>1675987950283</created>
-      <option name="number" value="00261" />
-      <option name="presentableId" value="LOCAL-00261" />
+    <task id="LOCAL-00186" summary="백준 11404번 플로이드 플로이드 워셜 문제&#10;&#10;플로이드 워셜 연습용 문제임. 그런데 약간 비틀어서 추정 예상되는 가장 큰 비용값으로 경로 배열을 초기화하지 않고 0으로 초기화 해놓고 플로이드 워셜을 썼음. 이것도 가능은 하네 ㅇㅅㅇ;;">
+      <created>1669264742735</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
       <option name="project" value="LOCAL" />
-      <updated>1675987950283</updated>
+      <updated>1669264742735</updated>
     </task>
-    <task id="LOCAL-00262" summary="백준 2166번 다각형의 면적 기하학 문제(신발끈)&#10;&#10;다각형이 어떤 다각형인지 말한 적 없음 -&gt; 오목한 다각형일 수 있음(삼각형으로 분할 못시키는 다각형). 이건 너무한거 아니냐고.">
-      <created>1676012479267</created>
-      <option name="number" value="00262" />
-      <option name="presentableId" value="LOCAL-00262" />
+    <task id="LOCAL-00187" summary="하는중">
+      <created>1669277949385</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
       <option name="project" value="LOCAL" />
-      <updated>1676012479267</updated>
+      <updated>1669277949385</updated>
     </task>
-    <task id="LOCAL-00263" summary="하는중">
-      <created>1676017046680</created>
-      <option name="number" value="00263" />
-      <option name="presentableId" value="LOCAL-00263" />
+    <task id="LOCAL-00188" summary="백준 11725번 트리의 부모 찾기 트리 문제&#10;&#10;해시로 할까 생각하다가 그냥 관둠. 스탠다드한 bfs로 풀었음.">
+      <created>1669346991573</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
       <option name="project" value="LOCAL" />
-      <updated>1676017046681</updated>
+      <updated>1669346991574</updated>
     </task>
-    <task id="LOCAL-00264" summary="백준 2239번 스도쿠 백트래킹 문제&#10;&#10;음 그냥 해시써서 체크함. 메모리는 많이 먹어도 시간은 좀 절약이 될듯..?">
-      <created>1676270741499</created>
-      <option name="number" value="00264" />
-      <option name="presentableId" value="LOCAL-00264" />
+    <task id="LOCAL-00189" summary="하는중">
+      <created>1669363777581</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
       <option name="project" value="LOCAL" />
-      <updated>1676270741499</updated>
+      <updated>1669363777582</updated>
     </task>
-    <task id="LOCAL-00265" summary="백준 2252번 줄 세우기 위상정렬 문제&#10;&#10;기본적인 위상정렬, 우선순위 큐 써서 풀어서 사전순 최소 순서로 나옴.">
-      <created>1676273573234</created>
-      <option name="number" value="00265" />
-      <option name="presentableId" value="LOCAL-00265" />
+    <task id="LOCAL-00190" summary="백준 13549번 숨바꼭질 3 bfs문제&#10;&#10;단순한 bfs로 풀 수 있는데 우선순위 큐를 잘 쓸것. 일단 시간 순으로 나열하되, 같은 시간일 경우 위치의 크기 순으로 나열이 되어있어야 가장 빠르게 k값에 도달할 수 있다.">
+      <created>1669608030961</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
       <option name="project" value="LOCAL" />
-      <updated>1676273573234</updated>
+      <updated>1669608030961</updated>
     </task>
-    <task id="LOCAL-00266" summary="백준 2467번 용액 투 포인터 문제&#10;&#10;투 포인터로 계속 비교해가면서 절대값이 가장 작은 두 용액을 찾아냄.">
-      <created>1676353043103</created>
-      <option name="number" value="00266" />
-      <option name="presentableId" value="LOCAL-00266" />
+    <task id="LOCAL-00191" summary="백준 15654번 n과 m 5 dfs문제&#10;&#10;dfs로 풀면 됨.">
+      <created>1669613672937</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
       <option name="project" value="LOCAL" />
-      <updated>1676353043103</updated>
+      <updated>1669613672937</updated>
     </task>
-    <task id="LOCAL-00267" summary="백준 2473번 용액 투 포인터 문제&#10;&#10;처음에 했던건 투 포인터로 두 수를 결정하고, 두 수 사이에 있는 값들 중에 절댓값을 최소로 만드는 값을 이분 탐색으로 찾겠다고 알고리즘을 짰는데 대차게 실패함.&#10;&#10;그래서 무식하게 반복문으로 0번부터 n - 2번까지 한개 골라놓고, 나머지 두개를 투포인터로 찾아내는 방식으로 바꿨음. 또한 입력 값이 워낙 커서 long 자료형을 써야함.">
-      <created>1676436030067</created>
-      <option name="number" value="00267" />
-      <option name="presentableId" value="LOCAL-00267" />
+    <task id="LOCAL-00192" summary="하는중">
+      <created>1669623315936</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
       <option name="project" value="LOCAL" />
-      <updated>1676436030067</updated>
+      <updated>1669623315936</updated>
     </task>
-    <task id="LOCAL-00268" summary="하는중">
-      <created>1676448907549</created>
-      <option name="number" value="00268" />
-      <option name="presentableId" value="LOCAL-00268" />
+    <task id="LOCAL-00193" summary="백준 1916번 최소비용구하기 다익스트라 문제&#10;&#10;작성자님께서 ﻿﻿﻿﻿33,34번 줄에서 저장된 값이 0일 경우 입력 받은 수를 그대로 넣어주는 방식으로 코드를 짜셨는데, 이 문제에서는 버스의 비용이 0인 경우가 존재합니다. 따라서 배열에 값이 들어온 적이 없는것인지, 혹은 배열에 값이 들어왔는데 0인지를 판단할 수 없습니다. 여기서 문제가 발생한 것 같습니다.&#10;예를 들자면&#10;&#10;1 4 3&#10;&#10;1 4 0&#10;&#10;1 4 1&#10;&#10;같은 입력이 들어올 경우 원래라면 최소 비용인 0이 배열에 저장되어야하지만, 현재 코드 상으로 0이 저장된 이후에 배열에 바로 다음 값인 1이 저장되게 되므로 최소 비용을 저장하지 못합니다. 이 부분을 고치신다면 통과할 수 있으실것 같습니다.&#10;단순한 다익스트라였는데 비용을 입력받을 때 삐꾸나서 틀림.">
+      <created>1669706466168</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
       <option name="project" value="LOCAL" />
-      <updated>1676448907549</updated>
+      <updated>1669706466168</updated>
     </task>
-    <task id="LOCAL-00269" summary="백준 2623번 음악프로그램 위상정렬 문제&#10;&#10;단순한 위상정렬인데 출력 조건이 있으므로 잘 보고 하면 됨.">
-      <created>1676507355342</created>
-      <option name="number" value="00269" />
-      <option name="presentableId" value="LOCAL-00269" />
+    <task id="LOCAL-00194" summary="하는중">
+      <created>1669709897836</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
       <option name="project" value="LOCAL" />
-      <updated>1676507355342</updated>
+      <updated>1669709897837</updated>
     </task>
-    <task id="LOCAL-00270" summary="하는중">
-      <created>1676621189442</created>
-      <option name="number" value="00270" />
-      <option name="presentableId" value="LOCAL-00270" />
+    <task id="LOCAL-00195" summary="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함.">
+      <created>1669872580621</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
       <option name="project" value="LOCAL" />
-      <updated>1676621189442</updated>
+      <updated>1669872580622</updated>
     </task>
-    <task id="LOCAL-00271" summary="백준 7579번 앱 냅색(dp) 문제&#10;&#10;냅색처럼 풀면 되는데, 문제 조건이 좀 달라서 헷갈릴 수 있음. 기본적으로 가치가 제일 높은걸 찾으면 됨. 배낭 크기 조건이 딱히 없어서 담을 수 있는 걸 모두 담다가 메모리가 요구 조건을 만족시키면 그때의 코스트를 출력해주면 됨. 이렇게 하기 위해서 이중 for문에서 코스트를 첫 반복인자로 삼아야 됨.">
-      <created>1676853757055</created>
-      <option name="number" value="00271" />
-      <option name="presentableId" value="LOCAL-00271" />
+    <task id="LOCAL-00196" summary="하는중">
+      <created>1669882148942</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
       <option name="project" value="LOCAL" />
-      <updated>1676853757055</updated>
+      <updated>1669882148942</updated>
     </task>
-    <task id="LOCAL-00272" summary="백준 9252번 LCS 2 DP문제&#10;&#10;와 이거 생각보다 어려웠네. 스트링빌더 배열 만드니까 바로 시간초과떠서 실패. 배열 초기화 안하고 i, j = 0일때만 초기화하고 돌리니까 제대로 정답이 안나옴.&#10;&#10;결국 역추적해야겠다 싶어서 새로 클래스 만들어서 최근 char 값과 다음 char가 들어있는 인덱스를 저장하게 만듦.">
-      <created>1676874906036</created>
-      <option name="number" value="00272" />
-      <option name="presentableId" value="LOCAL-00272" />
+    <task id="LOCAL-00197" summary="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯.">
+      <created>1669950564387</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
       <option name="project" value="LOCAL" />
-      <updated>1676874906036</updated>
+      <updated>1669950564387</updated>
     </task>
-    <task id="LOCAL-00273" summary="백준 1992번 쿼드트리 분할 정복 문제&#10;&#10;입력에 n = 1 인 경우의 출력을 고쳤음.">
-      <created>1676876751283</created>
-      <option name="number" value="00273" />
-      <option name="presentableId" value="LOCAL-00273" />
+    <task id="LOCAL-00198" summary="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
+      <created>1669969040139</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
       <option name="project" value="LOCAL" />
-      <updated>1676876751283</updated>
+      <updated>1669969040139</updated>
     </task>
-    <task id="LOCAL-00274" summary="하는중">
-      <created>1676880480254</created>
-      <option name="number" value="00274" />
-      <option name="presentableId" value="LOCAL-00274" />
+    <task id="LOCAL-00199" summary="백준 9935번 문자열 폭발 스택 문제&#10;&#10;일단 문자열을 죄다 스택에 넣음. 스택 꼭다리가 폭발 문자열의 마지막 글자(패턴의 마지막)일때 폭발하는지 검사함. 스택에서 패턴만큼 비교하면서 뽑음. 이때 뽑은 갯수가 맞으면 통과 -&gt; 삭제, 아니면 통과 x -&gt; 다시 스택에 집어넣음을 반복함. 이러면 폭발 후에 합치는 것도 그렇게 걱정할 필요 없음.">
+      <created>1670390527125</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
       <option name="project" value="LOCAL" />
-      <updated>1676880480254</updated>
+      <updated>1670390527125</updated>
     </task>
-    <task id="LOCAL-00275" summary="백준 9328번 열쇠 bfs문제&#10;&#10;그냥 bfs를 하면 되기는하는데, 문을 발견했을때 지금 열쇠가 없더라도 나중에 열쇠를 얻을 수 있으니 따로 저장해 놔야함. 문제는 같은 대문자로 된 문이 여러개 나올 수 있으니 Hashmap&lt;String, Steal_Index&gt; 으론 하나밖에 저장 못하므로 &#10;밸류를 큐로 바꿔서 대문자로 된 모든 문을 다 검사할 수 있게 하면 됨.">
-      <created>1676952008323</created>
-      <option name="number" value="00275" />
-      <option name="presentableId" value="LOCAL-00275" />
+    <task id="LOCAL-00200" summary="하는중">
+      <created>1670400082928</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
       <option name="project" value="LOCAL" />
-      <updated>1676952008323</updated>
+      <updated>1670400082928</updated>
     </task>
-    <task id="LOCAL-00276" summary="하는중">
-      <created>1676966892027</created>
-      <option name="number" value="00276" />
-      <option name="presentableId" value="LOCAL-00276" />
+    <task id="LOCAL-00201" summary="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함.">
+      <created>1670471917386</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
       <option name="project" value="LOCAL" />
-      <updated>1676966892027</updated>
+      <updated>1670471917386</updated>
     </task>
-    <task id="LOCAL-00277" summary="백준 9466번 텀 프로젝트 DFS 문제&#10;&#10;사이클을 찾을 수 있으면 =&gt; 걔네들 끼리 팀을 짜고 사이클에 못들어간 친구는 다 팀이 아니게 된다.">
-      <created>1677027735993</created>
-      <option name="number" value="00277" />
-      <option name="presentableId" value="LOCAL-00277" />
+    <task id="LOCAL-00202" summary="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
+      <created>1670475880701</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
       <option name="project" value="LOCAL" />
-      <updated>1677027735993</updated>
+      <updated>1670475880701</updated>
     </task>
-    <task id="LOCAL-00278" summary="백준 10942번 팰린드롬? dp문제&#10;&#10;무지성 풀이 실패! 5분컷 ㄲㅂ; 메모 써서 팰린드롬 검사 해놓은거 두번 안하게 바꿔주면 됨. 검사한 적 없을 때 = 0 이므로 검사돌리면 됨.">
-      <created>1677029487158</created>
-      <option name="number" value="00278" />
-      <option name="presentableId" value="LOCAL-00278" />
+    <task id="LOCAL-00203" summary="백준 12851번 숨바꼭질 2 bfs문제&#10;&#10;숨바꼭질 3 코드에서 시간재는 코드 + 방문 체크를 while문 시작지점에 만들었음.(같은 시간내에 동일한 지점에 오는건 상관 없음, 더 늦게 오면 어차피 최단 거리가 아님)">
+      <created>1670826173620</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
       <option name="project" value="LOCAL" />
-      <updated>1677029487158</updated>
+      <updated>1670826173620</updated>
     </task>
-    <task id="LOCAL-00279" summary="백준 12100번 2048(Easy) 구현, 백트래킹 문제&#10;&#10;아니 이거 왤케 복잡함. 구현 문제이니만큼 좀 무식하게 직접 구현해서 통과하는게 정공법인거 같음. 배열 얕은 복사랑 깊은 복사 유의해서 잘하고.&#10;한 번 합쳐진 블럭은 다음 이동 전까지는 다시 합쳐지지 않음.&#10;&#10;왼쪽으로 이동 후 뒤집기는 오른쪽으로 이동한게 아님!!!! 중요한 포인트&#10;&#10;배열 전체를 원점 대칭으로 회전시키고 왼쪽으로 이동한 배열을 다시 회전시킴 -&gt; 오른쪽 이동임 -&gt; 굉장히 복잡함!!&#10;코드 개선할 부분이 좀 많음. 엄청 더러움. 지금은 퇴근해야되므로 추후에 하는걸로,.">
-      <created>1677140207325</created>
-      <option name="number" value="00279" />
-      <option name="presentableId" value="LOCAL-00279" />
+    <task id="LOCAL-00204" summary="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,.">
+      <created>1670832907714</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
       <option name="project" value="LOCAL" />
-      <updated>1677140207327</updated>
+      <updated>1670832907714</updated>
     </task>
-    <task id="LOCAL-00280" summary="백준 12852번 1로 만들기 2 bfs 문제&#10;&#10;bfs 감 떨어져서 재귀로 만들었다가 뭔가 이상한걸 깨달았음. 그냥 쉬운 bfs.">
-      <created>1677205190474</created>
-      <option name="number" value="00280" />
-      <option name="presentableId" value="LOCAL-00280" />
+    <task id="LOCAL-00205" summary="하는중">
+      <created>1670919358332</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
       <option name="project" value="LOCAL" />
-      <updated>1677205190474</updated>
+      <updated>1670919358332</updated>
     </task>
-    <task id="LOCAL-00281" summary="하는중">
-      <created>1677226687869</created>
-      <option name="number" value="00281" />
-      <option name="presentableId" value="LOCAL-00281" />
+    <task id="LOCAL-00206" summary="백준 14052번 연구소 bfs 문제&#10;&#10;브루트포스로 풀면 됨 (시간 초과 안남. bfs만 제대로 짜면). 벽을 세워야하는 장소를 큐로 저장해놓고 큐에서 3개 뽑는 방법을 썼음. 바이러스가 있는 곳은 리스트로 저장되어있으므로 그냥 그대로 bfs 큐에 넣어서 돌리면 됨.">
+      <created>1670997367407</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
       <option name="project" value="LOCAL" />
-      <updated>1677226687869</updated>
+      <updated>1670997367407</updated>
     </task>
-    <task id="LOCAL-00282" summary="백준 13460번 구슬 탈출 2 구현(bfs 문제)&#10;&#10;아 왤케 섹시하게 코드를 못짜겠지. 너무 더러운 코드갔워요~~~">
-      <created>1677471417017</created>
-      <option name="number" value="00282" />
-      <option name="presentableId" value="LOCAL-00282" />
+    <task id="LOCAL-00207" summary="백준 13172번 시그마 모듈러 연산 역원 구하기 문제&#10;&#10;모듈러 역원을 구함. 구하는 방법은 확장 유클리드를 재귀를 돌림. 재귀인데 일종의 dp처럼 함수가 호출될때 값이 변경되고, 그 변경 된 값을 그 전 함수에서 바로 이용가능하게끔 atomicLong을 썼음. 왜 틀렸는지는 잘 모르겠음. 아마도 확장 유클리드 함수에서 s가 음수가 됐을 때를 고쳤더니 맞은 것 같음.">
+      <created>1670997528090</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
       <option name="project" value="LOCAL" />
-      <updated>1677471417017</updated>
+      <updated>1670997528090</updated>
     </task>
-    <task id="LOCAL-00283" summary="백준 13460번 구슬 탈출 2 구현(bfs 문제)&#10;&#10;아 왤케 섹시하게 코드를 못짜겠지. 너무 더러운 코드갔워요~~~">
-      <created>1677479221643</created>
-      <option name="number" value="00283" />
-      <option name="presentableId" value="LOCAL-00283" />
+    <task id="LOCAL-00208" summary="하는중">
+      <created>1671005527353</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
       <option name="project" value="LOCAL" />
-      <updated>1677479221643</updated>
+      <updated>1671005527353</updated>
     </task>
-    <task id="LOCAL-00284" summary="백준 13459번 구슬 탈출 구현(bfs) 문제&#10;&#10;저번 구슬 탈출 2를 엄청 개선했음!!!!&#10;&#10;x y좌표로 1씩 움직이는 방법을 배웠다!">
-      <created>1677479272685</created>
-      <option name="number" value="00284" />
-      <option name="presentableId" value="LOCAL-00284" />
+    <task id="LOCAL-00209" summary="하는중">
+      <created>1671092061924</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
       <option name="project" value="LOCAL" />
-      <updated>1677479272685</updated>
+      <updated>1671092061924</updated>
     </task>
-    <task id="LOCAL-00285" summary="백준 15653번 구슬 탈출 4 구현(bfs)문제&#10;&#10;아니 구슬 1 에서 개선한 코드가 있었는데, 중복 방문 체크를 Red, Blue로 해놔가지고 무한 루프를 도는 경우가 발생함. 그걸 temp로 고쳐서 해결">
-      <created>1677548843933</created>
-      <option name="number" value="00285" />
-      <option name="presentableId" value="LOCAL-00285" />
+    <task id="LOCAL-00210" summary="백준 14938번 서강그라운드 그래프 문제&#10;&#10;언럭키 다익스트라? 우선순위 큐로 거리 별로 탐색하는 알고리즘인데 bfs로 수색하게끔 만들었음. 방문이 중요한게 아니라 실제 지점의 아이템을 더했냐 안했냐가 중요한것임.">
+      <created>1671167050133</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
       <option name="project" value="LOCAL" />
-      <updated>1677548843933</updated>
+      <updated>1671167050133</updated>
     </task>
-    <task id="LOCAL-00286" summary="백준 15644번 구슬 탈출 3 구현 문제&#10;&#10;구슬 탈출 4 에서 중복 배열 체크 개선한 코드에 역추적으로 기울인 방향을 구할 수 있게 만든 코드">
-      <created>1677548905583</created>
-      <option name="number" value="00286" />
-      <option name="presentableId" value="LOCAL-00286" />
+    <task id="LOCAL-00211" summary="백준 15657 N과 M(8) 재귀로 푼 문제&#10;&#10;스트링빌더를 재귀로 넣어서 풀었음. 중복으로 수를 뽑는게 가능하므로 재귀에서 인덱스를 상위 인덱스 그대로 받아오게끔 만들었고, 비내림차 순이므로 입력된 값은 리스트에 넣어 정렬함(우선순위 큐도 생각은 했는데 귀찮았음). 스트링빌더에서 delete나 replace 메소드는 스트링빌더의 인덱스를 기준으로 잡는데, 리스트에 입력된 값이 몇 자리 수일지는 모르기 때문에 사용하기 힘듦.">
+      <created>1671420749757</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
       <option name="project" value="LOCAL" />
-      <updated>1677548905583</updated>
+      <updated>1671420749757</updated>
     </task>
-    <task id="LOCAL-00287" summary="하는중">
-      <created>1677572030595</created>
-      <option name="number" value="00287" />
-      <option name="presentableId" value="LOCAL-00287" />
+    <task id="LOCAL-00212" summary="백준 15663번 N과 M(9) 백트래킹 문제&#10;&#10;그냥 재귀로 풀긴했음. 중복없이 탐색해야되므로 visited 배열을 써서 리스트 내에서 중복 탐색을 막았고, hashset으로 만약 리스트 내에 중복 값이 있어 같은 결과가 출력될 경우 막을 수 있게끔 조치했음.">
+      <created>1671438235472</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
       <option name="project" value="LOCAL" />
-      <updated>1677572030595</updated>
+      <updated>1671438235472</updated>
     </task>
-    <task id="LOCAL-00288" summary="백준 14003번 가장 긴 증가하는 부분 수열 5 LIS문제(nlogn)&#10;&#10;이미 LIS를 바이너리로 해놓은 코드(LIS2)가 있어서 거기다 역추적을 어떻게 잘 끼워넣은 코드임.">
-      <created>1677740572594</created>
-      <option name="number" value="00288" />
-      <option name="presentableId" value="LOCAL-00288" />
+    <task id="LOCAL-00213" summary="하는중">
+      <created>1671438478934</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
       <option name="project" value="LOCAL" />
-      <updated>1677740572594</updated>
+      <updated>1671438478934</updated>
     </task>
-    <task id="LOCAL-00289" summary="백준 12738번 가장 긴 증가하는 부분 수열 3 LIS&#10;&#10;마 바이너리로 후딱 해치워라!">
-      <created>1677740791741</created>
-      <option name="number" value="00289" />
-      <option name="presentableId" value="LOCAL-00289" />
+    <task id="LOCAL-00214" summary="백준 15666번 N과 M(12) 재귀로 푼 문제&#10;&#10;N과 M(8)번 소스에서 중복된 수열 출력하지 않게끔 Hashset으로 조정한게 다임.">
+      <created>1671495002522</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
       <option name="project" value="LOCAL" />
-      <updated>1677740791741</updated>
+      <updated>1671495002522</updated>
     </task>
-    <task id="LOCAL-00290" summary="백준 14002번 가장 긴 증가하는 부분 수열 4 LIS&#10;&#10;LIS5랑 완전히 동일하게 풀면 되지만 입력 값이 널널해서 NlogN 까지 필요없는 문제.">
-      <created>1677740864599</created>
-      <option name="number" value="00290" />
-      <option name="presentableId" value="LOCAL-00290" />
+    <task id="LOCAL-00215" summary="백준 15686번 치킨 배달 백트래킹 문제&#10;&#10;좌표의 절댓값 차이만큼의 거리가 있고, 각 집에서 치킨 집 까지의 최소 거리의 합산을 구하는 문제. 브루트포스로 모든 경우의 수를 찾아보는 방법을 썼는데, BFS로 할까 고민했는데 재귀로 풀었음. 재귀 과정에서 변수가 변경되는 경우를 잘 고려해야함. &lt;- 실수가 잦음.">
+      <created>1671524336566</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
       <option name="project" value="LOCAL" />
-      <updated>1677740864599</updated>
+      <updated>1671524336566</updated>
     </task>
-    <task id="LOCAL-00291" summary="하는중">
-      <created>1677745165807</created>
-      <option name="number" value="00291" />
-      <option name="presentableId" value="LOCAL-00291" />
+    <task id="LOCAL-00216" summary="백준 16953번 A -&gt; B BFS 문제&#10;&#10;간단한 BFS로 풀 수 있는데, 다음 노드로 넘어갈때 INT 한계치를 넘어가는 경우가 있음. 이걸 LONG으로 고치면 통과">
+      <created>1671680848968</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
       <option name="project" value="LOCAL" />
-      <updated>1677745165807</updated>
+      <updated>1671680848968</updated>
     </task>
-    <task id="LOCAL-00292" summary="하는중">
-      <created>1677830733735</created>
-      <option name="number" value="00292" />
-      <option name="presentableId" value="LOCAL-00292" />
+    <task id="LOCAL-00217" summary="하는중">
+      <created>1671696744070</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
       <option name="project" value="LOCAL" />
-      <updated>1677830733735</updated>
+      <updated>1671696744070</updated>
     </task>
-    <task id="LOCAL-00293" summary="백준 2342번 DDR DP문제&#10;&#10;처음엔 그리디로 풀었음 -&gt; 현재 발 위치 기억해놓고 움직이는 방식 =&gt; 망함&#10;&#10;DP로 풀어야됨. 다음 가야될 위치를 왼발로 밟을때, 오른발로 밟을 떄의 비용을 메모하고 돌리면 됨.">
-      <created>1678078710544</created>
-      <option name="number" value="00293" />
-      <option name="presentableId" value="LOCAL-00293" />
+    <task id="LOCAL-00218" summary="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함.">
+      <created>1671771670521</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
       <option name="project" value="LOCAL" />
-      <updated>1678078710544</updated>
+      <updated>1671771670521</updated>
     </task>
-    <option name="localTasksCounter" value="294" />
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,32 +530,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="백준 17387번 선분 교차 2 기하학 문제&#10;&#10;선분 교차 1과 완전히 똑같음 (이미 선분 교차 1에서 겹치거나 끝 점일때 교차하는걸로 판정했었기 떄문에)" />
-    <MESSAGE value="백준 20149번 선분 교차 3 기하학(CCW) 문제&#10;&#10;교차점 찾는거는 문제가 없었는데, 문제가 되는 부분이 바로&#10;&#10;두 선분의 끝점이 한 점을 공유하면서 일직선으로 뻗는 경우( 1 1 5 5&#10;                                                5 5 9 9)&#10;                                                &#10;이런 경우 교차점을 찾아내는 함수를 만듦(OnePointCover) 이거만 조심하면 통과." />
-    <MESSAGE value="백준 2166번 다각형의 면적 기하학 문제(신발끈)&#10;&#10;다각형이 어떤 다각형인지 말한 적 없음 -&gt; 오목한 다각형일 수 있음(삼각형으로 분할 못시키는 다각형). 이건 너무한거 아니냐고." />
-    <MESSAGE value="백준 2239번 스도쿠 백트래킹 문제&#10;&#10;음 그냥 해시써서 체크함. 메모리는 많이 먹어도 시간은 좀 절약이 될듯..?" />
-    <MESSAGE value="백준 2252번 줄 세우기 위상정렬 문제&#10;&#10;기본적인 위상정렬, 우선순위 큐 써서 풀어서 사전순 최소 순서로 나옴." />
-    <MESSAGE value="백준 2467번 용액 투 포인터 문제&#10;&#10;투 포인터로 계속 비교해가면서 절대값이 가장 작은 두 용액을 찾아냄." />
-    <MESSAGE value="백준 2473번 용액 투 포인터 문제&#10;&#10;처음에 했던건 투 포인터로 두 수를 결정하고, 두 수 사이에 있는 값들 중에 절댓값을 최소로 만드는 값을 이분 탐색으로 찾겠다고 알고리즘을 짰는데 대차게 실패함.&#10;&#10;그래서 무식하게 반복문으로 0번부터 n - 2번까지 한개 골라놓고, 나머지 두개를 투포인터로 찾아내는 방식으로 바꿨음. 또한 입력 값이 워낙 커서 long 자료형을 써야함." />
-    <MESSAGE value="백준 2623번 음악프로그램 위상정렬 문제&#10;&#10;단순한 위상정렬인데 출력 조건이 있으므로 잘 보고 하면 됨." />
-    <MESSAGE value="백준 7579번 앱 냅색(dp) 문제&#10;&#10;냅색처럼 풀면 되는데, 문제 조건이 좀 달라서 헷갈릴 수 있음. 기본적으로 가치가 제일 높은걸 찾으면 됨. 배낭 크기 조건이 딱히 없어서 담을 수 있는 걸 모두 담다가 메모리가 요구 조건을 만족시키면 그때의 코스트를 출력해주면 됨. 이렇게 하기 위해서 이중 for문에서 코스트를 첫 반복인자로 삼아야 됨." />
-    <MESSAGE value="백준 9252번 LCS 2 DP문제&#10;&#10;와 이거 생각보다 어려웠네. 스트링빌더 배열 만드니까 바로 시간초과떠서 실패. 배열 초기화 안하고 i, j = 0일때만 초기화하고 돌리니까 제대로 정답이 안나옴.&#10;&#10;결국 역추적해야겠다 싶어서 새로 클래스 만들어서 최근 char 값과 다음 char가 들어있는 인덱스를 저장하게 만듦." />
-    <MESSAGE value="백준 1992번 쿼드트리 분할 정복 문제&#10;&#10;입력에 n = 1 인 경우의 출력을 고쳤음." />
-    <MESSAGE value="백준 9328번 열쇠 bfs문제&#10;&#10;그냥 bfs를 하면 되기는하는데, 문을 발견했을때 지금 열쇠가 없더라도 나중에 열쇠를 얻을 수 있으니 따로 저장해 놔야함. 문제는 같은 대문자로 된 문이 여러개 나올 수 있으니 Hashmap&lt;String, Steal_Index&gt; 으론 하나밖에 저장 못하므로 &#10;밸류를 큐로 바꿔서 대문자로 된 모든 문을 다 검사할 수 있게 하면 됨." />
-    <MESSAGE value="백준 9466번 텀 프로젝트 DFS 문제&#10;&#10;사이클을 찾을 수 있으면 =&gt; 걔네들 끼리 팀을 짜고 사이클에 못들어간 친구는 다 팀이 아니게 된다." />
-    <MESSAGE value="백준 10942번 팰린드롬? dp문제&#10;&#10;무지성 풀이 실패! 5분컷 ㄲㅂ; 메모 써서 팰린드롬 검사 해놓은거 두번 안하게 바꿔주면 됨. 검사한 적 없을 때 = 0 이므로 검사돌리면 됨." />
-    <MESSAGE value="백준 12100번 2048(Easy) 구현, 백트래킹 문제&#10;&#10;아니 이거 왤케 복잡함. 구현 문제이니만큼 좀 무식하게 직접 구현해서 통과하는게 정공법인거 같음. 배열 얕은 복사랑 깊은 복사 유의해서 잘하고.&#10;한 번 합쳐진 블럭은 다음 이동 전까지는 다시 합쳐지지 않음.&#10;&#10;왼쪽으로 이동 후 뒤집기는 오른쪽으로 이동한게 아님!!!! 중요한 포인트&#10;&#10;배열 전체를 원점 대칭으로 회전시키고 왼쪽으로 이동한 배열을 다시 회전시킴 -&gt; 오른쪽 이동임 -&gt; 굉장히 복잡함!!&#10;코드 개선할 부분이 좀 많음. 엄청 더러움. 지금은 퇴근해야되므로 추후에 하는걸로,." />
-    <MESSAGE value="백준 12852번 1로 만들기 2 bfs 문제&#10;&#10;bfs 감 떨어져서 재귀로 만들었다가 뭔가 이상한걸 깨달았음. 그냥 쉬운 bfs." />
-    <MESSAGE value="백준 13460번 구슬 탈출 2 구현(bfs 문제)&#10;&#10;아 왤케 섹시하게 코드를 못짜겠지. 너무 더러운 코드갔워요~~~" />
-    <MESSAGE value="백준 13459번 구슬 탈출 구현(bfs) 문제&#10;&#10;저번 구슬 탈출 2를 엄청 개선했음!!!!&#10;&#10;x y좌표로 1씩 움직이는 방법을 배웠다!" />
-    <MESSAGE value="백준 15653번 구슬 탈출 4 구현(bfs)문제&#10;&#10;아니 구슬 1 에서 개선한 코드가 있었는데, 중복 방문 체크를 Red, Blue로 해놔가지고 무한 루프를 도는 경우가 발생함. 그걸 temp로 고쳐서 해결" />
-    <MESSAGE value="백준 15644번 구슬 탈출 3 구현 문제&#10;&#10;구슬 탈출 4 에서 중복 배열 체크 개선한 코드에 역추적으로 기울인 방향을 구할 수 있게 만든 코드" />
-    <MESSAGE value="백준 14003번 가장 긴 증가하는 부분 수열 5 LIS문제(nlogn)&#10;&#10;이미 LIS를 바이너리로 해놓은 코드(LIS2)가 있어서 거기다 역추적을 어떻게 잘 끼워넣은 코드임." />
-    <MESSAGE value="백준 12738번 가장 긴 증가하는 부분 수열 3 LIS&#10;&#10;마 바이너리로 후딱 해치워라!" />
-    <MESSAGE value="백준 14002번 가장 긴 증가하는 부분 수열 4 LIS&#10;&#10;LIS5랑 완전히 동일하게 풀면 되지만 입력 값이 널널해서 NlogN 까지 필요없는 문제." />
+    <MESSAGE value="백준 2263번 트리의 순회 트리 문제&#10;&#10;in, postorder로 주어진 순회로 pre오더를 찾는것. 기본 알고리즘은 다음과 같다.&#10;&#10;post의 마지막 요소 값이 root가 된다.&#10;in에서 root의 위치를 찾으면, root보다 낮은 인덱스는 left subtree이고, 높은 인덱스는 right subtree이다.&#10;&#10;를 재귀적으로 반복하면 pre오더로 순회값을 구할 수 있다. 처음에는 실제 트리를 만들었는데, 굳이 그럴 필요는 없으므로 출력만 해주는걸로 바꿨다. 재귀도 많이 고쳤다. 함수 내에서 왼, 오 루트를 골라줬는데 그러지 않게 바꿨다. 그 다음 &#10;알고리즘의 두 번째 단계인 inorder에서 root의 위치 찾기에서 반복문이 너무 많이 돈다. 최악의 경우 n이 n번 돌기때문에 시간초과를 뿜어낸다. 요소의 중복이 없고, 원래 있는 index값이 변화하지도 않기때문에 hashmap으로 string을 넣어 원래 index를 반환하게 만들었다." />
+    <MESSAGE value="백준 2206번 벽 부수고 이동하기 bfs문제&#10;&#10;처음에는 단순한 bfs로 했는데 실패. 문제가 벽을 뚫을 수 있으면 다 뚫어봐야됨. 그래서 뭔 생각을 했냐면 for문 돌려서 벽이 나올때마다 벽에서 bfs를 돌리자 =&gt;개같이 실패. 그 다음은 스타트 지점에서 bfs를 돌리면서 가다가, 벽이 나오면 벽에서 bfs를 해서 목적지에 도달할 수 있는지 재귀로 판단하자 -&gt; 개같이 시간초과. 생각만 한거는 방문을 벽을 뚫음 = 1, 안뚫음 = 0 으로 해서 bfs가 두개 돌아가게 만들자고 생각했는데 방법을 고민하다가 너무 복잡한거 같아서 포기함. &#10;결론적으로 마지막이 정답. 그런데 구현방법을 새로운 클래스를 정의한다든지가 아니라, 삼차원 배열을 써서 z값을 벽을 부쉈나 안부쉈나로 판단했음. 간단히 해결됨." />
+    <MESSAGE value="백준 2407번 조합 정수론&#10;&#10;100c50이 너무 크긴 함. 문자열으로 계산하면 됨. 개같이 빅---인트" />
+    <MESSAGE value="백준 9465번 스티커 dp문제&#10;&#10;스티커를 뽑을 때, j - 1위치에서 사선에 위치한 j 스티커를 뽑을 수도있고,&#10;&#10;j -2 위치에서 어느 위치든 j 스티커를 뽑을 수 있다(위 아래 둘 다 선택 가능)&#10;&#10;따라서 dp[i][j] = max(dp[i - 1][j-1] , dp[i - 1][j - 2], dp[i][j - 2] + sticker[i][j]점화식이 나오게된다." />
+    <MESSAGE value="백준 11404번 플로이드 플로이드 워셜 문제&#10;&#10;플로이드 워셜 연습용 문제임. 그런데 약간 비틀어서 추정 예상되는 가장 큰 비용값으로 경로 배열을 초기화하지 않고 0으로 초기화 해놓고 플로이드 워셜을 썼음. 이것도 가능은 하네 ㅇㅅㅇ;;" />
+    <MESSAGE value="백준 11725번 트리의 부모 찾기 트리 문제&#10;&#10;해시로 할까 생각하다가 그냥 관둠. 스탠다드한 bfs로 풀었음." />
+    <MESSAGE value="백준 13549번 숨바꼭질 3 bfs문제&#10;&#10;단순한 bfs로 풀 수 있는데 우선순위 큐를 잘 쓸것. 일단 시간 순으로 나열하되, 같은 시간일 경우 위치의 크기 순으로 나열이 되어있어야 가장 빠르게 k값에 도달할 수 있다." />
+    <MESSAGE value="백준 15654번 n과 m 5 dfs문제&#10;&#10;dfs로 풀면 됨." />
+    <MESSAGE value="백준 1916번 최소비용구하기 다익스트라 문제&#10;&#10;작성자님께서 ﻿﻿﻿﻿33,34번 줄에서 저장된 값이 0일 경우 입력 받은 수를 그대로 넣어주는 방식으로 코드를 짜셨는데, 이 문제에서는 버스의 비용이 0인 경우가 존재합니다. 따라서 배열에 값이 들어온 적이 없는것인지, 혹은 배열에 값이 들어왔는데 0인지를 판단할 수 없습니다. 여기서 문제가 발생한 것 같습니다.&#10;예를 들자면&#10;&#10;1 4 3&#10;&#10;1 4 0&#10;&#10;1 4 1&#10;&#10;같은 입력이 들어올 경우 원래라면 최소 비용인 0이 배열에 저장되어야하지만, 현재 코드 상으로 0이 저장된 이후에 배열에 바로 다음 값인 1이 저장되게 되므로 최소 비용을 저장하지 못합니다. 이 부분을 고치신다면 통과할 수 있으실것 같습니다.&#10;단순한 다익스트라였는데 비용을 입력받을 때 삐꾸나서 틀림." />
+    <MESSAGE value="백준 2096 내려가기 dp문제&#10;&#10;아니 슬라이딩 윈도우 쓸 문제가 아닌데 어케함;;; 그냥 dp로 풀었음. 3차원 배열로 max, min을 결정함." />
+    <MESSAGE value="백준 2448번 별 찍기 11 재귀 문제&#10;&#10;별 찍기 10번을 참고했음. 위 -&gt; 좌 -&gt; 우 순으로 문자열에 집어넣는 방법을 썼는데 시간초과가 나서 원래 별을 가지고 추가로 복사하는 방법을 썼음. 그리고 문자열에 문자열을 더하는거 보다 StringBuilder가 더 시간이 덜 걸리는듯." />
+    <MESSAGE value="백준 9935번 문자열 폭발 스택 문제&#10;&#10;일단 문자열을 죄다 스택에 넣음. 스택 꼭다리가 폭발 문자열의 마지막 글자(패턴의 마지막)일때 폭발하는지 검사함. 스택에서 패턴만큼 비교하면서 뽑음. 이때 뽑은 갯수가 맞으면 통과 -&gt; 삭제, 아니면 통과 x -&gt; 다시 스택에 집어넣음을 반복함. 이러면 폭발 후에 합치는 것도 그렇게 걱정할 필요 없음." />
+    <MESSAGE value="백준 11779 최소비용 구하기 2 다익스트라 문제&#10;&#10;아니 최소비용 구하는거 그대로 하면 되는데, 경로 추적할때 무한 루프를 돌았음.&#10;근데 무한 루프때문에 시간초과보다 메모리 초과가 더 빨리 떠서 계속 간선 메모리만 만지고 있었음. 문제는 루프에서 계속 리스트에 값을 쑤셔넣는거라서 그거 고쳤더니 통과함." />
+    <MESSAGE value="백준 12851번 숨바꼭질 2 bfs문제&#10;&#10;숨바꼭질 3 코드에서 시간재는 코드 + 방문 체크를 while문 시작지점에 만들었음.(같은 시간내에 동일한 지점에 오는건 상관 없음, 더 늦게 오면 어차피 최단 거리가 아님)" />
+    <MESSAGE value="백준 2638번 치즈 bfs문제&#10;&#10;외부 공기 =&gt; bfs로 1을 무시하고 0끼리 진행했을때 닿은 곳. 따라서 bfs 시작지점을 가장자리 변으로 해야(치즈가 없는 곳) 항상 외부공기라는 것을 보장할 수 있겠음. 문제가 안생김 &lt;- 여기서 처음 틀렸음.&#10;&#10;그 후에는 제거해야할 치즈들을 골라내고 다른 것은 모두 처음(과 비슷한)상태로 되돌려서 bfs를 반복하는 것이 정답 풀이가 되겠음,." />
+    <MESSAGE value="백준 14052번 연구소 bfs 문제&#10;&#10;브루트포스로 풀면 됨 (시간 초과 안남. bfs만 제대로 짜면). 벽을 세워야하는 장소를 큐로 저장해놓고 큐에서 3개 뽑는 방법을 썼음. 바이러스가 있는 곳은 리스트로 저장되어있으므로 그냥 그대로 bfs 큐에 넣어서 돌리면 됨." />
+    <MESSAGE value="백준 13172번 시그마 모듈러 연산 역원 구하기 문제&#10;&#10;모듈러 역원을 구함. 구하는 방법은 확장 유클리드를 재귀를 돌림. 재귀인데 일종의 dp처럼 함수가 호출될때 값이 변경되고, 그 변경 된 값을 그 전 함수에서 바로 이용가능하게끔 atomicLong을 썼음. 왜 틀렸는지는 잘 모르겠음. 아마도 확장 유클리드 함수에서 s가 음수가 됐을 때를 고쳤더니 맞은 것 같음." />
+    <MESSAGE value="백준 14938번 서강그라운드 그래프 문제&#10;&#10;언럭키 다익스트라? 우선순위 큐로 거리 별로 탐색하는 알고리즘인데 bfs로 수색하게끔 만들었음. 방문이 중요한게 아니라 실제 지점의 아이템을 더했냐 안했냐가 중요한것임." />
+    <MESSAGE value="백준 15657 N과 M(8) 재귀로 푼 문제&#10;&#10;스트링빌더를 재귀로 넣어서 풀었음. 중복으로 수를 뽑는게 가능하므로 재귀에서 인덱스를 상위 인덱스 그대로 받아오게끔 만들었고, 비내림차 순이므로 입력된 값은 리스트에 넣어 정렬함(우선순위 큐도 생각은 했는데 귀찮았음). 스트링빌더에서 delete나 replace 메소드는 스트링빌더의 인덱스를 기준으로 잡는데, 리스트에 입력된 값이 몇 자리 수일지는 모르기 때문에 사용하기 힘듦." />
+    <MESSAGE value="백준 15663번 N과 M(9) 백트래킹 문제&#10;&#10;그냥 재귀로 풀긴했음. 중복없이 탐색해야되므로 visited 배열을 써서 리스트 내에서 중복 탐색을 막았고, hashset으로 만약 리스트 내에 중복 값이 있어 같은 결과가 출력될 경우 막을 수 있게끔 조치했음." />
+    <MESSAGE value="백준 15666번 N과 M(12) 재귀로 푼 문제&#10;&#10;N과 M(8)번 소스에서 중복된 수열 출력하지 않게끔 Hashset으로 조정한게 다임." />
+    <MESSAGE value="백준 15686번 치킨 배달 백트래킹 문제&#10;&#10;좌표의 절댓값 차이만큼의 거리가 있고, 각 집에서 치킨 집 까지의 최소 거리의 합산을 구하는 문제. 브루트포스로 모든 경우의 수를 찾아보는 방법을 썼는데, BFS로 할까 고민했는데 재귀로 풀었음. 재귀 과정에서 변수가 변경되는 경우를 잘 고려해야함. &lt;- 실수가 잦음." />
+    <MESSAGE value="백준 16953번 A -&gt; B BFS 문제&#10;&#10;간단한 BFS로 풀 수 있는데, 다음 노드로 넘어갈때 INT 한계치를 넘어가는 경우가 있음. 이걸 LONG으로 고치면 통과" />
     <MESSAGE value="하는중" />
-    <MESSAGE value="백준 2342번 DDR DP문제&#10;&#10;처음엔 그리디로 풀었음 -&gt; 현재 발 위치 기억해놓고 움직이는 방식 =&gt; 망함&#10;&#10;DP로 풀어야됨. 다음 가야될 위치를 왼발로 밟을때, 오른발로 밟을 떄의 비용을 메모하고 돌리면 됨." />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 2342번 DDR DP문제&#10;&#10;처음엔 그리디로 풀었음 -&gt; 현재 발 위치 기억해놓고 움직이는 방식 =&gt; 망함&#10;&#10;DP로 풀어야됨. 다음 가야될 위치를 왼발로 밟을때, 오른발로 밟을 떄의 비용을 메모하고 돌리면 됨." />
+    <MESSAGE value="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함." />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 17070번 파이프 옮기기 1 그래프 문제&#10;&#10;파이프를 움직이는건 움직이는건데, 파이프가 어떤 자세를 취하냐에 따라 다르게 움직일 수 있다. 따라서 파이프 자세를 가세대 세 가지로 저장해놓고 그에 맞게끔 움직일 수 있게 하면 시간초과가 난다. 따라서 (n, n)이 이미 막혀서 도달못하는 경우, x나 y 좌표가 이미 벽에 닿아있어서 특정 자세 말고는 못 움직이는 경우를 따로 떼 주니까 통과함." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -595,16 +601,6 @@
           <line>57</line>
           <option name="timeStamp" value="183" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinarySearch/LIS2.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="295" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="300" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GraphTheory/Cheese.java</url>
           <line>24</line>
@@ -614,24 +610,32 @@
           </properties>
           <option name="timeStamp" value="177" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>30</line>
+          <properties class="Main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="vlist" language="JAVA" />
-        <watch expression="Jlist" />
-        <watch expression="((java.util.LinkedList)next).get(2)" custom="java.util.LinkedList" />
-        <watch expression="((java.util.LinkedList)next).get(2)" custom="java.util.LinkedList" />
-        <watch expression="select" />
-        <watch expression="sum" />
-        <watch expression="b" />
-        <watch expression="recent[i - 1]" language="JAVA" />
-        <watch expression="st" />
+        <watch expression="com[2]" />
+        <watch expression="m" />
+        <watch expression="tree[0]" language="JAVA" />
+        <watch expression="((dslr)((LinkedList)bs).get(4)).num" custom="dslr,java.util.LinkedList" />
+        <watch expression="bs" />
+        <watch expression="oper.get(0).op" />
+        <watch expression="tree[0]" language="JAVA" />
+        <watch expression="root" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1675927655943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Practicing_Java_and_Git$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1659011936841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/untitled$Main.ic" NAME="Main 커버리지 결과" MODIFIED="1653019956093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
